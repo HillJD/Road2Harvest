@@ -1,0 +1,7 @@
+﻿/*Used for displaying images input canvas*/
+.carousel-inner > .item > img,
+      .carousel-inner > .item > a > img {
+      max-width: 40%;
+        margin: auto;
+        /*border:solid 3px thin ;*/
+     }
