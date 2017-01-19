@@ -13,15 +13,15 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img  class="thumbnail" src ="/images/pic1.jpg" width:300 height:300" alt="Chania">
+      <img  class="thumbnail" src ="/images/pic1.jpg" alt="Chania">
     </div>
 
     <div class="item">
-      <img class="thumbnail" src="/images/pic2.jpg" width:300 height:300" alt="Chania">
+      <img class="thumbnail" src="/images/pic2.jpg"  alt="Chania">
     </div>
 
     <div class="item">
-      <img class="thumbnail" src="/images/pic3.jpg" width:300 height:300" alt="Flower">
+      <img class="thumbnail" src="/images/pic3.jpg"  alt="Flower">
     </div>
   </div>
 

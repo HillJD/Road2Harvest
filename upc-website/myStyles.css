@@ -1,7 +1,22 @@
 ﻿/*Used for displaying images input canvas*/
 .carousel-inner > .item > img,
       .carousel-inner > .item > a > img {
-      max-width: 40%;
-        margin: auto;
-        /*border:solid 3px thin ;*/
-     }
+    width: 40%;
+    margin:auto ;
+    border:solid 2px black;
+}
+    
+/*change background color jumbotron*/
+div.jumbotron {
+    background-color:#b94a48;
+    /*background:transparent !important*/
+}
+
+/*Change text color H1 in jumbotron*/
+/*.jumbotron h1 {
+color:#ffffff;
+}*/
+
+body {
+background-color:#8A715A;
+}  

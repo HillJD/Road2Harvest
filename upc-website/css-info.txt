@@ -1,0 +1,3 @@
+﻿Bryans colors: Brown #8A715A Green: #52B1AE
+Jumbotron transparent backrground: style="background:transparent !important"
+
