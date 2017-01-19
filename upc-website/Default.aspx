@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
         <div style="background:transparent !important" class="jumbotron text-center" >
         <h1>Union Pentecostal Church</h1>
-        <p>Union Pentecostal Church on Mia Avenue is now over 79 years new!<br />
+        <p>Union Pentecostal Church on Mia Avenue is now over 79 years old, new!<br />
         Founded in 1927 by Sis Laura Shank in need of Sunday school for neighborhood children.<br />
         It soon grew to about fifty members. In 1935, a need for a larger building started<br />
          the church on building anew on Mia Avenue in Dayton, Ohio.</p>
