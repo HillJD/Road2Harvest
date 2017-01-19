@@ -19,4 +19,8 @@ color:#ffffff;
 
 body {
 background-color:#8A715A;
-}  
+}
+/*Move pic indicators (circles)down below pic2.aspx pictures in gallery*/
+ul, ol {
+margin-bottom:-40px;
+}
