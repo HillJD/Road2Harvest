@@ -83,6 +83,13 @@
             <hr />
             <footer>
                 <p class="text-center">&copy; <%: DateTime.Now.Year %> - Union Pentecostal Church</p>
+                <div class="text-center center-block">
+                    <p class="txt-railway">- Bootsnipp.com -</p>
+                    <br />
+                    <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-inverse fa-3x social"></i></a>
+                    <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-inverse fa-3x social"></i></a>
+                    <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-inverse fa-3x social"></i></a>
+                </div>
             </footer>
         </div>
     </form>

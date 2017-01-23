@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container" style="margin-top:40px;">
     <h1 class="text-center">Carousel</h1>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1000">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -14,10 +14,24 @@
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img  class="thumbnail" src ="/images/pic1.jpg" alt="Chania">
+        <div class="hero">
+            <hgroup>
+                <h1>Revival April 6, 2017</h1>        
+                <h3>Bro. Noah Dearth (hero) </h3>
+                <h3>Sunday - Wednesday </h3>
+            </hgroup>
+        </div>
     </div>
 
     <div class="item">
       <img class="thumbnail" src="/images/pic2.jpg"  alt="Chania">
+        <div class="carousel-caption">
+            <hgroup>
+                <h1>Revival April 6, 2017</h1>        
+                <h3>Bro. Bob Smith (carousel-caption) </h3>
+                <h3>Sunday - Wednesday </h3>
+            </hgroup>
+        </div>
     </div>
 
     <div class="item">

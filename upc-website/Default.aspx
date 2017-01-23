@@ -7,12 +7,12 @@
             Founded in 1927 by Sis Laura Shank in need of Sunday school for neighborhood children.
             It soon grew to about fifty members. In 1935, a need for a larger building started
          the church on building anew on Mia Avenue in Dayton, Ohio.</p>
-        <p><a href="http://www.unionpentecostalchurch.com/" class="btn btn-primary btn-lg"><i class="fa fa-flag pull-left"></i>Go<br>Here!</a>
+        <p><a href="http://www.unionpentecostalchurch.com/" class="btn btn-default">Go Here</a>
         </p>
     </div>
     <div class="row">
-        <div class="col-md-3">
-            <h2><i class="fa fa-home fa-fw"></i>Our Pastor</h2>
+        <div class="col-md-4">
+            <h2>Our Pastor</h2>
             <p>
                 Pastor Clifford Hurst is a dynamic preacher and teacher and has no parallels amongst other ministers.
             </p>
@@ -20,7 +20,7 @@
                 <a class="btn btn-default" href="http://www.obicollege.com">Learn more &raquo;</a>
             </p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <h2>Our Youth leaders</h2>
             <p>
                 Bro. Bryan & Sara McKelvey are youth leaders with a passion for youth spiritual growth. 
@@ -30,7 +30,7 @@
                 <a class="btn btn-default" href="http://www.leadershipinstitute.org/yls/">Learn more &raquo;</a>
             </p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <h2>Media & Technical Ministries</h2>
             <p>
                 No church or organization can quite match the unsurpassed raw technical talent of Union Road Church! 
