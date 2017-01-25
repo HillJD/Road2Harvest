@@ -14,7 +14,7 @@
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img  class="thumbnail" src ="/images/pic1.jpg" alt="Chania">
-        <div class="hero">
+        <div class="carousel-caption">
             <hgroup>
                 <h1>Revival April 6, 2017</h1>        
                 <h3>Bro. Noah Dearth (hero) </h3>
