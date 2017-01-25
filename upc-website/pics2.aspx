@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="Pics #2" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="pics2.aspx.cs" Inherits="upc_website.pics2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container" style="margin-top:40px;">
-    <h1 class="text-center">Carousel</h1>
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1000">
+    <h1 class="text-center">Our News</h1>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
