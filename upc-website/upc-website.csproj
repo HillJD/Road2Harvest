@@ -220,6 +220,7 @@
     <Content Include="images\pic1.jpg" />
     <Content Include="images\pic2.jpg" />
     <Content Include="images\pic3.jpg" />
+    <Content Include="main.aspx" />
     <Content Include="media.aspx" />
     <Content Include="myStyles.css" />
     <Content Include="pic3.aspx" />
@@ -450,6 +451,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
     </Compile>
     <Compile Include="media.aspx.cs">
       <DependentUpon>media.aspx</DependentUpon>

@@ -16,7 +16,7 @@
     <link href="~/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css">
 
 </head>
-<body>
+<body id="myBody" runat="server">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -56,7 +56,9 @@
                         <li><a runat="server" href="~/sermons">Sermons</a></li>
                         <li><a runat="server" href="~/pics">Pics1</a></li>
                         <li><a runat="server" href="~/pics2">Pics2</a></li>
+                        <li><a runat="server" href="~/pic3">Pics3</a></li>
                         <li><a runat="server" href="~/media">Media</a></li>
+                        <li><a runat="server" href="~/main">Main</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
@@ -77,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div id="container" class="container" runat="server">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />

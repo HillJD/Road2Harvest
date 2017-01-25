@@ -7,9 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace upc_website {
+namespace WebPageLifeCycle {
     
     
     public partial class _Default {
+        
+        /// <summary>
+        /// litExample control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litExample;
+        
+        /// <summary>
+        /// txtExample control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtExample;
     }
 }
