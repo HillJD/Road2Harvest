@@ -6068,9 +6068,9 @@ body.modal-open,
 
 .carousel-control {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
+  top: -28px;
+  bottom: 675px;
+  left: 49px;
   width: 15%;
   font-size: 20px;
   color: #ffffff;

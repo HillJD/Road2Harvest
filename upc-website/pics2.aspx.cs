@@ -11,7 +11,13 @@ namespace upc_website
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Page.Title = string.Format("Pictures{0:d}", DateTime.Now);
+          
+        }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+            var i = img1;
+            i.Src = "/images/pic2.jpg";
         }
     }
 }
