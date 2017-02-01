@@ -218,11 +218,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="HtmlPage1.html" />
-    <Content Include="images\pic1.jpg" />
-    <Content Include="images\pic2.jpg" />
-    <Content Include="images\pic3.jpg" />
+    <Content Include="images\0.jpg" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
     <Content Include="main.aspx" />
     <Content Include="media.aspx" />
+    <Content Include="ModifyCarousel.html" />
     <Content Include="myStyles.css" />
     <Content Include="pic3.aspx" />
     <Content Include="pics.aspx" />

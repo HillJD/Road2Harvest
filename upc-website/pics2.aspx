@@ -1,15 +1,25 @@
 ﻿<%@ Page Title="Pics #2" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="pics2.aspx.cs" Inherits="upc_website.pics2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    
-<<script type="text/javascript">
-     // Enable Carousel Controls
-     $(".left").click(function(){
-         $("#myCarousel").carousel("prev");
-     });
-  });
+
+    <script type="text/javascript">
+    window.onload = load();
+
+    function load() {
+        var d = new Date()
+        var gmtOffSet = -d.getTimezoneOffset();
+        var gmtHours = Math.floor(gmtOffSet / 60);
+        var GMTMin = Math.abs(gmtOffSet % 60);
+        var dot = ".";
+        var retVal = "" + gmtHours + dot + GMTMin;
+        alert(retVal)
+        
+    alert(retVal);
+}
 </script>
 
-
+    <%--<asp:HiddenField ID="clientDateTime" runat="server" />
+    <asp:HiddenField ID="offSet" runat="server" />
+    <asp:Te--%>xtBox ID="TextBox1" runat="server"></asp:TextBox>
 
     <div class="container" style="margin-top:40px;">
     <h1 class="text-center">

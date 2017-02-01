@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Assets/css/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">        </script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <title></title>
+    
+</head>
+
+<body>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators id="indi"></ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" id="inner">
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <script>
+        window.onload = load();
+        function load() {
+
+            alert("Function Load()");
+            for (var i = 0 ; i < 1 ; i++) {
+                var path = "images/" + i + ".jpg";
+                alert("Function Before carousel.inner()");
+                $('<div class="item"><img src="' + "images/0.jpg" + '"><div class="carousel-caption"></div>   </div>').appendTo('.carousel-inner');
+                alert("Function After carousel.inner()");
+                //$("#indi").after("<li data-target='#carousel-example-generic' data-slide-to=\"" + i + "\"></li>");
+                $(".carousel-inner").after("<div class='item'><img src='" + path  + "'></div>");
+                alert("Function Load after carousel.inner()");
+            }
+
+            $(".carousel-indicators li:first").addClass("active");
+            $(".carousel-inner .item:first").addClass("active");
+            $('.carousel').carousel();
+        }
+        window.onload = load;
+    </script>
+</body>
+</html> 
