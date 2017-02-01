@@ -13,13 +13,31 @@ namespace upc_website {
     public partial class pics2 {
         
         /// <summary>
-        /// Button1 control.
+        /// myCarousel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button myCarousel;
+        
+        /// <summary>
+        /// Button_Previous control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button_Previous;
+        
+        /// <summary>
+        /// Button_Next control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button_Next;
         
         /// <summary>
         /// wrapper control.
