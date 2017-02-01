@@ -6,7 +6,7 @@
                 <div class="carousel-inner">
                     <div class="item active">
                         <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4">
-                            <a href="#">
+                           <a href="#">
                                 <img style="margin: auto" src="images/pic1.jpg" class="img-responsive">1</a>
                         </div>
                     </div>

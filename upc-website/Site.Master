@@ -13,8 +13,10 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="~/myStyles.css" rel="stylesheet" type="text/css" />
+    <link href="~/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css">
+
 </head>
-<body>
+<body id="myBody" runat="server">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -54,7 +56,9 @@
                         <li><a runat="server" href="~/sermons">Sermons</a></li>
                         <li><a runat="server" href="~/pics">Pics1</a></li>
                         <li><a runat="server" href="~/pics2">Pics2</a></li>
+                        <li><a runat="server" href="~/pic3">Pics3</a></li>
                         <li><a runat="server" href="~/media">Media</a></li>
+                        <li><a runat="server" href="~/main">Main</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
@@ -75,12 +79,19 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div id="container" class="container" runat="server">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
                 <p class="text-center">&copy; <%: DateTime.Now.Year %> - Union Pentecostal Church</p>
+                <div class="text-center center-block">
+                    <p class="txt-railway">- Bootsnipp.com -</p>
+                    <br />
+                    <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-inverse fa-3x social"></i></a>
+                    <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-inverse fa-3x social"></i></a>
+                    <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-inverse fa-3x social"></i></a>
+                </div>
             </footer>
         </div>
     </form>
