@@ -221,6 +221,10 @@
     <Content Include="images\0.jpg" />
     <Content Include="images\1.jpg" />
     <Content Include="images\2.jpg" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\6.jpg" />
+    <Content Include="images\7.jpg" />
     <Content Include="main.aspx" />
     <Content Include="media.aspx" />
     <Content Include="ModifyCarousel.html" />

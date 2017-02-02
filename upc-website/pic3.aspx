@@ -22,14 +22,14 @@
         function load() {
 
             //alert("Function Load()");
-            var pics=new Array("0","1","2");
-            for (var i = 0 ; i < 3 ; i++) {
+            var pics=new Array("0","1","2","4","5","6");
+            for (var i = 0 ; i < 6 ; i++) {
                 var path = "images/" + pics[i] + ".jpg";
                 //alert("Function Before carousel.inner()");
                 $('<div class="item"><img src="' + path  + '"><div class="carousel-caption"></div>   </div>').appendTo('.carousel-inner');
                 //alert("Function After carousel.inner()");
                 $(".carousel-indicators").after("<li data-target='#carousel-example-generic' data-slide-to=\"" + i + "\"></li>");
-                $('.carousel-inner').after('<div class="item"><img src=' + path  + '></div>');
+                //$('.carousel-inner').after('<div class="item"><img src=' + path  + '></div>');
                 //alert("Function Load after carousel.inner()");
             }
 
@@ -37,6 +37,6 @@
             $(".carousel-inner .item:first").addClass("active");
             $('.carousel').carousel();
         }
-        window.onload = load;
+        //window.onload = load;
     </script>
 </asp:Content>
