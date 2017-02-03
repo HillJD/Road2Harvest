@@ -225,6 +225,7 @@
     <Content Include="images\5.jpg" />
     <Content Include="images\6.jpg" />
     <Content Include="images\7.jpg" />
+    <Content Include="JavascriptObjectsAndMethods.aspx" />
     <Content Include="main.aspx" />
     <Content Include="media.aspx" />
     <Content Include="ModifyCarousel.html" />
@@ -464,6 +465,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="JavascriptObjectsAndMethods.aspx.cs">
+      <DependentUpon>JavascriptObjectsAndMethods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JavascriptObjectsAndMethods.aspx.designer.cs">
+      <DependentUpon>JavascriptObjectsAndMethods.aspx</DependentUpon>
     </Compile>
     <Compile Include="main.aspx.cs">
       <DependentUpon>main.aspx</DependentUpon>
