@@ -224,6 +224,8 @@
     <Content Include="images\3.jpg" />
     <Content Include="images\4.jpg" />
     <Content Include="images\5.jpg" />
+    <Content Include="images\6.jpg" />
+    <Content Include="images\7.jpg" />
     <Content Include="JavascriptObjectsAndMethods.aspx" />
     <Content Include="main.aspx" />
     <Content Include="media.aspx" />
