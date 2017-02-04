@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Pics #2" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="pics2.aspx.cs" Inherits="upc_website.pics2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <script type="text/javascript">
+    <%--<script type="text/javascript">
     window.onload = load();
 
     function load() {
@@ -15,12 +15,8 @@
         
     alert(retVal);
 }
-</script>
-
-    <%--<asp:HiddenField ID="clientDateTime" runat="server" />
-    <asp:HiddenField ID="offSet" runat="server" />
-    <asp:Te--%>xtBox ID="TextBox1" runat="server"></asp:TextBox>
-
+</script>--%>
+    
     <div class="container" style="margin-top:40px;">
     <h1 class="text-center">
         <%--<asp:Button ID="Button2" runat="server" OnClick="$('#Button1').trigger('Button1_Click1')" Text="Button" />--%>

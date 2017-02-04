@@ -36,15 +36,20 @@
         mike.weight = 195;
 
         var carol = new people("Carol Dearth", 64);
+
+        var dudes = new Array("mike", "Carol", "Josh");
+               
     </script>
 </head>
 <body>
     
     <form id="form1" runat="server">
         <div>
-            <h3 style="color:red"><script>
-                document.write("Years: " + mike.yearsUntilRetire() + "<br> " + "Months: " +
-                    mike.monthsUntilRetire() + "<br>" + " And weighs " + mike.weightInKilos() + "(kg)");
+            <h3 style="color: red">
+                <script>
+                    document.write(dudes.length + "<br>");
+                    document.write("Years: " + mike.yearsUntilRetire() + "<br> " + "Months: " + mike.monthsUntilRetire() + "<br>" + " And weighs " + mike.weightInKilos() + "(kg)");
+                    
                 </script>
             </h3>
         </div>
