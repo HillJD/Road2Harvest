@@ -1,9 +1,9 @@
 ﻿/*Used for displaying images input canvas added for my code*/
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    width: 20%;
+.carousel-inner > .item > img
+{
+    width: 80%;
     margin: auto;
-    border: solid 2px black;
+    border: solid 6px black;
 }
  
 body {
