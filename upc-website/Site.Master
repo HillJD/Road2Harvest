@@ -12,7 +12,8 @@
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="~/myStyles.css" rel="stylesheet" type="text/css" />
+    <link href="myStyles.css" rel="stylesheet" runat="server" />
+    <%--<link href="~/myStyles.css" rel="stylesheet" type="text/css" />--%>
     <link href="~/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css">
 
 </head>
@@ -79,7 +80,7 @@
                 </div>
             </div>
         </div>
-        <div id="container" class="container" runat="server">
+        <div class="container">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />

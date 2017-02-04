@@ -1,10 +1,11 @@
 ﻿/*Used for displaying images input canvas added for my code*/
 .carousel-inner > .item > img,
       .carousel-inner > .item > a > img {
-    width: 50%;
-    margin:auto ;
-    border:solid 2px black;
+    width: 20%;
+    margin:auto;
+    border:solid 4px black;
 }
+
     
 /*change background color jumbotron*/
 div.jumbotron {
@@ -17,8 +18,9 @@ div.jumbotron {
 color:#ffffff;
 }*/
 
+/**/8A715A*/
 body {
-background-color:#8A715A;
+background-color:aliceblue;
 }
 /*Move pic indicators (circles)down below pic2.aspx pictures in gallery*/
 ul, ol {
@@ -74,9 +76,9 @@ Image credits: unsplash.com
     position: relative;
     height: 100vh;
 }
-.fade-carousel .carousel-inner .item {
+/*.fade-carousel .carousel-inner .item {
     height: 100vh;
-}
+}*/
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
     background-color: #f39c12;
