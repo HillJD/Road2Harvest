@@ -200,6 +200,7 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="AddControls.aspx" />
+    <Content Include="addControlsFirstAttempt.aspx" />
     <Content Include="buildcontrol.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -445,6 +446,13 @@
     </Compile>
     <Compile Include="AddControls.aspx.designer.cs">
       <DependentUpon>AddControls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addControlsFirstAttempt.aspx.cs">
+      <DependentUpon>addControlsFirstAttempt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addControlsFirstAttempt.aspx.designer.cs">
+      <DependentUpon>addControlsFirstAttempt.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

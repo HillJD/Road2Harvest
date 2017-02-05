@@ -1,26 +1,27 @@
 ﻿<%@ Page Title="Pics 3" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="pic3.aspx.cs" Inherits="upc_website.pic3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="false">
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="false"></div>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-        <!-- Indicators -->
-        <ol class="carousel-indicators"></ol>
+        
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner"></div>
+        <div class="carousel-inner">
 
-          <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Indicators -->
+        <div class="carousel-indicators"><ol></ol></div>
     </div>
-</div>
+
     <script>
         window.onload = load();
         function load() {
