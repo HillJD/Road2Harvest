@@ -13,7 +13,7 @@ namespace upc_website
         {
             var div = new Panel();
             div.ID = "mike";
-            div.i
+           
             div.Controls.Add(new LiteralControl("<h1>hallo</h1>"));
             div.Controls.Add(new Image());
             Page.Form.Controls.Add(div);

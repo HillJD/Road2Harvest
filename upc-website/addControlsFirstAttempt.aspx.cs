@@ -13,6 +13,16 @@ namespace upc_website
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            LiteralControl lc = new LiteralControl();
+            lc.Text = "< div id = 'myCarousel' class='carousel carousel slide' data-ride='carousel'>";
+            lc.Text += "<!-- Indicators --><ol class='carousel-indicators'>";
+            lc.Text += "<li data-target='#myCarousel' data-slide-to='0' class='active'>";
+            lc.Text += "<li data-target='#myCarousel' data-slide-to='1'></li>";
+            lc.Text += "<li data-target='#myCarousel' data-slide-to='2'></li>";
+            lc.Text += "</o>";
+            myDiv.Controls.Add(lc);
+
+
             //StringBuilder sb = new StringBuilder();
             //sb.Append("<div class='text-center' id='newDiv'>");
             //sb.Append("<h1>Mike was here div newDiv</h1>");
@@ -30,51 +40,51 @@ namespace upc_website
 
 
             // //this builds the carousel indicators
-            StringBuilder sb = new StringBuilder();
-            sb.Append("<div id ='myCarousel' class='carousel carousel slide' data-ride='carousel'>");
-            sb.Append('\n');
-            sb.Append(" <!-- Indicators -->");
-            sb.Append('\n');
-            sb.Append("<ol class='carousel-indicators'>");
-            sb.Append('\n');
-            sb.Append("<li data-target='#myCarousel' data-slide-to='0' class='active'></li>");
-            sb.Append('\n');
-            sb.Append("<li data-target='#myCarousel' data-slide-to='1'></li>");
-            sb.Append('\n');
-            sb.Append("<li data-target='#myCarousel' data-slide-to='2'></li>");
-            sb.Append('\n');
-            sb.Append("</o>");
-            Literal1.Text = sb.ToString();
+            //StringBuilder sb = new StringBuilder();
+            //sb.Append("<div id ='myCarousel' class='carousel carousel slide' data-ride='carousel'>");
+            //sb.Append('\n');
+            //sb.Append(" <!-- Indicators -->");
+            //sb.Append('\n');
+            //sb.Append("<ol class='carousel-indicators'>");
+            //sb.Append('\n');
+            //sb.Append("<li data-target='#myCarousel' data-slide-to='0' class='active'></li>");
+            //sb.Append('\n');
+            //sb.Append("<li data-target='#myCarousel' data-slide-to='1'></li>");
+            //sb.Append('\n');
+            //sb.Append("<li data-target='#myCarousel' data-slide-to='2'></li>");
+            //sb.Append('\n');
+            //sb.Append("</o>");
+            //Literal1.Text = sb.ToString();
 
             //this builds the wrapper for the slides
             //slide 1
-            sb.Append('\n');
-            sb.Append("<!-- Wrapper for slides -->");
-            sb.Append('\n');
-            sb.Append("<div class='carousel-inner' role='listbox'>");
-            sb.Append('\n');
-            sb.Append("<div class='item active'>");
-            sb.Append('\n');
-            sb.Append("<img src='images/0.jpg'>");
-            sb.Append('\n');
-            sb.Append("</div>");
-            sb.Append("\n\n");
-            //slide 2
-            sb.Append("<div class='item'>");
-            sb.Append('\n');
-            sb.Append("<img src='images/1.jpg'>");
-            sb.Append('\n');
-            sb.Append("</div>");
-            sb.Append("\n\n");
-            //slide 3
-            sb.Append("<div class='item'>");
-            sb.Append('\n');
-            sb.Append("<img src='images/2.jpg'>");
-            sb.Append('\n');
-            sb.Append("</div>");
-            sb.Append("\n");
-            sb.Append("</div>");
-            sb.Append("\n\n");
+            //sb.Append('\n');
+            //sb.Append("<!-- Wrapper for slides -->");
+            //sb.Append('\n');
+            //sb.Append("<div class='carousel-inner' role='listbox'>");
+            //sb.Append('\n');
+            //sb.Append("<div class='item active'>");
+            //sb.Append('\n');
+            //sb.Append("<img src='images/0.jpg'>");
+            //sb.Append('\n');
+            //sb.Append("</div>");
+            //sb.Append("\n\n");
+            ////slide 2
+            //sb.Append("<div class='item'>");
+            //sb.Append('\n');
+            //sb.Append("<img src='images/1.jpg'>");
+            //sb.Append('\n');
+            //sb.Append("</div>");
+            //sb.Append("\n\n");
+            ////slide 3
+            //sb.Append("<div class='item'>");
+            //sb.Append('\n');
+            //sb.Append("<img src='images/2.jpg'>");
+            //sb.Append('\n');
+            //sb.Append("</div>");
+            //sb.Append("\n");
+            //sb.Append("</div>");
+            //sb.Append("\n\n");
 
             // //this builds left & right controls
             // //left control
