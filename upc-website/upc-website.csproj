@@ -237,6 +237,7 @@
     <Content Include="myStyles.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="panelCtrl.aspx" />
     <Content Include="pic3.aspx" />
     <Content Include="pics.aspx" />
     <Content Include="pics2.aspx" />
@@ -511,6 +512,13 @@
       <DependentUpon>media.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="panelCtrl.aspx.cs">
+      <DependentUpon>panelCtrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panelCtrl.aspx.designer.cs">
+      <DependentUpon>panelCtrl.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pic3.aspx.cs">
       <DependentUpon>pic3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
