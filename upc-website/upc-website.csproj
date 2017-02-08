@@ -199,8 +199,9 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="AddControls.aspx" />
+    <Content Include="addcarousel.aspx" />
     <Content Include="addControlsFirstAttempt.aspx" />
+    <Content Include="addDiv.aspx" />
     <Content Include="buildcontrol.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -209,6 +210,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="css-info.txt" />
+    <Content Include="default2.ascx" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.css" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.min.css" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
@@ -284,6 +286,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="WebUserControl1.ascx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -441,12 +444,12 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddControls.aspx.cs">
-      <DependentUpon>AddControls.aspx</DependentUpon>
+    <Compile Include="addcarousel.aspx.cs">
+      <DependentUpon>addcarousel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddControls.aspx.designer.cs">
-      <DependentUpon>AddControls.aspx</DependentUpon>
+    <Compile Include="addcarousel.aspx.designer.cs">
+      <DependentUpon>addcarousel.aspx</DependentUpon>
     </Compile>
     <Compile Include="addControlsFirstAttempt.aspx.cs">
       <DependentUpon>addControlsFirstAttempt.aspx</DependentUpon>
@@ -454,6 +457,13 @@
     </Compile>
     <Compile Include="addControlsFirstAttempt.aspx.designer.cs">
       <DependentUpon>addControlsFirstAttempt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addDiv.aspx.cs">
+      <DependentUpon>addDiv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addDiv.aspx.designer.cs">
+      <DependentUpon>addDiv.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -486,6 +496,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default2.ascx.cs">
+      <DependentUpon>default2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default2.ascx.designer.cs">
+      <DependentUpon>default2.ascx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -583,6 +600,13 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

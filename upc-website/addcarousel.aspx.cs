@@ -8,15 +8,13 @@ using System.Text;
 
 namespace upc_website
 {
-    public partial class addControlsFirst_Attempt : System.Web.UI.Page
+    public partial class addcarousel : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // //this builds the carousel indicators
             StringBuilder sb = new StringBuilder();
-
-            //this builds the carousel indicators
-            sb.Append("<div id ='myCarousel' class='carousel slide' data-ride='carousel'>");
+            sb.Append("<div id ='myCarousel' class='carousel carousel slide' data-ride='carousel'>");
             sb.Append('\n');
             sb.Append(" <!-- Indicators -->");
             sb.Append('\n');
@@ -28,8 +26,8 @@ namespace upc_website
             sb.Append('\n');
             sb.Append("<li data-target='#myCarousel' data-slide-to='2'></li>");
             sb.Append('\n');
-            sb.Append("</ol>");
-            Literal1.Text = sb.ToString();
+            sb.Append("</o>");
+          
             sb.Clear();
 
             //this builds the wrapper for the slides
@@ -39,33 +37,33 @@ namespace upc_website
             sb.Append('\n');
             sb.Append("<div class='carousel-inner' role='listbox'>");
             sb.Append('\n');
-            sb.Append("<div class='item active center'>");
+            sb.Append("<div class='item active'>");
             sb.Append('\n');
-            sb.Append("<img class='.img-responsive' src='images/0.jpg'>");
+            sb.Append("<img src='images/0.jpg'>");
             sb.Append('\n');
             sb.Append("</div>");
             sb.Append("\n\n");
             //slide 2
-            sb.Append("<div class='item center'>");
+            sb.Append("<div class='item'>");
             sb.Append('\n');
-            sb.Append("<img class='.img-responsive' src='images/1.jpg'>");
+            sb.Append("<img src='images/1.jpg'>");
             sb.Append('\n');
             sb.Append("</div>");
             sb.Append("\n\n");
             //slide 3
-            sb.Append("<div class='item center'>");
+            sb.Append("<div class='item'>");
             sb.Append('\n');
-            sb.Append("<img class='.img-responsive' src='images/2.jpg'>");
+            sb.Append("<img src='images/2.jpg'>");
             sb.Append('\n');
             sb.Append("</div>");
             sb.Append("\n");
             sb.Append("</div>");
             sb.Append("\n\n");
-            Literal2.Text = sb.ToString();
+            //Literal2.Text = sb.ToString();
             sb.Clear();
 
             // //this builds left & right controls
-            //left control
+            // //left control
             sb.Append("<!-- Left and right controls -->");
             sb.Append("\n");
             sb.Append("<a class='left carousel-control' href='#myCarousel' role='button' data-slide='prev'>");
@@ -86,16 +84,7 @@ namespace upc_website
             sb.Append("\n");
             sb.Append("</a>");
             sb.Append("\n");
-            sb.Append("</div>");
-            Literal3.Text = sb.ToString();
-            sb.Clear();
-
-
-
-
-
-
-
+            //Literal3.Text = sb.ToString();
         }
     }
 }
