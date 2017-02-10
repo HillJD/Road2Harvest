@@ -43,42 +43,50 @@ textarea,
 
 body {
 background-color:bisque;
-padding-top:90px;
+padding-top:70px;
 }
 
 /* Carousel base class */
 .carousel {
   height: auto;
   margin-bottom: 15px;
-  width:500px;  
+  max-width:100%; 
+  margin:auto;
  
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
 }
+.carousel-inner {
+    margin:auto;
+}
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height:300px;
+  height:600px;
   background-color: #777;
-  width:auto;
+  max-width:100%;
 }
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
-  left: 0;
-  min-width: 50%;
+  left: 170px;
+  max-width: 100%;
+  height:600px; 
+}
 
- 
+.thumbnail{
+    background-color: rgba(10, 9, 21, 0.13);
+
 }
 
 
 
 
 /* Move down content because we have a fixed navbar that is 50px tall */
-body {
-    padding-top: 150px;
+/*body {
+    padding-top: 80px;
     padding-bottom: 20px;
 }
 
@@ -94,28 +102,28 @@ body {
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
-.body-content {
+/*.body-content {
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px;*/
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
-*/
+/*
 .dl-horizontal dt {
     white-space: normal;
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
-input[type="text"],
+/*input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
 input[type="select"] {
-    max-width: 280px;
+    max-width: 280px;*/
 }
 
-/* Responsive: Portrait tablets and up */
+/* Responsive: Portrait tablets and up 
 @media screen and (min-width: 768px) {
     .jumbotron {
         margin-top: 20px;
@@ -123,4 +131,4 @@ input[type="select"] {
     .body-content {
         padding: 0;
     }
-}
+}*/

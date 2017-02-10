@@ -16,7 +16,9 @@ namespace upc_website
             StringBuilder sb = new StringBuilder();
 
             //this builds the carousel indicators
-            sb.Append("<div id ='myCarousel' class='carousel slide' data-ride='carousel'>");
+            sb.Append("<div class='row'>");
+            sb.Append("<div class='col-md-12'>");
+            sb.Append("<div id ='myCarousel' class='fade-carousel carousel slide' data-ride='carousel'>");
             sb.Append('\n');
             sb.Append(" <!-- Indicators -->");
             sb.Append('\n');
@@ -39,23 +41,23 @@ namespace upc_website
             sb.Append('\n');
             sb.Append("<div class='carousel-inner' role='listbox'>");
             sb.Append('\n');
-            sb.Append("<div class='item active center'>");
+            sb.Append("<div class='item active'>");
             sb.Append('\n');
-            sb.Append("<img class='.img-responsive' src='images/0.jpg'>");
+            sb.Append("<img class='.img-responsive thumbnail' src='images/1_1.jpg'>");
             sb.Append('\n');
             sb.Append("</div>");
             sb.Append("\n\n");
             //slide 2
-            sb.Append("<div class='item center'>");
+            sb.Append("<div class='item'>");
             sb.Append('\n');
-            sb.Append("<img class='.img-responsive' src='images/1.jpg'>");
+            sb.Append("<img class='.img-responsive thumbnail' src='images/2_1.jpg'>");
             sb.Append('\n');
             sb.Append("</div>");
             sb.Append("\n\n");
             //slide 3
-            sb.Append("<div class='item center'>");
+            sb.Append("<div class='item'>");
             sb.Append('\n');
-            sb.Append("<img class='.img-responsive' src='images/2.jpg'>");
+            sb.Append("<img class='.img-responsive thumbnail' src='images/3_1.jpg'>");
             sb.Append('\n');
             sb.Append("</div>");
             sb.Append("\n");
@@ -87,6 +89,8 @@ namespace upc_website
             sb.Append("</a>");
             sb.Append("\n");
             sb.Append("</div>");
+            sb.Append("</div>");
+            sb.Append("</div>"); //col-xs-12
             Literal3.Text = sb.ToString();
             sb.Clear();
 
