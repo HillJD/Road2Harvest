@@ -209,6 +209,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\site2.css" />
     <Content Include="css-info.txt" />
     <Content Include="default2.ascx" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.css" />
