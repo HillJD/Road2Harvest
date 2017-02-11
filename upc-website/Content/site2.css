@@ -35,7 +35,7 @@
   right: 0;
   left: 0;
   width: 100%;
-  z-index: 15;
+  z-index: 26;
   margin: 0;
   padding: 0 25px 25px 0;
   text-align: right;
@@ -44,6 +44,7 @@
 .carousel-control.left,
 .carousel-control.right {
   background-image: none;
+  z-index:26;
 }
 
 
@@ -72,5 +73,13 @@
   .container {
     max-width: 800px;
   }
+
+}
+body {
+background-color:#52B1AE;
+font-family: 'Montserrat', sans-serif;
+
+
+
 
 }
