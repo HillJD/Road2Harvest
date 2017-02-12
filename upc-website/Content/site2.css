@@ -31,9 +31,9 @@
 
 .carousel-indicators {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  bottom: -24px; /*Move indicators up or down*/
+  right:0;
+  left: 0; /*Move indicators left or right*/
   width: 100%;
   z-index: 26;
   margin: 0;
@@ -49,37 +49,38 @@
 
 
 /* ------------------- Section Styling - Not needed for carousel styling ------------------- */
-
-.section-white {
-   padding: 0 0;
-   margin-top:60px
-}
-
-.section-white {
-  background-color: #52B1AE;
-  color: #555;
-}
-
-@media screen and (min-width: 768px) {
-
-  .section-white {
-     padding: 1.5em 0;
-  }
-
-}
-
-@media screen and (min-width: 992px) {
-
-  .container {
-    max-width: 800px;
-  }
-
-}
 body {
-background-color:#52B1AE;
-font-family: 'Montserrat', sans-serif;
-
-
-
-
+    background-color: #000000;
+    font-family: 'Montserrat', sans-serif;
 }
+
+.section-white {
+    padding: 0 0;
+    margin-top: 60px;
+    background-color: black;
+    color: #555;
+}
+
+.section-white {
+}
+
+@media screen and (max-width: 768px) {
+    .section-white {
+        padding: 1.5em 0;
+    }
+
+
+    @media screen and (min-width: 992px) {
+
+        .container {
+            max-width: 1000px;
+        }
+    }
+
+    @media screen and (max-width: 844px) {
+        .navbar-brand {
+            font-size: 26px;
+        }
+    }
+
+

@@ -55,11 +55,11 @@
                         <li><a runat="server" href="~/About">About Us</a></li>
                         <li><a runat="server" href="~/sermons">Sermons</a></li>
                         <li><a runat="server" href="~/addControlsFirstAttempt">Pics</a></li>
-                         <li><a runat="server" href="~/media">Media</a></li>
+                        <li><a runat="server" href="~/media">Media</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav navbar-right visible-md visible-lg visible-xs">
                                 <li><a runat="server" href="~/Account/Register">Register</a></li>
                                 <li><a runat="server" href="~/Account/Login">Log in</a></li>
                             </ul>
@@ -80,7 +80,7 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
            <footer>
-                <p class="text-center">&copy; <%: DateTime.Now.Year %> - Union Pentecostal Church</p>
+                <p class="text-center">&copy; <%: DateTime.Now.Year %> - UPC</p>
                 <div class="text-center center-block">
                     
                     <br />
