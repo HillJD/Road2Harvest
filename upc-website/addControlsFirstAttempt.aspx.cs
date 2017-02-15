@@ -16,7 +16,7 @@ namespace upc_website
             StringBuilder sb = new StringBuilder();
 
             //this builds the carousel indicators
-            sb.Append("<section class='section-white'>");
+            ////sb.Append("<section class='section-white'>");
             sb.Append("<div id ='myCarousel' class='fade-carousel carousel slide' data-ride='carousel' data-interval='2000'>");
             sb.Append('\n');
             sb.Append(" <!-- Indicators -->");
@@ -88,7 +88,7 @@ namespace upc_website
             sb.Append("</a>");
             sb.Append("\n");
             sb.Append("</div>");
-            sb.Append("</div>");
+            //sb.Append("</div>");
             sb.Append("</section>");
             Literal3.Text = sb.ToString();
             sb.Clear();

@@ -52,7 +52,7 @@
 body {
     background-color: #000000;
     font-family: 'Montserrat', sans-serif;
-    padding-top:100px;
+    padding-top:111px;/*a taller menu*/
 }
 
 .section-white {
@@ -65,44 +65,49 @@ body {
 .section-white {
 }
 
+
+
+    /* ------------------- Section Styling - For navbar-brand  ------------------- */
+.navbar {
+    min-height: 100px;
+    background-color: black;
+    padding: 30px;
+}
+
+.navbar-brand {
+   /* margin-left: 50px;*/
+}
+
+    .navbar-brand > img {
+        position:relative;
+       margin-top:-41px;
+        /* left: 10px;
+        top: 10px;
+        height: 90%;
+        margin-right: 50px;
+        padding: 0px;
+        width: auto;*/
+    }
+
 @media screen and (max-width: 768px) {
     .section-white {
         padding: 1.5em 0;
     }
 }
 
-    @media screen and (min-width: 992px) {
-
-        .container {
+@media screen and (min-width: 992px) {
+   
+    /*.container {
             max-width: 1366px;
-        }
-    }
+        }*/
+}
 
-    /*@media screen and (max-width: 844px) {
+/*@media screen and (max-width: 844px) {
         .navbar-brand {
             font-size: 26px;
+            margin-left:50px;
         }
     }*/
-
-    /* ------------------- Section Styling - For navbar-brand  ------------------- */
-   .navbar{
-       min-height:100px;
-       background-color:black;
-   }
-    
-     .navbar-brand {
-        padding: 15px;
-    }
-
-        .navbar-brand > img {
-            position:absolute;
-            left:10px;
-            top:10px;
-            height: 90%;
-            margin-right10px;
-            /*padding: 0px;*/
-            width: auto;
-        }
 
 
 
