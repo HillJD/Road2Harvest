@@ -297,6 +297,9 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="WebUserControl1.ascx" />
+    <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\upc.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
