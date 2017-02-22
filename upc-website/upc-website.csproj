@@ -221,6 +221,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-regular.svg" />
+    <Content Include="glyphicons\glyphicons.css" />
     <Content Include="HtmlPage1.html" />
     <Content Include="images\0.jpg" />
     <Content Include="images\1.jpg" />
@@ -297,6 +299,10 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="WebUserControl1.ascx" />
+    <Content Include="fonts\glyphicons-regular.eot" />
+    <Content Include="fonts\glyphicons-regular.ttf" />
+    <Content Include="fonts\glyphicons-regular.woff" />
+    <Content Include="fonts\glyphicons-regular.woff2" />
     <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\upc.pubxml" />
@@ -624,6 +630,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="fonts\font\" />
+    <Folder Include="glyphicons\css\" />
+    <Folder Include="glyphicons\fonts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
