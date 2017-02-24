@@ -42,21 +42,21 @@ namespace upc_website
             sb.Append('\n');
             sb.Append("<div class='item active'>");
             sb.Append('\n');
-            sb.Append("<img src='images/3_1.jpg'>");
+            sb.Append("<img src='images/1_4.jpg'>");
             sb.Append('\n');
             sb.Append("</div>");
             sb.Append("\n\n");
             //slide 2
             sb.Append("<div class='item'>");
             sb.Append('\n');
-            sb.Append("<img src='images/3_2.jpg'>");
+            sb.Append("<img src='images/4_2.jpg'>");
             sb.Append('\n');
             sb.Append("</div>");
             sb.Append("\n\n");
             //slide 3
             sb.Append("<div class='item'>");
             sb.Append('\n');
-            sb.Append("<img src='images/3_3.jpg'>");
+            sb.Append("<img src='images/4_3.jpg'>");
             sb.Append('\n');
             sb.Append("</div>");
             sb.Append("\n");
