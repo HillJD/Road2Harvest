@@ -11,6 +11,14 @@
 }
 
 /* ------------------- Carousel Styling ------------------- */
+/*Change width of carousel*/
+.carousel {
+  height: auto;
+  margin-bottom: 15px;
+  width:700px;
+  margin:10px auto 0;
+ 
+}
 
 .carousel-inner {
   border-radius: 15px;

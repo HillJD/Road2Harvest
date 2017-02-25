@@ -227,12 +227,15 @@
     <Content Include="images\0.jpg" />
     <Content Include="images\1.jpg" />
     <Content Include="images\1_1.jpg" />
+    <Content Include="images\1_4.jpg" />
     <Content Include="images\2.jpg" />
     <Content Include="images\2_1.jpg" />
+    <Content Include="images\2_4.jpg" />
     <Content Include="images\3.jpg" />
     <Content Include="images\3_1.jpg" />
     <Content Include="images\3_2.jpg" />
     <Content Include="images\3_3.jpg" />
+    <Content Include="images\3_4.jpg" />
     <Content Include="images\4.jpg" />
     <Content Include="images\5.jpg" />
     <Content Include="images\6.jpg" />
