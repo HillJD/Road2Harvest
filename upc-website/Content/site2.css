@@ -11,6 +11,14 @@
 }
 
 /* ------------------- Carousel Styling ------------------- */
+/*Change width of carousel*/
+.carousel {
+  height: auto;
+  margin-bottom: 15px;
+  width:70%;
+  margin:10px auto 0;
+ 
+}
 
 .carousel-inner {
   border-radius: 15px;
@@ -52,7 +60,7 @@
 
 /* ------------------- Section Styling - Not needed for carousel styling ------------------- */
 body {
-    background-color: #00000f;
+    background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     padding-top:111px;/*a taller menu*/
 }
@@ -104,12 +112,17 @@ body {
         }*/
 }
 
-/*@media screen and (max-width: 844px) {
-        .navbar-brand {
+@media screen and (max-width: 768px) {
+        /*.navbar-brand {
             font-size: 26px;
             margin-left:50px;
+        }*/
+
+        .carousel{
+            width:100%
         }
-    }*/
+
+}
 
 
 

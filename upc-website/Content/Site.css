@@ -50,8 +50,8 @@ padding-top:70px;
 .carousel {
   height: auto;
   margin-bottom: 15px;
-  max-width:100%; 
-  margin:auto;
+  width:400px;
+  margin:0 auto;
  
 }
 /* Since positioning the image, we need to help out the caption */
