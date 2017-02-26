@@ -15,7 +15,7 @@
 .carousel {
   height: auto;
   margin-bottom: 15px;
-  width:700px;
+  width:70%;
   margin:10px auto 0;
  
 }
@@ -112,12 +112,17 @@ body {
         }*/
 }
 
-/*@media screen and (max-width: 844px) {
-        .navbar-brand {
+@media screen and (max-width: 768px) {
+        /*.navbar-brand {
             font-size: 26px;
             margin-left:50px;
+        }*/
+
+        .carousel{
+            width:100%
         }
-    }*/
+
+}
 
 
 
