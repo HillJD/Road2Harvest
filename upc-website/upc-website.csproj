@@ -251,7 +251,7 @@
     <Content Include="main.aspx" />
     <Content Include="media.aspx" />
     <Content Include="ModifyCarousel.html" />
-    <Content Include="myStyles.css">
+    <Content Include="Content\myStyles.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="panelCtrl.aspx" />
