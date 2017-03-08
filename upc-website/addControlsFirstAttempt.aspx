@@ -6,13 +6,13 @@
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
    
-   
-    <asp:Repeater 
+
+    
      <asp:Literal ID="Literal1" runat="server"></asp:Literal>
         <asp:Literal ID="Literal2" runat="server"></asp:Literal>
         <asp:Literal ID="Literal3" runat="server"></asp:Literal>
     <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-
+    <div class="container" style="margin:40px 0px;">
     <div class="row">
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
       <span class="glyphicons glyphicons-headphones"></span>
@@ -31,7 +31,7 @@
 
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
       <span class="glyphicons glyphicons-envelope"></span>
-      <p>Prayer Requests</p>
+      <p>Requests</p>
    </div>
 
    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
@@ -44,10 +44,7 @@
       <p>Resources</p>
    </div>
   </div>
-         <asp:PlaceHolder ID="ControlContainer" runat="server">
-
-
-    </asp:PlaceHolder>
+</div>
 
    
    </asp:Content>
