@@ -101,61 +101,87 @@ namespace upc_website
             Literal3.Text = sb.ToString();
             sb.Clear();
 
-            HtmlGenericControl tabs = new HtmlGenericControl("ul");
-            tabs.ID = "myTopnav";
-            tabs.Attributes.Add("class", "topnav");
+            //HtmlGenericControl tabs = new HtmlGenericControl("ul");
+            //tabs.ID = "myTopnav";
+            //tabs.Attributes.Add("class", "topnav");
 
-            HtmlGenericControl li = new HtmlGenericControl("li");
-            HtmlGenericControl ianchor = new HtmlGenericControl("a");
+            //HtmlGenericControl li = new HtmlGenericControl("li");
+            //HtmlGenericControl ianchor = new HtmlGenericControl("a");
 
-            li = new HtmlGenericControl("li");
-            ianchor = new HtmlGenericControl("a");
-            ianchor.ID = "Home";
-            ianchor.Attributes.Add("href", "#home");
-            ianchor.Attributes.Add("class", "active");
-            ianchor.InnerText = "Home";
-            li.Controls.Add(ianchor);
-            tabs.Controls.Add(li);
+            //li = new HtmlGenericControl("li");
+            //ianchor = new HtmlGenericControl("a");
+            //ianchor.ID = "Home";
+            //ianchor.Attributes.Add("href", "#home");
+            //ianchor.Attributes.Add("class", "active");
+            //ianchor.InnerText = "Home";
+            //li.Controls.Add(ianchor);
+            //tabs.Controls.Add(li);
 
 
-            li = new HtmlGenericControl("li");
-            ianchor = new HtmlGenericControl("a");
-            ianchor.ID = "News";
-            ianchor.Attributes.Add("href", "#");
-            ianchor.InnerText = "News";
-            li.Controls.Add(ianchor);
-            tabs.Controls.Add(li);
+            //li = new HtmlGenericControl("li");
+            //ianchor = new HtmlGenericControl("a");
+            //ianchor.ID = "News";
+            //ianchor.Attributes.Add("href", "#");
+            //ianchor.InnerText = "News";
+            //li.Controls.Add(ianchor);
+            //tabs.Controls.Add(li);
             
-            //Add to PlaceHolder Control on .aspx
-            ControlContainer.Controls.Add(tabs);
+            ////Add to PlaceHolder Control on .aspx 
+            //ControlContainer.Controls.Add(tabs);
 
-            //This generates a Div within a Div, first Div #1
+            ////This generates a Div within a Div, first Div #1
+            //System.Web.UI.HtmlControls.HtmlGenericControl
+            //createDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
+            //createDiv.ID = "createDiv";
+            ////createDiv.InnerHtml = " I'm a div, from code behind ";
+            //this.Controls.Add(createDiv);
+
+            ////Then Div 2
+            //System.Web.UI.HtmlControls.HtmlGenericControl
+            //createDiv2 = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
+            //createDiv2.ID = "createDiv2";
+            //createDiv2.InnerHtml = " I'm a div2, from code behind ";
+            ////Add Div 2 inside of Div1
+            //createDiv.Controls.Add(createDiv2);
+
+            //System.Web.UI.HtmlControls.HtmlGenericControl
+            //createDiv3 = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
+            //createDiv3.ID = "createDiv3";
+            //createDiv3.InnerHtml = " I'm a div3, from code behind ";
+            //createDiv3.Attributes.Add("class", "Main");
+            ////Add this info below to inner div this way
+            //createDiv3.Attributes.Add("role","listbox");
+            //createDiv3.Attributes.Add("data-slide-to", "1");
+            //createDiv.Controls.Add(createDiv3);
+
+            //Create ordered list 'ol' with 'li' elements
             System.Web.UI.HtmlControls.HtmlGenericControl
-            createDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
-            createDiv.ID = "createDiv";
-            //createDiv.InnerHtml = " I'm a div, from code behind ";
-            this.Controls.Add(createDiv);
+            ol = new System.Web.UI.HtmlControls.HtmlGenericControl("ol");
+            ol.Attributes.Add("class", "carousel-indicators");
 
-            //Then Div 2
+            //Now add  #1 of 3 'li' elements
             System.Web.UI.HtmlControls.HtmlGenericControl
-            createDiv2 = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
-            createDiv2.ID = "createDiv2";
-            createDiv2.InnerHtml = " I'm a div2, from code behind ";
-            //Add Div 2 inside of Div1
-            createDiv.Controls.Add(createDiv2);
+            li_1 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
+            li_1.Attributes.Add("data-target", "#myCarousel");
+            li_1.Attributes.Add("data-slide-to", "0");
+            li_1.Attributes.Add("class", "active");
+            ol.Controls.Add(li_1);
 
+            //Now add  #2 of 3 'li' elements
             System.Web.UI.HtmlControls.HtmlGenericControl
-            createDiv3 = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
-            createDiv3.ID = "createDiv3";
-            createDiv3.InnerHtml = " I'm a div3, from code behind ";
-            createDiv3.Attributes.Add("class", "Main");
-            //Add this info below to inner div this way
-            createDiv3.Attributes.Add("role","listbox");
-            createDiv3.Attributes.Add("data-slide-to", "1");
-            createDiv.Controls.Add(createDiv3);
+            li_2 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
+            li_2.Attributes.Add("data-target", "#myCarousel");
+            li_2.Attributes.Add("data-slide-to", "1");
+            ol.Controls.Add(li_2);
 
-
-
+            //Now add  #3 of 3 'li' elements
+            System.Web.UI.HtmlControls.HtmlGenericControl
+            li_3 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
+            li_3.Attributes.Add("data-target", "#myCarousel");
+            li_3.Attributes.Add("data-slide-to", "2");
+            ol.Controls.Add(li_3);
+            //Add 'ol' and 'li' to PlaceHolder
+            ControlContainer.Controls.Add(ol);
 
 
 

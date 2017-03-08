@@ -200,9 +200,9 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="addcarousel.aspx" />
-    <Content Include="addControlsFirstAttempt.aspx" />
     <Content Include="addDiv.aspx" />
     <Content Include="buildcontrol.aspx" />
+    <Content Include="carousel.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -473,13 +473,6 @@
     <Compile Include="addcarousel.aspx.designer.cs">
       <DependentUpon>addcarousel.aspx</DependentUpon>
     </Compile>
-    <Compile Include="addControlsFirstAttempt.aspx.cs">
-      <DependentUpon>addControlsFirstAttempt.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="addControlsFirstAttempt.aspx.designer.cs">
-      <DependentUpon>addControlsFirstAttempt.aspx</DependentUpon>
-    </Compile>
     <Compile Include="addDiv.aspx.cs">
       <DependentUpon>addDiv.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -504,6 +497,13 @@
     </Compile>
     <Compile Include="buildcontrol.aspx.designer.cs">
       <DependentUpon>buildcontrol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="carousel.aspx.cs">
+      <DependentUpon>carousel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="carousel.aspx.designer.cs">
+      <DependentUpon>carousel.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
