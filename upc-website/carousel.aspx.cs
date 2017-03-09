@@ -297,7 +297,7 @@ namespace upc_website
             spanRightCtrl_2.InnerText = "Next";
             
             //Add span control to 'A'
-            aRightCtrl.Controls.Add(spanLeftCtrl_2);
+            aRightCtrl.Controls.Add(spanRightCtrl_2);
             
             //Add aRightCtrl to wrapper div
             Wrapper.Controls.Add(aRightCtrl);
