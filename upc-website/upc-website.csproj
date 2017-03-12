@@ -254,6 +254,7 @@
     <Content Include="Content\myStyles.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="modifyData.aspx" />
     <Content Include="panelCtrl.aspx" />
     <Content Include="pic3.aspx" />
     <Content Include="pics.aspx" />
@@ -529,6 +530,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\RetrieveData.cs" />
     <Compile Include="JavascriptObjectsAndMethods.aspx.cs">
       <DependentUpon>JavascriptObjectsAndMethods.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -551,6 +553,13 @@
       <DependentUpon>media.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="modifyData.aspx.cs">
+      <DependentUpon>modifyData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modifyData.aspx.designer.cs">
+      <DependentUpon>modifyData.aspx</DependentUpon>
+    </Compile>
     <Compile Include="panelCtrl.aspx.cs">
       <DependentUpon>panelCtrl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -636,6 +645,7 @@
     <Folder Include="fonts\font\" />
     <Folder Include="glyphicons\css\" />
     <Folder Include="glyphicons\fonts\" />
+    <Folder Include="images\carousel\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
