@@ -25,6 +25,7 @@ namespace upc_website
             {
                 picName.Text = dt.Rows[0]["picName"].ToString();
                 path.Text = dt.Rows[0]["path"].ToString();
+                color.Text = dt.Rows[0]["color"].ToString();
             }
 //            command.Connection = cs;
   //          command.CommandType = CommandType.Text;

@@ -240,6 +240,26 @@
     <Content Include="images\5.jpg" />
     <Content Include="images\6.jpg" />
     <Content Include="images\7.jpg" />
+    <Content Include="images\carousel\1.jpg" />
+    <Content Include="images\carousel\10.jpg" />
+    <Content Include="images\carousel\11.jpg" />
+    <Content Include="images\carousel\12.jpg" />
+    <Content Include="images\carousel\13.jpg" />
+    <Content Include="images\carousel\14.jpg" />
+    <Content Include="images\carousel\16.jpg" />
+    <Content Include="images\carousel\17.jpg" />
+    <Content Include="images\carousel\18.jpg" />
+    <Content Include="images\carousel\19.jpg" />
+    <Content Include="images\carousel\2.jpg" />
+    <Content Include="images\carousel\20.jpg" />
+    <Content Include="images\carousel\3.jpg" />
+    <Content Include="images\carousel\4.jpg" />
+    <Content Include="images\carousel\5.jpg" />
+    <Content Include="images\carousel\6.jpg" />
+    <Content Include="images\carousel\600x338 web pic sample sizes.jpg" />
+    <Content Include="images\carousel\7.jpg" />
+    <Content Include="images\carousel\8.jpg" />
+    <Content Include="images\carousel\9.jpg" />
     <Content Include="images\dove3.png" />
     <Content Include="images\dove40px.jpg" />
     <Content Include="images\gena upc dove white-03.png" />
@@ -645,7 +665,6 @@
     <Folder Include="fonts\font\" />
     <Folder Include="glyphicons\css\" />
     <Folder Include="glyphicons\fonts\" />
-    <Folder Include="images\carousel\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
