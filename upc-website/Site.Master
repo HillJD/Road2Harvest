@@ -7,16 +7,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> </title>
+    <!-- This below allows to have custom style sheets on any page-->
+    <!--The corresponding code must be placed in the destination page -->
+    <asp:ContentPlaceHolder ID="headContent" runat="server">
+    </asp:ContentPlaceHolder>
+    
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="~/myStyles.css" rel="stylesheet" type="text/css" />
-    <link href="~/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css">
-
+    <%--<link href="myStyles.css" rel="stylesheet" type="text/css"/>--%>
+    <link href="~/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="glyphicons/glyphicons.css" rel="stylesheet" type="text/css"/>
 </head>
-<body id="myBody" runat="server">
+<body>
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -47,27 +53,26 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Union Pentecostal Church</a>
+                    <a class="navbar-brand" href="#" runat="server"><img src="images/dove3.png"/></a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav navbar-right">
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About Us</a></li>
                         <li><a runat="server" href="~/sermons">Sermons</a></li>
-                        <li><a runat="server" href="~/pics">Pics1</a></li>
-                        <li><a runat="server" href="~/pics2">Pics2</a></li>
-                        <li><a runat="server" href="~/pic3">Pics3</a></li>
-                        <li><a runat="server" href="~/media">Media</a></li>
-                        <li><a runat="server" href="~/main">Main</a></li>
+                        <li><a runat="server" href="~/addControlsFirstAttempt">Pics</a></li>
+                        <li class="hidden-sm"><a runat="server" href="~/media">Media</a></li>
+                         <li><a runat="server" href="~/Account/Register">Register</a></li>
+                        <li><a runat="server" href="~/Account/Login">Log in</a></li>
                     </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <%--<asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a runat="server" href="~/Account/Register">Register</a></li>
                                 <li><a runat="server" href="~/Account/Login">Log in</a></li>
                             </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
+                        <!--</AnonymousTemplate>-->
+                        <%--<LoggedInTemplate>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
                                 <li>
@@ -75,22 +80,21 @@
                                 </li>
                             </ul>
                         </LoggedInTemplate>
-                    </asp:LoginView>
+                    </asp:LoginView>--%>
                 </div>
             </div>
         </div>
-        <div id="container" class="container" runat="server">
+        <div class="container">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p class="text-center">&copy; <%: DateTime.Now.Year %> - Union Pentecostal Church</p>
+           <footer>
+                <p class="text-center">&copy; <%: DateTime.Now.Year %> - UPC</p>
                 <div class="text-center center-block">
-                    <p class="txt-railway">- Bootsnipp.com -</p>
+                    
                     <br />
-                    <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-inverse fa-3x social"></i></a>
-                    <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-inverse fa-3x social"></i></a>
-                    <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-inverse fa-3x social"></i></a>
+                    <a href="https://www.facebook.com/unionpentecostalchurch"><i class="fa fa-facebook-square fa-inverse fa-3x social"></i></a>
+                    <a href="https://twitter.com/unionroadchurch"><i class="fa fa-twitter-square fa-inverse fa-3x social"></i></a>
+                    <a href="http://plus.google.com/b/113686491120109002941"><i class="fa fa-google-plus-square fa-inverse fa-3x social"></i></a>
                 </div>
             </footer>
         </div>

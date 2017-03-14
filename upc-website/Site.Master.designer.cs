@@ -13,22 +13,13 @@ namespace upc_website {
     public partial class SiteMaster {
         
         /// <summary>
-        /// myBody control.
+        /// headContent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl myBody;
-        
-        /// <summary>
-        /// container control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl container;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder headContent;
         
         /// <summary>
         /// MainContent control.

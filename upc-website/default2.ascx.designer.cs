@@ -10,15 +10,15 @@
 namespace upc_website {
     
     
-    public partial class AddControls {
+    public partial class default2 {
         
         /// <summary>
-        /// Panel1 control.
+        /// MyControl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::upc_website.WebUserControl1 MyControl;
     }
 }

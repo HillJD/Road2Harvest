@@ -43,6 +43,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AspNet.ScriptManager.bootstrap, Version=3.3.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.3.7\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -95,9 +99,6 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="AspNet.ScriptManager.bootstrap">
-      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
     </Reference>
     <Reference Include="AspNet.ScriptManager.jQuery">
       <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
@@ -198,35 +199,88 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="AddControls.aspx" />
+    <Content Include="addcarousel.aspx" />
+    <Content Include="addDiv.aspx" />
     <Content Include="buildcontrol.aspx" />
+    <Content Include="carousel.aspx" />
     <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\site2.css" />
     <Content Include="css-info.txt" />
+    <Content Include="default2.ascx" />
+    <Content Include="displayData.aspx" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.css" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.min.css" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
     <Content Include="font-awesome-4.7.0\HELP-US-OUT.txt" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-regular.svg" />
+    <Content Include="glyphicons\glyphicons.css" />
     <Content Include="HtmlPage1.html" />
+    <Content Include="images\0.jpg" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\1_1.jpg" />
+    <Content Include="images\1_4.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\2_1.jpg" />
+    <Content Include="images\2_4.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\3_1.jpg" />
+    <Content Include="images\3_2.jpg" />
+    <Content Include="images\3_3.jpg" />
+    <Content Include="images\3_4.jpg" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\6.jpg" />
+    <Content Include="images\7.jpg" />
+    <Content Include="images\carousel\1.jpg" />
+    <Content Include="images\carousel\10.jpg" />
+    <Content Include="images\carousel\11.jpg" />
+    <Content Include="images\carousel\12.jpg" />
+    <Content Include="images\carousel\13.jpg" />
+    <Content Include="images\carousel\14.jpg" />
+    <Content Include="images\carousel\16.jpg" />
+    <Content Include="images\carousel\17.jpg" />
+    <Content Include="images\carousel\18.jpg" />
+    <Content Include="images\carousel\19.jpg" />
+    <Content Include="images\carousel\2.jpg" />
+    <Content Include="images\carousel\20.jpg" />
+    <Content Include="images\carousel\3.jpg" />
+    <Content Include="images\carousel\4.jpg" />
+    <Content Include="images\carousel\5.jpg" />
+    <Content Include="images\carousel\6.jpg" />
+    <Content Include="images\carousel\600x338 web pic sample sizes.jpg" />
+    <Content Include="images\carousel\7.jpg" />
+    <Content Include="images\carousel\8.jpg" />
+    <Content Include="images\carousel\9.jpg" />
+    <Content Include="images\dove3.png" />
+    <Content Include="images\dove40px.jpg" />
+    <Content Include="images\gena upc dove white-03.png" />
+    <Content Include="images\gena upc dove-01-03.png" />
     <Content Include="images\pic1.jpg" />
     <Content Include="images\pic2.jpg" />
     <Content Include="images\pic3.jpg" />
+    <Content Include="JavascriptObjectsAndMethods.aspx" />
     <Content Include="main.aspx" />
     <Content Include="media.aspx" />
-    <Content Include="myStyles.css" />
+    <Content Include="ModifyCarousel.html" />
+    <Content Include="Content\myStyles.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="modifyData.aspx" />
+    <Content Include="panelCtrl.aspx" />
     <Content Include="pic3.aspx" />
     <Content Include="pics.aspx" />
     <Content Include="pics2.aspx" />
+    <Content Include="styles.css" />
     <Content Include="WebForm1.aspx" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
@@ -261,6 +315,22 @@
     <Content Include="font-awesome-4.7.0\scss\_screen-reader.scss" />
     <Content Include="font-awesome-4.7.0\scss\_stacked.scss" />
     <Content Include="font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="WebUserControl1.ascx" />
+    <Content Include="fonts\glyphicons-regular.eot" />
+    <Content Include="fonts\glyphicons-regular.ttf" />
+    <Content Include="fonts\glyphicons-regular.woff" />
+    <Content Include="fonts\glyphicons-regular.woff2" />
+    <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\upc.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -418,12 +488,19 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddControls.aspx.cs">
-      <DependentUpon>AddControls.aspx</DependentUpon>
+    <Compile Include="addcarousel.aspx.cs">
+      <DependentUpon>addcarousel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddControls.aspx.designer.cs">
-      <DependentUpon>AddControls.aspx</DependentUpon>
+    <Compile Include="addcarousel.aspx.designer.cs">
+      <DependentUpon>addcarousel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addDiv.aspx.cs">
+      <DependentUpon>addDiv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addDiv.aspx.designer.cs">
+      <DependentUpon>addDiv.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -443,6 +520,13 @@
     <Compile Include="buildcontrol.aspx.designer.cs">
       <DependentUpon>buildcontrol.aspx</DependentUpon>
     </Compile>
+    <Compile Include="carousel.aspx.cs">
+      <DependentUpon>carousel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="carousel.aspx.designer.cs">
+      <DependentUpon>carousel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -457,8 +541,30 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="default2.ascx.cs">
+      <DependentUpon>default2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default2.ascx.designer.cs">
+      <DependentUpon>default2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="displayData.aspx.cs">
+      <DependentUpon>displayData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="displayData.aspx.designer.cs">
+      <DependentUpon>displayData.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\RetrieveData.cs" />
+    <Compile Include="JavascriptObjectsAndMethods.aspx.cs">
+      <DependentUpon>JavascriptObjectsAndMethods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JavascriptObjectsAndMethods.aspx.designer.cs">
+      <DependentUpon>JavascriptObjectsAndMethods.aspx</DependentUpon>
     </Compile>
     <Compile Include="main.aspx.cs">
       <DependentUpon>main.aspx</DependentUpon>
@@ -475,6 +581,20 @@
       <DependentUpon>media.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="modifyData.aspx.cs">
+      <DependentUpon>modifyData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modifyData.aspx.designer.cs">
+      <DependentUpon>modifyData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="panelCtrl.aspx.cs">
+      <DependentUpon>panelCtrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="panelCtrl.aspx.designer.cs">
+      <DependentUpon>panelCtrl.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pic3.aspx.cs">
       <DependentUpon>pic3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -540,9 +660,19 @@
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="fonts\font\" />
+    <Folder Include="glyphicons\css\" />
+    <Folder Include="glyphicons\fonts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

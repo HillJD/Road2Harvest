@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace upc_website
 {
-    public partial class AddControls : System.Web.UI.Page
+    public partial class default2 : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Panel1.Controls.Add(new LiteralControl("< table >< tr >"));
+
         }
     }
 }

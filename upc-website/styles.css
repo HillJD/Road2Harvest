@@ -1,0 +1,13 @@
+﻿/*Used for displaying images input canvas added for my code*/
+.carousel-inner > .item > img
+{
+    width: 80%;
+    margin: auto;
+    border: solid 6px black;
+}
+ 
+body {
+    background-color:bisque;
+}
+
+
