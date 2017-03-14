@@ -10,13 +10,18 @@
             <p class="text-success"><%: SuccessMessage %></p>
         </asp:PlaceHolder>
     </div>
-
+    
     <div class="row">
         <div class="col-md-12">
             <div class="form-horizontal">
                 <h4>Change your account settings</h4>
                 <hr />
                 <dl class="dl-horizontal">
+                    <dt>User Name:</dt>
+                    <dd>
+                        <asp:LoginName runat="server" />
+
+                    </dd>
                     <dt>Password:</dt>
                     <dd>
                         <asp:HyperLink NavigateUrl="/Account/ManagePassword" Text="[Change]" Visible="false" ID="ChangePassword" runat="server" />
