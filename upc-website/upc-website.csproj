@@ -212,6 +212,7 @@
     <Content Include="Content\site2.css" />
     <Content Include="css-info.txt" />
     <Content Include="default2.ascx" />
+    <Content Include="displayData.aspx" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.css" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.min.css" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
@@ -546,6 +547,13 @@
     </Compile>
     <Compile Include="default2.ascx.designer.cs">
       <DependentUpon>default2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="displayData.aspx.cs">
+      <DependentUpon>displayData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="displayData.aspx.designer.cs">
+      <DependentUpon>displayData.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
