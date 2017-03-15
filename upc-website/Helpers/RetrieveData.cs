@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 namespace upc_website.Helpers
 {
-
+    
     public class CarouselItem
     {
         private string picName;
@@ -18,49 +18,39 @@ namespace upc_website.Helpers
         private string lineOneCaption;
         private string lineTwoCaption;
 
-        public CarouselItem(string picName, string picPath, string color, DateTime beginDate, DateTime endDate, string lineOneCaption, string lineTwoCaption)
-        {
-            this.picName = picName;
-            this.picPath = picPath;
-            this.color = color;
-            this.beginDate = beginDate;
-            this.endDate = endDate;
-            this.lineOneCaption = lineOneCaption;
-            this.lineTwoCaption = lineTwoCaption;
-        }
-
-        public string _picName
+        
+        public string PicName
         {
             get { return picName; }
             set { picName = value; }
         }
 
-        public string _picPath
+        public string PicPath
         {
             get { return picPath; }
             set { picPath = value; }
         }
-        public string _color
+        public string Color
         {
             get { return color; }
             set { color = value; }
         }
-        public DateTime _beginDate
+        public DateTime BeginDate
         {
             get { return beginDate; }
             set { beginDate = value; }
         }
-        public DateTime _endDate
+        public DateTime EndDate
         {
             get { return endDate; }
             set { endDate = value; }
         }
-        public string _lineOneCaption
+        public string LineOneCaption
         {
             get { return lineOneCaption; }
-            set { lineTwoCaption = value; }
+            set { lineOneCaption = value; }
         }
-        public string _lineTwoCaption
+        public string LineTwoCaption
         {
             get { return lineTwoCaption; }
             set { lineTwoCaption = value; }
