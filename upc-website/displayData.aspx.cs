@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+using upc_website.Helpers;
 
 namespace upc_website
 {
@@ -20,6 +21,7 @@ namespace upc_website
                 color.Text += " Key " + Pair.Key + " Value " + Pair.Value + "\n\n";
             }
         }
+
         public Dictionary<string, string> GetValues()
         {
             //Setup data connection, get data fron sql table 'carousel_images

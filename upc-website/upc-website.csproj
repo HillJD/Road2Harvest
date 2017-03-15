@@ -280,6 +280,7 @@
     <Content Include="pic3.aspx" />
     <Content Include="pics.aspx" />
     <Content Include="pics2.aspx" />
+    <Content Include="ReturnList.aspx" />
     <Content Include="styles.css" />
     <Content Include="WebForm1.aspx" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
@@ -617,6 +618,13 @@
       <DependentUpon>pics2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnList.aspx.cs">
+      <DependentUpon>ReturnList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReturnList.aspx.designer.cs">
+      <DependentUpon>ReturnList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="sermons.aspx.cs">
       <DependentUpon>sermons.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

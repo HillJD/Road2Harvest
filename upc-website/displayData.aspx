@@ -2,5 +2,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:TextBox ID="picName" runat="server" Width="16px"></asp:TextBox><asp:TextBox ID="path" runat="server" Width="16px"></asp:TextBox><asp:TextBox ID="color" runat="server" Height="99px" Width="1175px"></asp:TextBox>
+    <asp:Label ID="color" runat="server" Text=""></asp:Label>
+        <asp:Label ID="path" runat="server" Text=""></asp:Label>
 </asp:Content>
