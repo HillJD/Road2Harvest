@@ -60,19 +60,17 @@
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About Us</a></li>
                         <li><a runat="server" href="~/sermons">Sermons</a></li>
-                        <li><a runat="server" href="~/addControlsFirstAttempt">Pics</a></li>
+                        <%--<li><a runat="server" href="~/addControlsFirstAttempt">Pics</a></li>--%>
                         <li class="hidden-sm"><a runat="server" href="~/media">Media</a></li>
-                         <li><a runat="server" href="~/Account/Register">Register</a></li>
-                        <li><a runat="server" href="~/Account/Login">Log in</a></li>
                     </ul>
-                    <%--<asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a runat="server" href="~/Account/Register">Register</a></li>
                                 <li><a runat="server" href="~/Account/Login">Log in</a></li>
                             </ul>
-                        <!--</AnonymousTemplate>-->
-                        <%--<LoggedInTemplate>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
                                 <li>
@@ -80,7 +78,7 @@
                                 </li>
                             </ul>
                         </LoggedInTemplate>
-                    </asp:LoginView>--%>
+                    </asp:LoginView>
                 </div>
             </div>
         </div>

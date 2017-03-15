@@ -13,30 +13,21 @@ namespace upc_website {
     public partial class displayData {
         
         /// <summary>
-        /// picName control.
+        /// lblColor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox picName;
+        protected global::System.Web.UI.WebControls.Label lblColor;
         
         /// <summary>
-        /// path control.
+        /// lblPath control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox path;
-        
-        /// <summary>
-        /// color control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox color;
+        protected global::System.Web.UI.WebControls.Label lblPath;
     }
 }

@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+using upc_website.Helpers;
 
 namespace upc_website
 {
@@ -13,45 +14,54 @@ namespace upc_website
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Dictionary<string, string> dic = GetValues();
-            int rowCount = dic.Count;
-            foreach (var Pair in dic)
+            GetValues();
+
+
             {
-                color.Text += " Key " + Pair.Key + " Value " + Pair.Value + "\n\n";
+
             }
         }
-        public Dictionary<string, string> GetValues()
+
+        public void GetValues()
         {
             //Setup data connection, get data fron sql table 'carousel_images
             SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
             cs.Open();
-            string str= "SELECT id, beginDate, endDate, color, path, picName";
-            str += " FROM carousel_images WHERE (beginDate > CONVERT(DATETIME, '2017-04-25 00:00:00', 102))";
-            str += " AND (endDate < CONVERT(DATETIME, '2017-08-01 00:00:00', 102)) order by beginDate asc";
-            // string str = "SELECT * FROM carousel_images WHERE (beginDate > CONVERT(DATETIME, '2016-12-01 00:00:00', 102))";
+            string str = "SELECT * ";
+            str += " FROM carousel_images WHERE (beginDate < CONVERT(DATETIME, '2017-01-10 00:00:00', 102))";
+            //str += " AND (endDate < CONVERT(DATETIME, '2017-01-10 00:00:00', 102)) order by beginDate asc";
 
             SqlCommand command = new SqlCommand(str, cs);
             DataTable dt = new DataTable();
             SqlDataAdapter adp = new SqlDataAdapter(command);
             adp.Fill(dt);
 
-            Dictionary<string, string> d = new Dictionary<string, string>();
             if (dt.Rows.Count > 0)
             {
+
+                CarouselItem ci = new CarouselItem();
 
                 int rowCount = dt.Rows.Count;
                 for (int i = 0; i < rowCount; i++)
                 {
-                    string imageName = dt.Rows[i]["picName"].ToString();
-                    string imageColor = dt.Rows[i]["color"].ToString();
-                    d.Add(imageName, imageColor);
+
+                    ci.PicName = dt.Rows[i]["picName"].ToString();
+                    ci.PicPath = dt.Rows[i]["path"].ToString(); ;
+                    ci.Color = dt.Rows[i]["color"].ToString();
+                    ci.BeginDate = Convert.ToDateTime(dt.Rows[i]["beginDate"]);
+                    ci.EndDate = Convert.ToDateTime(dt.Rows[i]["endDate"]);
+                    ci.LineOneCaption = dt.Rows[i]["lineOneText"].ToString();
+                    ci.LineTwoCaption = dt.Rows[i]["lineTwoText"].ToString();
                 }
-                return d;
-            }
-            else
-            {
-                return d;
+                foreach (var v in ci)
+                {
+                    lblColor.Text= 'ci.PicPath + " " + ci.PicPath + " " + ci.BeginDate + " " + ci.EndDate + " " + ci.LineOneCaption + " " + ci.LineTwoCaption';
+                }
             }
         }
     }
 }
+     
+
+
+         
