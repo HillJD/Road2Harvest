@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
 using upc_website.Helpers;
+using System.Reflection;
 
 namespace upc_website
 {
@@ -15,11 +16,6 @@ namespace upc_website
         protected void Page_Load(object sender, EventArgs e)
         {
             GetValues();
-
-
-            {
-
-            }
         }
 
         public void GetValues()
@@ -28,8 +24,7 @@ namespace upc_website
             SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
             cs.Open();
             string str = "SELECT * ";
-            str += " FROM carousel_images WHERE (beginDate < CONVERT(DATETIME, '2017-01-10 00:00:00', 102))";
-            //str += " AND (endDate < CONVERT(DATETIME, '2017-01-10 00:00:00', 102)) order by beginDate asc";
+            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY beginDate";
 
             SqlCommand command = new SqlCommand(str, cs);
             DataTable dt = new DataTable();
@@ -53,13 +48,11 @@ namespace upc_website
                     ci.LineOneCaption = dt.Rows[i]["lineOneText"].ToString();
                     ci.LineTwoCaption = dt.Rows[i]["lineTwoText"].ToString();
                 }
-                foreach (var v in ci)
-                {
-                    lblColor.Text= 'ci.PicPath + " " + ci.PicPath + " " + ci.BeginDate + " " + ci.EndDate + " " + ci.LineOneCaption + " " + ci.LineTwoCaption';
-                }
+
             }
         }
     }
+        
 }
      
 

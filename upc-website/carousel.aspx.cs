@@ -13,18 +13,8 @@ namespace upc_website
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-
-
-
-
-
-
-
-
-
             System.Web.UI.HtmlControls.HtmlGenericControl
-             myCarousel = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
+            myCarousel = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
             myCarousel.ID = "myCarousel";
             myCarousel.Attributes.Add("class", "fade-carousel carousel slide");
             myCarousel.Attributes.Add("data-ride", "carousel");
