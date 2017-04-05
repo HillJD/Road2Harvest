@@ -6,34 +6,91 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Text;
 using System.Web.UI.HtmlControls;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace upc_website
 {
-    public partial class addControlsFirst_Attempt : System.Web.UI.Page
+       public partial class addControlsFirst_Attempt : System.Web.UI.Page
     {
+        //Must be visible to all below
+        HtmlGenericControl myCarousel = new HtmlGenericControl("DIV");
+        HtmlGenericControl ol = new HtmlGenericControl("ol");
+        HtmlGenericControl Wrapper = new HtmlGenericControl("DIV");
+        HtmlGenericControl ImageWrapper = new HtmlGenericControl("DIV");
+        //HtmlGenericControl li_1 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            myCarousel = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
+            int SlidesToAdd = GetValues(); //i.e. # of pictures slides
+            BuildmyCarouselDiv("4000");//Slide display time
+            BuildCarouselOrderedList();
+            BuildCarouselListItems(SlidesToAdd);
+            BuildCarouselWrapperDiv();
+            BuildCarouselImageWrapperDiv(SlidesToAdd);
+
+
+
+        }
+        public void BuildmyCarouselDiv(string slideDelay)
+        {
+            
             myCarousel.ID = "myCarousel";
             myCarousel.Attributes.Add("class", "fade-carousel carousel slide");
             myCarousel.Attributes.Add("data-ride", "carousel");
-            myCarousel.Attributes.Add("data-interval", "2000");
+            myCarousel.Attributes.Add("data-interval", slideDelay);
             ControlContainer.Controls.Add(myCarousel);
+        }
 
+        public void BuildCarouselOrderedList()
+        {
             //******* carousel indicators ************************
-            //Create ordered list 'ol' with 'li' elements
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            ol = new System.Web.UI.HtmlControls.HtmlGenericControl("ol");
+            //Create ordered list 'ol' for 'li' elements
             ol.Attributes.Add("class", "carousel-indicators");
+            myCarousel.Controls.Add(ol); //temporary
+            return;
+        }
 
-            //Now add  #1 of 3 'li' elements
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            li_1 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
-            li_1.Attributes.Add("data-target", "#MainContent_myCarousel");
-            li_1.Attributes.Add("data-slide-to", "0");
-            li_1.Attributes.Add("class", "active");
-            ol.Controls.Add(li_1);
+        public void BuildCarouselListItems(int requestedlistItems)
+        {
+            //Now add requested #'s of li' elements
+            //Add HtmlGenericControl() to array 'p'
+            //Each one for each slide
+            HtmlGenericControl[] p = new HtmlGenericControl[requestedlistItems];
+            for (int x = 0; x < requestedlistItems; x++)
+            {
+                p[x] = new HtmlGenericControl();
+            }
+
+            //For loop through each array 'p' & create new 'Li' items & assign properties
+            for (int i = 0; i < requestedlistItems; i++)
+            {
+                p[i] = new HtmlGenericControl("li");
+                p[i].Attributes.Add("data-target", "#MainContent_myCarousel");
+                p[i].Attributes.Add("data-slide-to", i.ToString());
+                if (i == 0) {p[i].Attributes.Add("class", "active");}
+                ol.Controls.Add(p[i]);
+            }
+            return;
+        }
+
+        public void BuildCarouselWrapperDiv()
+        {
+            //This generates the Wrapper div
+            
+            Wrapper.Attributes.Add("class", "carousel-inner");
+            Wrapper.Attributes.Add("role", "listbox");
+            return;
+        }
+        public void BuildCarouselImageWrapperDiv(int slidesToBuild)
+        {
+
+            return;
+        }
+
+        public void BuildCarousel()
+        {
+        
 
             //Now add  #2 of 3 'li' elements
             System.Web.UI.HtmlControls.HtmlGenericControl
@@ -54,11 +111,7 @@ namespace upc_website
             myCarousel.Controls.Add(ol);
             //****** carousel indicators end *********************
 
-            //This generates the Wrapper div
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            Wrapper = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
-            Wrapper.Attributes.Add("class", "carousel-inner");
-            Wrapper.Attributes.Add("role", "listbox");
+            
 
             //This generates the image wrapper div's #1 inside of Wrapper div
             //Class='active' only on first div!
@@ -161,27 +214,25 @@ namespace upc_website
             Wrapper.Controls.Add(aRightCtrl);
             //Wrapper.Controls.Add(aRightCtrl); Added twice?
             //***** Right Carousel control, end *****
+        }
 
 
+        public int GetValues()
+        {
+            //install later a Try, Catch error routine
+            //Setup data connection, get data fron sql table 'carousel_images
+            SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
+            cs.Open();
+            string str = "SELECT * ";
+            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY beginDate";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            SqlCommand command = new SqlCommand(str, cs);
+            DataTable dt = new DataTable();
+            SqlDataAdapter adp = new SqlDataAdapter(command);
+            adp.Fill(dt);
+            return dt.Rows.Count;
+            
         }
     }
+
 }

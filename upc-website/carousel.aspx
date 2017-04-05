@@ -8,9 +8,9 @@
 
 
 
-    <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+    <%--<asp:Literal ID="Literal1" runat="server"></asp:Literal>
     <asp:Literal ID="Literal2" runat="server"></asp:Literal>
-    <asp:Literal ID="Literal3" runat="server"></asp:Literal>
+    <asp:Literal ID="Literal3" runat="server"></asp:Literal>--%>
     <asp:PlaceHolder ID="ControlContainer" runat="server"></asp:PlaceHolder>
 
     <!-- Stack the columns on mobile by making one full-width and the other half-width -->
