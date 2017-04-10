@@ -30,6 +30,27 @@ namespace upc_website
             DataTable dt = new DataTable();
             SqlDataAdapter adp = new SqlDataAdapter(command);
             adp.Fill(dt);
+            
+            
+            List<CarouselItem> carousel = new List<CarouselItem>();
+            carousel.Add(new CarouselItem() { });
+            carousel.Add(new CarouselItem() { });
+            carousel.Add(new CarouselItem() { });
+            carousel.Add(new CarouselItem() { });
+            carousel.Add(new CarouselItem() { });
+
+            foreach (CarouselItem c in carousel)
+            {
+                Console.WriteLine(c.PicPath);
+                Console.Read();
+            }
+            {
+
+            }
+          
+            
+            
+
 
             if (dt.Rows.Count > 0)
             {

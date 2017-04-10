@@ -22,19 +22,23 @@ namespace upc_website
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            int SlidesToAdd = GetValues(); //i.e. # of pictures slides
-            BuildmyCarouselDiv("4000");//Slide display time
+            int SlidesToAdd = GetRowCount(); //i.e. # of pictures slides to add
+            BuildCarouselDiv("2000");//Slide display time
             BuildCarouselOrderedList();
             BuildCarouselListItems(SlidesToAdd);
             BuildCarouselWrapperDiv();
             BuildCarouselImageWrapperDiv(SlidesToAdd);
-
+            List<string> myData = GetCarouselImageData();
+            foreach (string s in myData)
+            {
+                Console.WriteLine(s);
+            }
+            Console.ReadLine();
 
 
         }
-        public void BuildmyCarouselDiv(string slideDelay)
-        {
-            
+        public void BuildCarouselDiv(string slideDelay)
+        {            
             myCarousel.ID = "myCarousel";
             myCarousel.Attributes.Add("class", "fade-carousel carousel slide");
             myCarousel.Attributes.Add("data-ride", "carousel");
@@ -55,7 +59,7 @@ namespace upc_website
         {
             //Now add requested #'s of li' elements
             //Add HtmlGenericControl() to array 'p'
-            //Each one for each slide
+            //One for each slide
             HtmlGenericControl[] p = new HtmlGenericControl[requestedlistItems];
             for (int x = 0; x < requestedlistItems; x++)
             {
@@ -76,8 +80,7 @@ namespace upc_website
 
         public void BuildCarouselWrapperDiv()
         {
-            //This generates the Wrapper div
-            
+            //This generates the Wrapper div            
             Wrapper.Attributes.Add("class", "carousel-inner");
             Wrapper.Attributes.Add("role", "listbox");
             return;
@@ -217,7 +220,7 @@ namespace upc_website
         }
 
 
-        public int GetValues()
+        public int GetRowCount()
         {
             //install later a Try, Catch error routine
             //Setup data connection, get data fron sql table 'carousel_images
@@ -230,8 +233,38 @@ namespace upc_website
             DataTable dt = new DataTable();
             SqlDataAdapter adp = new SqlDataAdapter(command);
             adp.Fill(dt);
-            return dt.Rows.Count;
-            
+            int rowCount=dt.Rows.Count;
+            cs.Close();
+            return rowCount;
+        }
+
+        public static List<string> GetCarouselImageData()
+        {
+            //install later a Try, Catch error routine
+            //Setup data connection, get data fron sql table 'carousel_images
+            SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
+            cs.Open();
+            string str = "SELECT * ";
+            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY beginDate";
+
+            SqlCommand command = new SqlCommand(str, cs);
+            DataTable dt = new DataTable();
+            SqlDataAdapter adp = new SqlDataAdapter(command);
+            adp.Fill(dt);
+            int rowCount = dt.Rows.Count;
+
+            List<string> rowData= new List<string>();
+            for (int i = 0; i < rowCount; i++)
+            {
+                String temp = "";
+                temp += dt.Rows[i]["path"].ToString();
+                temp += "/" + dt.Rows[i]["picName"].ToString();
+                temp+= "*"+ dt.Rows[i]["lineOneText"].ToString();
+                temp += "*" + dt.Rows[i]["lineTwoText"].ToString();
+                rowData.Add(temp);
+            }
+            cs.Close();
+            return rowData;
         }
     }
 

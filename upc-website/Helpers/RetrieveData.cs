@@ -7,7 +7,13 @@ using System.Data.SqlClient;
 
 namespace upc_website.Helpers
 {
-    
+    //enum Colors
+    //{
+    //    Red,
+    //    White,
+    //    Blue,
+    //    Green,
+    //}
     public class CarouselItem
     {
         private string picName;
@@ -17,6 +23,7 @@ namespace upc_website.Helpers
         private DateTime endDate;
         private string lineOneCaption;
         private string lineTwoCaption;
+        private string fullPathName;
 
         
         public string PicName
@@ -30,11 +37,22 @@ namespace upc_website.Helpers
             get { return picPath; }
             set { picPath = value; }
         }
+
+        //public string FullPathName { get { return fullPathName = picPath + "/" + picName; } }
+        public string FullPath()
+        {
+
+            return picName + "/" + picPath;
+
+        }
+
+        
         public string Color
         {
             get { return color; }
             set { color = value; }
         }
+
         public DateTime BeginDate
         {
             get { return beginDate; }
