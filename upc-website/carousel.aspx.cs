@@ -18,6 +18,7 @@ namespace upc_website
         HtmlGenericControl ol = new HtmlGenericControl("ol");
         HtmlGenericControl Wrapper = new HtmlGenericControl("DIV");
         HtmlGenericControl ImageWrapper = new HtmlGenericControl("DIV");
+        HtmlGenericControl ImageContainer = new HtmlGenericControl("IMG");
         //HtmlGenericControl li_1 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
 
         protected void Page_Load(object sender, EventArgs e)
@@ -27,7 +28,8 @@ namespace upc_website
             BuildCarouselOrderedList();
             BuildCarouselListItems(SlidesToAdd);
             BuildCarouselWrapperDiv();
-            BuildCarouselImageWrapperDiv(SlidesToAdd);
+            BuildCarouselImageDiv(SlidesToAdd);
+
             List<string> myData = GetCarouselImageData();
             foreach (string s in myData)
             {
@@ -85,9 +87,40 @@ namespace upc_website
             Wrapper.Attributes.Add("role", "listbox");
             return;
         }
-        public void BuildCarouselImageWrapperDiv(int slidesToBuild)
+        public void BuildCarouselImageDiv(int slidesToBuild)
         {
+            //Get data fron db for items requested, return as List<>
+            List<string> myData = GetCarouselImageData();
 
+            //This builds the divs for images, put them in an array
+            HtmlGenericControl[] myDiv = new HtmlGenericControl[slidesToBuild];
+            for (int x = 0; x < slidesToBuild; x++)
+            {
+                myDiv[x] = new HtmlGenericControl();
+            }
+
+            //This builds the image element for images, put them in an array
+            HtmlGenericControl[] myImage = new HtmlGenericControl[slidesToBuild];
+            for (int x = 0; x < slidesToBuild; x++)
+            {
+                myImage[x] = new HtmlGenericControl();
+            }
+
+            for (int i = 0; i < slidesToBuild; i++)
+            {
+                myDiv[i] = new HtmlGenericControl("div");
+                myImage[i]=new HtmlGenericControl("img");
+                if (i == 0)
+                {
+                    myDiv[i].Attributes.Add("class", "item active");
+                    myImage[i].Attributes.Add("src",)
+                }
+                else
+                {
+                    ImageWrapper.Attributes.Add("class", "item");
+                }
+
+            }
             return;
         }
 
@@ -118,8 +151,7 @@ namespace upc_website
 
             //This generates the image wrapper div's #1 inside of Wrapper div
             //Class='active' only on first div!
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            imageDiv1 = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
+            HtmlGenericControl imageDiv1 = new HtmlGenericControl("DIV");
             imageDiv1.Attributes.Add("class", "item active");
 
             //This generates 'image' #1 container for pics in image divs
@@ -253,14 +285,21 @@ namespace upc_website
             adp.Fill(dt);
             int rowCount = dt.Rows.Count;
 
+            //One row per piece of data i.e. path,picName etc.
+            //Total of 3 rows for each slide./
+            //So 8 slides = 24 rows of data.
             List<string> rowData= new List<string>();
             for (int i = 0; i < rowCount; i++)
             {
-                String temp = "";
-                temp += dt.Rows[i]["path"].ToString();
+                String temp = ""; 
+                temp = dt.Rows[i]["path"].ToString();
                 temp += "/" + dt.Rows[i]["picName"].ToString();
-                temp+= "*"+ dt.Rows[i]["lineOneText"].ToString();
-                temp += "*" + dt.Rows[i]["lineTwoText"].ToString();
+                rowData.Add(temp);
+                temp = "";
+                temp = dt.Rows[i]["lineOneText"].ToString();
+                rowData.Add(temp);
+                temp = "";
+                temp = dt.Rows[i]["lineTwoText"].ToString();
                 rowData.Add(temp);
             }
             cs.Close();

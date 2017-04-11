@@ -33,7 +33,7 @@ namespace upc_website
             
             
             List<CarouselItem> carousel = new List<CarouselItem>();
-            carousel.Add(new CarouselItem() { });
+            carousel.Add(new CarouselItem {PicPath="images/carousel",PicName="1.jpg" });
             carousel.Add(new CarouselItem() { });
             carousel.Add(new CarouselItem() { });
             carousel.Add(new CarouselItem() { });
@@ -63,7 +63,6 @@ namespace upc_website
 
                     ci.PicName = dt.Rows[i]["picName"].ToString();
                     ci.PicPath = dt.Rows[i]["path"].ToString(); ;
-                    ci.Color = dt.Rows[i]["color"].ToString();
                     ci.BeginDate = Convert.ToDateTime(dt.Rows[i]["beginDate"]);
                     ci.EndDate = Convert.ToDateTime(dt.Rows[i]["endDate"]);
                     ci.LineOneCaption = dt.Rows[i]["lineOneText"].ToString();
