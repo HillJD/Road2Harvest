@@ -2,7 +2,7 @@
 
 
 <asp:Content ID="ContentHead" ContentPlaceHolderID="headContent" runat="server">
-    <link href="content/myStyles.css" rel="stylesheet" />
+    <link href="content/site2.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -18,32 +18,32 @@
     <div class="row">
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
       <span class="glyphicons glyphicons-headphones"></span>
-      <p>Listen-Live</p>      
+      <p class="glythicon-paragraph">Listen-Live</p>      
    </div>
 
        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
       <span class="glyphicons glyphicons-family"></span>
-      <p>New Here</p>
+      <p class="glythicon-paragraph">New Here</p>
    </div>
 
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
       <span class="glyphicons glyphicons-important-day"></span>
-      <p>Upcoming</p>
+      <p class="glythicon-paragraph">Upcoming</p>
    </div>
 
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
       <span class="glyphicons glyphicons-envelope"></span>
-      <p>Prayer Requests</p>
+      <p class="glythicon-paragraph">Prayer Requests</p>
    </div>
 
    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
       <span class="glyphicons glyphicons-temple-christianity-church"></span>
-      <p>Welcome</p>
+      <p class="glythicon-paragraph">Welcome</p>
    </div>
 
    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
       <span class="glyphicons glyphicons-paperclip"></span>
-      <p>Resources</p>
+      <p class="glythicon-paragraph">Resources</p>
    </div>
   </div>
 

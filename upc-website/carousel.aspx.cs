@@ -321,11 +321,11 @@ namespace upc_website
         {
             //install later a Try, Catch error routine
             //Setup data connection, get data fron sql table 'carousel_images
-            SqlConnection cs= new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
-            //             SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
-            //cs.Open();
+           SqlConnection cs= new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
+           // SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
+            cs.Open();
             string str = "SELECT * ";
-            str += " FROM carousel_images WHERE (beginDate >= {fn now() }) and (endDate <= {fn now() }) ORDER BY beginDate";
+            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY beginDate";
 
             SqlCommand command = new SqlCommand(str, cs);
             DataTable dt = new DataTable();
@@ -340,7 +340,8 @@ namespace upc_website
         {
             //install later a Try, Catch error routine
             //Setup data connection, get data fron sql table 'carousel_images
-            SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
+            //SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
+            SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
             cs.Open();
             string str = "SELECT * ";
             str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY beginDate";
@@ -359,7 +360,7 @@ namespace upc_website
             {
                 String temp = ""; 
                 temp = dt.Rows[i]["path"].ToString();
-                temp += "/" + dt.Rows[i]["picName"].ToString();
+                temp += "/" + dt.Rows[i]["picName"];
                 rowData.Add(temp);
                 temp = "";
                 temp = dt.Rows[i]["lineOneText"].ToString();

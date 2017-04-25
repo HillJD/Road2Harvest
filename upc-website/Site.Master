@@ -17,7 +17,7 @@
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <%--<link href="myStyles.css" rel="stylesheet" type="text/css"/>--%>
+    <link href="~/content/site2.css" rel="stylesheet" type="text/css"/>
     <link href="~/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="glyphicons/glyphicons.css" rel="stylesheet" type="text/css"/>

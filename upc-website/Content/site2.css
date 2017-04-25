@@ -15,7 +15,7 @@
   height: auto;
   margin-bottom: 15px;
   width:70%;
-  margin:10px auto 0;
+  margin:-84px auto 0;
  }
 .carousel-inner {
   border-radius: 15px;
@@ -51,9 +51,9 @@
 }
 /* ------------------- Section Styling - Not needed for carousel styling ------------------- */
 body {
-    background-color: #ffffff;
+    background-color: rgba(155, 160, 170, 1);
     font-family: 'Montserrat', sans-serif;
-    padding-top:111px;/*a taller menu*/
+    padding-top:211px;/*a taller menu*/
 }
 .section-white {
     padding: 0 0;
@@ -65,9 +65,14 @@ body {
     /* ------------------- Section Styling - For navbar-brand  ------------------- */
 .navbar {
     min-height: 100px;
-    background-color: black;
+    background-color:rgba(0, 21, 64, 1);
     padding: 30px;
 }
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
 .navbar-brand {
    /* margin-left: 50px;*/
 }
@@ -124,4 +129,13 @@ h2 {
 .glyphicons {
     display: inline;
 }
+
+p {/**Adjust glythicon vertical spacing first 2 settings below**/
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    color:#fff;
+}
+   
 /*****************End of glyphicons ******************************************/
