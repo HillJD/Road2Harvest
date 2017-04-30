@@ -53,16 +53,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#" runat="server"><img src="images/dove3.png"/></a>
+                    <!--<a class="navbar-brand" href="#" runat="server"><img src="images/dove3.png"/></a>-->
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About Us</a></li>
-                        <li><a runat="server" href="~/sermons">Sermons</a></li>
-                        <%--<li><a runat="server" href="~/addControlsFirstAttempt">Pics</a></li>--%>
-                        <li class="hidden-sm"><a runat="server" href="~/media">Media</a></li>
-                    </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
@@ -79,6 +72,14 @@
                             </ul>
                         </LoggedInTemplate>
                     </asp:LoginView>
+                   
+                     <ul class="nav navbar-nav navbar-right">
+                        <li><a runat="server" href="~/">Home</a></li>
+                        <li><a runat="server" href="~/About">About Us</a></li>
+                        <li><a runat="server" href="~/sermons">Sermons</a></li>
+                        <%--<li><a runat="server" href="~/addControlsFirstAttempt">Pics</a></li>--%>
+                        <li class="hidden-sm"><a runat="server" href="~/media">Media</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -86,14 +87,13 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
            <footer>
-                <p class="text-center">&copy; <%: DateTime.Now.Year %> - UPC</p>
+                
                 <div class="text-center center-block">
-                    
-                    <br />
-                    <a href="https://www.facebook.com/unionpentecostalchurch"><i class="fa fa-facebook-square fa-inverse fa-3x social"></i></a>
-                    <a href="https://twitter.com/unionroadchurch"><i class="fa fa-twitter-square fa-inverse fa-3x social"></i></a>
-                    <a href="http://plus.google.com/b/113686491120109002941"><i class="fa fa-google-plus-square fa-inverse fa-3x social"></i></a>
-                </div>
+                    <a href="https://www.facebook.com/unionpentecostalchurch"><i class="social-icons fa fa-facebook-square fa-inverse fa-3x social"></i></a>
+                    <a href="https://twitter.com/unionroadchurch"><i class="social-icons fa fa-twitter-square fa-inverse fa-3x social"></i></a>
+                    <a href="http://plus.google.com/b/113686491120109002941"><i class="social-icons fa fa-google-plus-square fa-inverse fa-3x social"></i></a>
+                    <p id="footer-date" class="text-center">&copy; <%: DateTime.Now.Year %> - UPC</p>
+               </div>
             </footer>
         </div>
     </form>

@@ -18,32 +18,32 @@
     <div class="row">
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
       <span class="glyphicons glyphicons-headphones"></span>
-      <p class="glythicon-paragraph">Listen-Live</p>      
+      <p class="gly-paragraph">Listen-Live</p>      
    </div>
 
        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
       <span class="glyphicons glyphicons-family"></span>
-      <p class="glythicon-paragraph">New Here</p>
+      <p class="gly-paragraph">New Here</p>
    </div>
 
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
       <span class="glyphicons glyphicons-important-day"></span>
-      <p class="glythicon-paragraph">Upcoming</p>
+      <p class="gly-paragraph">Upcoming</p>
    </div>
 
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
       <span class="glyphicons glyphicons-envelope"></span>
-      <p class="glythicon-paragraph">Prayer Requests</p>
+      <p class="gly-paragraph">Prayer</p>
    </div>
 
    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
       <span class="glyphicons glyphicons-temple-christianity-church"></span>
-      <p class="glythicon-paragraph">Welcome</p>
+      <p class="gly-paragraph">Welcome</p>
    </div>
 
    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
       <span class="glyphicons glyphicons-paperclip"></span>
-      <p class="glythicon-paragraph">Resources</p>
+      <p class="gly-paragraph">Resources</p>
    </div>
   </div>
 
