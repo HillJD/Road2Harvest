@@ -73,10 +73,23 @@ body {
 
 }
 
+.navbar-brand {
+    float: left;
+    height: 50px;
+    /*padding: 15px 15px;*/
+    font-size: 18px;
+    line-height: 20px;
+    transform: translate(25%,-38%);
+}
+
 .navbar-brand > img {
     display:block;
     height: 60px;
+    margin-bottom:-20px;
+
 }
+
+.navbar-collapse { background:#cccccc; /*replace with desired color*/ } 
 
 .navbar-fixed-top {
     top: 0;
@@ -88,9 +101,10 @@ body {
     
 }
 
-.navbar-inverse .navbar-nav > li > a {
+/*.navbar-inverse .navbar-nav > li > a {
     color: #fff;
-}
+    background-color:red
+}*/
 
 
 @media screen and (max-width: 768px) {
