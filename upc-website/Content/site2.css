@@ -89,7 +89,7 @@ body {
 
 }
 
-.navbar-collapse { background:#cccccc; /*replace with desired color*/ } 
+.navbar-collapse { background-color:rgba(0, 21, 64, 1) /*replace with desired color*/ } 
 
 .navbar-fixed-top {
     top: 0;
