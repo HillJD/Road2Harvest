@@ -14,11 +14,14 @@
 .carousel {
   height: auto;
   margin-bottom: 15px;
-  width:70%;
-  margin:-136px auto 0;
+  width:100%;
+  margin:-138px auto 0;
+  border-style:solid;
+  border-color:rgba(255,251,251,.5);
+  border-width:2px;
  }
 .carousel-inner {
-  border-radius: 15px;
+  border-radius: 0px;
   z-index:25;
   width:100%;
   }
@@ -55,12 +58,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding-top:211px;/*a taller menu*/
 }
-.section-white {
+/*.section-white {
     padding: 0 0;
     margin-top: 20px;
     background-color: black;
     color: #555;
-}
+}*/
 
     /* ------------------- Section Styling - For navbar-brand  ------------------- */
 .navbar {
@@ -77,9 +80,9 @@ body {
     float: left;
     height: 50px;
     padding: 15px 15px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 20px;
-    transform: translate(6%,-38%);
+    transform: translate(0%,-38%);
 }
 
 .navbar-brand > img {
@@ -101,13 +104,13 @@ body {
     
 }
 
-/*.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a {
     color: #fff;
-    background-color:red
-}*/
+    /*background-color:red*/
+}
 
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     .section-white {
         padding: 1.5em 0;
     }
@@ -115,38 +118,30 @@ body {
 
 @media screen and (min-width: 992px) {
    
-    /*.container {
+    .container {
             max-width: 1366px;
-        }*/
-}
-
-@media screen and (max-width: 768px) {
-        /*.navbar-brand {
-            font-size: 26px;
-            margin-left:50px;
-        }*/
-
-        .carousel{
-            width:100%
         }
-}
+}*/
+
+
+
 /***************** End of carousel*********************************************/
 
 /***************** This displays glyphicons properly***************************/
 .col-lg-4, .col-md-6, .col-sm-6, .col-xs-6, span {
     display:block;
     text-align:center;
-    font-size: 24px;
+    font-size: 16px;
   }
   .glyphicons:before {
       color: black;
      }
-h2 {
+/*h2 {
     display: inline-block;
 	width: 30px;
 	font-size: 23px;
 	margin-left: 80px;
-}
+}*/
 .glyphicons {
     display: inline;
 }
@@ -176,5 +171,38 @@ h2 {
  #footer-date {
      color:white;
  }
+/***************** media query styling ******************************************/ 
+ @media screen and (min-width: 768px) {
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    transform: translate(-10%,-38%);
+    }
 
- 
+.navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+/*.col-lg-4, .col-md-6, .col-sm-6, .col-xs-6, span {
+    display:block;
+    text-align:center;
+    font-size: 18px;
+  }*/
+
+ .col-lg-4, .col-md-6, .col-sm-6, .col-xs-6, span {
+    display:block;
+    text-align:center;
+    font-size: 24px;
+  }
+
+.carousel{
+    width:100%
+ }
+}
+/***************** end media query styling ******************************************/  
