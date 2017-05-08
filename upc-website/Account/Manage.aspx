@@ -21,7 +21,11 @@
                     <dd>
                         <asp:LoginName runat="server" />
 
+
                     </dd>
+
+                    
+
                     <dt>Password:</dt>
                     <dd>
                         <asp:HyperLink NavigateUrl="/Account/ManagePassword" Text="[Change]" Visible="false" ID="ChangePassword" runat="server" />

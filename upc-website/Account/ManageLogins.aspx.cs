@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
+using Microsoft.AspNet.Facebook;    
 
 namespace upc_website.Account
 {
@@ -29,11 +30,19 @@ namespace upc_website.Account
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            //attemt to retrieve facebook data
+            
+                
+           //end facebook data
             var manager = Context.GetOwinContext().GetUserManager<ApplicationUserManager>();
             CanRemoveExternalLogins = manager.GetLogins(User.Identity.GetUserId()).Count() > 1;
 
             SuccessMessage = String.Empty;
             successMessage.Visible = !String.IsNullOrEmpty(SuccessMessage);
+             
+            
+         
+
         }
 
         public IEnumerable<UserLoginInfo> GetLogins()
