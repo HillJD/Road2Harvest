@@ -309,11 +309,14 @@
     <Content Include="images\carousel\9.jpg" />
     <Content Include="images\dove3.png" />
     <Content Include="images\dove40px.jpg" />
+    <Content Include="images\DoveIconTrans.png" />
+    <Content Include="images\DoveIconTrans2.png" />
     <Content Include="images\gena upc dove white-03.png" />
     <Content Include="images\gena upc dove-01-03.png" />
     <Content Include="images\pic1.jpg" />
     <Content Include="images\pic2.jpg" />
     <Content Include="images\pic3.jpg" />
+    <Content Include="images\upc dove and text logo.png" />
     <Content Include="JavascriptObjectsAndMethods.aspx" />
     <Content Include="main.aspx" />
     <Content Include="media.aspx" />

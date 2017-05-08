@@ -1,4 +1,4 @@
-﻿/*****************This section is for carousel*********************************************/
+﻿/***************** This section is for carousel *********************************************/
 /* Makes images fully responsive for carousel */
 .img-responsive,
 .thumbnail > img,
@@ -14,11 +14,14 @@
 .carousel {
   height: auto;
   margin-bottom: 15px;
-  width:70%;
-  margin:10px auto 0;
+  width:100%;
+  margin:-138px auto 0;
+  border-style:solid;
+  border-color:rgba(255,251,251,.5);
+  border-width:2px;
  }
 .carousel-inner {
-  border-radius: 15px;
+  border-radius: 0px;
   z-index:25;
   width:100%;
   }
@@ -51,37 +54,63 @@
 }
 /* ------------------- Section Styling - Not needed for carousel styling ------------------- */
 body {
-    background-color: #ffffff;
+    background-color: rgba(155, 160, 170, 1);
     font-family: 'Montserrat', sans-serif;
-    padding-top:111px;/*a taller menu*/
+    padding-top:211px;/*a taller menu*/
 }
-.section-white {
+/*.section-white {
     padding: 0 0;
     margin-top: 20px;
     background-color: black;
     color: #555;
-}
+}*/
 
     /* ------------------- Section Styling - For navbar-brand  ------------------- */
 .navbar {
-    min-height: 100px;
-    background-color: black;
-    padding: 30px;
+    height: 70px;
+    background-color:rgba(0, 21, 64, 1);
+    padding-top: 8px;
+    padding-bottom:15px;
+    border: 3px solid;
+    border-bottom-color:rgba(130,105,30,1);
+
 }
+
 .navbar-brand {
-   /* margin-left: 50px;*/
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 20px;
+    line-height: 20px;
+    transform: translate(0%,-38%);
 }
-    .navbar-brand > img {
-        position:relative;
-       margin-top:-41px;
-        /* left: 10px;
-        top: 10px;
-        height: 90%;
-        margin-right: 50px;
-        padding: 0px;
-        width: auto;*/
-    }
-@media screen and (max-width: 768px) {
+
+.navbar-brand > img {
+    display:block;
+    height: 60px;
+    margin-bottom:-20px;
+
+}
+
+.navbar-collapse { background-color:rgba(0, 21, 64, 1) /*replace with desired color*/ } 
+
+.navbar-fixed-top {
+    top: 0;
+    /*border-width: 0 0 1px;*/
+    border-top-width: 0px;
+    border-right-width: 0px;
+    /*border-bottom-width: 5px;*/
+    border-left-width: 0px;
+    
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    /*background-color:red*/
+}
+
+
+/*@media screen and (max-width: 768px) {
     .section-white {
         padding: 1.5em 0;
     }
@@ -89,39 +118,91 @@ body {
 
 @media screen and (min-width: 992px) {
    
-    /*.container {
+    .container {
             max-width: 1366px;
-        }*/
-}
-
-@media screen and (max-width: 768px) {
-        /*.navbar-brand {
-            font-size: 26px;
-            margin-left:50px;
-        }*/
-
-        .carousel{
-            width:100%
         }
-}
-/*****************End of carousel*********************************************/
+}*/
 
-/*****************This displays glyphicons properly***************************/
+
+
+/***************** End of carousel*********************************************/
+
+/***************** This displays glyphicons properly***************************/
 .col-lg-4, .col-md-6, .col-sm-6, .col-xs-6, span {
     display:block;
     text-align:center;
-    font-size: 24px;
+    font-size: 16px;
   }
   .glyphicons:before {
       color: black;
      }
-h2 {
+/*h2 {
     display: inline-block;
 	width: 30px;
 	font-size: 23px;
 	margin-left: 80px;
-}
+}*/
 .glyphicons {
     display: inline;
 }
-/*****************End of glyphicons ******************************************/
+
+ .gly-paragraph {*Adjust glythicon vertical spacing first 2 settings below*
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    color:#fff;
+}
+ /***************** End of glyphicons ******************************************/
+
+ /***************** footer styling ******************************************/
+ .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:rgba(93, 80, 50, 1);
+    border-radius: 15px;
+}
+ /***************** end of footer styling ******************************************/  
+ .social-icons {
+     padding:10px 0;
+ }
+
+ #footer-date {
+     color:white;
+ }
+/***************** media query styling ******************************************/ 
+ @media screen and (min-width: 768px) {
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    transform: translate(-10%,-38%);
+    }
+
+.navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+/*.col-lg-4, .col-md-6, .col-sm-6, .col-xs-6, span {
+    display:block;
+    text-align:center;
+    font-size: 18px;
+  }*/
+
+ .col-lg-4, .col-md-6, .col-sm-6, .col-xs-6, span {
+    display:block;
+    text-align:center;
+    font-size: 24px;
+  }
+
+.carousel{
+    width:100%
+ }
+}
+/***************** end media query styling ******************************************/  

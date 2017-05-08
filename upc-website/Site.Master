@@ -11,16 +11,16 @@
     <!--The corresponding code must be placed in the destination page -->
     <asp:ContentPlaceHolder ID="headContent" runat="server">
     </asp:ContentPlaceHolder>
-    
+
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <%--<link href="myStyles.css" rel="stylesheet" type="text/css"/>--%>
+    <link href="~/content/site2.css" rel="stylesheet" type="text/css" />
     <link href="~/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="glyphicons/glyphicons.css" rel="stylesheet" type="text/css"/>
+    <link href="glyphicons/glyphicons.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form runat="server">
@@ -53,14 +53,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#" runat="server"><img src="images/dove3.png"/></a>
+                    <a class="navbar-brand" href="#" runat="server">
+                        <img src="images/upc dove and text logo.png" /></a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About Us</a></li>
                         <li><a runat="server" href="~/sermons">Sermons</a></li>
-                        <%--<li><a runat="server" href="~/addControlsFirstAttempt">Pics</a></li>--%>
+                        <li><a runat="server" href="~/addControlsFirstAttempt">Pics</a></li>
                         <li class="hidden-sm"><a runat="server" href="~/media">Media</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
@@ -85,14 +86,13 @@
         <div class="container">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-           <footer>
-                <p class="text-center">&copy; <%: DateTime.Now.Year %> - UPC</p>
+            <footer>
+
                 <div class="text-center center-block">
-                    
-                    <br />
-                    <a href="https://www.facebook.com/unionpentecostalchurch"><i class="fa fa-facebook-square fa-inverse fa-3x social"></i></a>
-                    <a href="https://twitter.com/unionroadchurch"><i class="fa fa-twitter-square fa-inverse fa-3x social"></i></a>
-                    <a href="http://plus.google.com/b/113686491120109002941"><i class="fa fa-google-plus-square fa-inverse fa-3x social"></i></a>
+                    <a href="https://www.facebook.com/unionpentecostalchurch"><i class="social-icons fa fa-facebook-square fa-inverse fa-3x social"></i></a>
+                    <a href="https://twitter.com/unionroadchurch"><i class="social-icons fa fa-twitter-square fa-inverse fa-3x social"></i></a>
+                    <a href="http://plus.google.com/b/113686491120109002941"><i class="social-icons fa fa-google-plus-square fa-inverse fa-3x social"></i></a>
+                    <p id="footer-date" class="text-center">&copy; <%: DateTime.Now.Year %> - UPC</p>
                 </div>
             </footer>
         </div>

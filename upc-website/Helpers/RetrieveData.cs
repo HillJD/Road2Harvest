@@ -7,8 +7,7 @@ using System.Data.SqlClient;
 
 namespace upc_website.Helpers
 {
-    
-    public class CarouselItem
+        public class CarouselItem
     {
         private string picName;
         private string picPath;
@@ -17,6 +16,7 @@ namespace upc_website.Helpers
         private DateTime endDate;
         private string lineOneCaption;
         private string lineTwoCaption;
+        private string fullPath;
 
         
         public string PicName
@@ -30,11 +30,15 @@ namespace upc_website.Helpers
             get { return picPath; }
             set { picPath = value; }
         }
-        public string Color
+
+        public string FullPath
         {
-            get { return color; }
-            set { color = value; }
+            get
+            {
+                return picPath + "/" + PicName;
+            }
         }
+
         public DateTime BeginDate
         {
             get { return beginDate; }
