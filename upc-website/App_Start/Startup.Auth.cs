@@ -58,6 +58,17 @@ namespace upc_website
             app.UseFacebookAuthentication(
                appId: "1846335912290211",
                appSecret: "7f7555d14710c880b0f55885f7f13c9f");
+            
+            
+           //attempt to get FB info
+            var facebookOptions = new Microsoft.Owin.Security.Facebook.FacebookAuthenticationOptions()
+            {   AppId = "1846335912290211",
+                AppSecret = "7f7555d14710c880b0f55885f7f13c9f",
+            };
+            facebookOptions.Scope.Add("email");
+
+           
+            
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
