@@ -16,45 +16,45 @@
     <!-- Stack the columns on mobile by making one full-width and the other half-width -->
 
     <div class="row">
-    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-      <span class="glyphicons glyphicons-map-marker"></span>
-      <p class="gly-paragraph">Location</p>      
-   </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="location.aspx"><span class="glyphicons glyphicons-map-marker"></span></a>
+            <a href="location.aspx"><p class="gly-paragraph">Location</p></a>
+        </div>
 
-       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-      <span class="glyphicons glyphicons-clock"></span>
-      <p class="gly-paragraph">Service Times</p>
-   </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="service"><span class="glyphicons glyphicons-clock"></span></a>
+            <a href="services.aspx"><p class="gly-paragraph">Service Times</p></a>
+        </div>
 
-    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-      <span class="glyphicons glyphicons-temple-christianity-church"></span>
-      <p class="gly-paragraph">Welcome Home</p>
-   </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="welcome"><span class="glyphicons glyphicons-temple-christianity-church"></span></a>
+            <a href="welcome"><p class="gly-paragraph">Welcome Home</p></a>
+        </div>
 
-    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-      <span class="glyphicons glyphicons-headphones"></span>
-      <p class="gly-paragraph">Listen-Live</p>
-   </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="listen.aspx"><span class="glyphicons glyphicons-headphones"></span></a>
+            <a href="listen.aspx"><p class="gly-paragraph">Listen-Live</p></a>
+        </div>
 
-   <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-      <span class="glyphicons glyphicons-group"></span>
-      <p class="gly-paragraph">Connection Card</p>
-   </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="connection.aspx"><span class="glyphicons glyphicons-group"></span></a>
+            <a href="connect.aspx"><p class="gly-paragraph">Connection Card</p></a>
+        </div>
 
-   <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-      <span class="glyphicons glyphicons-calendar"></span>
-      <p class="gly-paragraph">Upcoming Events</p>
-   </div>
-    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-      <span class="glyphicons glyphicons-envelope"></span>
-      <p class="gly-paragraph">Prayer Requests</p>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="events.aspx"><span class="glyphicons glyphicons-calendar"></span></a>
+            <a href="upcoming.aspx"><p class="gly-paragraph">Upcoming Events</p></a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="prayer.aspx"><span class="glyphicons glyphicons-envelope"></span></a>
+            <a href="prayer.aspx"><p class="gly-paragraph">Prayer Requests</p></a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="resources.aspx"><span class="glyphicons glyphicons-paperclip"></span></a>
+            <a href="resources.aspx"><p class="gly-paragraph">Resources</p></a>
+        </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-      <span class="glyphicons glyphicons-paperclip"></span>
-      <p class="gly-paragraph">Resources</p>
-   </div>
-   </div>
-  </div>
+   
 
    
-   </asp:Content>
+</asp:Content>
