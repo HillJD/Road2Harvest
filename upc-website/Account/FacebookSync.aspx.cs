@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 
 
@@ -20,7 +21,7 @@ namespace upc_website.Account
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+                        
             
         }
 
@@ -82,6 +83,22 @@ namespace upc_website.Account
                 var email = (string)result["email"];
                 var firstName = (string)result["first_name"];
                 var lastName = (string)result["last_name"];
+
+
+                //Write data to user database
+                SqlConnection conn = new SqlConnection("Data Source=s13.winhost.com;Initial Catalog=DB_110695_webauth;Persist Security Info=True;User ID=DB_110695_webauth_user;Password=John1!1");
+                string stmt = "Insert into User(UID, FN, LN) Values(@UID, @FN, @LN)";
+
+                SqlCommand insert = new SqlCommand(stmt, conn);
+                insert.Parameters.AddWithValue("@UID", id);
+                insert.Parameters.AddWithValue("@FN", firstName);
+                insert.Parameters.AddWithValue("@LN", lastName);
+
+
+                conn.Open();
+                insert.ExecuteNonQuery();
+                conn.Close();
+
 
                 Auth_Done = true;
 

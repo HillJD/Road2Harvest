@@ -47,6 +47,7 @@ namespace upc_website.Account
                     return;
                 }
                 var user = manager.Find(loginInfo.Login);
+                
                 if (user != null)
                 {
                     signInManager.SignIn(user, isPersistent: false, rememberBrowser: false);
