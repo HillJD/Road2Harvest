@@ -21,6 +21,7 @@ namespace upc_website
         {
             // Determine current view
             var isMobile = WebFormsFriendlyUrlResolver.IsMobileView(new HttpContextWrapper(Context));
+
             CurrentView = isMobile ? "Mobile" : "Desktop";
 
             // Determine alternate view
@@ -38,6 +39,9 @@ namespace upc_website
             var url = GetRouteUrl(switchViewRouteName, new { view = AlternateView, __FriendlyUrls_SwitchViews = true });
             url += "?ReturnUrl=" + HttpUtility.UrlEncode(Request.RawUrl);
             SwitchUrl = url;
+
+            //temporary fix to disable mobile view
+            Response.Redirect(url);
         }
     }
 }
