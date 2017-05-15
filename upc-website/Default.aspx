@@ -1,44 +1,60 @@
-﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="upc_website._Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="upc_website.addControlsFirst_Attempt" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-        <div  class="jumbotron text-center" >
-        <h1>Union Pentecostal Church</h1>
-        <p>Union Pentecostal Church on Mia Avenue is now over 79 years new! 
-            Founded in 1927 by Sis Laura Shank in need of Sunday school for neighborhood chirren.
-            It soon grew to about fifty members. In 1935, a need for a larger building started
-         the church on building anew on Mia Avenue in Dayton, Ohio.</p>
-        <p><a href="http://www.unionpentecostalchurch.com/" class="btn btn-default">Go Here</a>
-        </p>
-    </div>
+
+<asp:Content ID="ContentHead" ContentPlaceHolderID="headContent" runat="server">
+    <link href="content/site2.css" rel="stylesheet" />
+</asp:Content>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+
+
+    <%--<asp:Literal ID="Literal1" runat="server"></asp:Literal>
+    <asp:Literal ID="Literal2" runat="server"></asp:Literal>
+    <asp:Literal ID="Literal3" runat="server"></asp:Literal>--%>
+    <asp:PlaceHolder ID="ControlContainer" runat="server"></asp:PlaceHolder>
+
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+
     <div class="row">
-        <div class="col-md-4">
-            <h2>Our Pastor</h2>
-            <p>
-                Pastor Clifford Hurst is a dynamic preacher and teacher and has no parallels amongst other ministers.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://www.obicollege.com">Learn more &raquo;</a>
-            </p>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="location.aspx"><span class="glyphicons glyphicons-map-marker"></span></a>
+            <a href="location.aspx"><p class="gly-paragraph">Location</p></a>
         </div>
-        <div class="col-md-4">
-            <h2>Our Youth leaders</h2>
-            <p>
-                Bro. Bryan & Sara McKelvey are youth leaders with a passion for youth spiritual growth. 
-                They bring the vigor of youth with the wisdom of experienced adults
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://www.leadershipinstitute.org/yls/">Learn more &raquo;</a>
-            </p>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="service"><span class="glyphicons glyphicons-clock"></span></a>
+            <a href="services.aspx"><p class="gly-paragraph">Service Times</p></a>
         </div>
-        <div class="col-md-4">
-            <h2>Media & Technical Ministries</h2>
-            <p>
-                No church or organization can quite match the unsurpassed raw technical talent of Union Road Church! 
-                Hands down they are the best around.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://salvationarmyusa.org/">Donations here! &raquo;</a>
-            </p>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="welcome"><span class="glyphicons glyphicons-temple-christianity-church"></span></a>
+            <a href="welcome"><p class="gly-paragraph">Welcome Home</p></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="listen.aspx"><span class="glyphicons glyphicons-headphones"></span></a>
+            <a href="listen.aspx"><p class="gly-paragraph">Listen-Live</p></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="connection.aspx"><span class="glyphicons glyphicons-group"></span></a>
+            <a href="connect.aspx"><p class="gly-paragraph">Connection Card</p></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="events.aspx"><span class="glyphicons glyphicons-calendar"></span></a>
+            <a href="upcoming.aspx"><p class="gly-paragraph">Upcoming Events</p></a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="prayer.aspx"><span class="glyphicons glyphicons-envelope"></span></a>
+            <a href="prayer.aspx"><p class="gly-paragraph">Prayer Requests</p></a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="resources.aspx"><span class="glyphicons glyphicons-paperclip"></span></a>
+            <a href="resources.aspx"><p class="gly-paragraph">Resources</p></a>
         </div>
     </div>
+   
+
+   
 </asp:Content>

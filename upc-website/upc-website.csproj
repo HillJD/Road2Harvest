@@ -247,8 +247,11 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="addcarousel.aspx" />
     <Content Include="addDiv.aspx" />
+    <Content Include="archives.aspx" />
+    <Content Include="beliefs.aspx" />
     <Content Include="buildcontrol.aspx" />
-    <Content Include="carousel.aspx" />
+    <Content Include="connect.aspx" />
+    <Content Include="default.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -259,6 +262,7 @@
     <Content Include="css-info.txt" />
     <Content Include="default2.ascx" />
     <Content Include="displayData.aspx" />
+    <Content Include="events.aspx" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.css" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.min.css" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
@@ -269,7 +273,10 @@
     </Content>
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-regular.svg" />
+    <Content Include="give.aspx" />
     <Content Include="glyphicons\glyphicons.css" />
+    <Content Include="help.aspx" />
+    <Content Include="history.aspx" />
     <Content Include="HtmlPage1.html" />
     <Content Include="images\0.jpg" />
     <Content Include="images\1.jpg" />
@@ -318,6 +325,8 @@
     <Content Include="images\pic3.jpg" />
     <Content Include="images\upc dove and text logo.png" />
     <Content Include="JavascriptObjectsAndMethods.aspx" />
+    <Content Include="listen.aspx" />
+    <Content Include="location.aspx" />
     <Content Include="main.aspx" />
     <Content Include="media.aspx" />
     <Content Include="ModifyCarousel.html" />
@@ -325,11 +334,20 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="modifyData.aspx" />
+    <Content Include="notifications.aspx" />
     <Content Include="panelCtrl.aspx" />
+    <Content Include="pastor-info.aspx" />
+    <Content Include="pastors-desk.aspx" />
     <Content Include="pic3.aspx" />
     <Content Include="pics.aspx" />
     <Content Include="pics2.aspx" />
+    <Content Include="prayer.aspx" />
+    <Content Include="resources.aspx" />
+    <Content Include="services.aspx" />
+    <Content Include="staff.aspx" />
     <Content Include="styles.css" />
+    <Content Include="upcoming.aspx" />
+    <Content Include="video-tour.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
@@ -377,6 +395,7 @@
     <Content Include="fonts\glyphicons-regular.ttf" />
     <Content Include="fonts\glyphicons-regular.woff" />
     <Content Include="fonts\glyphicons-regular.woff2" />
+    <Content Include="welcome.aspx" />
     <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\upc.pubxml" />
@@ -410,7 +429,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Default.aspx" />
+    <Content Include="Default-old.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="sermons.aspx" />
@@ -569,6 +588,20 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="archives.aspx.cs">
+      <DependentUpon>archives.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="archives.aspx.designer.cs">
+      <DependentUpon>archives.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="beliefs.aspx.cs">
+      <DependentUpon>beliefs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="beliefs.aspx.designer.cs">
+      <DependentUpon>beliefs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="buildcontrol.aspx.cs">
       <DependentUpon>buildcontrol.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -576,12 +609,19 @@
     <Compile Include="buildcontrol.aspx.designer.cs">
       <DependentUpon>buildcontrol.aspx</DependentUpon>
     </Compile>
-    <Compile Include="carousel.aspx.cs">
-      <DependentUpon>carousel.aspx</DependentUpon>
+    <Compile Include="connect.aspx.cs">
+      <DependentUpon>connect.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="carousel.aspx.designer.cs">
-      <DependentUpon>carousel.aspx</DependentUpon>
+    <Compile Include="connect.aspx.designer.cs">
+      <DependentUpon>connect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -590,12 +630,12 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Default-old.aspx.cs">
+      <DependentUpon>Default-old.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Default-old.aspx.designer.cs">
+      <DependentUpon>Default-old.aspx</DependentUpon>
     </Compile>
     <Compile Include="default2.ascx.cs">
       <DependentUpon>default2.ascx</DependentUpon>
@@ -611,16 +651,58 @@
     <Compile Include="displayData.aspx.designer.cs">
       <DependentUpon>displayData.aspx</DependentUpon>
     </Compile>
+    <Compile Include="events.aspx.cs">
+      <DependentUpon>events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="events.aspx.designer.cs">
+      <DependentUpon>events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="give.aspx.cs">
+      <DependentUpon>give.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="give.aspx.designer.cs">
+      <DependentUpon>give.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="help.aspx.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="help.aspx.designer.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\RetrieveData.cs" />
+    <Compile Include="history.aspx.cs">
+      <DependentUpon>history.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="history.aspx.designer.cs">
+      <DependentUpon>history.aspx</DependentUpon>
+    </Compile>
     <Compile Include="JavascriptObjectsAndMethods.aspx.cs">
       <DependentUpon>JavascriptObjectsAndMethods.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="JavascriptObjectsAndMethods.aspx.designer.cs">
       <DependentUpon>JavascriptObjectsAndMethods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="listen.aspx.cs">
+      <DependentUpon>listen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="listen.aspx.designer.cs">
+      <DependentUpon>listen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="location.aspx.cs">
+      <DependentUpon>location.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="location.aspx.designer.cs">
+      <DependentUpon>location.aspx</DependentUpon>
     </Compile>
     <Compile Include="main.aspx.cs">
       <DependentUpon>main.aspx</DependentUpon>
@@ -644,12 +726,33 @@
     <Compile Include="modifyData.aspx.designer.cs">
       <DependentUpon>modifyData.aspx</DependentUpon>
     </Compile>
+    <Compile Include="notifications.aspx.cs">
+      <DependentUpon>notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="notifications.aspx.designer.cs">
+      <DependentUpon>notifications.aspx</DependentUpon>
+    </Compile>
     <Compile Include="panelCtrl.aspx.cs">
       <DependentUpon>panelCtrl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="panelCtrl.aspx.designer.cs">
       <DependentUpon>panelCtrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pastor-info.aspx.cs">
+      <DependentUpon>pastor-info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pastor-info.aspx.designer.cs">
+      <DependentUpon>pastor-info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pastors-desk.aspx.cs">
+      <DependentUpon>pastors-desk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pastors-desk.aspx.designer.cs">
+      <DependentUpon>pastors-desk.aspx</DependentUpon>
     </Compile>
     <Compile Include="pic3.aspx.cs">
       <DependentUpon>pic3.aspx</DependentUpon>
@@ -672,13 +775,34 @@
     <Compile Include="pics2.aspx.designer.cs">
       <DependentUpon>pics2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="prayer.aspx.cs">
+      <DependentUpon>prayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="prayer.aspx.designer.cs">
+      <DependentUpon>prayer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="resources.aspx.cs">
+      <DependentUpon>resources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="resources.aspx.designer.cs">
+      <DependentUpon>resources.aspx</DependentUpon>
+    </Compile>
     <Compile Include="sermons.aspx.cs">
       <DependentUpon>sermons.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="sermons.aspx.designer.cs">
       <DependentUpon>sermons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="services.aspx.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="services.aspx.designer.cs">
+      <DependentUpon>services.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -701,7 +825,28 @@
     <Compile Include="site2.Master.designer.cs">
       <DependentUpon>site2.Master</DependentUpon>
     </Compile>
+    <Compile Include="staff.aspx.cs">
+      <DependentUpon>staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff.aspx.designer.cs">
+      <DependentUpon>staff.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="upcoming.aspx.cs">
+      <DependentUpon>upcoming.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upcoming.aspx.designer.cs">
+      <DependentUpon>upcoming.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="video-tour.aspx.cs">
+      <DependentUpon>video-tour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="video-tour.aspx.designer.cs">
+      <DependentUpon>video-tour.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -722,6 +867,13 @@
     </Compile>
     <Compile Include="WebUserControl1.ascx.designer.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.aspx.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="welcome.aspx.designer.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

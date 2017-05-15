@@ -161,7 +161,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     background-color:rgba(93, 80, 50, 1);
-    border-radius: 15px;
+    /*border-radius: 15px;*/
 }
  /***************** end of footer styling ******************************************/  
  .social-icons {
@@ -201,8 +201,18 @@ body {
     font-size: 24px;
   }
 
-.carousel{
+/*.carousel{
     width:100%
- }
+ }*/
+}
+
+ @media (max-width: 400px) {/*small mobile dedvices, this image is normally 60px*/
+/*At 60 px interferes with hamburger menu*/
+  .navbar-brand > img {
+    display:block;
+    height: 52px;
+    margin-bottom:-20px;
+
+}
 }
 /***************** end media query styling ******************************************/  
