@@ -127,6 +127,17 @@ body {
 
 /***************** End of carousel*********************************************/
 
+
+.jumbotron
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee;
+    margin-top: -115px;
+}
+
 /***************** This displays glyphicons properly***************************/
 .col-lg-4, .col-md-6, .col-sm-6, .col-xs-6, span {
     display:block;
@@ -152,6 +163,7 @@ body {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     color:#fff;
+    font-size:small;
 }
  /***************** End of glyphicons ******************************************/
 
@@ -210,9 +222,16 @@ body {
 /*At 60 px interferes with hamburger menu*/
   .navbar-brand > img {
     display:block;
-    height: 52px;
+    height: 46px;
     margin-bottom:-20px;
-
 }
+
+  .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    transform: translate(-2%,-23%);/* Move dove and text up*/
 }
 /***************** end media query styling ******************************************/  

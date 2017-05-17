@@ -43,7 +43,7 @@
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
             <a href="events.aspx"><span class="glyphicons glyphicons-calendar"></span></a>
-            <a href="upcoming.aspx"><p class="gly-paragraph">Upcoming Events</p></a>
+            <a href="upcoming.aspx"><p class="gly-paragraph">Events</p></a>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
             <a href="prayer.aspx"><span class="glyphicons glyphicons-envelope"></span></a>
