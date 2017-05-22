@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="history.aspx.cs" Inherits="upc_website.history" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">////
     <div class="jumbotron text-center">
         <h1>Union Pentecostal Church</h1>
         <h2>History</h2>
@@ -9,8 +9,7 @@
         <p class="text-center"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Read about Pastor Hurst</button></p>
     <div id="demo" class="collapse lead">
 Through students from our church, board members met an instructor at Ozark Bible Institute. That meeting resulted in that instructor,
-Clifford Hurst, becoming acquainted with Union Pentecostal Church. In  Brother and Sister Hurst
-Brother and Sister Hurst July of 1991, Clifford Hurst became the pastor of our church. He and his
+Clifford Hurst, becoming acquainted with Union Pentecostal Church. In July of 1991, Clifford Hurst became the pastor of our church. He and his
 wife Sandra had two children, Ashlynn and Micah, at that time. One year after Bro. Hurst became pastor,
 Hannah was born. A fourth child, Andrew, was born in September 2001. In 2011, Bro. Hurst  has started his
 twentieth year of service at Union Road. Clifford Hurst, a native Oklahoman, began preaching at the age of 17 in 1979.
