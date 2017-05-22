@@ -52,6 +52,47 @@
   background-image: none;
   z-index:26;
 }
+
+/* Carousel Fading slide added 5.19.17 from CodePen*/
+.carousel-fade .item {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.carousel-fade .active.left,
+.carousel-fade .active.right {
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.carousel-fade .carousel-control { z-index: 3; }
+.carousel-fade .next,
+.carousel-fade .prev {
+  left: 0;
+  z-index: 1;
+}
+
+
+
+/* Carousel Control */
+.carousel-control {
+  top: 43%;
+  font-size: 38px;
+  } 
+
+  /* Animation */
+  .control-box, a.carousel-control, .carousel-indicators li {
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;   
+    /* hardware acceleration will cause Bootstrap carousel controlbox margin error in webkit browsers */
+    /* Assigning animation to indicator li will make slides flicker */
+   } 
 /* ------------------- Section Styling - Not needed for carousel styling ------------------- */
 body {
     background-color: rgba(155, 160, 170, 1);

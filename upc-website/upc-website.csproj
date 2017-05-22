@@ -897,7 +897,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>64542</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:64542/</IISUrl>
+          <IISUrl>http://localhost:64543/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
