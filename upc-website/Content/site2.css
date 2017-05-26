@@ -9,6 +9,42 @@
   width: 100%;
   height: auto;
 }
+
+/* ------------------- Button state styling ------------------- */
+.btn-info {
+    color: #fff;
+     background-color:rgba(0, 21, 64, 1);
+    border-color: #eee;
+}
+.btn-info:visited {
+    color: #fff;
+    background-color:rgba(4, 59, 171, 1);
+    border-color: #eee;
+}
+
+.btn-info:active {
+    color: #fff;
+    background-color:rgba(4, 59, 171, 1);
+    border-color: #eee;
+}
+
+.btn-info:hover,.btn-info:focus {
+    color: #fff;
+    background-color:rgba(93, 80, 50, 1);
+    border-color: #eee;
+}
+/* ------------------- End Button state styling ------------------- */
+
+/* ------------------- Page-header styling ------------------- */
+/*Move to top of page*/
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+    margin-top: -140px;
+}
+/* ------------------- End Page-header styling ------------------- */
+
 /* ------------------- Carousel Styling ------------------- */
 /*Change width of carousel*/
 .carousel {
@@ -162,7 +198,7 @@ body {
     .container {
             max-width: 1366px;
         }
-}*/
+}*/background
 
 
 
