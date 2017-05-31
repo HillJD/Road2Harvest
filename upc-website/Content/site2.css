@@ -315,9 +315,15 @@ body {
     font-size: 32px;
   }
 
-/*.carousel{
-    width:100%
- }*/
+.carousel {
+  height: auto;
+  margin-bottom: 15px;
+  width:70%;
+  margin:-138px auto 0;
+  border-style:solid;
+  border-color:rgba(255,251,251,.5);
+  border-width:2px;
+ }
 }
 
  @media (max-width: 400px) {/*small mobile dedvices, this image is normally 60px*/
