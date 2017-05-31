@@ -26,7 +26,7 @@ namespace upc_website
         protected void Page_Load(object sender, EventArgs e)
         {
             int SlidesToAdd = GetRowCount(); //i.e. # of pictures slides to add
-            BuildCarouselDiv("1000");//Slide display time
+            BuildCarouselDiv("3000");//Slide display time
             BuildCarouselOrderedList();
             BuildCarouselListItems(SlidesToAdd);
             BuildCarouselWrapperDiv();
