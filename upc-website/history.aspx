@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="page-header text-center">
-        <h2>Union Pentecostal Church History</h2>
+        <h2>History</h2>
     </div>
      
     <p class="text-center"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#prelude">Prelude</button></p>
@@ -21,7 +21,7 @@ message, and emphasis we gratefully realize that the experiences, teachings, and
 Classic Pentecost have been preserved within and by the Body of what is now the Union Pentecostal Church.
     </div>
 
-       <p class="text-center"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#laurashank">Read about Sister Laura Shank</button></p>
+       <p class="text-center"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#laurashank">Sister Laura Shank</button></p>
     <div style="text-indent:35px" id="laurashank" class="collapse lead">
 Harvey Cox, professor of religion at Harvard, has made an observation from his years of study of Pentecostalism.
  It is an observation those of us intimately acquainted with the Pentecostal movement already knew: Without women
@@ -37,23 +37,9 @@ It was a vision of a field of golden grain. God told her that a church would be 
 This church, God impressed her, would last. It has. Eighty-five years so far as of 2011.
 </div>
     
-    <p class="text-center"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#pastorhurst">Read about Pastor Hurst</button></p>
-    <div style="text-indent: 35px" id="pastorhurst" class="collapse lead">
-        Through students from our church, board members met an instructor at Ozark Bible Institute. That meeting resulted in that instructor,
-Clifford Hurst, becoming acquainted with Union Pentecostal Church. In July of 1991, Clifford Hurst became the pastor of our church. He and his
-wife Sandra had two children, Ashlynn and Micah, at that time. One year after Bro. Hurst became pastor,
-Hannah was born. A fourth child, Andrew, was born in September 2001. In 2011, Bro. Hurst  has started his
-twentieth year of service at Union Road. Clifford Hurst, a native Oklahoman, began preaching at the age of 17 in 1979.
-  After graduating from high school, he did some evangelizing before entering Bible School.  
-After graduating from Bible School in 1984, he taught seven years at Ozark Bible Institute. 
-That first year of teaching, he married Sandra Barnes, a daughter of missionaries who was a student at OBI 
-at the time. While teaching, he completed seminary and with his wife evangelized each summer.  
-In 1987 he graduated from seminary. When at OBI, he also served as Supervisor of the Men's Dorm and for two years as Principal of Ozark Christian Academy.  
-    </div>
-
-<p class="text-center"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#humblebeginnings">Read about Humble Beginnings</button></p>
+<p class="text-center"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#humblebeginnings">Humble Beginnings</button></p>
     <div style="text-indent: 35px" id="humblebeginnings" class="collapse lead">
-Soon, so many neighborhood children were coming to Sunday School that there were just too many for the porch.
+<p>Soon, so many neighborhood children were coming to Sunday School that there were just too many for the porch.
  Across the street lived the Goddard family. Sis. Shank had crossed that street and asked the Goddard children
  to come to Sunday School. We still have one of those Goddard children with us today.
  In fact, she is the only original member that is still a part of our congregation.
@@ -68,15 +54,15 @@ we would move the furniture back so we kids could sleep," remembers Sis. Juanita
 He didn't know why he built it at the time. Soon, he sold his house to the church and partitioned off the big building 
 and moved his family into it." This house turned church became the Crown Point Church. 
 The street it was on was intersected by a street that was later named by Juanita after her mother-in-law, Lome. 
-Thus, our first location was on the corner of Crown and Lome.
-    This church was a neighborhood church. Although none now remember, an old photo shows the church’s name on a sign attached to the church. 
+Thus, our first location was on the corner of Crown and Lome.</p>
+<p>This church was a neighborhood church. Although none now remember, an old photo shows the church’s name on a sign attached to the church. 
 It reads, “Pentecost Community Church.” "On Lome," chronicles Sister Norma Bicknell
 , "lived the Goddards, Berries, Bicknells, Wilbur and Juanita Orrill, Dutch and Frances Orrill, and others. Sis. Shank
  lived around the corner on Crown. Many didn't have cars in those days. They walked to church. 
     There was no air conditioning, we set on wooden benches, and the place was crowded. The basement was more like a cellar. 
     We held our Sunday School classes in that basement. The facilities were pitiful by today's standards, but no one cared.
      We just had church." "It was wonderful, wonderful," remarks Bro. Helmich. He continues, 
-“We call the church the ‘Little Ark.’ It was so small but people got saved there.
+“We call the church the ‘Little Ark.’ It was so small but people got saved there.</p>
     </div>
 
     <p class="text-center"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#earlyservices">Early Services</button></p>
@@ -103,11 +89,11 @@ and chauffer besides being a Sunday School teacher, piano player, and singer.</p
   
     <p class="text-center"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#shepherdsbeginnings">A New Shepherd's Beginnings</button></p>
     <div style="text-indent: 35px" id="shepherdsbeginnings" class="collapse lead">
-For twenty-six years, 1926-1952, our church worshipped in that crowded house turned church on Crown and Lome.
+<p>For twenty-six years, 1926-1952, our church worshipped in that crowded house turned church on Crown and Lome.
 It became more and more evident that a bigger building was needed for the growing church.  
 It was decided that the church would build. The location chosen was Mia Avenue. The men of the church built that structure. 
 There would be building parties on Monday nights. The ladies would bring cake, punch, etc., 
-to Sis. Shank’s house to refresh the men on those nights. The first service was held on Saturday, April 12, 1952.
+to Sis. Shank’s house to refresh the men on those nights. The first service was held on Saturday, April 12, 1952.</p>
 <p>Not long after the church had moved into the Mia location, it became necessary to pass the reigns of shepherd to another. 
 On June 25, 1954, due to bad health Sis. Shank resigned. Sis. Shank had always used the men ministers of the church as her assistants. 
 Many pictures show two of them doing the baptizing. Those two were Phil Berry and Vearl Vaughn. 
@@ -129,5 +115,37 @@ He went to the altar and was saved. </p>
 After a season they were blessed with three children, Carol Ann, Verla Ruth, and Jimmie. </p>
         <p>In 1937 Bro. Vaughn was ordained as a minister of the Gospel. He began to evangelize and had a great revival service at Hazard, Kentucky. During this revival he was asked to pastor a body of believers there. He then moved his family to Kentucky to pastor his first church, the Wabaco Pentecostal Church. There, the Vaughns had twin girls, Julia Faye and Sharon Mae. God blessed the pastorate there with many converts, many who began to minister in surrounding towns and cities. </p>
         <p>The Vaughns returned to Ohio in 1939 when Bro. Vaughn began working as an executive at Lau Blower Company. During these years the Vaughn's final child, Bill, was born. During this period, Bro. Vaughn pastored briefly at the Highview Pentecostal Church and, around 1952, the Hunt Avenue Church in Hamilton, Ohio. Later, he returned to Crown Avenue to assist Sis. Shank once again. There Bro. Vaughn conducted funerals, baptisms and wedding ceremonies, and was also the radio preacher of the "Wings of Faith" broadcast while serving on the church board as well.</p>
+    </div>
+
+    <p class="text-center"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#unionrdmove">Move to Union Road</button></p>
+    <div style="text-indent: 35px" id="unionrdmove" class="collapse lead">
+    <p>Under his pastorate the church grew rapidly until it outgrew the new building in just under ten years. With the congregation growing to 250 plus the Mia church soon filled up. Some remember the many steps to enter the building and the bathrooms in the basement along with the need for more room as influencing reasons for building another church. Soon land was located on Union Road. Only ten years after building the Mia church, the church relocated to our present location, 1101 N. Union Road in 1962. However, many yet remember those days on Mia Avenue. "It was a busy, good church," reflects Sis. Norma Bicknell. "Good worship, good preaching, good singing, good people, well, it was just a good time."</p>
+    <p>On March 18, 1962, ground was broken on Union Road for the new church. On Saturday, July 1, 1962, the church moved to its present location on 1101 N. Union Road. The church had purchased a 3.2 acre tract of land that had recently been part of a farm. Not long before the church was built there, bison had fed on the field. The church was built for $80,000. Fifty-nine thousand of that was raised by selling bonds to church members. Some of those members later donated their bonds instead of collecting on them when they were due.</p>
+    <p>The church at Union Road continued to grow under Bro. Vaughn’s pastorate at times reaching 350. Bro. Vaughn had a tremendous impact on a multitude of lives. His wit and wisdom is not only still remembered, but it also continues to be a guiding influence on many lives. After a long, fruitful pastorate, Bro. Vaughn resigned on April 21, 1985. His leadership went far beyond his immediate pastorate of the local church. Bro. Vaughn was one of those instrumental in the organizing of the Pentecostal Ministerial Association that today continues its ministry to ministers and churches. Throughout the years Bro. Vaughn served many years in positions of Chairman, Vice Chairman, and Secretary of the PMA. Bro. Vaughn was a part of the leadership that obtained land, cleared and built the Southern Ohio Youth Camp. He also served as the Chairman of the Pentecostal Fellowship of North America. Bro. Vaughn passed away October 10, 1995. </p>
+</div>
+
+    
+ <p class="text-center"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#derwinward">Bro. Derwin Ward</button></p>
+    <div style="text-indent: 35px" id="derwinward" class="collapse lead">
+    <p>On April 21, 1985, Bro. Derwin Ward became the pastor. He with his wife Terri, and children, Hannah and Charity, pastored our church for over five years. Bro. Ward was not only extremely musically talented in both singing and playing instruments, he was also a great preacher of God’s Word. </p>
+    <p>Bro. Ward was born November 5, 1963, in Pascagoula, Mississippi, the last of eleven children born to Mr. & Mrs. L. B. Ward. Derwin was saved at the age of 5, filled with the Spirit at age 8, and called to preach at the age of 16. A talented musician and singer, Bro Ward began singing at his home church (First Assembly of God Pascagoula) at the age of 3. Bro. Ward's full-time evangelistic ministry began when he was 17, at which time he first came to the Miami Valley at the invitation of Rev. L.L. Collins.</p>
+    <p>Brother Ward and his wife, Terri, were married at Forts Lake Assembly of God in Pascagoula, MS, on November 14, 1981. Their oldest daughter, Charity, was born in Mobile, AL, on July 9, 1983. While pastoring here Hannah, the Ward's younger daughter, was born on August 21, 1986.</p>
+    <p>During Bro. Ward's pastorate, construction began on the Vaughn Hall, the large activity center and fellowship hall that is such a blessing to the church today. That building was dedicated between pastors in June of 1991.</p>
+    <p>The Ward's five plus years of pastoring saw many families join our church. People were attracted to Bro. Ward's anointed, exceptional preaching and singing the Gospel message. His daily radio broadcasts on WPFB and WQRP that aired twice daily are still remembered and commented on. Bro. Ward resigned on Dec. 30, 1990.</p>
+    <p>After Bro. Ward’s resignation, the church entered that difficult period of searching for a new pastor. During that time, Bro. Charles Pennington agreed to serve as interim pastor. His was a steadying hand at the helm in those days of search and transition. His years of experience were brought to play, in several people’s words, in “holding the church together.”</p>
+</div>
+
+<p class="text-center"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#pastorhurst">Pastor Hurst</button></p>
+    <div style="text-indent: 35px" id="pastorhurst" class="collapse lead">
+        Through students from our church, board members met an instructor at Ozark Bible Institute. That meeting resulted in that instructor,
+Clifford Hurst, becoming acquainted with Union Pentecostal Church. In July of 1991, Clifford Hurst became the pastor of our church. He and his
+wife Sandra had two children, Ashlynn and Micah, at that time. One year after Bro. Hurst became pastor,
+Hannah was born. A fourth child, Andrew, was born in September 2001. In 2011, Bro. Hurst  has started his
+twentieth year of service at Union Road. Clifford Hurst, a native Oklahoman, began preaching at the age of 17 in 1979.
+  After graduating from high school, he did some evangelizing before entering Bible School.  
+After graduating from Bible School in 1984, he taught seven years at Ozark Bible Institute. 
+That first year of teaching, he married Sandra Barnes, a daughter of missionaries who was a student at OBI 
+at the time. While teaching, he completed seminary and with his wife evangelized each summer.  
+In 1987 he graduated from seminary. When at OBI, he also served as Supervisor of the Men's Dorm and for two years as Principal of Ozark Christian Academy.  
     </div>
 </asp:Content>
