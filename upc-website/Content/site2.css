@@ -360,8 +360,7 @@ body {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    /*background-color:rgba(93, 80, 50, 1);*/
-    background-color:#060377;
+    background-color:rgba(0, 21, 64, 1);
     border-radius: 4px;
 }
  /***************** end of footer styling ******************************************/  

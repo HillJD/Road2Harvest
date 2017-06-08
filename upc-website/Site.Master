@@ -91,10 +91,10 @@
             <footer>
 
                 <div class="text-center center-block">
-                    <a href="https://www.facebook.com/unionpentecostalchurch"><i class="social-icons fa fa-facebook-square fa-inverse fa-3x social"></i></a>
-                    <a href="https://twitter.com/unionroadchurch"><i class="social-icons fa fa-twitter-square fa-inverse fa-3x social"></i></a>
-                    <a href="http://plus.google.com/b/113686491120109002941"><i class="social-icons fa fa-google-plus-square fa-inverse fa-3x social"></i></a>
-                    <p id="footer-date" class="text-center">&copy; <%: DateTime.Now.Year %> - UPC Version 3.0</p>
+                    <a href="https://www.facebook.com/unionpentecostalchurch"><i class="social-icons fa fa-facebook-square fa-inverse fa-2x social"></i></a>
+                    <a href="https://twitter.com/unionroadchurch"><i class="social-icons fa fa-twitter-square fa-inverse fa-2x social"></i></a>
+                    <a href="http://plus.google.com/b/113686491120109002941"><i class="social-icons fa fa-google-plus-square fa-inverse fa-2x social"></i></a>
+                    <p id="footer-date" class="text-center">&copy; <%: DateTime.Now.Year %> - UPC Version 4.0</p>
                 </div>
             </footer>
         </div>
