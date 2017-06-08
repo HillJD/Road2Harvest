@@ -22,7 +22,7 @@
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-            <a href="service"><span class="glyphicons glyphicons-clock"></span></a>
+            <a href="services"><span class="glyphicons glyphicons-clock"></span></a>
             <a href="services.aspx"><p class="gly-paragraph">Services</p></a>
         </div>
 
@@ -33,7 +33,7 @@
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
             <a href="listen.aspx"><span class="glyphicons glyphicons-headphones"></span></a>
-            <a href="listen.aspx"><p class="gly-paragraph">Live</p></a>
+            <a href="listen.aspx"><p class="gly-paragraph">Listen</p></a>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">

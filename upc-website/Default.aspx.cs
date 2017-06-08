@@ -45,7 +45,7 @@ namespace upc_website
         public void BuildCarouselDiv(string slideDelay)
         {
             myCarousel.ID = "myCarousel";
-            myCarousel.Attributes.Add("class", "fade-carousel carousel slide");
+            myCarousel.Attributes.Add("class", "carousel slide carousel-fade");
             myCarousel.Attributes.Add("data-ride", "carousel");
             myCarousel.Attributes.Add("data-interval", slideDelay);
             ControlContainer.Controls.Add(myCarousel);
