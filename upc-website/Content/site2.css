@@ -345,7 +345,7 @@ body {
     display: inline;
 }
 
- .gly-paragraph {*Adjust glythicon vertical spacing first 2 settings below*
+ .gly-paragraph {/*Adjust glythicon vertical spacing first 2 settings below*/
     -webkit-margin-before: 0em;
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
@@ -412,20 +412,21 @@ body {
  }
 }
 
- @media (max-width: 400px) {/*small mobile dedvices, this image is normally 60px*/
-/*At 60 px interferes with hamburger menu*/
-  .navbar-brand > img {
-    display:block;
-    height: 46px;
-    margin-bottom:-20px;
-}
+    @media (max-width: 400px) { /*small mobile dedvices, this image is normally 60px*/
+        /*At 60 px interferes with hamburger menu*/
+        .navbar-brand > img {
+            display: block;
+            height: 46px;
+            margin-bottom: -20px;
+        }
 
-  .navbar-brand {
-    float: left;
-    height: 50px;
-    padding: 15px 15px;
-    font-size: 18px;
-    line-height: 20px;
-    transform: translate(-2%,-23%);/* Move dove and text up*/
-}
+        .navbar-brand {
+            float: left;
+            height: 50px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+            transform: translate(-2%,-23%); /* Move dove and text up*/
+        }
+    }
 /***************** end media query styling ******************************************/  

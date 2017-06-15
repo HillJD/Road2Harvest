@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 
 namespace upc_website
 {
-    public partial class addControlsFirst_Attempt : System.Web.UI.Page
+    public partial class Carousel : System.Web.UI.Page
     {
         //Must be visible to all below
         HtmlGenericControl myCarousel = new HtmlGenericControl("DIV");
@@ -32,14 +32,6 @@ namespace upc_website
             BuildCarouselWrapperDiv();
             BuildCarouselImageDiv(SlidesToAdd);
             BuildCarouselControls();
-
-            //List<string> myData = GetCarouselImageData();
-            //foreach (string s in myData)
-            //{
-            //    Console.WriteLine(s);
-            //}
-            //Console.ReadLine();
-
 
         }
         public void BuildCarouselDiv(string slideDelay)
