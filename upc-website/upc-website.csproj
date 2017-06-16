@@ -396,6 +396,7 @@
     <Content Include="fonts\glyphicons-regular.woff" />
     <Content Include="fonts\glyphicons-regular.woff2" />
     <Content Include="welcome.aspx" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\upc.pubxml" />

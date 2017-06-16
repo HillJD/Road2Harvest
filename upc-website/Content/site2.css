@@ -112,6 +112,18 @@
   background-image: none;
   z-index:26;
 }
+
+.carousel-caption {
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:40%;
+    z-index: 10;
+    padding: 0 0 10px 25px;
+    color: #fff;
+    text-align: center;
+}
 /* ------------------- End Carousel Styling ------------------- */
 
 /* Carousel Fading slide added 5.19.17 from CodePen*/
