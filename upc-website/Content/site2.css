@@ -267,12 +267,12 @@ body {
 
     /* ------------------- Section Styling - For navbar-brand  ------------------- */
 .navbar {
-    height: 70px;
+    height: 66px;/*changed from 70px*/
     background-color:rgba(0, 21, 64, 1);
     padding-top: 8px;
     padding-bottom:15px;
-    border: 3px solid;
-    border-bottom-color:rgba(130,105,30,1);
+    /*border: 3px solid;*/
+    /*border-bottom-color:rgba(130,105,30,1); Gold bottom border deleted 6.21.17*/
 
 }
 
@@ -377,7 +377,7 @@ body {
 }
  /***************** end of footer styling ******************************************/  
  .social-icons {
-     padding:10px 0;
+     padding:2px 0; /*changed from 10px 6.21.17*/
  }
 
  #footer-date {
