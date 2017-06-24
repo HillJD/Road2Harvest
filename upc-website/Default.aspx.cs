@@ -88,7 +88,7 @@ namespace upc_website
         {
             //This moves us through the array, index 3 = fields path, lineOneText,lineTwoText
             //index would be 4 if we have 3 caption fields i.e lineThreeText.
-            int index = 3;
+            int index = 4;
 
             //Get data fron db for items requested, return as List<>
             List<string> myData = GetCarouselImageData();
@@ -114,11 +114,18 @@ namespace upc_website
                 myCaptionH3[x] = new HtmlGenericControl();
             }
 
-            //This builds the <p> for captions, put them in an array
+            //This builds the <h4> for captions, put them in an array
             HtmlGenericControl[] myCaptionH4 = new HtmlGenericControl[slidesToBuild];
             for (int x = 0; x < slidesToBuild; x++)
             {
                 myCaptionH4[x] = new HtmlGenericControl();
+            }
+
+            //This builds the <h5> for captions, put them in an array
+            HtmlGenericControl[] myCaptionH5 = new HtmlGenericControl[slidesToBuild];
+            for (int x = 0; x < slidesToBuild; x++)
+            {
+                myCaptionH5[x] = new HtmlGenericControl();
             }
 
             //This builds the image element for images, put them in an array
@@ -135,17 +142,20 @@ namespace upc_website
                 myCaptionDiv[i] = new HtmlGenericControl("div");
                 myCaptionH3[i] = new HtmlGenericControl("h3");
                 myCaptionH4[i] = new HtmlGenericControl("h4");
+                myCaptionH5[i] = new HtmlGenericControl("h5");
 
                 if (i == 0)
                 {
                     myDiv[i].Attributes.Add("class", "item active");
                     myImage[i].Attributes.Add("src", myData[index * i].ToString());
                     myCaptionDiv[i].Attributes.Add("class", "carousel-caption"); //Future captions
-                    myCaptionH3[i].InnerHtml = myData[(index * i) + 1].ToString();
-                    myCaptionH4[i].InnerHtml = myData[(index * i) + 2].ToString();
+                    myCaptionH3[i].InnerHtml = myData[(index * i) + 1].ToString();//caption1
+                    myCaptionH4[i].InnerHtml = myData[(index * i) + 2].ToString();//caption 2
+                    myCaptionH5[i].InnerHtml = myData[(index * i) + 3].ToString();//caption 3
                     myDiv[i].Controls.Add(myImage[i]);
                     myCaptionDiv[i].Controls.Add(myCaptionH3[i]);
                     myCaptionDiv[i].Controls.Add(myCaptionH4[i]);
+                    myCaptionDiv[i].Controls.Add(myCaptionH5[i]);
                     myDiv[i].Controls.Add(myCaptionDiv[i]);
                     Wrapper.Controls.Add(myDiv[i]);
 
@@ -155,11 +165,13 @@ namespace upc_website
                     myDiv[i].Attributes.Add("class", "item");
                     myImage[i].Attributes.Add("src", myData[index * i].ToString());
                     myCaptionDiv[i].Attributes.Add("class", "carousel-caption"); //Future captions
-                    myCaptionH3[i].InnerHtml = myData[(index * i) + 1].ToString();
-                    myCaptionH4[i].InnerHtml = myData[(index * i) + 2].ToString();
+                    myCaptionH3[i].InnerHtml = myData[(index * i) + 1].ToString();//caption 1
+                    myCaptionH4[i].InnerHtml = myData[(index * i) + 2].ToString();//caption 2
+                    myCaptionH5[i].InnerHtml = myData[(index * i) + 3].ToString();//caption 3
                     myDiv[i].Controls.Add(myImage[i]);
                     myCaptionDiv[i].Controls.Add(myCaptionH3[i]);
                     myCaptionDiv[i].Controls.Add(myCaptionH4[i]);
+                    myCaptionDiv[i].Controls.Add(myCaptionH5[i]);
                     myDiv[i].Controls.Add(myCaptionDiv[i]);
                     Wrapper.Controls.Add(myDiv[i]);
                 }
@@ -219,7 +231,6 @@ namespace upc_website
         public void BuildCarousel()
         {
         
-
             //Now add  #2 of 3 'li' elements
             System.Web.UI.HtmlControls.HtmlGenericControl
             li_2 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
@@ -238,9 +249,7 @@ namespace upc_website
             //Add 'ol' with inside 'li's's  to Div Carousel
             myCarousel.Controls.Add(ol);
             //****** carousel indicators end *********************
-
             
-
             //This generates the image wrapper div's #1 inside of Wrapper div
             //Class='active' only on first div!
             HtmlGenericControl imageDiv1 = new HtmlGenericControl("DIV");
@@ -367,7 +376,7 @@ namespace upc_website
         {
             //install later a Try, Catch error routine
             //Setup data connection, get data fron sql table 'carousel_images
-           // SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
+            // SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
             SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
             cs.Open();
             string str = "SELECT * ";
@@ -396,8 +405,8 @@ namespace upc_website
                 temp = "";
                 temp = dt.Rows[i]["lineTwoText"].ToString();
                 rowData.Add(temp);
-                //temp = dt.Rows[i]["lineThreeText"].ToString();
-                //rowData.Add(temp); //Future use
+                temp = dt.Rows[i]["lineThreeText"].ToString();
+                rowData.Add(temp); //Future use
             }
             cs.Close();
             return rowData;
