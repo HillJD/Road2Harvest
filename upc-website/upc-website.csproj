@@ -314,6 +314,8 @@
     <Content Include="images\carousel\7.jpg" />
     <Content Include="images\carousel\8.jpg" />
     <Content Include="images\carousel\9.jpg" />
+    <Content Include="images\carousel\default carousel image.jpg" />
+    <Content Include="images\carousel\default carousel.jpg" />
     <Content Include="images\dove3.png" />
     <Content Include="images\dove40px.jpg" />
     <Content Include="images\DoveIconTrans.png" />
