@@ -71,10 +71,10 @@ namespace upc_website
             int rowCount = dt.Rows.Count;
 
             //One row per piece of data 8 database fields a follows:
-            //picName, path, lineOnetext,lineTwotext,lineThreeText,url etc.
-            //picName & path are concatenated, thus only 7 rows of data are needed
-            //Total of 5 rows for each slide./
-            //So 1 slide = 5 rows of data
+            //picName, path, lineOneCaption,lineTwoCaption,lineThreeCaption,url, urlLocation
+            //picName & path are concatenated, thus only 6 rows of data are needed
+            //Total of 6 rows for each slide./
+            //So 1 slide = 6 rows of data
             List<string> rowData = new List<string>();
             for (int i = 0; i < rowCount; i++)
             {
@@ -83,14 +83,16 @@ namespace upc_website
                 temp += "/" + dt.Rows[i]["picName"];
                 rowData.Add(temp);
                 temp = "";
-                temp = dt.Rows[i]["lineOneText"].ToString();
+                temp = dt.Rows[i]["lineOneCaption"].ToString();
                 rowData.Add(temp);
                 temp = "";
-                temp = dt.Rows[i]["lineTwoText"].ToString();
+                temp = dt.Rows[i]["lineTwoCaption"].ToString();
                 rowData.Add(temp);
-                temp = dt.Rows[i]["lineThreeText"].ToString();
+                temp = dt.Rows[i]["lineThreeCaption"].ToString();
                 rowData.Add(temp);
                 temp = dt.Rows[i]["url"].ToString();
+                rowData.Add(temp); 
+                temp = dt.Rows[i]["urlLocation"].ToString();
                 rowData.Add(temp); //Future use
             }
             cs.Close();
@@ -156,7 +158,7 @@ namespace upc_website
             //This moves us through the array
             //index 5 = fields= path, lineOneText, lineTwoText, lineThreeText, url
 
-            int index = 5;
+            int index = 6;
 
             //Get data fron db for items requested, return as List<>
             List<string> myData = GetCarouselImageData();
