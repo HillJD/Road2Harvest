@@ -14,11 +14,11 @@ namespace upc_website
     public partial class Carousel : System.Web.UI.Page
     {
         //Must be visible to all below
-        HtmlGenericControl myCarousel = new HtmlGenericControl("DIV");
-        HtmlGenericControl ol = new HtmlGenericControl("ol");
-        HtmlGenericControl Wrapper = new HtmlGenericControl("DIV");
-        HtmlGenericControl ImageWrapper = new HtmlGenericControl("DIV");
-        HtmlGenericControl ImageContainer = new HtmlGenericControl("IMG");
+        HtmlGenericControl myCarousel = new HtmlGenericControl("DIV"); //Top level <div>
+        HtmlGenericControl OrderedList = new HtmlGenericControl("ol"); //ordered list container for listitems
+        HtmlGenericControl SlideWrapper = new HtmlGenericControl("DIV"); //Wrapper for slides
+        HtmlGenericControl ImageWrapper = new HtmlGenericControl("DIV");//Wrapper for each image inside master <div> for all slides
+        HtmlGenericControl ImageContainer = new HtmlGenericControl("IMG");//Container for each individual image
         //HtmlGenericControl ImageContainer = new HtmlGenericControl("A");
         //HtmlGenericControl ImageContainer = new HtmlGenericControl("SPAN");
         //HtmlGenericControl li_1 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
@@ -29,11 +29,75 @@ namespace upc_website
             BuildCarouselDiv("3000");//Slide display time
             BuildCarouselOrderedList();
             BuildCarouselListItems(SlidesToAdd);
-            BuildCarouselWrapperDiv();
+            BuildCarouselWrapperDiv(); //
             BuildCarouselImageDiv(SlidesToAdd);
             BuildCarouselControls();
 
         }
+
+        public int GetRowCount()
+        {
+            //install later a Try, Catch error routine
+            //Setup data connection, get data fron sql table 'carousel_images
+            SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
+            //SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
+            cs.Open();
+            string str = "SELECT * ";
+            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY beginDate";
+
+            SqlCommand command = new SqlCommand(str, cs);
+            DataTable dt = new DataTable();
+            SqlDataAdapter adp = new SqlDataAdapter(command);
+            adp.Fill(dt);
+            int rowCount = dt.Rows.Count;
+            cs.Close();
+            return rowCount;
+        }
+
+        public static List<string> GetCarouselImageData()
+        {
+            //install later a Try, Catch error routine
+            //Setup data connection, get data fron sql table 'carousel_images
+            // SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
+            SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
+            cs.Open();
+            string str = "SELECT * ";
+            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY beginDate";
+
+            SqlCommand command = new SqlCommand(str, cs);
+            DataTable dt = new DataTable();
+            SqlDataAdapter adp = new SqlDataAdapter(command);
+            adp.Fill(dt);
+            int rowCount = dt.Rows.Count;
+
+            //One row per piece of data 8 database fields a follows:
+            //picName, path, lineOnetext,lineTwotext,lineThreeText,url etc.
+            //picName & path are concatenated, thus only 7 rows of data are needed
+            //Total of 5 rows for each slide./
+            //So 1 slide = 5 rows of data
+            List<string> rowData = new List<string>();
+            for (int i = 0; i < rowCount; i++)
+            {
+                String temp = "";
+                temp = dt.Rows[i]["path"].ToString();
+                temp += "/" + dt.Rows[i]["picName"];
+                rowData.Add(temp);
+                temp = "";
+                temp = dt.Rows[i]["lineOneText"].ToString();
+                rowData.Add(temp);
+                temp = "";
+                temp = dt.Rows[i]["lineTwoText"].ToString();
+                rowData.Add(temp);
+                temp = dt.Rows[i]["lineThreeText"].ToString();
+                rowData.Add(temp);
+                temp = dt.Rows[i]["url"].ToString();
+                rowData.Add(temp); //Future use
+            }
+            cs.Close();
+            return rowData;
+        }
+
+        //This div wraps the whole carousel, therefore top level Div
         public void BuildCarouselDiv(string slideDelay)
         {
             myCarousel.ID = "myCarousel";
@@ -47,12 +111,14 @@ namespace upc_website
         {
             //******* carousel indicators ************************
             //Create ordered list 'ol' for 'li' elements
-            ol.Attributes.Add("class", "carousel-indicators");
-            myCarousel.Controls.Add(ol); //temporary
+            OrderedList.Attributes.Add("class", "carousel-indicators");
+            myCarousel.Controls.Add(OrderedList); //temporary
             return;
         }
 
-        public void BuildCarouselListItems(int requestedlistItems)
+        //This the listitems for carousel-indicators,
+        //the amount needed is based on # of slides needed
+        public void BuildCarouselListItems(int requestedlistItems) 
         {
             //Now add requested #'s of li' elements
             //Add HtmlGenericControl() to array 'p'
@@ -70,34 +136,43 @@ namespace upc_website
                 p[i].Attributes.Add("data-target", "#MainContent_myCarousel");
                 p[i].Attributes.Add("data-slide-to", i.ToString());
                 if (i == 0) { p[i].Attributes.Add("class", "active"); }
-                ol.Controls.Add(p[i]);
+                OrderedList.Controls.Add(p[i]);
             }
             return;
         }
 
+        //This generates the Wrapper div i.e contains div that wraps all images and
+        //hyperlinks for images in <div class-'carousel-inner'>
         public void BuildCarouselWrapperDiv()
         {
-            //This generates the Wrapper div            
-            Wrapper.Attributes.Add("class", "carousel-inner");
-            Wrapper.Attributes.Add("role", "listbox");
-            myCarousel.Controls.Add(Wrapper);
+            SlideWrapper.Attributes.Add("class", "carousel-inner");
+            SlideWrapper.Attributes.Add("role", "listbox");
+            myCarousel.Controls.Add(SlideWrapper);
             return;
         }
 
         public void BuildCarouselImageDiv(int slidesToBuild)
         {
-            //This moves us through the array, index 3 = fields path, lineOneText,lineTwoText
-            //index would be 4 if we have 3 caption fields i.e lineThreeText.
-            int index = 4;
+            //This moves us through the array
+            //index 5 = fields= path, lineOneText, lineTwoText, lineThreeText, url
+
+            int index = 5;
 
             //Get data fron db for items requested, return as List<>
             List<string> myData = GetCarouselImageData();
 
-            //This builds the divs for images, put them in an array
-            HtmlGenericControl[] myDiv = new HtmlGenericControl[slidesToBuild];
+            //This builds the divs for images, put them in an array 'myImageDiv'
+            HtmlGenericControl[] myImageDiv = new HtmlGenericControl[slidesToBuild];
             for (int x = 0; x < slidesToBuild; x++)
             {
-                myDiv[x] = new HtmlGenericControl();
+                myImageDiv[x] = new HtmlGenericControl();
+            }
+
+            //This builds the anchor element links for images, put them in an array 'myAnchor'
+            HtmlGenericControl[] myAnchor = new HtmlGenericControl[slidesToBuild];
+            for (int x = 0; x < slidesToBuild; x++)
+            {
+                myAnchor[x] = new HtmlGenericControl();
             }
 
             //This builds the divs for captions, put them in an array
@@ -137,7 +212,8 @@ namespace upc_website
 
             for (int i = 0; i < slidesToBuild; i++)
             {
-                myDiv[i] = new HtmlGenericControl("div");
+                myImageDiv[i] = new HtmlGenericControl("div");
+                myAnchor[i] = new HtmlGenericControl("a"); //added 07_14_17
                 myImage[i] = new HtmlGenericControl("img");
                 myCaptionDiv[i] = new HtmlGenericControl("div");
                 myCaptionH3[i] = new HtmlGenericControl("h3");
@@ -146,38 +222,50 @@ namespace upc_website
 
                 if (i == 0)
                 {
-                    myDiv[i].Attributes.Add("class", "item active");
-                    myImage[i].Attributes.Add("src", myData[index * i].ToString());
+                    myImageDiv[i].Attributes.Add("class", "item active");
+                    myAnchor[i].Attributes.Add("href", myData[(index * i) + 4].ToString());
+                    myImage[i].Attributes.Add("src", myData[index * i].ToString());//url
                     myCaptionDiv[i].Attributes.Add("class", "carousel-caption"); //Future captions
                     myCaptionH3[i].InnerHtml = myData[(index * i) + 1].ToString();//caption1
                     myCaptionH4[i].InnerHtml = myData[(index * i) + 2].ToString();//caption 2
                     myCaptionH5[i].InnerHtml = myData[(index * i) + 3].ToString();//caption 3
-                    myDiv[i].Controls.Add(myImage[i]);
                     myCaptionDiv[i].Controls.Add(myCaptionH3[i]);
                     myCaptionDiv[i].Controls.Add(myCaptionH4[i]);
                     myCaptionDiv[i].Controls.Add(myCaptionH5[i]);
-                    myDiv[i].Controls.Add(myCaptionDiv[i]);
-                    Wrapper.Controls.Add(myDiv[i]);
+                    myAnchor[i].Controls.Add(myImage[i]);
+                    myAnchor[i].Controls.Add(myCaptionDiv[i]);
+                    myImageDiv[i].Controls.Add(myAnchor[i]);
+                    //myImageDiv[i].Controls.Add(myImage[i]);
+                    
+
+                    //myImageDiv[i].Controls.Add(myCaptionDiv[i]);
+                    SlideWrapper.Controls.Add(myImageDiv[i]);
 
                 }
                 else
                 {
-                    myDiv[i].Attributes.Add("class", "item");
+                    myImageDiv[i].Attributes.Add("class", "item");
+                    myAnchor[i].Attributes.Add("href", myData[(index * i) + 4].ToString());
                     myImage[i].Attributes.Add("src", myData[index * i].ToString());
                     myCaptionDiv[i].Attributes.Add("class", "carousel-caption"); //Future captions
                     myCaptionH3[i].InnerHtml = myData[(index * i) + 1].ToString();//caption 1
                     myCaptionH4[i].InnerHtml = myData[(index * i) + 2].ToString();//caption 2
                     myCaptionH5[i].InnerHtml = myData[(index * i) + 3].ToString();//caption 3
-                    myDiv[i].Controls.Add(myImage[i]);
                     myCaptionDiv[i].Controls.Add(myCaptionH3[i]);
                     myCaptionDiv[i].Controls.Add(myCaptionH4[i]);
                     myCaptionDiv[i].Controls.Add(myCaptionH5[i]);
-                    myDiv[i].Controls.Add(myCaptionDiv[i]);
-                    Wrapper.Controls.Add(myDiv[i]);
+                    myAnchor[i].Controls.Add(myImage[i]);
+                    myAnchor[i].Controls.Add(myCaptionDiv[i]);
+                    myImageDiv[i].Controls.Add(myAnchor[i]);
+                    //myImageDiv[i].Controls.Add(myImage[i]);
+
+
+                    //myImageDiv[i].Controls.Add(myCaptionDiv[i]);
+                    SlideWrapper.Controls.Add(myImageDiv[i]);
                 }
 
             }
-            myCarousel.Controls.Add(Wrapper);
+            myCarousel.Controls.Add(SlideWrapper);
             return;
         } 
 
@@ -228,189 +316,134 @@ namespace upc_website
             myCarousel.Controls.Add(myAnchors[1]);
             return;
         }
-        public void BuildCarousel()
-        {
+        //public void BuildCarousel()
+        //{
         
-            //Now add  #2 of 3 'li' elements
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            li_2 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
-            li_2.Attributes.Add("data-target", "#MainContent_myCarousel");
-            li_2.Attributes.Add("data-slide-to", "1");
-            ol.Controls.Add(li_2);
+        //    //Now add  #2 of 3 'li' elements
+        //    System.Web.UI.HtmlControls.HtmlGenericControl
+        //    li_2 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
+        //    li_2.Attributes.Add("data-target", "#MainContent_myCarousel");
+        //    li_2.Attributes.Add("data-slide-to", "1");
+        //    ol.Controls.Add(li_2);
 
-            //Now add  #3 of 3 'li' elements
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            li_3 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
-            li_3.Attributes.Add("data-target", "#MainContent_myCarousel");
-            li_3.Attributes.Add("data-slide-to", "2");
-            //Add 'li' to 'ol'
-            ol.Controls.Add(li_3);
+        //    //Now add  #3 of 3 'li' elements
+        //    System.Web.UI.HtmlControls.HtmlGenericControl
+        //    li_3 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
+        //    li_3.Attributes.Add("data-target", "#MainContent_myCarousel");
+        //    li_3.Attributes.Add("data-slide-to", "2");
+        //    //Add 'li' to 'ol'
+        //    ol.Controls.Add(li_3);
 
-            //Add 'ol' with inside 'li's's  to Div Carousel
-            myCarousel.Controls.Add(ol);
-            //****** carousel indicators end *********************
+        //    //Add 'ol' with inside 'li's's  to Div Carousel
+        //    myCarousel.Controls.Add(ol);
+        //    //****** carousel indicators end *********************
             
-            //This generates the image wrapper div's #1 inside of Wrapper div
-            //Class='active' only on first div!
-            HtmlGenericControl imageDiv1 = new HtmlGenericControl("DIV");
-            imageDiv1.Attributes.Add("class", "item active");
+        //    //This generates the image wrapper div's #1 inside of Wrapper div
+        //    //Class='active' only on first div!
+        //    HtmlGenericControl imageDiv1 = new HtmlGenericControl("DIV");
+        //    imageDiv1.Attributes.Add("class", "item active");
 
-            //This generates 'image' #1 container for pics in image divs
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            image1 = new System.Web.UI.HtmlControls.HtmlGenericControl("IMG");
-            image1.Attributes.Add("src", "images/1_4.jpg");
-            imageDiv1.Controls.Add(image1);
-            Wrapper.Controls.Add(imageDiv1);
+        //    //This generates 'image' #1 container for pics in image divs
+        //    System.Web.UI.HtmlControls.HtmlGenericControl
+        //    image1 = new System.Web.UI.HtmlControls.HtmlGenericControl("IMG");
+        //    image1.Attributes.Add("src", "images/1_4.jpg");
+        //    imageDiv1.Controls.Add(image1);
+        //    Wrapper.Controls.Add(imageDiv1);
 
-            //This generates the image wrapper div's #2 inside of Wrapper div
-            //Class='active' only on first div!
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            imageDiv2 = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
-            imageDiv2.Attributes.Add("class", "item");
+        //    //This generates the image wrapper div's #2 inside of Wrapper div
+        //    //Class='active' only on first div!
+        //    System.Web.UI.HtmlControls.HtmlGenericControl
+        //    imageDiv2 = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
+        //    imageDiv2.Attributes.Add("class", "item");
 
-            //This generates 'image' #2 container for pics in image divs
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            image2 = new System.Web.UI.HtmlControls.HtmlGenericControl("IMG");
-            image2.Attributes.Add("src", "images/2_4.jpg");
-            imageDiv2.Controls.Add(image2);
-            Wrapper.Controls.Add(imageDiv2);
+        //    //This generates 'image' #2 container for pics in image divs
+        //    System.Web.UI.HtmlControls.HtmlGenericControl
+        //    image2 = new System.Web.UI.HtmlControls.HtmlGenericControl("IMG");
+        //    image2.Attributes.Add("src", "images/2_4.jpg");
+        //    imageDiv2.Controls.Add(image2);
+        //    Wrapper.Controls.Add(imageDiv2);
 
-            //This generates the image wrapper div's #3 inside of Wrapper div
-            //Class='active' only on first div!
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            imageDiv3 = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
-            imageDiv3.Attributes.Add("class", "item");
+        //    //This generates the image wrapper div's #3 inside of Wrapper div
+        //    //Class='active' only on first div!
+        //    System.Web.UI.HtmlControls.HtmlGenericControl
+        //    imageDiv3 = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
+        //    imageDiv3.Attributes.Add("class", "item");
 
-            //This generates 'image' #3 container for pics in image divs
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            image3 = new System.Web.UI.HtmlControls.HtmlGenericControl("IMG");
-            image3.Attributes.Add("src", "images/3_4.jpg");
-            imageDiv3.Controls.Add(image3);
-            Wrapper.Controls.Add(imageDiv3);
+        //    //This generates 'image' #3 container for pics in image divs
+        //    System.Web.UI.HtmlControls.HtmlGenericControl
+        //    image3 = new System.Web.UI.HtmlControls.HtmlGenericControl("IMG");
+        //    image3.Attributes.Add("src", "images/3_4.jpg");
+        //    imageDiv3.Controls.Add(image3);
+        //    Wrapper.Controls.Add(imageDiv3);
 
-            //Add this Wrapper to Carousel div
-            myCarousel.Controls.Add(Wrapper);
+        //    //Add this Wrapper to Carousel div
+        //    myCarousel.Controls.Add(Wrapper);
 
-            //***** Left Carousel control, 'A' ******
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            aLeftCtrl = new System.Web.UI.HtmlControls.HtmlGenericControl("A");
-            aLeftCtrl.Attributes.Add("class", "left carousel-control");
-            aLeftCtrl.Attributes.Add("href", "#MainContent_myCarousel");
-            aLeftCtrl.Attributes.Add("role", "button");
-            aLeftCtrl.Attributes.Add("data-slide", "prev");
+        //    //***** Left Carousel control, 'A' ******
+        //    System.Web.UI.HtmlControls.HtmlGenericControl
+        //    aLeftCtrl = new System.Web.UI.HtmlControls.HtmlGenericControl("A");
+        //    aLeftCtrl.Attributes.Add("class", "left carousel-control");
+        //    aLeftCtrl.Attributes.Add("href", "#MainContent_myCarousel");
+        //    aLeftCtrl.Attributes.Add("role", "button");
+        //    aLeftCtrl.Attributes.Add("data-slide", "prev");
 
-            //Left Carousel control, 'Span' there are 2 for each control
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            spanLeftCtrl_1 = new System.Web.UI.HtmlControls.HtmlGenericControl("SPAN");
-            spanLeftCtrl_1.Attributes.Add("class", "glyphicon glyphicon-chevron-left");
-            spanLeftCtrl_1.Attributes.Add("aria-hidden", "true");
-            //Add span control to 'A'
-            aLeftCtrl.Controls.Add(spanLeftCtrl_1);
+        //    //Left Carousel control, 'Span' there are 2 for each control
+        //    System.Web.UI.HtmlControls.HtmlGenericControl
+        //    spanLeftCtrl_1 = new System.Web.UI.HtmlControls.HtmlGenericControl("SPAN");
+        //    spanLeftCtrl_1.Attributes.Add("class", "glyphicon glyphicon-chevron-left");
+        //    spanLeftCtrl_1.Attributes.Add("aria-hidden", "true");
+        //    //Add span control to 'A'
+        //    aLeftCtrl.Controls.Add(spanLeftCtrl_1);
 
-            //2 span sper carousel control
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            spanLeftCtrl_2 = new System.Web.UI.HtmlControls.HtmlGenericControl("SPAN");
-            spanLeftCtrl_2.Attributes.Add("class", "sr-only");
-            spanLeftCtrl_2.InnerText = "Previous";
+        //    //2 span sper carousel control
+        //    System.Web.UI.HtmlControls.HtmlGenericControl
+        //    spanLeftCtrl_2 = new System.Web.UI.HtmlControls.HtmlGenericControl("SPAN");
+        //    spanLeftCtrl_2.Attributes.Add("class", "sr-only");
+        //    spanLeftCtrl_2.InnerText = "Previous";
 
-            //Add span control to 'A'
-            aLeftCtrl.Controls.Add(spanLeftCtrl_2);
+        //    //Add span control to 'A'
+        //    aLeftCtrl.Controls.Add(spanLeftCtrl_2);
 
-            //Add aleftCtrl to wrapper div
-            Wrapper.Controls.Add(aLeftCtrl);
-            //***** Left Carousel control, end ******
+        //    //Add aleftCtrl to wrapper div
+        //    Wrapper.Controls.Add(aLeftCtrl);
+        //    //***** Left Carousel control, end ******
 
-            //***** Right Carousel control, 'A' *****
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            aRightCtrl = new System.Web.UI.HtmlControls.HtmlGenericControl("A");
-            aRightCtrl.Attributes.Add("class", "right carousel-control");
-            aRightCtrl.Attributes.Add("href", "#MainContent_myCarousel");
-            aRightCtrl.Attributes.Add("role", "button");
-            aRightCtrl.Attributes.Add("data-slide", "next");
+        //    //***** Right Carousel control, 'A' *****
+        //    System.Web.UI.HtmlControls.HtmlGenericControl
+        //    aRightCtrl = new System.Web.UI.HtmlControls.HtmlGenericControl("A");
+        //    aRightCtrl.Attributes.Add("class", "right carousel-control");
+        //    aRightCtrl.Attributes.Add("href", "#MainContent_myCarousel");
+        //    aRightCtrl.Attributes.Add("role", "button");
+        //    aRightCtrl.Attributes.Add("data-slide", "next");
 
-            //Right Carousel control, 'Span' there are 2 for each control
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            spanRightCtrl_1 = new System.Web.UI.HtmlControls.HtmlGenericControl("SPAN");
-            spanRightCtrl_1.Attributes.Add("class", "glyphicon glyphicon-chevron-right");
-            spanRightCtrl_1.Attributes.Add("aria-hidden", "true");
+        //    //Right Carousel control, 'Span' there are 2 for each control
+        //    System.Web.UI.HtmlControls.HtmlGenericControl
+        //    spanRightCtrl_1 = new System.Web.UI.HtmlControls.HtmlGenericControl("SPAN");
+        //    spanRightCtrl_1.Attributes.Add("class", "glyphicon glyphicon-chevron-right");
+        //    spanRightCtrl_1.Attributes.Add("aria-hidden", "true");
 
-            //Add span control to 'A'
-            aRightCtrl.Controls.Add(spanRightCtrl_1);
+        //    //Add span control to 'A'
+        //    aRightCtrl.Controls.Add(spanRightCtrl_1);
 
-            //2 span sper carousel control
-            System.Web.UI.HtmlControls.HtmlGenericControl
-            spanRightCtrl_2 = new System.Web.UI.HtmlControls.HtmlGenericControl("SPAN");
-            spanRightCtrl_2.Attributes.Add("class", "sr-only");
-            spanRightCtrl_2.InnerText = "Next";
+        //    //2 span sper carousel control
+        //    System.Web.UI.HtmlControls.HtmlGenericControl
+        //    spanRightCtrl_2 = new System.Web.UI.HtmlControls.HtmlGenericControl("SPAN");
+        //    spanRightCtrl_2.Attributes.Add("class", "sr-only");
+        //    spanRightCtrl_2.InnerText = "Next";
 
-            //Add span control to 'A'
-            aRightCtrl.Controls.Add(spanRightCtrl_2);
+        //    //Add span control to 'A'
+        //    aRightCtrl.Controls.Add(spanRightCtrl_2);
 
-            //Add aRightCtrl to wrapper div
-            Wrapper.Controls.Add(aRightCtrl);
-            //Wrapper.Controls.Add(aRightCtrl); Added twice?
-            //***** Right Carousel control, end *****
-        }
+        //    //Add aRightCtrl to wrapper div
+        //    Wrapper.Controls.Add(aRightCtrl);
+        //    //Wrapper.Controls.Add(aRightCtrl); Added twice?
+        //    //***** Right Carousel control, end *****
+        //}
 
 
-        public int GetRowCount()
-        {
-            //install later a Try, Catch error routine
-            //Setup data connection, get data fron sql table 'carousel_images
-           SqlConnection cs= new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
-           //SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
-            cs.Open();
-            string str = "SELECT * ";
-            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY beginDate";
+      
 
-            SqlCommand command = new SqlCommand(str, cs);
-            DataTable dt = new DataTable();
-            SqlDataAdapter adp = new SqlDataAdapter(command);
-            adp.Fill(dt);
-            int rowCount=dt.Rows.Count;
-            cs.Close();
-            return rowCount;
-        }
-
-        public static List<string> GetCarouselImageData()
-        {
-            //install later a Try, Catch error routine
-            //Setup data connection, get data fron sql table 'carousel_images
-            // SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
-            SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
-            cs.Open();
-            string str = "SELECT * ";
-            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY beginDate";
-
-            SqlCommand command = new SqlCommand(str, cs);
-            DataTable dt = new DataTable();
-            SqlDataAdapter adp = new SqlDataAdapter(command);
-            adp.Fill(dt);
-            int rowCount = dt.Rows.Count;
-
-            //One row per piece of data i.e. path,picName etc.
-            //Total of 3 rows for each slide./
-            //We'll four rows per image if we use 3 caption lines
-            //So 8 slides = 24 rows of data, 3 captions, 8 slides x 4 =32 rows of data
-            List<string> rowData= new List<string>();
-            for (int i = 0; i < rowCount; i++)
-            {
-                String temp = ""; 
-                temp = dt.Rows[i]["path"].ToString();
-                temp += "/" + dt.Rows[i]["picName"];
-                rowData.Add(temp);
-                temp = "";
-                temp = dt.Rows[i]["lineOneText"].ToString();
-                rowData.Add(temp);
-                temp = "";
-                temp = dt.Rows[i]["lineTwoText"].ToString();
-                rowData.Add(temp);
-                temp = dt.Rows[i]["lineThreeText"].ToString();
-                rowData.Add(temp); //Future use
-            }
-            cs.Close();
-            return rowData;
-        }
+       
     }
 
 }
