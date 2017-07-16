@@ -374,6 +374,13 @@ body {
     margin-left: auto;
     background-color:rgba(0, 21, 64, 1);
     border-radius: 4px;
+    padding-right:6px; /*added 7_15_17 */
+}
+ /* Make footer div shorter and float text left, icons right 7_15_17 */
+ span#footer-date {
+    font-size: 12px;
+    padding: 9px 0 0 6px;
+    float: left;
 }
  /***************** end of footer styling ******************************************/  
  .social-icons {

@@ -156,7 +156,7 @@ namespace upc_website
         public void BuildCarouselImageDiv(int slidesToBuild)
         {
             //This moves us through the array
-            //index 5 = fields= path, lineOneText, lineTwoText, lineThreeText, url
+            //index 6 = fields= path, lineOneText, lineTwoText, lineThreeText, url
 
             int index = 6;
 
