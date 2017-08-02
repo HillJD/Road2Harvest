@@ -10,6 +10,68 @@
   height: auto;
 }
 
+/*Try to force hamburger menu all times 7.27.17*/
+/*.navbar-header {
+  float: none;
+}
+.navbar-toggle {
+  display: block;
+}
+.navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar-nav {
+  float: none!important;
+}
+.navbar-nav>li {
+  float: none;
+}
+.navbar-collapse.collapse.in{
+  display:block !important;
+}*/
+/*Try to force hamburger menu all times*/
+
+
+/*Try to force hamburger menu @1600 px tablets*/
+@media (max-width: 860px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+/*Try to force hamburger menu @1600 px tablets*/
+
+
 /* ------------------- Button state styling ------------------- */
 /* set width color-profile button */
 .btn {
@@ -431,8 +493,9 @@ body {
  }
 }
 
-    @media (max-width: 400px) { /*small mobile dedvices, this image is normally 60px*/
+ /*small mobile dedvices, this image is normally 60px*/
         /*At 60 px interferes with hamburger menu*/
+    @media (max-width: 400px) { 
         .navbar-brand > img {
             display: block;
             height: 46px;
@@ -449,3 +512,16 @@ body {
         }
     }
 /***************** end media query styling ******************************************/  
+
+/********************* location page styling ******************************************/  
+#page-name {
+    margin-top:-145px;
+    border:5px solid rgb(125,85,30); 
+    border-left-width:0;
+    border-right-width:0;
+    width:100%;
+    
+    
+}
+
+/***************** end location page styling ******************************************/
