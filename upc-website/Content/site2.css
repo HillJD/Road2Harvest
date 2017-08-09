@@ -123,12 +123,22 @@
 
 /* ------------------- Page-header styling ------------------- */
 /*Move to top of page*/
-.page-header {
+.mypage-header {
     padding-bottom: 9px;
     margin: 40px 0 20px;
     border-bottom: 1px solid #eee;
+    border-bottom-color:rgba(130,105,30,1);
     margin-top: -140px;
 }
+
+.mypage-header h2 {
+    line-height:.1;
+}
+
+.text-center h3 {
+    line-height:.2;
+}
+
 /* ------------------- End Page-header styling ------------------- */
 
 /* ------------------- Carousel Styling ------------------- */
@@ -232,6 +242,12 @@
  
 /* Carousel Fading slide added 5.19.17 from CodePen*/
 
+#map {
+    height:250px;
+    margin-top:20px;
+    margin-bottom:20px;
+    border:solid thin black;
+}
 
 
 
@@ -329,12 +345,12 @@ body {
 
     /* ------------------- Section Styling - For navbar-brand  ------------------- */
 .navbar {
-    height: 66px;/*changed from 70px*/
+    height: 70px;/*changed from 70px*/
     background-color:rgba(0, 21, 64, 1);
     padding-top: 8px;
     padding-bottom:15px;
-    /*border: 3px solid;*/
-    /*border-bottom-color:rgba(130,105,30,1); Gold bottom border deleted 6.21.17*/
+    border: 3px solid;
+    border-bottom-color:rgba(130,105,30,1);/* Gold */
 
 }
 
@@ -368,8 +384,7 @@ body {
 
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
-    /*background-color:red*/
-}
+   }
 
 
 /*@media screen and (max-width: 768px) {
@@ -417,6 +432,12 @@ body {
 }*/
 .glyphicons {
     display: inline;
+}
+
+.mypage-glythicons {
+
+    margin-top:-140px;
+    float:left;
 }
 
  .gly-paragraph {/*Adjust glythicon vertical spacing first 2 settings below*/

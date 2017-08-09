@@ -11,7 +11,7 @@ namespace upc_website
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            pagename.InnerHtml = "Location";
+            //pagename.InnerHtml = "Location";
         }
     }
 }
