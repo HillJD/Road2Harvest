@@ -249,7 +249,20 @@
     border:solid thin black;
 }
 
+#church_pic {
+    width: 100%;
+    height: auto;
+    border: thin solid black;
+    margin-bottom: 20px;
+}
 
+#bible_iframe {
+    width:100%;
+    height:300px;
+    border:thin solid black;
+} 
+
+}
 
   /*codepen.io/wisnust10/pen/mPjwWv 6/5/17*/
   .carousel-fade .carousel-inner .item {
@@ -438,6 +451,7 @@ body {
 
     margin-top:-140px;
     float:left;
+    font-size:24px;
 }
 
  .gly-paragraph {/*Adjust glythicon vertical spacing first 2 settings below*/
@@ -455,6 +469,7 @@ body {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom:5px;
     background-color:rgba(0, 21, 64, 1);
     border-radius: 4px;
     padding-right:6px; /*added 7_15_17 */

@@ -316,6 +316,7 @@
     <Content Include="images\carousel\9.jpg" />
     <Content Include="images\carousel\default carousel image.jpg" />
     <Content Include="images\carousel\default_carousel.jpg" />
+    <Content Include="images\churchbuilding.jpg" />
     <Content Include="images\dove3.png" />
     <Content Include="images\dove40px.jpg" />
     <Content Include="images\DoveIconTrans.png" />
@@ -339,6 +340,7 @@
     <Content Include="notifications.aspx" />
     <Content Include="panelCtrl.aspx" />
     <Content Include="pastor-info.aspx" />
+    <Content Include="pastors-blog.aspx" />
     <Content Include="pastors-desk.aspx" />
     <Content Include="pic3.aspx" />
     <Content Include="pics.aspx" />
@@ -749,6 +751,13 @@
     </Compile>
     <Compile Include="pastor-info.aspx.designer.cs">
       <DependentUpon>pastor-info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pastors-blog.aspx.cs">
+      <DependentUpon>pastors-blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pastors-blog.aspx.designer.cs">
+      <DependentUpon>pastors-blog.aspx</DependentUpon>
     </Compile>
     <Compile Include="pastors-desk.aspx.cs">
       <DependentUpon>pastors-desk.aspx</DependentUpon>
