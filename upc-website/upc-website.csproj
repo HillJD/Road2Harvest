@@ -331,6 +331,8 @@
     <Content Include="listen.aspx" />
     <Content Include="location.aspx" />
     <Content Include="main.aspx" />
+    <Content Include="map.aspx" />
+    <Content Include="mapmobile.aspx" />
     <Content Include="media.aspx" />
     <Content Include="ModifyCarousel.html" />
     <Content Include="Content\myStyles.css">
@@ -715,6 +717,20 @@
     </Compile>
     <Compile Include="main.aspx.designer.cs">
       <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="map.aspx.cs">
+      <DependentUpon>map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="map.aspx.designer.cs">
+      <DependentUpon>map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mapmobile.aspx.cs">
+      <DependentUpon>mapmobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mapmobile.aspx.designer.cs">
+      <DependentUpon>mapmobile.aspx</DependentUpon>
     </Compile>
     <Compile Include="media.aspx.cs">
       <DependentUpon>media.aspx</DependentUpon>
