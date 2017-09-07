@@ -271,6 +271,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="font-awesome-4.7.0\WebForm1.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-regular.svg" />
     <Content Include="give.aspx" />
@@ -664,6 +665,13 @@
     </Compile>
     <Compile Include="events.aspx.designer.cs">
       <DependentUpon>events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="font-awesome-4.7.0\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="font-awesome-4.7.0\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="give.aspx.cs">
       <DependentUpon>give.aspx</DependentUpon>
