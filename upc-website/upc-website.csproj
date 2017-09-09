@@ -354,7 +354,7 @@
     <Content Include="services.aspx" />
     <Content Include="staff.aspx" />
     <Content Include="styles.css" />
-    <Content Include="upc dove favicon.ico" />
+    <Content Include="upc_dove_favicon.ico" />
     <Content Include="upcoming.aspx" />
     <Content Include="video-tour.aspx" />
     <Content Include="WebForm1.aspx" />
