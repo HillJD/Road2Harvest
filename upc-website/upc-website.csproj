@@ -330,6 +330,7 @@
     <Content Include="images\upc dove and text logo.png" />
     <Content Include="JavascriptObjectsAndMethods.aspx" />
     <Content Include="listen.aspx" />
+    <Content Include="locationtest.aspx" />
     <Content Include="location.aspx" />
     <Content Include="main.aspx" />
     <Content Include="map.aspx" />
@@ -353,6 +354,7 @@
     <Content Include="services.aspx" />
     <Content Include="staff.aspx" />
     <Content Include="styles.css" />
+    <Content Include="upc dove favicon.ico" />
     <Content Include="upcoming.aspx" />
     <Content Include="video-tour.aspx" />
     <Content Include="WebForm1.aspx" />
@@ -438,7 +440,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Default-old.aspx" />
-    <Content Include="favicon.ico" />
+    <Content Include="favicon_upc.ico" />
     <Content Include="Global.asax" />
     <Content Include="sermons.aspx" />
     <Content Include="Site.Master" />
@@ -711,6 +713,13 @@
     </Compile>
     <Compile Include="listen.aspx.designer.cs">
       <DependentUpon>listen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="locationtest.aspx.cs">
+      <DependentUpon>locationtest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="locationtest.aspx.designer.cs">
+      <DependentUpon>locationtest.aspx</DependentUpon>
     </Compile>
     <Compile Include="location.aspx.cs">
       <DependentUpon>location.aspx</DependentUpon>
