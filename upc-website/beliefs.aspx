@@ -6,6 +6,5 @@
         <h1>Union Pentecostal Church</h1>
         <h2>What we believe</h2>
         <p>This is where I'll put Brother Hurst's text</p>
-        <p>This is just a test</p>
     </div>
 </asp:Content>
