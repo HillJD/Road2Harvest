@@ -5,11 +5,11 @@
     <div class="jumbotron text-center">
         <h1>Union Pentecostal Church</h1>
         <h2>Welcome Home!</h2>
-        <p><a href="location.aspx">Location</a></p>
-        <p><a href="History.aspx">History</a></p>
-        <p><a href="beliefs.aspx">What we believe</a></p>
-        <p><a href="help.aspx">Help</a></p>
-        <p><a href="pastor-info.aspx">Pastor Info</a></p>
+        <p><a href="History.aspx">Our Church</a></p>
+        <p><a href="pastor-info.aspx">Our Staff</a></p>
+        <p><a href="Ministries.aspx">Our Ministries / Groups</a></p>
+        <p><a href="help.aspx">Our Mission</a></p>
+        <p><a href="beliefs.aspx">Our Beliefs</a></p>
         <p><a href="video-tour.aspx">Video Tour</a></p>
     </div>
 </asp:Content>
