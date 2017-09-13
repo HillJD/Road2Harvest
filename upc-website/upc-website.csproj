@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -248,6 +249,7 @@
     <Content Include="addcarousel.aspx" />
     <Content Include="addDiv.aspx" />
     <Content Include="archives.aspx" />
+    <Content Include="Ministries.aspx" />
     <Content Include="beliefs.aspx" />
     <Content Include="buildcontrol.aspx" />
     <Content Include="events.aspx" />
@@ -325,9 +327,13 @@
     <Content Include="images\DoveIconTrans2.png" />
     <Content Include="images\gena upc dove white-03.png" />
     <Content Include="images\gena upc dove-01-03.png" />
+    <Content Include="images\live stream.jpg" />
     <Content Include="images\pic1.jpg" />
     <Content Include="images\pic2.jpg" />
     <Content Include="images\pic3.jpg" />
+    <Content Include="images\sermon archive.jpg" />
+    <Content Include="images\sermon stream.jpg" />
+    <Content Include="images\tunein.jpg" />
     <Content Include="images\upc dove and text logo.png" />
     <Content Include="JavascriptObjectsAndMethods.aspx" />
     <Content Include="listen.aspx" />
@@ -605,6 +611,13 @@
     </Compile>
     <Compile Include="archives.aspx.designer.cs">
       <DependentUpon>archives.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ministries.aspx.cs">
+      <DependentUpon>Ministries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ministries.aspx.designer.cs">
+      <DependentUpon>Ministries.aspx</DependentUpon>
     </Compile>
     <Compile Include="beliefs.aspx.cs">
       <DependentUpon>beliefs.aspx</DependentUpon>

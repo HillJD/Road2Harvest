@@ -4,8 +4,13 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron text-center">
-        <h1>Union Pentecostal Church</h1>
-        <p>Live Stream</p>
-        <p>Tune-in Radio</p>
+        
+        
+        <p><asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/images/sermon stream.jpg" Width="90%" /></p>
+        <p><asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" ImageUrl="~/images/sermon archive.jpg" Width="90%" /></p>
+        <p><asp:ImageButton ID="ImageButton3" runat="server" OnClick="ImageButton3_Click" ImageUrl="~/images/tunein.jpg" Width="90%" /> </p>
+         <asp:Label ID="Label1" runat="server" Text="day and time dayton"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Text="Day Check NULL"></asp:Label>
+        <asp:Label ID="Label3" runat="server" Text="Time Check NULL"></asp:Label>
     </div>
 </asp:Content>
