@@ -3,7 +3,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron text-Left">
-        <h1>Union Pentecostal Church</h1>
         <h2>What we believe</h2>
         <p>
             <button type="button" style="text-align:left;" class="btn btn-link"data-toggle="collapse" data-target="#WWB1">We believe in God; Eternal and Almighty</button>

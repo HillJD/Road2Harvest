@@ -2,6 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div>
+        <span class="glyphicons glyphicons-temple-christianity-church"></span>
+    </div>
+    <div class="mypage-header text-center">
+        <h4>Ministries / Groups</h4>
+    </div>
     <div class="jumbotron text-Left">
         <h2>Our Ministries / Groups</h2>
         <p>
