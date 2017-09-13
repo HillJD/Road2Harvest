@@ -11,7 +11,7 @@ namespace upc_website
 {
 
 
-    public partial class calendar
+    public partial class events
     {
     }
 }

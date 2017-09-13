@@ -250,6 +250,7 @@
     <Content Include="archives.aspx" />
     <Content Include="beliefs.aspx" />
     <Content Include="buildcontrol.aspx" />
+    <Content Include="events.aspx" />
     <Content Include="connect.aspx" />
     <Content Include="default.aspx" />
     <Content Include="Contact.aspx" />
@@ -262,7 +263,7 @@
     <Content Include="css-info.txt" />
     <Content Include="default2.ascx" />
     <Content Include="displayData.aspx" />
-    <Content Include="events.aspx" />
+    <Content Include="eventsold.aspx" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.css" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.min.css" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
@@ -354,7 +355,7 @@
     <Content Include="services.aspx" />
     <Content Include="staff.aspx" />
     <Content Include="styles.css" />
-    <Content Include="upc_dove_favicon.ico" />
+    <Content Include="upc_dove_favicon.png" />
     <Content Include="upcoming.aspx" />
     <Content Include="video-tour.aspx" />
     <Content Include="WebForm1.aspx" />
@@ -619,6 +620,13 @@
     <Compile Include="buildcontrol.aspx.designer.cs">
       <DependentUpon>buildcontrol.aspx</DependentUpon>
     </Compile>
+    <Compile Include="events.aspx.cs">
+      <DependentUpon>events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="events.aspx.designer.cs">
+      <DependentUpon>events.aspx</DependentUpon>
+    </Compile>
     <Compile Include="connect.aspx.cs">
       <DependentUpon>connect.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -661,12 +669,12 @@
     <Compile Include="displayData.aspx.designer.cs">
       <DependentUpon>displayData.aspx</DependentUpon>
     </Compile>
-    <Compile Include="events.aspx.cs">
-      <DependentUpon>events.aspx</DependentUpon>
+    <Compile Include="eventsold.aspx.cs">
+      <DependentUpon>eventsold.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="events.aspx.designer.cs">
-      <DependentUpon>events.aspx</DependentUpon>
+    <Compile Include="eventsold.aspx.designer.cs">
+      <DependentUpon>eventsold.aspx</DependentUpon>
     </Compile>
     <Compile Include="font-awesome-4.7.0\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

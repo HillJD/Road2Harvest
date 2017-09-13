@@ -241,6 +241,10 @@
    /*}*/
  
 /* Carousel Fading slide added 5.19.17 from CodePen*/
+#calendar {
+position:relative;
+top:-130px;
+}
 
 #map {
     height:500px;
