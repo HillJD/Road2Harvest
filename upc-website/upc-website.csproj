@@ -324,9 +324,13 @@
     <Content Include="images\DoveIconTrans2.png" />
     <Content Include="images\gena upc dove white-03.png" />
     <Content Include="images\gena upc dove-01-03.png" />
+    <Content Include="images\live stream.jpg" />
     <Content Include="images\pic1.jpg" />
     <Content Include="images\pic2.jpg" />
     <Content Include="images\pic3.jpg" />
+    <Content Include="images\sermon archive.jpg" />
+    <Content Include="images\sermon stream.jpg" />
+    <Content Include="images\tunein.jpg" />
     <Content Include="images\upc dove and text logo.png" />
     <Content Include="JavascriptObjectsAndMethods.aspx" />
     <Content Include="listen.aspx" />
