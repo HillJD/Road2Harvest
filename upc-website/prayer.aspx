@@ -7,7 +7,7 @@
         <h2>Prayer</h2>
     <p>Share a prayer request</p>
     <p><a href="help.aspx">Help</a></p>
-    <p><a href="resources.aspx">Resurces</a></p>
+    <p><a href="resources.aspx">Resources</a></p>
     <p><a href="services.aspx">Service Times</a></p>
     </div>
 </asp:Content>

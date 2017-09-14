@@ -2,9 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="page-header text-center">
-        <h2>History</h2>
-    </div>
+<div>
+    <span class="glyphicons glyphicons-calendar mypage-glythicons"></span>
+</div>
+<div class="mypage-header text-center">
+    <h4><b>History</b></h4>
+</div>
     <p>In the 1920’s, Laura Shank was given a vision of a harvest being reaped in a church that she was to 
         start. Though she could not read and was seemingly alone in her hunger for the Holy Spirit, she 
         followed God’s leading. She was moved to begin a children’s Sunday school on her front porch. They 

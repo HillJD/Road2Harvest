@@ -7,7 +7,7 @@
         <span class="glyphicons glyphicons-map-marker mypage-glythicons"></span>
     </div>
     <div class="mypage-header text-center">
-        <h4>Location</h4>
+        <h4><b>Location</b></h4>
     </div>
 
     <div class="text-center">
