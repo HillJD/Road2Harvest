@@ -9,14 +9,15 @@
     <div class="mypage-header text-center">
         <h4>Resources</h4>
     </div>
-    <iframe id="bible_iframe" src="https://www.bible.com"></iframe>
+    
 
 
     <div class="text-center">
         <h4>Giving</h4>
         <h4>Streaming Audio</h4>
-        <h4><a href="pastors-blog.aspx">Pastors Blog</a></h4>
+        <h4><a runat="server" href="pastors-blog.aspx">Pastors Blog</a></h4>
         <h4>Links</h4>
+        <h4><a runat="server" href="~/bible">YouVersion Bible</a></h4>
     </div>
 
 </asp:Content>

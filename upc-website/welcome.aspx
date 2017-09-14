@@ -6,7 +6,7 @@
     <span class="glyphicons glyphicons-temple-christianity-church mypage-glythicons"></span>
 </div>
 <div class="mypage-header text-center">
-    <h4><b>Events</b></h4>
+    <h4><b>Welcome</b></h4>
 </div>
 
     <div class="jumbotron text-center">

@@ -249,6 +249,7 @@
     <Content Include="addcarousel.aspx" />
     <Content Include="addDiv.aspx" />
     <Content Include="archives.aspx" />
+    <Content Include="bible.aspx" />
     <Content Include="Ministries.aspx" />
     <Content Include="beliefs.aspx" />
     <Content Include="buildcontrol.aspx" />
@@ -611,6 +612,13 @@
     </Compile>
     <Compile Include="archives.aspx.designer.cs">
       <DependentUpon>archives.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bible.aspx.cs">
+      <DependentUpon>bible.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bible.aspx.designer.cs">
+      <DependentUpon>bible.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ministries.aspx.cs">
       <DependentUpon>Ministries.aspx</DependentUpon>
