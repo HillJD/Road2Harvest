@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron text-center">
-        <h1>Union Pentecostal Church</h1>
+
         <h2>Pastor Bio</h2>
         <p><a href="staff.aspx">Staff Bios</a></p>
     </div>

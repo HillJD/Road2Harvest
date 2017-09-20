@@ -11,7 +11,7 @@ namespace upc_website
 {
 
 
-    public partial class location
+    public partial class location2
     {
     }
 }

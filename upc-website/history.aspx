@@ -1,24 +1,31 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="history.aspx.cs" Inherits="upc_website.history" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Church.aspx.cs" Inherits="upc_website.Church" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="jumbotron text-center">
-        <h1>Union Pentecostal Church</h1>
-        <h2>History</h2>
-    </div>
-        <p class="text-center"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Read about Pastor Hurst</button></p>
-    <div id="demo" class="collapse lead">
-Through students from our church, board members met an instructor at Ozark Bible Institute. That meeting resulted in that instructor,
-Clifford Hurst, becoming acquainted with Union Pentecostal Church. In  Brother and Sister Hurst
-Brother and Sister Hurst July of 1991, Clifford Hurst became the pastor of our church. He and his
-wife Sandra had two children, Ashlynn and Micah, at that time. One year after Bro. Hurst became pastor,
-Hannah was born. A fourth child, Andrew, was born in September 2001. In 2011, Bro. Hurst  has started his
-twentieth year of service at Union Road. Clifford Hurst, a native Oklahoman, began preaching at the age of 17 in 1979.
-  After graduating from high school, he did some evangelizing before entering Bible School.  
-After graduating from Bible School in 1984, he taught seven years at Ozark Bible Institute. 
-That first year of teaching, he married Sandra Barnes, a daughter of missionaries who was a student at OBI 
-at the time. While teaching, he completed seminary and with his wife evangelized each summer.  
-In 1987 he graduated from seminary. When at OBI, he also served as Supervisor of the Men's Dorm and for two years as Principal of Ozark Christian Academy.  
+<div>
+    <span class="glyphicons glyphicons-temple-christianity-church mypage-glythicons"></span>
 </div>
-  
+    <div class="mypage-header text-center">
+        <h4><b>History</b></h4>
+    </div>
+
+
+<div class="jumbotron text-left">
+
+    <h4>In the 1920’s, Laura Shank was given a vision of a harvest being reaped in a church that she was to 
+        start. Though she could not read and was seemingly alone in her hunger for the Holy Spirit, she 
+        followed God’s leading. She was moved to begin a children’s Sunday school on her front porch. They 
+        soon outgrew the porch as not only children but parents attended!  They moved into their first 
+        building known as Crown Avenue Church in 1926.  Continuing to grow, they built a new church on 
+        Mia Avenue in 1952.  In 1954, Vearl Vaughn became the new pastor due to Sister Shank’s failing 
+        health.  Brother Vaughn had been saved at Crown Avenue and had assisted Sister Shank in the church.  
+        The still growing congregation relocated to the current location, Union Road. Brother Vaughn became 
+        a leader in a community of churches in the Miami Valley and the congregation at Union Road grew to 
+        350 under his guidance. In 1985, Brother Vaughn’s health declined and Derwin Ward became pastor and 
+        blessed the congregation with his musical talent as well as preaching of the Word. Five years later, 
+        he resigned. In 1991 Rev. Clifford Hurst, an instructor at Ozark Bible Institute was called by God 
+        to carry on the vision, strengthening the congregation and reinforcing Biblical principles. The 
+        experiences, teachings, and Biblical living of classic Pentecost are still preserved in what is 
+        now Union Pentecostal Church.</h4>
+</div>
 </asp:Content>

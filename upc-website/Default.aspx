@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="upc_website.addControlsFirst_Attempt" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="upc_website.Carousel" %>
 
 
 <asp:Content ID="ContentHead" ContentPlaceHolderID="headContent" runat="server">
@@ -22,28 +22,28 @@
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-            <a href="service"><span class="glyphicons glyphicons-clock"></span></a>
+            <a href="services.aspx"><span class="glyphicons glyphicons-clock"></span></a>
             <a href="services.aspx"><p class="gly-paragraph">Services</p></a>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-            <a href="welcome"><span class="glyphicons glyphicons-temple-christianity-church"></span></a>
-            <a href="welcome"><p class="gly-paragraph">Welcome</p></a>
+            <a href="welcome.aspx"><span class="glyphicons glyphicons-temple-christianity-church"></span></a>
+            <a href="welcome.aspx"><p class="gly-paragraph">Welcome</p></a>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
             <a href="listen.aspx"><span class="glyphicons glyphicons-headphones"></span></a>
-            <a href="listen.aspx"><p class="gly-paragraph">Live</p></a>
+            <a href="listen.aspx"><p class="gly-paragraph">Listen</p></a>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-            <a href="connection.aspx"><span class="glyphicons glyphicons-group"></span></a>
+            <a href="connect.aspx"><span class="glyphicons glyphicons-group"></span></a>
             <a href="connect.aspx"><p class="gly-paragraph">Connection</p></a>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
             <a href="events.aspx"><span class="glyphicons glyphicons-calendar"></span></a>
-            <a href="upcoming.aspx"><p class="gly-paragraph">Events</p></a>
+            <a href="events.aspx"><p class="gly-paragraph">Events</p></a>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
             <a href="prayer.aspx"><span class="glyphicons glyphicons-envelope"></span></a>
