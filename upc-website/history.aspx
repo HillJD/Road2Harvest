@@ -1,13 +1,18 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="history.aspx.cs" Inherits="upc_website.history" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Church.aspx.cs" Inherits="upc_website.Church" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <div>
-    <span class="glyphicons glyphicons-calendar mypage-glythicons"></span>
+    <span class="glyphicons glyphicons-temple-christianity-church mypage-glythicons"></span>
 </div>
-<div class="mypage-header text-left">
-</div>
-    <p>In the 1920’s, Laura Shank was given a vision of a harvest being reaped in a church that she was to 
+    <div class="mypage-header text-center">
+        <h4><b>History</b></h4>
+    </div>
+
+
+<div class="jumbotron text-left">
+
+    <h4>In the 1920’s, Laura Shank was given a vision of a harvest being reaped in a church that she was to 
         start. Though she could not read and was seemingly alone in her hunger for the Holy Spirit, she 
         followed God’s leading. She was moved to begin a children’s Sunday school on her front porch. They 
         soon outgrew the porch as not only children but parents attended!  They moved into their first 
@@ -21,5 +26,6 @@
         he resigned. In 1991 Rev. Clifford Hurst, an instructor at Ozark Bible Institute was called by God 
         to carry on the vision, strengthening the congregation and reinforcing Biblical principles. The 
         experiences, teachings, and Biblical living of classic Pentecost are still preserved in what is 
-        now Union Pentecostal Church.</p>
+        now Union Pentecostal Church.</h4>
+</div>
 </asp:Content>
