@@ -11,7 +11,7 @@
 
     <div class="jumbotron text-center">
         <h2>Welcome Home!</h2>
-        <p><a href="History.aspx">Our Church</a></p>
+        <p><a href="Church.aspx">Our Church</a></p>
         <p><a href="pastor-info.aspx">Our Staff</a></p>
         <p><a href="Ministries.aspx">Our Ministries / Groups</a></p>
         <p><a href="help.aspx">Our Mission</a></p>
