@@ -13,8 +13,13 @@ namespace upc_website
         {
             bool DayCheck = false;
             bool TimeCheck = false;
-            String Day = DateTime.Now.DayOfWeek.ToString();
-            String Time =DateTime.Now.TimeOfDay.ToString();
+            
+            TimeSpan DaytonOffset = new TimeSpan(4, 0, 0);
+            DateTimeOffset DaytonTime = new DateTimeOffset(DateTime.UtcNow);
+            DaytonTime = DaytonTime.Subtract(DaytonOffset);
+            String Day = DaytonTime.DayOfWeek.ToString();
+            String Time = DaytonTime.TimeOfDay.ToString();
+
             TimeSpan SundayStart1 = new TimeSpan(11, 00, 00);
             TimeSpan SundayStart2 = new TimeSpan(18, 00, 00);
             TimeSpan SundayEnd1 = new TimeSpan(12, 15, 00);
@@ -23,17 +28,18 @@ namespace upc_website
             TimeSpan WednesdayEnd = new TimeSpan(20, 30, 00);
 
             Label1.Text = Day + " " + Time;
+
             if (Day == "Wednesday")
             {
                 DayCheck = true;
-                if (DateTime.Now.TimeOfDay >= WednesdayStart && DateTime.Now.TimeOfDay <= WednesdayEnd) TimeCheck = true;
+                if (DaytonTime.TimeOfDay >= WednesdayStart && DaytonTime.TimeOfDay <= WednesdayEnd) TimeCheck = true;
                 
             }
             else if (Day == "Sunday")
             {
                 DayCheck = true;
-                if (DateTime.Now.TimeOfDay >= SundayStart1 && DateTime.Now.TimeOfDay <= SundayEnd1) TimeCheck = true;
-                else if (DateTime.Now.TimeOfDay >= SundayStart2 && DateTime.Now.TimeOfDay <= SundayEnd2) TimeCheck = true;
+                if (DaytonTime.TimeOfDay >= SundayStart1 && DaytonTime.TimeOfDay <= SundayEnd1) TimeCheck = true;
+                else if (DaytonTime.TimeOfDay >= SundayStart2 && DaytonTime.TimeOfDay <= SundayEnd2) TimeCheck = true;
             }
 
             
