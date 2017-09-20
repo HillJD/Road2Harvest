@@ -251,6 +251,7 @@
     <Content Include="archives.aspx" />
     <Content Include="bible.aspx" />
     <Content Include="Church.aspx" />
+    <Content Include="dove_in_circle_favicon.png" />
     <Content Include="Ministries.aspx" />
     <Content Include="beliefs.aspx" />
     <Content Include="buildcontrol.aspx" />
