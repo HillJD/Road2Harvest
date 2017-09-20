@@ -26,7 +26,7 @@ namespace upc_website
         protected void Page_Load(object sender, EventArgs e)
         {
             int SlidesToAdd = GetRowCount(); //i.e. # of pictures slides to add
-            BuildCarouselDiv("1000");//Slide display time
+            BuildCarouselDiv("4000");//Slide display time
             BuildCarouselOrderedList();
             BuildCarouselListItems(SlidesToAdd);
             BuildCarouselWrapperDiv();
@@ -45,7 +45,7 @@ namespace upc_website
         public void BuildCarouselDiv(string slideDelay)
         {
             myCarousel.ID = "myCarousel";
-            myCarousel.Attributes.Add("class", "fade-carousel carousel slide");
+            myCarousel.Attributes.Add("class", "carousel-fader carousel slide");
             myCarousel.Attributes.Add("data-ride", "carousel");
             myCarousel.Attributes.Add("data-interval", slideDelay);
             ControlContainer.Controls.Add(myCarousel);
