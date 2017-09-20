@@ -7,7 +7,7 @@
         <span class="glyphicons glyphicons-map-marker mypage-glythicons"></span>
     </div>
     <div class="mypage-header text-center">
-        <h4><b>Help and Hope</b></h4>
+        <h4><b>Hope and Help</b></h4>
     </div>
 
     <div class="jumbotron text-left">
