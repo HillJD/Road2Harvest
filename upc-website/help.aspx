@@ -2,8 +2,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    
+    <div>
+        <span class="glyphicons glyphicons-map-marker mypage-glythicons"></span>
+    </div>
+    <div class="mypage-header text-center">
+        <h4><b>Help and Hope</b></h4>
+    </div>
+
     <div class="jumbotron text-left">
-        <h2>Help and Hope</h2>
         <p>
             <button type="button" style="text-align:left;" class="btn btn-link"data-toggle="collapse" data-target="#Help0">Hope</button>
             <div id="Help0" class="collapse">
@@ -46,7 +53,7 @@
         <p>
             <button type="button" style="text-align:left;" class="btn btn-link"data-toggle="collapse" data-target="#Help2">How can I be saved?</button>
             <div id="Help2" class="collapse">
-                You'll like it.  It feels so good to be free.
+                Find the Roman road.  Turn right.  Keep going straight.
             </div>
         </p>
         <p>
