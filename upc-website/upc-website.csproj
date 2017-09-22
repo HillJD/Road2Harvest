@@ -280,7 +280,7 @@
     <Content Include="font-awesome-4.7.0\WebForm1.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-regular.svg" />
-    <Content Include="give.aspx" />
+    <Content Include="Give.aspx" />
     <Content Include="glyphicons\glyphicons.css" />
     <Content Include="help.aspx" />
     <Content Include="history.aspx" />
@@ -713,12 +713,12 @@
     <Compile Include="font-awesome-4.7.0\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="give.aspx.cs">
-      <DependentUpon>give.aspx</DependentUpon>
+    <Compile Include="Give.aspx.cs">
+      <DependentUpon>Give.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="give.aspx.designer.cs">
-      <DependentUpon>give.aspx</DependentUpon>
+    <Compile Include="Give.aspx.designer.cs">
+      <DependentUpon>Give.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
