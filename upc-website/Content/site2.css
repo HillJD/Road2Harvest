@@ -74,6 +74,8 @@
 
 /* ------------------- Button state styling ------------------- */
 /* set width color-profile button */
+ 
+
 .btn {
     display: inline-block;
     padding: 6px 12px;
@@ -96,6 +98,11 @@
     border-radius: 4px;
     width: 80%;
 }
+.btn-belief {
+       white-space:normal;
+       width:100%;
+       text-align:left;
+    }
 .btn-info {
     color: #fff;
      background-color:rgba(0, 21, 64, 1);
@@ -545,6 +552,8 @@ body {
             height: 46px;
             margin-bottom: -20px;
         }
+
+   
 
         .navbar-brand {
             float: left;
