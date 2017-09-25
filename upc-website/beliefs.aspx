@@ -68,7 +68,7 @@
                 and of the Holy Ghost. (Matt. 28:19; Acts. 8:28,29).</span></p>
             </div>
         
-            <button type="button" class="btn-belief btn btn-link"data-toggle="collapse" data-target="#WWB10"><p> believe in the Divine Church</p></button>
+            <button type="button" class="btn-belief btn btn-link"data-toggle="collapse" data-target="#WWB10"><p>We believe in the Divine Church</p></button>
             <div id="WWB10" class="collapse">
                 <p><span style="color:red" class="text-left small">We believe in the Divine Church, built by Jesus Christ, that it embraces and includes 
                 everyone who is born into the household of faith. 
