@@ -2,14 +2,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+         
     <div>
-        <span class="glyphicons glyphicons-temple-christianity-church"></span>
+        <span class="glyphicons glyphicons-temple-christianity-church mypage-glythicons"></span>
     </div>
     <div class="mypage-header text-center">
-        <h4>Ministries / Groups</h4>
+        <h4><b>Ministries / Groups</b></h4>
     </div>
-    <div class="jumbotron text-Left">
-        <h2>Our Ministries / Groups</h2>
+
+    <div class="jumbotron text-left">
+
         <p>
             <button type="button" style="text-align:left;" class="btn btn-link"data-toggle="collapse" data-target="#Min1">Lively, Spirit-led worship on Sundays and Wednesdays</button>
             <div id="Min1" class="collapse">

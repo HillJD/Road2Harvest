@@ -250,6 +250,8 @@
     <Content Include="addDiv.aspx" />
     <Content Include="archives.aspx" />
     <Content Include="bible.aspx" />
+    <Content Include="Church.aspx" />
+    <Content Include="dove_in_circle_favicon.png" />
     <Content Include="Ministries.aspx" />
     <Content Include="beliefs.aspx" />
     <Content Include="buildcontrol.aspx" />
@@ -278,7 +280,7 @@
     <Content Include="font-awesome-4.7.0\WebForm1.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-regular.svg" />
-    <Content Include="give.aspx" />
+    <Content Include="Give.aspx" />
     <Content Include="glyphicons\glyphicons.css" />
     <Content Include="help.aspx" />
     <Content Include="history.aspx" />
@@ -620,6 +622,13 @@
     <Compile Include="bible.aspx.designer.cs">
       <DependentUpon>bible.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Church.aspx.cs">
+      <DependentUpon>Church.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Church.aspx.designer.cs">
+      <DependentUpon>Church.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Ministries.aspx.cs">
       <DependentUpon>Ministries.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -704,12 +713,12 @@
     <Compile Include="font-awesome-4.7.0\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="give.aspx.cs">
-      <DependentUpon>give.aspx</DependentUpon>
+    <Compile Include="Give.aspx.cs">
+      <DependentUpon>Give.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="give.aspx.designer.cs">
-      <DependentUpon>give.aspx</DependentUpon>
+    <Compile Include="Give.aspx.designer.cs">
+      <DependentUpon>Give.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
