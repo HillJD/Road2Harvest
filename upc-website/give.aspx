@@ -32,10 +32,8 @@
   </div>
 
 
-
-
   <div>
-  <p><asp:ImageButton ID="ImageButton0" runat="server" OnClick="ImageButton0_Click" ImageUrl="~/images/easytithe-button.png" Width="100%" /></p>
+  <p><asp:ImageButton ID="ImageButton0" runat="server" OnClick="ImageButton0_Click" ImageUrl="~/images/ET1.png" Width="100%" /></p>
   </div>
 </div>
 </asp:Content>
