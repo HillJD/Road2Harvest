@@ -12,6 +12,11 @@
 
     <div class="jumbotron text-left">
 
+<div class="container"><div class="col-md-4" style="padding-left: 0px;  padding-right: 0px;">
+        <img src="images/Worship00.jpg" class="img-responsive">
+    </div>
+</div>
+
 <p><a href="History.aspx">History</a></p>
 
 </div>
