@@ -252,6 +252,11 @@
     <Content Include="bible.aspx" />
     <Content Include="Church.aspx" />
     <Content Include="dove_in_circle_favicon.png" />
+    <Content Include="images\ET1.png" />
+    <Content Include="images\McK_Crop.jpg" />
+    <Content Include="images\Ruth00.jpg" />
+    <Content Include="images\Worship00.JPG" />
+    <Content Include="images\younghurst.jpg" />
     <Content Include="Ministries.aspx" />
     <Content Include="beliefs.aspx" />
     <Content Include="buildcontrol.aspx" />
