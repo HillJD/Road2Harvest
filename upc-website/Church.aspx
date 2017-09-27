@@ -23,6 +23,7 @@
     </div>
 </div>
 
+<p><a href="services.aspx">Service Times</a></p>
 <p><a href="History.aspx">History</a></p>
 
 </div>
