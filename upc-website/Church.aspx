@@ -12,11 +12,9 @@
 
     <div class="jumbotron text-left">
 
-    <h4>Union Pentecostal Church is an independent, full gospel Christian Church.  Our beliefs are classical
-        trinitarian pentecostal.  Our worship is demonstrative without being "charismatic".  We favor hymns but
-        enjoy many contemporary songs.  One of our most treasured and commonly cited traits is a unique sense
-        of community.  We strive to be a well-balanced family of believers helping one another on this journey
-        of faith.
+    <h4>Union Pentecostal Church is a classical, trinitarian, full gospel church.  Our worship is demonstrative
+        without being "charismatic".  We favor hymns but enjoy many contemporary songs.  We have a wonderful sense of
+        community.  We strive to be a well-balanced family of believers helping one another on this journey of faith.
     </h4>
 
 
