@@ -9,7 +9,6 @@
     <h4><b>Beliefs</b></h4>
 </div>
     <div class="jumbotron text-Left">
-        <h2 class="text-center">What we believe.</h2>
         
             <button type="button" class="btn-belief btn-link" data-toggle="collapse" data-target="#WWB1"><p>We believe in God; Eternal and Almighty</p></button>
             <div id="WWB1" class="collapse">

@@ -8,7 +8,6 @@
 <div class="mypage-header text-center">
     <h4><b>Welcome</b></h4>
 </div>
-
     <div class="jumbotron text-center">
         <h2>Welcome Home!</h2>
         <p><a href="Church.aspx">Our Church</a></p>

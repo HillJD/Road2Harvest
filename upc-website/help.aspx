@@ -57,8 +57,8 @@
             </div>
         </p>
         <p>
-            <button type="button" style="text-align:left;" class="btn btn-link"data-toggle="collapse" data-target="#Help2">How can I have assurance?</button>
-            <div id="Help2" class="collapse">
+            <button type="button" style="text-align:left;" class="btn btn-link"data-toggle="collapse" data-target="#Help3">How can I have assurance?</button>
+            <div id="Help3" class="collapse">
                 Blessed assurance.
             </div>
         </p>
