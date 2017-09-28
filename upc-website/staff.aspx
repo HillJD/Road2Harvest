@@ -12,11 +12,11 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-xs-4 col-sm-5 col-lg-6" style="padding-top: 2px;  padding-bottom: 2px;">
-        <img src="images/younghurst.jpg" class="img-responsive">
+        <img src="images/younghurst.jpg" style="border:2px #666 solid;height:215px;" class="img-circle">
     </div>
     <div class="col-xs-8 col-sm-7 col-lg-6" style="text-align:left;">
       <p>
-        <button type="button" style="text-align:left;" class="btn btn-link"data-toggle="collapse" data-target="#Staff00">Pastor Clifford Hurst</button>
+        <button type="button" style="text-align:left;" class="btn-belief btn btn-link"data-toggle="collapse" data-target="#Staff00">Pastor Clifford Hurst</button>
           <div id="Staff00" class="collapse">
             Brief biography to follow.
           </div>
@@ -25,11 +25,11 @@
    </div>
   <div class="row">
     <div class="col-xs-4 col-sm-5 col-lg-6" style="padding-top: 2px;  padding-bottom: 2px;">
-        <img src="images/McK_Crop.jpg" class="img-responsive">
+        <img src="images/McK_Crop.jpg" style="border:2px #666 solid; height:215px;" class="img-circle">
     </div>
     <div class="col-xs-8 col-sm-7 col-lg-6" style="text-align:left;">
       <p>
-        <button type="button" style="text-align:left;" class="btn btn-link"data-toggle="collapse" data-target="#Staff01">Youth Pastor Bryan McKelvey</button>
+        <button type="button" style="text-align:left;" class="btn-belief btn btn-link"data-toggle="collapse" data-target="#Staff01">Youth Pastor Bryan McKelvey</button>
           <div id="Staff01" class="collapse">
             Brief biography to follow.
           </div>
@@ -38,11 +38,11 @@
   </div>
   <div class="row">
     <div class="col-xs-4 col-sm-5 col-lg-6" style="padding-top: 2px;  padding-bottom: 2px;">
-        <img src="images/Ruth00.jpg" class="img-responsive">
+        <img src="images/Ruth00.jpg" style="border:2px #666 solid;height:215px;" class="img-circle">
     </div>
     <div class="col-xs-8 col-sm-7 col-lg-6" style="text-align:left;">
       <p>
-        <button type="button" style="text-align:left;" class="btn btn-link"data-toggle="collapse" data-target="#Staff02">Children's Ministries Leader Ruth Maggard</button>
+        <button type="button" style="text-align:left;" class="btn-belief btn btn-link"data-toggle="collapse" data-target="#Staff02">Children's Ministries Leader Ruth Maggard</button>
           <div id="Staff02" class="collapse">
             Brief biography to follow.
           </div>

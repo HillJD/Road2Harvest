@@ -11,7 +11,7 @@
     </div>
 
 <div class="jumbotron text-Left" style="text-align:left">
-  <h2 class="text-center">What we believe about giving</h2>
+  <h2 class="text-center">What we believe <br /> about giving</h2>
   <div class="row">      
     <button type="button" class="btn-belief btn-link" data-toggle="collapse" data-target="#ET0" style="text-align:left "padding-left: 2px"><p>Why give?</p></button>
     <div id="ET0" class="collapse">
