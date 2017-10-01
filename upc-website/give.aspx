@@ -11,29 +11,9 @@
     </div>
 
 <div class="jumbotron text-Left" style="text-align:left">
-  <h2 class="text-center">What we believe <br /> about giving</h2>
-  <div class="row">      
-    <button type="button" class="btn-belief btn-link" data-toggle="collapse" data-target="#ET0" style="text-align:left "padding-left: 2px"><p>Why give?</p></button>
-    <div id="ET0" class="collapse">
-      <p><span style="color:black" class="text-left small">Abraham, Moses, Malachi, etc...</span></p>
-    </div>
-  </div>     
-  <div class="row">
-    <button type="button" class="btn-belief btn btn-link" data-toggle="collapse" data-target="#ET1" style="text-align:left "padding-left: 2px"><p>How much to give</p></button>
-    <div id="ET1" class="collapse">
-      <p><span style="color:black" class="text-left small">Tithe, but you should know that this method adds 3% overhead.</span></p>
-    </div>
-  </div>
-  <div class="row">      
-    <button type="button" class="btn-belief btn btn-link" data-toggle="collapse" data-target="#ET2" style="text-align:left "padding-left: 2px"><p>We don't need your money</p></button>
-    <div id="ET2" class="collapse">
-      <p><span style="color:black" class="text-left small">We want you to be blessed by taking God at His Word and returning to Him that which is already HIS.</span></p>
-    </div>
-  </div>
-
-
   <div>
   <p><asp:ImageButton ID="ImageButton0" runat="server" OnClick="ImageButton0_Click" ImageUrl="~/images/ET1.png" Width="100%" /></p>
   </div>
+  <a href="https://www.easytithe.com/dl/?uid=Unio1101162" target="_blank"><img src="~/images/ET1.png"></a>
 </div>
 </asp:Content>

@@ -364,6 +364,7 @@
     <Content Include="pic3.aspx" />
     <Content Include="pics.aspx" />
     <Content Include="pics2.aspx" />
+    <Content Include="PrayerReq.aspx" />
     <Content Include="prayer.aspx" />
     <Content Include="resources.aspx" />
     <Content Include="services.aspx" />
@@ -862,6 +863,13 @@
     </Compile>
     <Compile Include="pics2.aspx.designer.cs">
       <DependentUpon>pics2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrayerReq.aspx.cs">
+      <DependentUpon>PrayerReq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrayerReq.aspx.designer.cs">
+      <DependentUpon>PrayerReq.aspx</DependentUpon>
     </Compile>
     <Compile Include="prayer.aspx.cs">
       <DependentUpon>prayer.aspx</DependentUpon>
