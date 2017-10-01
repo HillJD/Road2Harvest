@@ -6,7 +6,7 @@
     <span class="glyphicons glyphicons-envelope mypage-glythicons"></span>
 </div>
 <div class="mypage-header text-center">
-    <h4><b>Prayer</b></h4>
+    <h4><b>Prayer Requests</b></h4>
 </div>
 <div class="jumbotron text-center">
         
