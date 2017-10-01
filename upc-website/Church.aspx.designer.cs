@@ -10,6 +10,6 @@
 namespace upc_website {
     
     
-    public partial class history {
+    public partial class Church {
     }
 }
