@@ -18,9 +18,9 @@
         <h4><a runat="server" href="listen.aspx">Streaming Audio</a></h4>
         <h4><a runat="server" href="pastors-blog.aspx">Pastors Blog</a></h4>
         <h4><a runat="server" href="~/bible">YouVersion Bible</a></h4>
-        <h4>Rev. Joe Serta</h4>
-        <h4>RZIM</h4>
-        <h4>Sharon's podcast lady</h4>
+        <h4>Rev. Joe Serta - Spanish Pentecostalism</h4>
+        <h4>RZIM - Christian Apologetics</h4>
+        <h4>Nancy DeMoss Wolgemuth - Revive Our Hearts</h4>
     </div>
     <div>
         <img id="church_pic" src="images/UPC_CM.jpg" /> 
