@@ -10,8 +10,9 @@
 </div>
 
 <div  class="jumbotron text-center" >
-    <p>Sunday   11am & 6pm
-    <p>Wednesday   7:30pm</p>
+    <p>Sunday School    10am</p>
+    <p>Sunday Services  11am & 6pm</p>
+    <p>Wednesday Service    7:30pm</p>
     <br />
     
     <p><a href="listen.aspx">Listen</a></p>
