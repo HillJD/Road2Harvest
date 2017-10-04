@@ -7,7 +7,7 @@
         <span class="glyphicons glyphicons-map-marker mypage-glythicons"></span>
     </div>
     <div class="mypage-header text-center">
-        <h4><b>Hope and Help</b></h4>
+        <h4><b>Help and Hope</b></h4>
     </div>
 
     <div class="jumbotron text-left">
@@ -57,8 +57,8 @@
             </div>
         </p>
         <p>
-            <button type="button" style="text-align:left;" class="btn btn-link"data-toggle="collapse" data-target="#Help2">How can I have assurance?</button>
-            <div id="Help2" class="collapse">
+            <button type="button" style="text-align:left;" class="btn btn-link"data-toggle="collapse" data-target="#Help3">How can I have assurance?</button>
+            <div id="Help3" class="collapse">
                 Blessed assurance.
             </div>
         </p>

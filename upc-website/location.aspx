@@ -10,7 +10,7 @@
         <h4><b>Location</b></h4>
     </div>
 
-    <div class="text-center">
+    <div class="jumbotron text-center">
 
         <h4>Union Pentecostal Church</h4>
         <h5>1101 North Union Road</h5>

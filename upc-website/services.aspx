@@ -6,16 +6,28 @@
     <span class="glyphicons glyphicons-clock mypage-glythicons"></span>
 </div>
 <div class="mypage-header text-center">
-    <h4><b>Services</b></h4>
+    <h4><b>Service Times</b></h4>
 </div>
 
 <div  class="jumbotron text-center" >
-        <h1>Union Pentecostal Church</h1>
-        <h2>Services</h2>
-    <p>Sunday 11am & 6pm
-    <p>Wednesday 7:30pm</p>
+    <p>Sunday School    10am</p>
+    <p>Sunday Services  11am & 6pm</p>
+    <p>Wednesday Service    7:30pm</p>
     <br />
-    <p>Special events</p>
-    <p><a href="upcoming.aspx">Upcoming Events</a></p>
+    
+    <p><a href="listen.aspx">Listen</a></p>
+
+    <p><a href="ministries.aspx">Other Ministries</a></p>
+
+
+    <div class="text-center">
+
+        <h3>Union Pentecostal Church</h3>
+        <h4>1101 North Union Road</h4>
+        <h4>Dayton, Oh 45417</h4>
+        <h5>(937) 555 - 5555</h5>
+
+        <p><a href="location.aspx">Location</a></p>
+    </div>
 </div>
 </asp:Content>
