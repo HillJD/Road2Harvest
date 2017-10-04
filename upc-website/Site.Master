@@ -21,6 +21,7 @@
     <link href="~/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="glyphicons/glyphicons.css" rel="stylesheet" type="text/css" />
+    <link href="Content/audio_player.css" rel="stylesheet" />
 </head>
 <body>
     <form runat="server">
