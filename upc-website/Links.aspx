@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="resources.aspx.cs" Inherits="upc_website.resources" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Links.aspx.cs" Inherits="upc_website.Links" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
 </asp:Content>
@@ -7,18 +7,23 @@
         <span class="glyphicons glyphicons-paperclip mypage-glythicons"></span>
     </div>
     <div class="mypage-header text-center">
-        <h4>Resources</h4>
+        <h4>Links</h4>
     </div>
     
 
 
-    <div class="text-center">
-<img src="https://biblia.com/api/plugins/verseoftheday/kjv1900?width=300&height=250&singleImage=true&theme=imagebased&variant=dark" width="90%" /></a>
+    <div class="jumbotron text-center">
+
         <h4><a runat="server" href="Give.aspx">Online Giving</a></h4>
         <h4><a runat="server" href="listen.aspx">Streaming Audio</a></h4>
         <h4><a runat="server" href="pastors-blog.aspx">Pastors Blog</a></h4>
-        <h4><a runat="server" href="Links.aspx">Links</a></h4>
         <h4><a runat="server" href="~/bible">YouVersion Bible</a></h4>
+        <h4>Rev. Joe Serta - Spanish Pentecostalism</h4>
+        <h4>RZIM - Christian Apologetics</h4>
+        <h4>Nancy DeMoss Wolgemuth - Revive Our Hearts</h4>
+    </div>
+    <div>
+        <img id="church_pic" src="images/UPC_CM.jpg" /> 
     </div>
 
 </asp:Content>

@@ -54,7 +54,4 @@
             <a href="resources.aspx"><p class="gly-paragraph">Resources</p></a>
         </div>
     </div>
-   
-
-   
 </asp:Content>

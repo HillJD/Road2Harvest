@@ -3,8 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div>
-    <span class="glyphicon glyphicon-headphones mypage-glythicons"></span>
+<div>
+    <span class="glyphicons glyphicons-headphones mypage-glythicons"></span>
 </div>
 <div class="mypage-header text-center">
     <h4><b>Listen</b></h4>

@@ -2,9 +2,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<div class="jumbotron text-center">
-        <h1>Union Pentecostal Church</h1>
-        <h2>Notifications</h2>
+    <div>
+    <span class="glyphicons glyphicons-group mypage-glythicons"></span>
+</div>
+<div class="mypage-header text-center">
+    <h4><b>Groups and Notifications</b></h4>
+</div>
+    <div class="jumbotron text-center">
     <p>Join a group</p>
     <p>Notifications Manager</p>
 </div>

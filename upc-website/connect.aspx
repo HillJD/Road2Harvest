@@ -10,9 +10,6 @@
     <h4><b>Connect</b></h4>
 </div>
     <div class="jumbotron text-center">
-        <h1>Union Pentecostal Church</h1>
-        <h2>Connect</h2>
-        <p>Tell us about your self</p>
         <p><a href="notifications.aspx">Groups & notifications</a></p>
         <p><a href="location.aspx">Location</a></p>
         <p><a href="services.aspx">Service Times</a></p>

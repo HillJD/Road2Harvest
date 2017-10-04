@@ -11,7 +11,7 @@ namespace upc_website
 {
 
 
-    public partial class video_tour
+    public partial class PrayerReq
     {
     }
 }

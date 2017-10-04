@@ -9,7 +9,6 @@
         <h4><b>History</b></h4>
     </div>
 
-
 <div class="jumbotron text-left">
 
     <h4>In the 1920’s, Laura Shank was given a vision of a harvest being reaped in a church that she was to 

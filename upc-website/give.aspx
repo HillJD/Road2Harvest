@@ -10,7 +10,10 @@
         <h4><b>Giving</b></h4>
     </div>
 
-
-<div class="jumbotron text-left">
-<h2>Online Giving</h2>
+<div class="jumbotron text-Left" style="text-align:left">
+  <div>
+  <p><asp:ImageButton ID="ImageButton0" runat="server" OnClick="ImageButton0_Click" ImageUrl="~/images/ET1.png" Width="100%" /></p>
+  </div>
+  <a href="https://www.easytithe.com/dl/?uid=Unio1101162" target="_blank"><img src="~/images/ET1.png"></a>
+</div>
 </asp:Content>
