@@ -1,4 +1,8 @@
-﻿/***************** This section is for carousel *********************************************/
+﻿/* body background-color: rgba(155, 160, 170, 1) gray */
+/* header bar background-color rgba(0,21,64,1) maroon */
+/* border-bottom-color:rgba(130,105,30,1)  gold */
+
+/***************** This section is for carousel *********************************************/
 /* Makes images fully responsive for carousel */
 .img-responsive,
 .thumbnail > img,
