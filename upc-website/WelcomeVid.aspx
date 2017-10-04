@@ -8,7 +8,9 @@
 <div class="mypage-header text-center">
     <h4><b>Welcome Video</b></h4>
 </div>
-    <div class="jumbotron text-center">
-        <h1>Welcome to Union Pentecostal Church</h1>
-    </div>
+
+<div class="jumbotron text-center">
+    <h1>Welcome to Union Pentecostal Church</h1>
+</div>
+
 </asp:Content>
