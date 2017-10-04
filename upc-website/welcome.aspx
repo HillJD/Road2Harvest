@@ -15,7 +15,7 @@
         <p><a href="Ministries.aspx">Our Ministries / Groups</a></p>
         <p><a href="help.aspx">Our Mission</a></p>
         <p><a href="beliefs.aspx">Our Beliefs</a></p>
-        <p><a href="video-tour.aspx">Video Tour</a></p>
+        <p><a href="WelcomeVid.aspx">Video Tour</a></p>
     </div>
     <div>
         <img id="church_pic" src="images/InsidePic.jpg" /> 
