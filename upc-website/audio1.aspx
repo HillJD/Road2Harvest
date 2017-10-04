@@ -1,8 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="audio1.aspx.cs" Inherits="upc_website.audio1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-
+    <script src="Scripts/audio_player.js"></script>
 <div id="audio_player">
 	<div id="audio_controls">
 		<button id="playpausebtn"></button>
@@ -21,7 +22,7 @@
 			<option value ="Sermon4">Sermon 4</option>
 		</select>
 </div> <!--end audio_player-->
-    <script>
+    <!--<script>
         var audio, playbtn, mutebtn, seek_bar, volumeslider, seeking, seekto, durtimetext, curtimetext;
         var ext = ".mp3";
         /*for firefox or opera that may not support mp3*/
@@ -109,5 +110,5 @@
 
         window.addEventListener("load", initAudioPlayer);
 
-    </script>
+    </script>-->
 </asp:Content>

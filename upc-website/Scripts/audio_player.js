@@ -52,15 +52,14 @@ function initAudioPlayer() {
         }
     }
 
-    function seek() {
+    function seek(event) {
         if (seeking) {
-            seekslider.value = event.clientX - (seekslider.offsetLeft + 50);/*150px + 45px*/
+            seekslider.value = event.clientX;
+            console.log(seekslider.value);
             seekto = audio.duration * (seekslider.value / 100);
             audio.currentTime = seekto;
-
         }
-
-    }
+        }
 
     function setvolume() {
         audio.volume = volumeslider.value / 100;
