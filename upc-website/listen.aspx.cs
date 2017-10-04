@@ -27,7 +27,7 @@ namespace upc_website
             TimeSpan WednesdayStart = new TimeSpan(19, 30, 00);
             TimeSpan WednesdayEnd = new TimeSpan(20, 30, 00);
 
-           
+            
             if (Day == "Wednesday")
             {
                 DayCheck = true;
@@ -42,7 +42,7 @@ namespace upc_website
             }
 
             
-            if (DayCheck && TimeCheck) ImageButton1.ImageUrl = "~/images/live stream.jpg";
+           if (DayCheck && TimeCheck) ImageButton1.ImageUrl = "~/images/live stream.jpg";
 
         }
 
