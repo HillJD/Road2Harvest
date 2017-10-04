@@ -252,6 +252,8 @@
     <Content Include="bible.aspx" />
     <Content Include="Church.aspx" />
     <Content Include="dove_in_circle_favicon.png" />
+    <Content Include="easytithe4.aspx" />
+    <Content Include="easytithes2.aspx" />
     <Content Include="Ministries.aspx" />
     <Content Include="beliefs.aspx" />
     <Content Include="buildcontrol.aspx" />
@@ -367,7 +369,7 @@
     <Content Include="upc_dove_favicon.png" />
     <Content Include="upcoming.aspx" />
     <Content Include="video-tour.aspx" />
-    <Content Include="WebForm1.aspx" />
+    <Content Include="easytithe.aspx" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
@@ -409,6 +411,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="WebForm4.aspx" />
     <Content Include="WebUserControl1.ascx" />
     <Content Include="fonts\glyphicons-regular.eot" />
     <Content Include="fonts\glyphicons-regular.ttf" />
@@ -628,6 +631,20 @@
     </Compile>
     <Compile Include="Church.aspx.designer.cs">
       <DependentUpon>Church.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="easytithe4.aspx.cs">
+      <DependentUpon>easytithe4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="easytithe4.aspx.designer.cs">
+      <DependentUpon>easytithe4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="easytithes2.aspx.cs">
+      <DependentUpon>easytithes2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="easytithes2.aspx.designer.cs">
+      <DependentUpon>easytithes2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ministries.aspx.cs">
       <DependentUpon>Ministries.aspx</DependentUpon>
@@ -937,12 +954,19 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="easytithe.aspx.cs">
+      <DependentUpon>easytithe.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="easytithe.aspx.designer.cs">
+      <DependentUpon>easytithe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebUserControl1.ascx.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>
