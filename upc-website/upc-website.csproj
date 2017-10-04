@@ -374,7 +374,7 @@
     <Content Include="styles.css" />
     <Content Include="upc_dove_favicon.png" />
     <Content Include="upcoming.aspx" />
-    <Content Include="video-tour.aspx" />
+    <Content Include="WelcomeVid.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
@@ -945,12 +945,12 @@
     <Compile Include="upcoming.aspx.designer.cs">
       <DependentUpon>upcoming.aspx</DependentUpon>
     </Compile>
-    <Compile Include="video-tour.aspx.cs">
-      <DependentUpon>video-tour.aspx</DependentUpon>
+    <Compile Include="WelcomeVid.aspx.cs">
+      <DependentUpon>WelcomeVid.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="video-tour.aspx.designer.cs">
-      <DependentUpon>video-tour.aspx</DependentUpon>
+    <Compile Include="WelcomeVid.aspx.designer.cs">
+      <DependentUpon>WelcomeVid.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
