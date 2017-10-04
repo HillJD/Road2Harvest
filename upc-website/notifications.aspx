@@ -9,7 +9,6 @@
     <h4><b>Groups and Notifications</b></h4>
 </div>
     <div class="jumbotron text-center">
-    <h2>Notifications</h2>
     <p>Join a group</p>
     <p>Notifications Manager</p>
 </div>
