@@ -27,8 +27,7 @@ namespace upc_website
             TimeSpan WednesdayStart = new TimeSpan(19, 30, 00);
             TimeSpan WednesdayEnd = new TimeSpan(20, 30, 00);
 
-            Label1.Text = Day + " " + Time;
-
+           
             if (Day == "Wednesday")
             {
                 DayCheck = true;
@@ -43,8 +42,6 @@ namespace upc_website
             }
 
             
-            if (DayCheck) Label2.Text = "Day Check True"; else Label2.Text = "Day Check False";
-            if (TimeCheck) Label3.Text = "Time Check True"; else Label3.Text = "Time Check False";
             if (DayCheck && TimeCheck) ImageButton1.ImageUrl = "~/images/live stream.jpg";
 
         }

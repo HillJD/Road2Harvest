@@ -16,8 +16,6 @@
         <p><asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/images/sermon stream.jpg" Width="100%" /></p>
         <p><asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" ImageUrl="~/images/sermon archive.jpg" Width="100%" /></p>
         <p><asp:ImageButton ID="ImageButton3" runat="server" OnClick="ImageButton3_Click" ImageUrl="~/images/tunein.jpg" Width="100%" /> </p>
-         <asp:Label ID="Label1" runat="server" Text="day and time dayton"></asp:Label>
-        <asp:Label ID="Label2" runat="server" Text="Day Check NULL"></asp:Label>
-        <asp:Label ID="Label3" runat="server" Text="Time Check NULL"></asp:Label>
+         
     </div>
 </asp:Content>
