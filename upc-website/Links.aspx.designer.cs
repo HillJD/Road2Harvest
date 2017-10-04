@@ -7,9 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace upc_website {
-    
-    
-    public partial class Links {
+namespace upc_website
+{
+
+
+    public partial class video_tour
+    {
     }
 }
