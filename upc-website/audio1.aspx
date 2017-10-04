@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<h1 style="margin-top:400px;">Hello Mike</h1>
+
 <div id="audio_player">
 	<div id="audio_controls">
 		<button id="playpausebtn"></button>

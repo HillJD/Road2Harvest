@@ -10,8 +10,9 @@ div#audio_player {
   width:450px;
   height:60px;
   margin-top:150px;
+  margin-bottom:150px;
   margin-left:150px;
-  background:url(../images/audio-skin3.png) no-repeat;
+  background:url(../images/audio_player/audio-skin3.png) no-repeat;
 }
 
 div#audio_controls {
@@ -38,7 +39,7 @@ left: 3px;
 top: -3px;
 height: 24px; 
 width: 24px;
-background:url(../images/pause_24px_gray.png);
+background:url(../images/audio_player/pause_24px_gray.png);
 background-repeat:no-repeat;
 }
 
@@ -48,7 +49,7 @@ left: 250px;
 top: -3px;
 height: 24px; 
 width: 24px;
-background:url(../images/speaker_muted_24px_gray.png);
+background:url(../images/audio_player/speaker_muted_24px_gray.png);
 background-repeat:no-repeat;
 }
 
@@ -67,7 +68,7 @@ width: 70px;
 div#timebox{
 position: absolute;
 left: 140px;
-top: 0px; /*0*/
+top: -10px; /*0*/
 display: inline-block;
 width: 100px;
 background-color:#000;
@@ -75,7 +76,7 @@ background-color:#000;
 text-align: center;
 color: #09f;
 font-family: Arial,Helvetica,sans-serif;
-font-size: 14px;
+font-size: 10px;
 }
 #mylist {
   position: absolute;

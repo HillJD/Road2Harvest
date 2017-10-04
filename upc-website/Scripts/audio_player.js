@@ -35,20 +35,20 @@ function initAudioPlayer() {
     function playPause() {
         if (audio.paused) {
             audio.play();
-            playbtn.style.background = "url(images/pause_24px_gray.png) no-repeat";
+            playbtn.style.background = "url(images/audio_player/pause_24px_gray.png) no-repeat";
         } else {
             audio.pause();
-            playbtn.style.background = "url(images/play_24px_gray.png) no-repeat";
+            playbtn.style.background = "url(images/audio_player/play_24px_gray.png) no-repeat";
         }
     }
 
     function mute() {
         if (audio.muted) {
             audio.muted = false;
-            mutebtn.style.background = "url(images/speaker_muted_24px_gray.png) no-repeat"
+            mutebtn.style.background = "url(images/audio_player/speaker_muted_24px_gray.png) no-repeat"
         } else {
             audio.muted = true;
-            mutebtn.style.background = "url(images/speaker_24px_gray.png) no-repeat"
+            mutebtn.style.background = "url(images/audio_player/speaker_24px_gray.png) no-repeat"
         }
     }
 
