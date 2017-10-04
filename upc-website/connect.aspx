@@ -10,7 +10,6 @@
     <h4><b>Connect</b></h4>
 </div>
     <div class="jumbotron text-center">
-        <h2>Connect</h2>
         <p><a href="notifications.aspx">Groups & notifications</a></p>
         <p><a href="location.aspx">Location</a></p>
         <p><a href="services.aspx">Service Times</a></p>
