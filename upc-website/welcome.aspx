@@ -13,7 +13,7 @@
         <p><a href="Church.aspx">Our Church</a></p>
         <p><a href="staff.aspx">Our Staff</a></p>
         <p><a href="Ministries.aspx">Our Ministries / Groups</a></p>
-        <p><a href="help.aspx">Our Mission</a></p>
+        <p><a href="help.aspx">Help and Hope</a></p>
         <p><a href="beliefs.aspx">Our Beliefs</a></p>
         <p><a href="WelcomeVid.aspx">Welcome Video</a></p>
     </div>
