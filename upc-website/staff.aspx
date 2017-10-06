@@ -54,28 +54,21 @@
       <p>
         <button type="button" style="text-align:left;" class="btn-belief btn btn-link"data-toggle="collapse" data-target="#Staff02">Children's Ministries Leader Ruth Maggard</button>
           <div id="Staff02" class="collapse">
-            Ruth A. Maggard, born in Dayton, Ohio has had a burden for ministry since she was a child.
-            At the age of 8 she first felt the Lord lay His hand on her life, and responded with “Yes
-            Lord”. She has been involved in children’s ministry since she was a teenager, and accepted
-            the position as Children’s Ministry and Outreach Director of Union Pentecostal Church in
-            2003, immediately after graduating from Bible College. She has traveled across the United
-            States and has done children’s ministry on several Native American Reservations, as well as
-            in Mexico, Haiti and the Philippines.
-
-            Her service at Union Pentecostal Church includes the Wednesday Night Kid’s Classes,
-            Extended Hands Puppet Team, Esther’s Heart (girl’s mentoring program), Sidewalk Sunday
-            School, Weekly Outreach and Glow in the Dark.
-
-            She has a passion to show children the love of God, and to reach them with the Gospel
-            through the means of puppets, skits, songs, stories, object lessons . . . etc.
-            Her ministry motto is “Partnering with Families to Help Strengthen Today’s Kids”!
+            Ruth A. Maggard, born in Dayton, Ohio has had a burden for ministry since the age of 8
+            when she first felt the Lord lay His hand on her life. She has been actively involved in children’s
+            ministry since she was a teenager.  In 2003, immediately after graduating from Bible College,
+            Ruth accepted the position as Children’s Ministry and Outreach Director of Union Pentecostal
+            Church . She has traveled across the United States and has conducted children’s ministry events
+            on several Native American reservations, as well as in Mexico, Haiti and the Philippines.  Her
+            service at Union Pentecostal Church includes Wednesday Night Kid’s Classes, Extended Hands
+            Puppet Team, Esther’s Heart (girl’s mentoring program), Sidewalk Sunday School, Weekly Outreach
+            and Glow in the Dark.  She has a passion to show children the love of God, and to reach them
+            with the Gospel through puppets, skits, songs, stories, object lessons, etc.  Her ministry
+            motto is “Partnering with Families to Help Strengthen Today’s Kids”!
           </div>
       </p>
     </div>
    </div>
 </div>
-
-
-
 
 </asp:Content>
