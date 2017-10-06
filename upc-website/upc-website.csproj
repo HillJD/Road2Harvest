@@ -249,7 +249,10 @@
     <Content Include="addcarousel.aspx" />
     <Content Include="addDiv.aspx" />
     <Content Include="archives.aspx" />
+    <Content Include="audio.aspx" />
     <Content Include="audio1.aspx" />
+    <Content Include="audio\4905_20sec.mp3" />
+    <Content Include="audio\4933_20sec.mp3" />
     <Content Include="audio\no more night.mp3" />
     <Content Include="images\audio_player\Asset 1%402x.png" />
     <Content Include="images\audio_player\Asset 1%403x.png" />
@@ -666,6 +669,13 @@
     </Compile>
     <Compile Include="archives.aspx.designer.cs">
       <DependentUpon>archives.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="audio.aspx.cs">
+      <DependentUpon>audio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="audio.aspx.designer.cs">
+      <DependentUpon>audio.aspx</DependentUpon>
     </Compile>
     <Compile Include="audio1.aspx.cs">
       <DependentUpon>audio1.aspx</DependentUpon>
