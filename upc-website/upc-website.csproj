@@ -332,7 +332,6 @@
     <Content Include="font-awesome-4.7.0\WebForm1.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-regular.svg" />
-    <Content Include="Give.aspx" />
     <Content Include="glyphicons\glyphicons.css" />
     <Content Include="help.aspx" />
     <Content Include="history.aspx" />
@@ -413,7 +412,6 @@
     <Content Include="pics2.aspx" />
     <Content Include="PrayerReq.aspx" />
     <Content Include="prayer.aspx" />
-    <Content Include="Links.aspx" />
     <Content Include="resources.aspx" />
     <Content Include="services.aspx" />
     <Content Include="staff.aspx" />
@@ -421,7 +419,6 @@
     <Content Include="upc_dove_favicon.png" />
     <Content Include="upcoming.aspx" />
     <Content Include="WelcomeVid.aspx" />
-    <Content Include="WebForm1.aspx" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
     <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
@@ -775,13 +772,6 @@
     <Compile Include="font-awesome-4.7.0\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Give.aspx.cs">
-      <DependentUpon>Give.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Give.aspx.designer.cs">
-      <DependentUpon>Give.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -935,13 +925,6 @@
       <DependentUpon>prayer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Links.aspx.cs">
-      <DependentUpon>Links.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Links.aspx.designer.cs">
-      <DependentUpon>Links.aspx</DependentUpon>
-    </Compile>
     <Compile Include="resources.aspx.cs">
       <DependentUpon>resources.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1012,13 +995,6 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebUserControl1.ascx.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>

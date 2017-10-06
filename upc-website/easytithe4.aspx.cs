@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace upc_website
 {
-    public partial class Links : System.Web.UI.Page
+    public partial class easytithe4 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

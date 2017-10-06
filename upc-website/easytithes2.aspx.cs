@@ -7,15 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace upc_website
 {
-    public partial class give : System.Web.UI.Page
+    public partial class easytithes2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-        protected void ImageButton0_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect("https://www.easytithe.com/dl/?uid=Unio1101162");
         }
     }
 }
