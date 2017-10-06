@@ -1,6 +1,6 @@
 ﻿body{ background:#666; }
 
-div#audio_player{ width:450px; height:60px; margin:100px auto 100px auto;background: url(../images/audio-skin3.png) no-repeat; border-radius:4px;}
+div#audio_player{ width:450px; height:60px; margin:100px auto 100px auto;background: url(../images/audio_player/audio-skin3.png) no-repeat; border-radius:4px;}
 div#audio_controls{ margin-left:66px; }
 div#audio_controls>button{
 	border:none;
@@ -17,12 +17,12 @@ div#audio_controls>input{outline:none;
 }
 
 button#playpausebtn{
-	background:url(../images/pause_12px.png) no-repeat;
+	background:url(../images/audio_player/pause_12px.png) no-repeat;
 	width:12px;
 	height:14px;
 }
 button#mutebtn{
-	background:url(../images/speaker_muted_12px.png) no-repeat;
+	background:url(../images/audio_player/speaker_muted_12px.png) no-repeat;
 	width:5px;
 	height:14px;
 }
@@ -46,7 +46,12 @@ div#timebox{
 	text-align:center;
 	color: #09F; 
 	font-family: Arial, Helvetica, sans-serif;
-	font-size:11px;
+	font-size:13px;
+}
+#curtimetext,#durtimetext {
+    display: inline-block;
+    text-align: center;
+    font-size: 9px;
 }
 input[type='range'] {
     -webkit-appearance: none !important;

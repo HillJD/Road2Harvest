@@ -51,19 +51,19 @@
     function playPause() {
         if (audio.paused) {
             audio.play();
-            playbtn.style.background = "url(images/pause_12px.png) no-repeat";
+            playbtn.style.background = "url(images/audio_player/pause_12px.png) no-repeat";
         } else {
             audio.pause();
-            playbtn.style.background = "url(images/play_12px.png) no-repeat";
+            playbtn.style.background = "url(images/audio_player/play_12px.png) no-repeat";
         }
     }
     function mute() {
         if (audio.muted) {
             audio.muted = false;
-            mutebtn.style.background = "url(images/speaker_muted_12px.png) no-repeat";
+            mutebtn.style.background = "url(images/audio_player/speaker_muted_12px.png) no-repeat";
         } else {
             audio.muted = true;
-            mutebtn.style.background = "url(images/speaker_12px.png) no-repeat";
+            mutebtn.style.background = "url(images/audio_player/speaker_12px.png) no-repeat";
         }
     }
     function seek(event) {

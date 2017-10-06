@@ -268,6 +268,7 @@
     <Content Include="images\audio_player\loudspeaker.png" />
     <Content Include="images\audio_player\mute.png" />
     <Content Include="images\audio_player\pause 48px.png" />
+    <Content Include="images\audio_player\pause_12px.png" />
     <Content Include="images\audio_player\pause_24px.png" />
     <Content Include="images\audio_player\pause_24px_gray.png" />
     <Content Include="images\audio_player\pause_72px.png" />
@@ -278,6 +279,7 @@
     <Content Include="images\audio_player\play3.jpg" />
     <Content Include="images\audio_player\play3.png" />
     <Content Include="images\audio_player\playold.png" />
+    <Content Include="images\audio_player\play_12px.png" />
     <Content Include="images\audio_player\play_24px.png" />
     <Content Include="images\audio_player\play_24px_gray.png" />
     <Content Include="images\audio_player\play_48px.png" />
@@ -286,10 +288,12 @@
     <Content Include="images\audio_player\play_Asset 1%403x.png" />
     <Content Include="images\audio_player\speaker-24px.png" />
     <Content Include="images\audio_player\speaker-skin1-450x60.png" />
+    <Content Include="images\audio_player\speaker_12px.png" />
     <Content Include="images\audio_player\speaker_24px_gray.png" />
     <Content Include="images\audio_player\speaker_48px %282%29.png" />
     <Content Include="images\audio_player\speaker_48px.png" />
     <Content Include="images\audio_player\speaker_72px.png" />
+    <Content Include="images\audio_player\speaker_muted_12px.png" />
     <Content Include="images\audio_player\speaker_muted_12px_gray.png" />
     <Content Include="images\audio_player\speaker_muted_24px.png" />
     <Content Include="images\audio_player\speaker_muted_24px_gray.png" />

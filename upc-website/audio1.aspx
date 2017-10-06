@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="audio1.aspx.cs" Inherits="upc_website.audio1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
+    <script src="Scripts/audio_player.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
