@@ -53,13 +53,52 @@
         <p>
             <button type="button" style="text-align:left;" class="btn btn-link"data-toggle="collapse" data-target="#Help2">How can I be saved?</button>
             <div id="Help2" class="collapse">
-                Find the Roman road.  Turn right.  Keep going straight.
+                To be saved is to be made right with God, to be restored to the wholeness God intended, and to be assured of heaven as one’s eternal home.  It is to be born again, to have one’s nature changed. The Holy Spirit works in one’s heart and mind showing him his need of salvation.  
+                <br />
+                <br />If you sense your need to be saved, here is how to respond to the Holy Spirit.
+                <br />
+                <br />Acknowledge that you are a sinner, out of fellowship with your Creator.
+                <br />“For all have sinned, and come short of the glory of God;”  (Rom 3:23)
+                <br />
+                <br />Realize that the consequences of your sin is death, ultimately, eternal death which is eternal separation from God (Hell).
+                <br />“For the wages of sin is death; …” (Rom 6:23).
+                <br />
+                <br />Also, realize that upon becoming saved one is “given” eternal life (Heaven).  This eternal life cannot be earned.  It is a gift.
+                <br />“… but the gift of God is eternal life through Jesus Christ our Lord.” (Rom 6:23).
+                <br />
+                <br />Note that Jesus by His coming and dying on the cross paid the penalty for our sins.
+                <br />“But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us.” (Rom 5:8).
+                <br />
+                <br />Confess that Jesus is your savior and call on Him.  This is done by  believing that salvation cannot be earned or deserved but that it is a free gift of God made possible by Jesus’ death on the cross and His resurrection from the grave.
+                <br />“That if thou shalt confess with thy mouth the Lord Jesus, and shalt believe in thine heart that God hath raised him from the dead, thou shalt be saved.” (Rom 10:9).
+                <br />
+                <br />“For whosoever shall call upon the name of the Lord shall be saved.” (Rom 10:13).
+                <br />
+                <br />Rejoice that you are in right relationship with God!  You are saved!  You will go to heaven!
+                <br />“Therefore being justified by faith, we have peace with God through our Lord Jesus Christ: By whom also we have access by faith into this grace wherein we stand, and rejoice in hope of the glory of God.” (Rom 5:1-2).
             </div>
         </p>
         <p>
             <button type="button" style="text-align:left;" class="btn btn-link"data-toggle="collapse" data-target="#Help3">How can I have assurance?</button>
             <div id="Help3" class="collapse">
-                Blessed assurance.
+                Since salvation is a matter of believing, it can also be doubted. Doubt can come from ourselves, the world in which we live, or the enemy of our souls himself.  
+                <br />
+                <br />When you need the assurance you are saved…
+                <br />
+                <br />Remember that your salvation is a matter of what Jesus had done.  It is in His hands.  Trust Him.  You can know you are saved because He does the saving.
+                <br />“For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: Not of works, lest any man should boast. For we are his workmanship, created in Christ Jesus unto good works, which God hath before ordained that we should walk in them.” (Eph 2:8-10)
+                <br />
+                <br />Realize that your salvation is based on God’s character.  He is faithful.  He is unchanging.  He is true to His word.  You can know you are saved because God is trustworthy.
+                <br />“God is faithful, by whom ye were called unto the fellowship of his Son Jesus Christ our Lord.”  (1Co 1:9)
+                <br />
+                <br />Recognize the Holy Spirit’s witness.
+                <br />“The Spirit itself beareth witness with our spirit, that we are the children of God:” (Rom 8:16)
+                <br />
+                <br />Rely on the Word of God.
+                <br />There are many verses that share of the promise of salvation that can give assurance.
+                <br />
+                <br />Rest knowing you are saved.
+                <br />“… for I know whom I have believed, and am persuaded that he is able to keep that which I have committed unto him against that day.” (2Ti 1:12).
             </div>
         </p>
     </div>
