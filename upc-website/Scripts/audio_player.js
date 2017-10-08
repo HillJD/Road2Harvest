@@ -1,70 +1,81 @@
-﻿var audio, playbtn, mutebtn, seek_bar, volumeslider, seeking, seekto, durtimetext, curtimetext;
-var ext = ".mp3";
-/*for firefox or opera that may not support mp3*/
-/*var agent = navigator.appName.toLowerCase();*/
-/*if(agent.indexOf('firefox')  != -1  || agent.indexOf('opera') != -1) {
- ext = ".ogg";
-}*/
+﻿function initAudioPlayer() {
+    var audio, playbtn, mutebtn, seekslider, volumeslider,
+	seeking = false, seekto, curtimetext, durtimetext,
+	playlist_status, dir, playlist, playlist_index, ext, agent;
 
+    dir = "audio/";
+    playlist = ["No More Night", "4905_20sec", "4933_20sec"];
+    playlist_index = 0;
+    ext = ".mp3";
+    agent = navigator.userAgent.toLowerCase();
+    if (agent.indexOf('firefox') != -1 || agent.indexOf('opera') != -1) {
+        ext = ".ogg";
+    }
 
-function initAudioPlayer() {
-    audio = new Audio();
-    audio.src = "audio/no more night" + ext;
-    /*alert(agent);*/
-    audio.loop = true;
-    audio.play();
-
-    //Set object references
+    // Set object references
     playbtn = document.getElementById("playpausebtn");
     mutebtn = document.getElementById("mutebtn");
     seekslider = document.getElementById("seekslider");
     volumeslider = document.getElementById("volumeslider");
-    durtimetext = document.getElementById("durtimetext");
     curtimetext = document.getElementById("curtimetext");
+    durtimetext = document.getElementById("durtimetext");
+    playlist_status = document.getElementById("playlist_status");
 
-    //Add event handling
+    //Audio oblect
+    audio = new Audio();
+    audio.src = dir + playlist[playlist_index] + ext;
+    audio.loop = false;
+    audio.play();
+    playlist_status.innerHTML = "Track " + (playlist_index + 1) + " - " + playlist[playlist_index] + ext;
+
+    // Add Event Handling
     playbtn.addEventListener("click", playPause);
     mutebtn.addEventListener("click", mute);
     seekslider.addEventListener("mousedown", function (event) { seeking = true; seek(event); });
     seekslider.addEventListener("mousemove", function (event) { seek(event); });
-    seekslider.addEventListener("mouseup", function () { seeking = false; })
+    seekslider.addEventListener("mouseup", function () { seeking = false; });
     volumeslider.addEventListener("mousemove", setvolume);
     audio.addEventListener("timeupdate", function () { seektimeupdate(); });
-
-    //Functions
+    audio.addEventListener("ended", function () { switchTrack(); });
+    // Functions
+    function switchTrack() {
+        if (playlist_index == (playlist.length - 1)) {
+            playlist_index = 0;
+        } else {
+            playlist_index++;
+        }
+        playlist_status.innerHTML = "Track " + (playlist_index + 1) + " - " + playlist[playlist_index] + ext;
+        audio.src = dir + playlist[playlist_index] + ext;
+        audio.play();
+    }
     function playPause() {
         if (audio.paused) {
             audio.play();
-            playbtn.style.background = "url(images/audio_player/pause_24px_gray.png) no-repeat";
+            playbtn.style.background = "url(images/audio_player/pause_12px.png) no-repeat";
         } else {
             audio.pause();
-            playbtn.style.background = "url(images/audio_player/play_24px_gray.png) no-repeat";
+            playbtn.style.background = "url(images/audio_player/play_12px.png) no-repeat";
         }
     }
-
     function mute() {
         if (audio.muted) {
             audio.muted = false;
-            mutebtn.style.background = "url(images/audio_player/speaker_muted_24px_gray.png) no-repeat"
+            mutebtn.style.background = "url(images/audio_player/speaker_muted_12px.png) no-repeat";
         } else {
             audio.muted = true;
-            mutebtn.style.background = "url(images/audio_player/speaker_24px_gray.png) no-repeat"
+            mutebtn.style.background = "url(images/audio_player/speaker_12px.png) no-repeat";
         }
     }
-
     function seek(event) {
         if (seeking) {
-            seekslider.value = event.clientX;
-            console.log(seekslider.value);
+            seekslider.value = event.clientX - seekslider.offsetLeft;
             seekto = audio.duration * (seekslider.value / 100);
             audio.currentTime = seekto;
         }
-        }
-
+    }
     function setvolume() {
         audio.volume = volumeslider.value / 100;
     }
-
     function seektimeupdate() {
         var nt = audio.currentTime * (100 / audio.duration);
         seekslider.value = nt;
@@ -72,14 +83,12 @@ function initAudioPlayer() {
         var cursecs = Math.floor(audio.currentTime - curmins * 60);
         var durmins = Math.floor(audio.duration / 60);
         var dursecs = Math.floor(audio.duration - durmins * 60);
-        if (cursecs < 10) { cursecs = "0" + cursecs }
-        if (dursecs < 10) { dursecs = "0" + dursecs }
-        if (curmins < 10) { curmins = "0" + curmins }
-        if (durmins < 10) { durmins = "0" + durmins }
+        if (cursecs < 10) { cursecs = "0" + cursecs; }
+        if (dursecs < 10) { dursecs = "0" + dursecs; }
+        if (curmins < 10) { curmins = "0" + curmins; }
+        if (durmins < 10) { durmins = "0" + durmins; }
         curtimetext.innerHTML = curmins + ":" + cursecs;
         durtimetext.innerHTML = durmins + ":" + dursecs;
     }
-
 }
-
 window.addEventListener("load", initAudioPlayer);

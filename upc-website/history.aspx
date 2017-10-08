@@ -11,7 +11,7 @@
 
 <div class="jumbotron text-left">
 
-    <h4>In the 1920’s, Laura Shank was given a vision of a harvest being reaped in a church that she was to 
+    <p>In the 1920’s, Laura Shank was given a vision of a harvest being reaped in a church that she was to 
         start. Though she could not read and was seemingly alone in her hunger for the Holy Spirit, she 
         followed God’s leading. She was moved to begin a children’s Sunday school on her front porch. They 
         soon outgrew the porch as not only children but parents attended!  They moved into their first 
@@ -25,6 +25,6 @@
         he resigned. In 1991 Rev. Clifford Hurst, an instructor at Ozark Bible Institute was called by God 
         to carry on the vision, strengthening the congregation and reinforcing Biblical principles. The 
         experiences, teachings, and Biblical living of classic Pentecost are still preserved in what is 
-        now Union Pentecostal Church.</h4>
+        now Union Pentecostal Church.</p>
 </div>
 </asp:Content>

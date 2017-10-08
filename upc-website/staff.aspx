@@ -18,7 +18,12 @@
       <p>
         <button type="button" style="text-align:left;" class="btn-belief btn btn-link"data-toggle="collapse" data-target="#Staff00">Pastor Clifford Hurst</button>
           <div id="Staff00" class="collapse">
-            Brief biography to follow.
+              Pastor Clifford Hurst has been in the ministry since 1979.   He has served, often concurrently, as
+              youth leader, evangelist, Bible school instructor, principal, instructor, and administrator of
+              Christian schools, leader of Pentecostal associations, and, since 1992, as pastor of the Union
+              Pentecostal Church.  He has earned a bachelors degree in Bible with a minor in Greek and a masters
+              degree in Bible literature with Old Testament emphasis.  In 1984 he married Sandra who shares in
+              the ministry with him.  They have four children and nine grandchildren.
           </div>
       </p>
     </div>
@@ -31,7 +36,12 @@
       <p>
         <button type="button" style="text-align:left;" class="btn-belief btn btn-link"data-toggle="collapse" data-target="#Staff01">Youth Pastor Bryan McKelvey</button>
           <div id="Staff01" class="collapse">
-            Brief biography to follow.
+              Pastor Bryan Mckelvey answered the call to preach at the age of 14 and a year later preached his first
+              sermon.  In 2007, at the age of 21, he began as our youth leader. A year later he and Sarah (Baker)
+              were married and obtained the official role as Youth Pastor, in 2008. Together they have directed the
+              Southern Ohio Youth Camp for 7 years and have preached across the country in revivals, youth revivals,
+              youth camps and youth retreats. They have a burden for teens and pre-teens to experience the love of
+              God and His plans for their life. Bryan and Sarah have three children, Emma, Preston, and Eden. 
           </div>
       </p>
     </div>
@@ -44,14 +54,21 @@
       <p>
         <button type="button" style="text-align:left;" class="btn-belief btn btn-link"data-toggle="collapse" data-target="#Staff02">Children's Ministries Leader Ruth Maggard</button>
           <div id="Staff02" class="collapse">
-            Brief biography to follow.
+            Ruth A. Maggard, born in Dayton, Ohio has had a burden for ministry since the age of 8
+            when she first felt the Lord lay His hand on her life. She has been actively involved in children’s
+            ministry since she was a teenager.  In 2003, immediately after graduating from Bible College,
+            Ruth accepted the position as Children’s Ministry and Outreach Director of Union Pentecostal
+            Church . She has traveled across the United States and has conducted children’s ministry events
+            on several Native American reservations, as well as in Mexico, Haiti and the Philippines.  Her
+            service at Union Pentecostal Church includes Wednesday Night Kid’s Classes, Extended Hands
+            Puppet Team, Esther’s Heart (girl’s mentoring program), Sidewalk Sunday School, Weekly Outreach
+            and Glow in the Dark.  She has a passion to show children the love of God, and to reach them
+            with the Gospel through puppets, skits, songs, stories, object lessons, etc.  Her ministry
+            motto is “Partnering with Families to Help Strengthen Today’s Kids”!
           </div>
       </p>
     </div>
    </div>
 </div>
-
-
-
 
 </asp:Content>
