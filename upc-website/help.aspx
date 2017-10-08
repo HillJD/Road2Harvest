@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     
     <div>
-        <span class="glyphicons glyphicons-map-marker mypage-glythicons"></span>
+        <span class="glyphicons glyphicons-temple-christianity-church mypage-glythicons"></span>
     </div>
     <div class="mypage-header text-center">
         <h4><b>Help and Hope</b></h4>

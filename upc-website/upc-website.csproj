@@ -1030,6 +1030,7 @@
     <Folder Include="fonts\font\" />
     <Folder Include="glyphicons\css\" />
     <Folder Include="glyphicons\fonts\" />
+    <Folder Include="Sermons\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
