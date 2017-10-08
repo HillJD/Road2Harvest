@@ -14,7 +14,7 @@
         
         <p>
             <a href="https://www.easytithe.com/dl/?uid=Unio1101162" target="_blank">
-            <img border="0" alt="Online Giving" src="\images\ET1.png" width="125" height="30">
+            <img border="0" alt="Online Giving" src="http://unionpen.w14.wh-2.com/myapp\images\ET1.png" width="125" height="30">
             </a>
         </p>
     </div>
