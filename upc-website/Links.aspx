@@ -14,13 +14,13 @@
         
         <p>
             <a href="https://www.easytithe.com/dl/?uid=Unio1101162" target="_blank">
-            <img border="0" alt="Online Giving" src="\images\ET1.png" width="125" height="30">
+            <img border="0" alt="Online Giving" src="~\images\ET1.png" width="125" height="30">
             </a>
         </p>
 
         <p>
             <a href="https://www.youversion.com/" target="_blank">
-            <img border="0" alt="Online Bible" src="\images\LC_YouVersion_Logo_with_icon_Light.png" width="160" height="50">
+            <img border="0" alt="Online Bible" src="~\images\LC_YouVersion_Logo_with_icon_Light.png" width="160" height="50">
             </a>
         </p>
         <br/>Rev. Joe Serta
@@ -28,19 +28,19 @@
         <br/>
         <p>
             <a href="http://www.obicollege.com/" target="_blank">
-            <img border="0" alt="Ozark Bible Institute" src="\images\OBI.png" width="55" height="55">
+            <img border="0" alt="Ozark Bible Institute" src="~\images\OBI.png" width="55" height="55">
             </a>
         </p>
 
         <p>
             <a href="http://rzim.org/" target="_blank">
-            <img border="0" alt="Ravi Zacharius International Ministries" src="\images\RZIM3Color.png" width="130" height="35">
+            <img border="0" alt="Ravi Zacharias International Ministries" src="~\images\RZIM3Color.png" width="130" height="35">
             </a>
         </p>
 
         <p>
             <a href="https://www.reviveourhearts.com/" target="_blank">
-            <img border="0" alt="Nancy DeMoss Wolgemuth" src="\images\Revive Our Hearts logo.jpg" width="140" height="40">
+            <img border="0" alt="Nancy DeMoss Wolgemuth" src="~\images\Revive Our Hearts logo.jpg" width="140" height="40">
             </a>
         </p>
 
