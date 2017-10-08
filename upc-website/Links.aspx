@@ -20,7 +20,7 @@
 
         <p>
             <a href="https://www.youversion.com/" target="_blank">
-            <img border="0" alt="Online Bible" src="http://unionpen.w14.wh-2.com/myapp\images\LC_YouVersion_Logo_with_icon_Light.png" width="160" height="50">
+            <img border="0" alt="Online Bible" src="http://unionpen.w14.wh-2.com/myapp\images\LC_YouVersion_Logo_with_icon_Light.png" width="170" height="55">
             </a>
         </p>
         <br/>Rev. Joe Serta
@@ -32,6 +32,12 @@
             </a>
         </p>
 
+        <p>
+            <a href="http://www.fgbi.org/" target="_blank">
+            <img border="0" alt="Free Gospel Bible Institute" src="http://unionpen.w14.wh-2.com/myapp\images\FGBI_Logo.png" width="55" height="55">
+            </a>
+        </p>
+        
         <p>
             <a href="http://rzim.org/" target="_blank">
             <img border="0" alt="Ravi Zacharias International Ministries" src="http://unionpen.w14.wh-2.com/myapp\images\RZIM3Color.png" width="130" height="35">

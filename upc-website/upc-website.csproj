@@ -300,6 +300,7 @@
     <Content Include="images\audio_player\speaker_muted_48px.png" />
     <Content Include="images\audio_player\speaker_muted_72px.png" />
     <Content Include="images\audio_player\unmute.png" />
+    <Content Include="images\FGBI_Logo.png" />
     <Content Include="images\LC_YouVersion_Logo_with_icon_Light.png" />
     <Content Include="images\OBI.png" />
     <Content Include="images\Revive Our Hearts logo.jpg" />
