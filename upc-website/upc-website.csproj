@@ -420,6 +420,7 @@
     <Content Include="PrayerReq.aspx" />
     <Content Include="prayer.aspx" />
     <Content Include="resources.aspx" />
+    <Content Include="Sermons\B001MCTHRW_%28disc_1%29_06_-_When_You_Cry_%28Album_Version%29.mp3" />
     <Content Include="services.aspx" />
     <Content Include="staff.aspx" />
     <Content Include="styles.css" />
@@ -1030,7 +1031,6 @@
     <Folder Include="fonts\font\" />
     <Folder Include="glyphicons\css\" />
     <Folder Include="glyphicons\fonts\" />
-    <Folder Include="Sermons\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
