@@ -10,4 +10,13 @@
         <h4>Giving</h4>
     </div>
 
+    <div class="jumbotron text-Left">
+        
+        <p>
+            <a href="https://www.easytithe.com/dl/?uid=Unio1101162" target="_blank">
+            <img border="0" alt="Online Giving" src="\images\ET1.png" width="100" height="25">
+            </a>
+        </p>
+    </div>
+
 </asp:Content>
