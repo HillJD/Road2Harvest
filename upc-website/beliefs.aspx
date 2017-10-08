@@ -12,7 +12,7 @@
         
             <button type="button" class="btn-belief btn-link" data-toggle="collapse" data-target="#WWB1"><p>We believe in God; Eternal and Almighty</p></button>
             <div id="WWB1" class="collapse">
-                <p><span style="color:black" class="text-left small">We believe in God Who is the Eternal and Almighty Creator of all things. (Eph 3:9; Gen. 1:1).</span></p>
+                <p><span style="color:black" class="text-left small">We believe in God Who is the Eternal and Almighty Creator of all things(Eph 3:9; Gen. 1:1).</span></p>
             </div>
         
             <button type="button" class="btn-belief btn btn-link"data-toggle="collapse" data-target="#WWB2"><p>We believe God is One Being of three persons</p></button>
