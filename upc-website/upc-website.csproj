@@ -482,6 +482,11 @@
     <Content Include="welcome.aspx" />
     <Content Include="ClassDiagram1.cd" />
     <Content Include="images\audio_player\play.psd" />
+    <Content Include="jPlayer-2.9.2\artwork\jplayer.blue.monday.psd" />
+    <Content Include="jPlayer-2.9.2\artwork\jplayer.blue.monday.spirites.psd" />
+    <Content Include="jPlayer-2.9.2\artwork\jplayer.circle.player.psd" />
+    <Content Include="jPlayer-2.9.2\artwork\jplayer.pink.flag.psd" />
+    <Content Include="jPlayer-2.9.2\artwork\jplayer.pink.flag.sprites.psd" />
     <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\upc.pubxml" />
