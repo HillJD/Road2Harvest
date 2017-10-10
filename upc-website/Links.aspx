@@ -31,12 +31,6 @@
             <img border="0" alt="Ozark Bible Institute" src="http://unionpen.w14.wh-2.com/myapp\images\OBI.png" width="55" height="55">
             </a>
         </p>
-
-        <p>
-            <a href="http://www.fgbi.org/" target="_blank">
-            <img border="0" alt="Free Gospel Bible Institute" src="http://unionpen.w14.wh-2.com/myapp\images\FGBI_Logo.png" width="65" height="40">
-            </a>
-        </p>
         
         <p>
             <a href="http://rzim.org/" target="_blank">
