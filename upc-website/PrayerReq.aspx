@@ -11,9 +11,16 @@
 <div class="jumbotron text-center">
         
     <form id="form1">
-        Name: <asp:TextBox ID="FromName" runat="server" /><br>
+        <div class="form-group">
+            <label for="FromName">Name:</label>
+            <input type="Name" class="form-control" id="FromName">
+        </div>
         Would you like to be contacted by a pastor? <br>
-        <asp:RadioButtonList ID="RadioButtonList1" runat="server" DataValueField='Yes, No'></asp:RadioButtonList><br>
+        <div class="radio">
+  <label><input type="radio" name="RadioYes">YES</label>
+            <label><input type="radio" name="RadioNO">NO</label>
+</div>
+        
         Email Address: <asp:TextBox ID="FromEmail" runat="server" /><br>
         
         Prayer Request: <br />
