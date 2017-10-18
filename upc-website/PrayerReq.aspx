@@ -10,22 +10,29 @@
 </div>
 <div class="jumbotron text-center">
         
-    
+ 
         <div class="form-group">
             <label for="FromName">Name:</label>
-            <input type="Name" class="form-control" id="FromName">
+            <input type="text" class="form-control" id="FromName">
         </div>
-        Would you like to be contacted by a pastor? <br>
+        Would you like to be contacted by a pastor?
         <div class="radio">
-            <label><input type="radio" name="RadioYes">YES</label>
-            <label><input type="radio" name="RadioNO">NO</label>
+            <label><input type="radio" name="PastorContact">YES</label>
+           </div>
+    <div class="radio">
+            <label><input type="radio" name="PastorContact">NO</label>
+           </div>
+    <div class="form-group">
+            <label for="Email">Email Address:</label>
+            <input type="email" class="form-control" id="Email">
         </div>
         
-        Email Address: <asp:TextBox ID="FromEmail" runat="server" /><br>
+        <div class="form-group">
+            <label for="Request">Prayer Request:</label>
+            <textarea  class="form-control" rows="5" id="Request"> </textarea>
+        </div>
         
-        Prayer Request: <br />
-        <asp:TextBox ID="PrayerRequest" runat="server" Height="171px" TextMode="MultiLine"  Width="270px" /><br><br>
-        <asp:Button ID="Submit" runat="server" onclick="Submit_Click" Text="Submit" /><br>
+        <button type="submit" class ="btn btn-default">Submit</button>
         
   
    
