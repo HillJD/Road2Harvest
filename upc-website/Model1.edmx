@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DB_110695_carouselModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ArticleGrp">
+          <Key>
+            <PropertyRef Name="ArticleGrpID" />
+          </Key>
+          <Property Name="ArticleGrpID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="OwnerGrpID" Type="int" />
+        </EntityType>
+        <EntityType Name="Articles">
+          <Key>
+            <PropertyRef Name="ArticleID" />
+          </Key>
+          <Property Name="ArticleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ArticleGrpID" Type="nvarchar" MaxLength="50" />
+          <Property Name="Author" Type="nvarchar" MaxLength="255" />
+          <Property Name="PubDt" Type="date" />
+          <Property Name="Title" Type="nvarchar" MaxLength="100" />
+          <Property Name="SubTitle" Type="nvarchar" MaxLength="100" />
+          <Property Name="ImageLink" Type="nvarchar" MaxLength="255" />
+          <Property Name="Data" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Book">
+          <Key>
+            <PropertyRef Name="BkID" />
+          </Key>
+          <Property Name="BkID" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="25" Nullable="false" />
+          <Property Name="Volume" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ChCnt" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Chapter">
+          <Key>
+            <PropertyRef Name="ChID" />
+          </Key>
+          <Property Name="ChID" Type="nvarchar" MaxLength="7" Nullable="false" />
+          <Property Name="BkID" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="VsCnt" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Event">
+          <Key>
+            <PropertyRef Name="EventID" />
+          </Key>
+          <Property Name="EventID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Event" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Notes" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Series">
+          <Key>
+            <PropertyRef Name="SeriesID" />
+          </Key>
+          <Property Name="SeriesID" Type="int" Nullable="false" />
+          <Property Name="SeriesName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Notes" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="SermonAudio">
+          <Key>
+            <PropertyRef Name="SermonAudioID" />
+          </Key>
+          <Property Name="SermonAudioID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="ImageURL" Type="nvarchar" MaxLength="150" />
+          <Property Name="Speaker" Type="nvarchar" MaxLength="150" />
+          <Property Name="1Book" Type="varchar" MaxLength="3" />
+          <Property Name="1Chapter" Type="int" />
+          <Property Name="1VerseStart" Type="int" />
+          <Property Name="1VerseEnd" Type="int" />
+          <Property Name="2Book" Type="varchar" MaxLength="3" />
+          <Property Name="2Chapter" Type="int" />
+          <Property Name="2VerseStart" Type="int" />
+          <Property Name="2VerseEnd" Type="int" />
+          <Property Name="EventID" Type="int" />
+          <Property Name="SeriesID" Type="int" />
+          <Property Name="SeriesOrder" Type="int" />
+          <Property Name="SermonDt" Type="date" />
+          <Property Name="SermonAMPM" Type="varchar" MaxLength="2" />
+          <Property Name="Notes" Type="nvarchar(max)" />
+        </EntityType>
+        <Association Name="FK_Articles_ArticleGrp">
+          <End Role="ArticleGrp" Type="Self.ArticleGrp" Multiplicity="0..1" />
+          <End Role="Articles" Type="Self.Articles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ArticleGrp">
+              <PropertyRef Name="ArticleGrpID" />
+            </Principal>
+            <Dependent Role="Articles">
+              <PropertyRef Name="ArticleGrpID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Chapter_Book">
+          <End Role="Book" Type="Self.Book" Multiplicity="1" />
+          <End Role="Chapter" Type="Self.Chapter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Book">
+              <PropertyRef Name="BkID" />
+            </Principal>
+            <Dependent Role="Chapter">
+              <PropertyRef Name="BkID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SermonAudio_Book">
+          <End Role="Book" Type="Self.Book" Multiplicity="0..1" />
+          <End Role="SermonAudio" Type="Self.SermonAudio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Book">
+              <PropertyRef Name="BkID" />
+            </Principal>
+            <Dependent Role="SermonAudio">
+              <PropertyRef Name="1Book" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SermonAudio_Book1">
+          <End Role="Book" Type="Self.Book" Multiplicity="0..1" />
+          <End Role="SermonAudio" Type="Self.SermonAudio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Book">
+              <PropertyRef Name="BkID" />
+            </Principal>
+            <Dependent Role="SermonAudio">
+              <PropertyRef Name="2Book" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SermonAudio_Event">
+          <End Role="Event" Type="Self.Event" Multiplicity="0..1" />
+          <End Role="SermonAudio" Type="Self.SermonAudio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Event">
+              <PropertyRef Name="EventID" />
+            </Principal>
+            <Dependent Role="SermonAudio">
+              <PropertyRef Name="EventID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SermonAudio_Series">
+          <End Role="Series" Type="Self.Series" Multiplicity="0..1" />
+          <End Role="SermonAudio" Type="Self.SermonAudio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Series">
+              <PropertyRef Name="SeriesID" />
+            </Principal>
+            <Dependent Role="SermonAudio">
+              <PropertyRef Name="SeriesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DB_110695_carouselModelStoreContainer">
+          <EntitySet Name="ArticleGrp" EntityType="Self.ArticleGrp" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Articles" EntityType="Self.Articles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Book" EntityType="Self.Book" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Chapter" EntityType="Self.Chapter" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Event" EntityType="Self.Event" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Series" EntityType="Self.Series" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SermonAudio" EntityType="Self.SermonAudio" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Articles_ArticleGrp" Association="Self.FK_Articles_ArticleGrp">
+            <End Role="ArticleGrp" EntitySet="ArticleGrp" />
+            <End Role="Articles" EntitySet="Articles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Chapter_Book" Association="Self.FK_Chapter_Book">
+            <End Role="Book" EntitySet="Book" />
+            <End Role="Chapter" EntitySet="Chapter" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SermonAudio_Book" Association="Self.FK_SermonAudio_Book">
+            <End Role="Book" EntitySet="Book" />
+            <End Role="SermonAudio" EntitySet="SermonAudio" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SermonAudio_Book1" Association="Self.FK_SermonAudio_Book1">
+            <End Role="Book" EntitySet="Book" />
+            <End Role="SermonAudio" EntitySet="SermonAudio" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SermonAudio_Event" Association="Self.FK_SermonAudio_Event">
+            <End Role="Event" EntitySet="Event" />
+            <End Role="SermonAudio" EntitySet="SermonAudio" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SermonAudio_Series" Association="Self.FK_SermonAudio_Series">
+            <End Role="Series" EntitySet="Series" />
+            <End Role="SermonAudio" EntitySet="SermonAudio" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DB_110695_carouselModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ArticleGrp">
+          <Key>
+            <PropertyRef Name="ArticleGrpID" />
+          </Key>
+          <Property Name="ArticleGrpID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OwnerGrpID" Type="Int32" />
+          <NavigationProperty Name="Articles" Relationship="Self.FK_Articles_ArticleGrp" FromRole="ArticleGrp" ToRole="Articles" />
+        </EntityType>
+        <EntityType Name="Article">
+          <Key>
+            <PropertyRef Name="ArticleID" />
+          </Key>
+          <Property Name="ArticleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ArticleGrpID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Author" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PubDt" Type="DateTime" Precision="0" />
+          <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SubTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ImageLink" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Data" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ArticleGrp" Relationship="Self.FK_Articles_ArticleGrp" FromRole="Articles" ToRole="ArticleGrp" />
+        </EntityType>
+        <EntityType Name="Book">
+          <Key>
+            <PropertyRef Name="BkID" />
+          </Key>
+          <Property Name="BkID" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Volume" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ChCnt" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Chapters" Relationship="Self.FK_Chapter_Book" FromRole="Book" ToRole="Chapter" />
+          <NavigationProperty Name="SermonAudios" Relationship="Self.FK_SermonAudio_Book" FromRole="Book" ToRole="SermonAudio" />
+          <NavigationProperty Name="SermonAudios1" Relationship="Self.FK_SermonAudio_Book1" FromRole="Book" ToRole="SermonAudio" />
+        </EntityType>
+        <EntityType Name="Chapter">
+          <Key>
+            <PropertyRef Name="ChID" />
+          </Key>
+          <Property Name="ChID" Type="String" MaxLength="7" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BkID" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="VsCnt" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Book" Relationship="Self.FK_Chapter_Book" FromRole="Chapter" ToRole="Book" />
+        </EntityType>
+        <EntityType Name="Event">
+          <Key>
+            <PropertyRef Name="EventID" />
+          </Key>
+          <Property Name="EventID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Event1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="SermonAudios" Relationship="Self.FK_SermonAudio_Event" FromRole="Event" ToRole="SermonAudio" />
+        </EntityType>
+        <EntityType Name="Series">
+          <Key>
+            <PropertyRef Name="SeriesID" />
+          </Key>
+          <Property Name="SeriesID" Type="Int32" Nullable="false" />
+          <Property Name="SeriesName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="SermonAudios" Relationship="Self.FK_SermonAudio_Series" FromRole="Series" ToRole="SermonAudio" />
+        </EntityType>
+        <EntityType Name="SermonAudio">
+          <Key>
+            <PropertyRef Name="SermonAudioID" />
+          </Key>
+          <Property Name="SermonAudioID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ImageURL" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Speaker" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="C1Book" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="C1Chapter" Type="Int32" />
+          <Property Name="C1VerseStart" Type="Int32" />
+          <Property Name="C1VerseEnd" Type="Int32" />
+          <Property Name="C2Book" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="C2Chapter" Type="Int32" />
+          <Property Name="C2VerseStart" Type="Int32" />
+          <Property Name="C2VerseEnd" Type="Int32" />
+          <Property Name="EventID" Type="Int32" />
+          <Property Name="SeriesID" Type="Int32" />
+          <Property Name="SeriesOrder" Type="Int32" />
+          <Property Name="SermonDt" Type="DateTime" Precision="0" />
+          <Property Name="SermonAMPM" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Book" Relationship="Self.FK_SermonAudio_Book" FromRole="SermonAudio" ToRole="Book" />
+          <NavigationProperty Name="Book1" Relationship="Self.FK_SermonAudio_Book1" FromRole="SermonAudio" ToRole="Book" />
+          <NavigationProperty Name="Event" Relationship="Self.FK_SermonAudio_Event" FromRole="SermonAudio" ToRole="Event" />
+          <NavigationProperty Name="Series" Relationship="Self.FK_SermonAudio_Series" FromRole="SermonAudio" ToRole="Series" />
+        </EntityType>
+        <Association Name="FK_Articles_ArticleGrp">
+          <End Role="ArticleGrp" Type="Self.ArticleGrp" Multiplicity="0..1" />
+          <End Role="Articles" Type="Self.Article" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ArticleGrp">
+              <PropertyRef Name="ArticleGrpID" />
+            </Principal>
+            <Dependent Role="Articles">
+              <PropertyRef Name="ArticleGrpID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Chapter_Book">
+          <End Role="Book" Type="Self.Book" Multiplicity="1" />
+          <End Role="Chapter" Type="Self.Chapter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Book">
+              <PropertyRef Name="BkID" />
+            </Principal>
+            <Dependent Role="Chapter">
+              <PropertyRef Name="BkID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SermonAudio_Book">
+          <End Role="Book" Type="Self.Book" Multiplicity="0..1" />
+          <End Role="SermonAudio" Type="Self.SermonAudio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Book">
+              <PropertyRef Name="BkID" />
+            </Principal>
+            <Dependent Role="SermonAudio">
+              <PropertyRef Name="C1Book" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SermonAudio_Book1">
+          <End Role="Book" Type="Self.Book" Multiplicity="0..1" />
+          <End Role="SermonAudio" Type="Self.SermonAudio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Book">
+              <PropertyRef Name="BkID" />
+            </Principal>
+            <Dependent Role="SermonAudio">
+              <PropertyRef Name="C2Book" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SermonAudio_Event">
+          <End Role="Event" Type="Self.Event" Multiplicity="0..1" />
+          <End Role="SermonAudio" Type="Self.SermonAudio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Event">
+              <PropertyRef Name="EventID" />
+            </Principal>
+            <Dependent Role="SermonAudio">
+              <PropertyRef Name="EventID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SermonAudio_Series">
+          <End Role="Series" Type="Self.Series" Multiplicity="0..1" />
+          <End Role="SermonAudio" Type="Self.SermonAudio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Series">
+              <PropertyRef Name="SeriesID" />
+            </Principal>
+            <Dependent Role="SermonAudio">
+              <PropertyRef Name="SeriesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DB_110695_carouselEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ArticleGrps" EntityType="Self.ArticleGrp" />
+          <EntitySet Name="Articles" EntityType="Self.Article" />
+          <EntitySet Name="Books" EntityType="Self.Book" />
+          <EntitySet Name="Chapters" EntityType="Self.Chapter" />
+          <EntitySet Name="Events" EntityType="Self.Event" />
+          <EntitySet Name="Series" EntityType="Self.Series" />
+          <EntitySet Name="SermonAudios" EntityType="Self.SermonAudio" />
+          <AssociationSet Name="FK_Articles_ArticleGrp" Association="Self.FK_Articles_ArticleGrp">
+            <End Role="ArticleGrp" EntitySet="ArticleGrps" />
+            <End Role="Articles" EntitySet="Articles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Chapter_Book" Association="Self.FK_Chapter_Book">
+            <End Role="Book" EntitySet="Books" />
+            <End Role="Chapter" EntitySet="Chapters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SermonAudio_Book" Association="Self.FK_SermonAudio_Book">
+            <End Role="Book" EntitySet="Books" />
+            <End Role="SermonAudio" EntitySet="SermonAudios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SermonAudio_Book1" Association="Self.FK_SermonAudio_Book1">
+            <End Role="Book" EntitySet="Books" />
+            <End Role="SermonAudio" EntitySet="SermonAudios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SermonAudio_Event" Association="Self.FK_SermonAudio_Event">
+            <End Role="Event" EntitySet="Events" />
+            <End Role="SermonAudio" EntitySet="SermonAudios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SermonAudio_Series" Association="Self.FK_SermonAudio_Series">
+            <End Role="Series" EntitySet="Series" />
+            <End Role="SermonAudio" EntitySet="SermonAudios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DB_110695_carouselModelStoreContainer" CdmEntityContainer="DB_110695_carouselEntities">
+          <EntitySetMapping Name="ArticleGrps">
+            <EntityTypeMapping TypeName="DB_110695_carouselModel.ArticleGrp">
+              <MappingFragment StoreEntitySet="ArticleGrp">
+                <ScalarProperty Name="ArticleGrpID" ColumnName="ArticleGrpID" />
+                <ScalarProperty Name="OwnerGrpID" ColumnName="OwnerGrpID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Articles">
+            <EntityTypeMapping TypeName="DB_110695_carouselModel.Article">
+              <MappingFragment StoreEntitySet="Articles">
+                <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
+                <ScalarProperty Name="ArticleGrpID" ColumnName="ArticleGrpID" />
+                <ScalarProperty Name="Author" ColumnName="Author" />
+                <ScalarProperty Name="PubDt" ColumnName="PubDt" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="SubTitle" ColumnName="SubTitle" />
+                <ScalarProperty Name="ImageLink" ColumnName="ImageLink" />
+                <ScalarProperty Name="Data" ColumnName="Data" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Books">
+            <EntityTypeMapping TypeName="DB_110695_carouselModel.Book">
+              <MappingFragment StoreEntitySet="Book">
+                <ScalarProperty Name="BkID" ColumnName="BkID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Volume" ColumnName="Volume" />
+                <ScalarProperty Name="ChCnt" ColumnName="ChCnt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Chapters">
+            <EntityTypeMapping TypeName="DB_110695_carouselModel.Chapter">
+              <MappingFragment StoreEntitySet="Chapter">
+                <ScalarProperty Name="ChID" ColumnName="ChID" />
+                <ScalarProperty Name="BkID" ColumnName="BkID" />
+                <ScalarProperty Name="VsCnt" ColumnName="VsCnt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Events">
+            <EntityTypeMapping TypeName="DB_110695_carouselModel.Event">
+              <MappingFragment StoreEntitySet="Event">
+                <ScalarProperty Name="EventID" ColumnName="EventID" />
+                <ScalarProperty Name="Event1" ColumnName="Event" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Series">
+            <EntityTypeMapping TypeName="DB_110695_carouselModel.Series">
+              <MappingFragment StoreEntitySet="Series">
+                <ScalarProperty Name="SeriesID" ColumnName="SeriesID" />
+                <ScalarProperty Name="SeriesName" ColumnName="SeriesName" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SermonAudios">
+            <EntityTypeMapping TypeName="DB_110695_carouselModel.SermonAudio">
+              <MappingFragment StoreEntitySet="SermonAudio">
+                <ScalarProperty Name="SermonAudioID" ColumnName="SermonAudioID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+                <ScalarProperty Name="Speaker" ColumnName="Speaker" />
+                <ScalarProperty Name="C1Book" ColumnName="1Book" />
+                <ScalarProperty Name="C1Chapter" ColumnName="1Chapter" />
+                <ScalarProperty Name="C1VerseStart" ColumnName="1VerseStart" />
+                <ScalarProperty Name="C1VerseEnd" ColumnName="1VerseEnd" />
+                <ScalarProperty Name="C2Book" ColumnName="2Book" />
+                <ScalarProperty Name="C2Chapter" ColumnName="2Chapter" />
+                <ScalarProperty Name="C2VerseStart" ColumnName="2VerseStart" />
+                <ScalarProperty Name="C2VerseEnd" ColumnName="2VerseEnd" />
+                <ScalarProperty Name="EventID" ColumnName="EventID" />
+                <ScalarProperty Name="SeriesID" ColumnName="SeriesID" />
+                <ScalarProperty Name="SeriesOrder" ColumnName="SeriesOrder" />
+                <ScalarProperty Name="SermonDt" ColumnName="SermonDt" />
+                <ScalarProperty Name="SermonAMPM" ColumnName="SermonAMPM" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

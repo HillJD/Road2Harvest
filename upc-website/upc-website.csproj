@@ -405,15 +405,10 @@
     <Content Include="default2.ascx" />
     <Content Include="displayData.aspx" />
     <Content Include="eventsold.aspx" />
-    <Content Include="font-awesome-4.7.0\css\font-awesome.css" />
-    <Content Include="font-awesome-4.7.0\css\font-awesome.min.css" />
-    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
-    <Content Include="font-awesome-4.7.0\HELP-US-OUT.txt" />
     <Content Include="Account\Web.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="font-awesome-4.7.0\WebForm1.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-regular.svg" />
     <Content Include="glyphicons\glyphicons.css" />
@@ -505,39 +500,6 @@
     <Content Include="Give.aspx" />
     <Content Include="Links.aspx" />
     <Content Include="WelcomeVid.aspx" />
-    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
-    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
-    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
-    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
-    <Content Include="font-awesome-4.7.0\fonts\FontAwesome.otf" />
-    <Content Include="font-awesome-4.7.0\less\animated.less" />
-    <Content Include="font-awesome-4.7.0\less\bordered-pulled.less" />
-    <Content Include="font-awesome-4.7.0\less\core.less" />
-    <Content Include="font-awesome-4.7.0\less\fixed-width.less" />
-    <Content Include="font-awesome-4.7.0\less\font-awesome.less" />
-    <Content Include="font-awesome-4.7.0\less\icons.less" />
-    <Content Include="font-awesome-4.7.0\less\larger.less" />
-    <Content Include="font-awesome-4.7.0\less\list.less" />
-    <Content Include="font-awesome-4.7.0\less\mixins.less" />
-    <Content Include="font-awesome-4.7.0\less\path.less" />
-    <Content Include="font-awesome-4.7.0\less\rotated-flipped.less" />
-    <Content Include="font-awesome-4.7.0\less\screen-reader.less" />
-    <Content Include="font-awesome-4.7.0\less\stacked.less" />
-    <Content Include="font-awesome-4.7.0\less\variables.less" />
-    <Content Include="font-awesome-4.7.0\scss\font-awesome.scss" />
-    <Content Include="font-awesome-4.7.0\scss\_animated.scss" />
-    <Content Include="font-awesome-4.7.0\scss\_bordered-pulled.scss" />
-    <Content Include="font-awesome-4.7.0\scss\_core.scss" />
-    <Content Include="font-awesome-4.7.0\scss\_fixed-width.scss" />
-    <Content Include="font-awesome-4.7.0\scss\_icons.scss" />
-    <Content Include="font-awesome-4.7.0\scss\_larger.scss" />
-    <Content Include="font-awesome-4.7.0\scss\_list.scss" />
-    <Content Include="font-awesome-4.7.0\scss\_mixins.scss" />
-    <Content Include="font-awesome-4.7.0\scss\_path.scss" />
-    <Content Include="font-awesome-4.7.0\scss\_rotated-flipped.scss" />
-    <Content Include="font-awesome-4.7.0\scss\_screen-reader.scss" />
-    <Content Include="font-awesome-4.7.0\scss\_stacked.scss" />
-    <Content Include="font-awesome-4.7.0\scss\_variables.scss" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -882,13 +844,6 @@
     </Compile>
     <Compile Include="eventsold.aspx.designer.cs">
       <DependentUpon>eventsold.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="font-awesome-4.7.0\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="font-awesome-4.7.0\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
