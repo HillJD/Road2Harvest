@@ -12,8 +12,10 @@
     
 
 
-    <div class="text-center">
-<img src="https://biblia.com/api/plugins/verseoftheday/kjv1900?width=300&height=250&singleImage=true&theme=imagebased&variant=dark" width="90%" /></a>
+    <div class="jumbotron text-center">
+    <script type="text/javascript">
+    document.write("<iframe src=\"http://www.kingjamesonline.org/inspiring-images-widget.php\" style=\"width: 344px; height: 344px; border: 0px solid #ffffff;\"></iframe>");
+    </script>
         <h4><a runat="server" href="Give.aspx">Online Giving</a></h4>
         <h4><a runat="server" href="listen.aspx">Streaming Audio</a></h4>
         <h4><a runat="server" href="pastors-blog.aspx">Pastors Blog</a></h4>
