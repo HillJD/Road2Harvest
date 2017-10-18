@@ -10,16 +10,16 @@
 </div>
 <div class="jumbotron text-center">
         
-    <form id="form1">
+    
         <div class="form-group">
             <label for="FromName">Name:</label>
             <input type="Name" class="form-control" id="FromName">
         </div>
         Would you like to be contacted by a pastor? <br>
         <div class="radio">
-  <label><input type="radio" name="RadioYes">YES</label>
+            <label><input type="radio" name="RadioYes">YES</label>
             <label><input type="radio" name="RadioNO">NO</label>
-</div>
+        </div>
         
         Email Address: <asp:TextBox ID="FromEmail" runat="server" /><br>
         
@@ -27,7 +27,7 @@
         <asp:TextBox ID="PrayerRequest" runat="server" Height="171px" TextMode="MultiLine"  Width="270px" /><br><br>
         <asp:Button ID="Submit" runat="server" onclick="Submit_Click" Text="Submit" /><br>
         
-    </form>
+  
    
 
     <br>
