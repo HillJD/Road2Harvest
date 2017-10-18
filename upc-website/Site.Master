@@ -68,6 +68,7 @@
                         <li><a runat="server" href="~/events">Events</a></li>
                         <li><a runat="server" href="~/listen">Listen</a></li>
                         <li><a runat="server" href="~/services">Services</a></li>
+                        <li><a runat="server" href="~/give">Giving</a></li>
                     </ul>
                     <%--<asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>

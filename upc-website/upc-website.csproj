@@ -251,6 +251,7 @@
     <Content Include="archives.aspx" />
     <Content Include="audio.aspx" />
     <Content Include="audio1.aspx" />
+    <Content Include="audio2.aspx" />
     <Content Include="audio\4905_20sec.mp3" />
     <Content Include="audio\4933_20sec.mp3" />
     <Content Include="audio\no more night.mp3" />
@@ -783,6 +784,13 @@
     </Compile>
     <Compile Include="audio1.aspx.designer.cs">
       <DependentUpon>audio1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="audio2.aspx.cs">
+      <DependentUpon>audio2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="audio2.aspx.designer.cs">
+      <DependentUpon>audio2.aspx</DependentUpon>
     </Compile>
     <Compile Include="bible.aspx.cs">
       <DependentUpon>bible.aspx</DependentUpon>
