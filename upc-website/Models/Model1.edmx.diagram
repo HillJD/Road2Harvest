@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="452c3f922ca44a86bedd8917c4e6a636" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_110695_carouselModel.ArticleGrp" Width="1.5" PointX="8.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_110695_carouselModel.Article" Width="1.5" PointX="11" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_110695_carouselModel.Book" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_110695_carouselModel.carousel_images" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_110695_carouselModel.Chapter" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_110695_carouselModel.Event" Width="1.5" PointX="3.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_110695_carouselModel.Series" Width="1.5" PointX="3.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_110695_carouselModel.SermonAudio" Width="1.5" PointX="6" PointY="2.5" IsExpanded="true" />
+        <AssociationConnector Association="DB_110695_carouselModel.FK_Articles_ArticleGrp" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_110695_carouselModel.FK_Chapter_Book" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_110695_carouselModel.FK_SermonAudio_Book" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_110695_carouselModel.FK_SermonAudio_Book1" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_110695_carouselModel.FK_SermonAudio_Event" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_110695_carouselModel.FK_SermonAudio_Series" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
