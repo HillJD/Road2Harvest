@@ -14,8 +14,8 @@
 
         <h4>Union Pentecostal Church</h4>
         <h5>1101 North Union Road</h5>
-        <h5>Dayton, Oh 45417</h5>
-        <h5>(937) 555 - 5555</h5>
+        <h5>Dayton, OH  45417</h5>
+        <h5>(937) 854-1351</h5>
     </div>
 
     <div id="map">

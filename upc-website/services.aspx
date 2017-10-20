@@ -20,12 +20,13 @@
     <p><a href="ministries.aspx">Other Ministries</a></p>
 
 
-    <div class="text-center">
+    
 
-        <h3>Union Pentecostal Church</h3>
-        <h4>1101 North Union Road</h4>
-        <h4>Dayton, Oh 45417</h4>
-        <h5>(937)854-1351</h5>
+        <h4>Union Pentecostal Church</h4>
+        <h5>1101 North Union Road</h5>
+        <h5>Dayton, OH  45417</h5>
+        <h5>(937) 854-1351</h5>
+    
 
         <p><a href="location.aspx">Location</a></p>
     </div>
