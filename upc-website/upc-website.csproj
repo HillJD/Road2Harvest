@@ -255,6 +255,8 @@
     <Content Include="audio\4905_20sec.mp3" />
     <Content Include="audio\4933_20sec.mp3" />
     <Content Include="audio\no more night.mp3" />
+    <Content Include="Content\jplayer.pink.flag.css" />
+    <Content Include="glyphicons\glyphicons-social.css" />
     <Content Include="images\audio_player\Asset 1%402x.png" />
     <Content Include="images\audio_player\Asset 1%403x.png" />
     <Content Include="images\audio_player\Asset 1-12.png" />
@@ -377,6 +379,19 @@
     <Content Include="jPlayer-2.9.2\src\skin\pink.flag\mustache\jplayer.pink.flag.audio.stream.html" />
     <Content Include="jPlayer-2.9.2\src\skin\pink.flag\mustache\jplayer.pink.flag.video.playlist.html" />
     <Content Include="jPlayer-2.9.2\src\skin\pink.flag\mustache\jplayer.pink.flag.video.single.html" />
+    <Content Include="jplayer.aspx" />
+    <Content Include="pink.flag\css\jplayer.pink.flag.css" />
+    <Content Include="pink.flag\css\jplayer.pink.flag.min.css" />
+    <Content Include="pink.flag\image\jplayer.pink.flag.jpg" />
+    <Content Include="pink.flag\image\jplayer.pink.flag.seeking.gif" />
+    <Content Include="pink.flag\image\jplayer.pink.flag.video.play.png" />
+    <Content Include="pink.flag\js\jquery.jplayer.min.js" />
+    <Content Include="pink.flag\js\jquery.min.js" />
+    <Content Include="pink.flag\mustache\jplayer.pink.flag.audio.playlist.html" />
+    <Content Include="pink.flag\mustache\jplayer.pink.flag.audio.single.html" />
+    <Content Include="pink.flag\mustache\jplayer.pink.flag.audio.stream.html" />
+    <Content Include="pink.flag\mustache\jplayer.pink.flag.video.playlist.html" />
+    <Content Include="pink.flag\mustache\jplayer.pink.flag.video.single.html" />
     <Content Include="Scripts\audio_player.js" />
     <Content Include="Content\audio_player.css" />
     <Content Include="bible.aspx" />
@@ -492,6 +507,7 @@
     <Content Include="PrayerReq.aspx" />
     <Content Include="prayer.aspx" />
     <Content Include="resources.aspx" />
+    <Content Include="Scripts\jquery.jplayer.min.js" />
     <Content Include="services.aspx" />
     <Content Include="staff.aspx" />
     <Content Include="styles.css" />
@@ -534,6 +550,9 @@
     <Content Include="jPlayer-2.9.2\src\javascript\popcorn\.jshintrc" />
     <Content Include="jPlayer-2.9.2\src\skin\blue.monday\scss\jplayer.blue.monday.scss" />
     <Content Include="jPlayer-2.9.2\src\skin\pink.flag\scss\jplayer.pink.flag.scss" />
+    <Content Include="fonts\glyphicons-social-regular.ttf" />
+    <Content Include="fonts\glyphicons-social-regular.woff" />
+    <Content Include="fonts\glyphicons-social-regular.woff2" />
     <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\upc.pubxml" />
@@ -767,6 +786,13 @@
     </Compile>
     <Compile Include="Church.aspx.designer.cs">
       <DependentUpon>Church.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jplayer.aspx.cs">
+      <DependentUpon>jplayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jplayer.aspx.designer.cs">
+      <DependentUpon>jplayer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ministries.aspx.cs">
       <DependentUpon>Ministries.aspx</DependentUpon>

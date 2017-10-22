@@ -18,9 +18,9 @@
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/upc_dove_favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="~/Content/site2.css" rel="stylesheet" type="text/css" />
-    <link href="~/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="glyphicons/glyphicons.css" rel="stylesheet" type="text/css" />
+    <link href="glyphicons/glyphicons-social.css" rel="stylesheet" />
     <link href="Content/audio_player.css" rel="stylesheet" />
 </head>
 <body>
@@ -97,9 +97,9 @@
 
                 <div class="text-right center-block">
                     <span id="footer-date" class="text-left">&copy; <%: DateTime.Now.Year %> - UPC Version 6.3</span>
-                    <a href="https://www.facebook.com/unionpentecostalchurch"><i class="social-icons fa fa-facebook-square fa-inverse fa-2x social"></i></a>
-                    <a href="https://twitter.com/unionroadchurch"><i class="social-icons fa fa-twitter-square fa-inverse fa-2x social"></i></a>
-                    <a href="http://plus.google.com/b/113686491120109002941"><i class="social-icons fa fa-google-plus-square fa-inverse fa-2x social"></i></a>
+                    <a href="https://www.facebook.com/unionpentecostalchurch"><span class="social social-facebook" style="font-size:24px; color:white;padding-top:2px;"></span></a>
+                    <a href="https://twitter.com/unionroadchurch"><span class="social social-twitter" style="font-size:24px; color:white;padding-top:2px;"></span></a>
+                    <a href="http://plus.google.com/b/113686491120109002941"><span class="social social-google-plus" style="font-size:24px; color:white;padding-top:2px;"></span></a>
                     
                 </div>
             </footer>
