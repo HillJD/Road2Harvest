@@ -1,0 +1,9 @@
+﻿<asp:GridView runat="server" Font-Name="Arial" />
+<asp:GridView runat="server" SkinID="UPC_GV1"
+        BackColor="White"
+        ForeColor="Black"        
+        Font-Name="Montserat"
+        Font-Size="10pt" Cellpadding="3"
+        HeaderStyle-BackColor="White"
+        HeaderStyle-ForeColor="Blue"
+        AlternatingRowStyle-BackColor="#dfc577" />
