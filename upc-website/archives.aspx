@@ -14,16 +14,16 @@
     <div class="table-responsive">
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="SermonAudioID" DataSourceID="SqlDataSource1">
             <Columns>
-                <asp:CommandField ShowSelectButton="True" />
-                <asp:BoundField DataField="SermonAudioID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
+                <asp:CommandField ShowSelectButton="True" selecttext="Play" />
+                <asp:BoundField DataField="SermonAudioID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="SermonAudioID" />
                 <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" />
                 <asp:BoundField DataField="Speaker" HeaderText="Speaker" SortExpression="Speaker" />
-                <asp:BoundField DataField="column1" HeaderText="Book" SortExpression="Book" />
-                <asp:BoundField DataField="column2" HeaderText="Chap" SortExpression="Chap" />
-                <asp:BoundField DataField="column3" HeaderText="V.Strt" SortExpression="V.Strt" />
-                <asp:BoundField DataField="column4" HeaderText="V.End" SortExpression="V.End" />
-                <asp:BoundField DataField="SermonDt" HeaderText="Date" SortExpression="Date" dataformatstring="{0:MM/dd/yy}" />
-                <asp:BoundField DataField="SermonAMPM" HeaderText="AMPM" SortExpression="AMPM" />
+                <asp:BoundField DataField="column1" HeaderText="Book" SortExpression="column1" />
+                <asp:BoundField DataField="column2" HeaderText="Chap" SortExpression="column2" />
+                <asp:BoundField DataField="column3" HeaderText="V.Strt" SortExpression="column3" />
+                <asp:BoundField DataField="column4" HeaderText="V.End" SortExpression="column4" />
+                <asp:BoundField DataField="SermonDt" HeaderText="Date" SortExpression="SermonDt" dataformatstring="{0:MM/dd/yy}" />
+                <asp:BoundField DataField="SermonAMPM" HeaderText="AMPM" SortExpression="SermonAMPM" />
             </Columns>
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1"
