@@ -17,11 +17,11 @@
     </asp:PlaceHolder>
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/upc_dove_favicon.png" rel="shortcut icon" type="image/x-icon" />
-    <link href="~/Content/site2.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/main.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="glyphicons/glyphicons.css" rel="stylesheet" type="text/css" />
     <link href="glyphicons/glyphicons-social.css" rel="stylesheet" />
-    <link href="Content/audio_player.css" rel="stylesheet" />
+    <!--<link href="Content/audio_player.css" rel="stylesheet" />-->
 </head>
 <body>
     <form runat="server">

@@ -414,8 +414,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Content\site2.css" />
+    <Content Include="Content\main.css" />
     <Content Include="css-info.txt" />
     <Content Include="default2.ascx" />
     <Content Include="displayData.aspx" />
@@ -492,9 +491,6 @@
     <Content Include="mapmobile.aspx" />
     <Content Include="media.aspx" />
     <Content Include="ModifyCarousel.html" />
-    <Content Include="Content\myStyles.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="modifyData.aspx" />
     <Content Include="notifications.aspx" />
     <Content Include="panelCtrl.aspx" />

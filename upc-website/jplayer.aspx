@@ -36,9 +36,9 @@
     });
     </script>
 
-
+    
 <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player" style="margin:20px auto;">
   <div class="jp-type-single">
     <div class="jp-gui jp-interface">
       <div class="jp-volume-controls">

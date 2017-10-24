@@ -13,7 +13,26 @@
   width: 100%;
   height: auto;
 }
+/***************** jplayer start*********************/
+.jp-audio {
+    width: 355px !important;/*change*/
+    padding: 20px;
+    
+}
+.jp-progress {
+    background: url(../image/jplayer.pink.flag.jpg) 0px -240px no-repeat;
+    width: 315px !important;
+    height: 13px;
+    padding: 0 2px 2px 2px;
+    margin-top:8px;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
 
+
+
+
+/***************** jplayer end*********************/
 /*Try to force hamburger menu all times 7.27.17*/
 /*.navbar-header {
   float: none;
