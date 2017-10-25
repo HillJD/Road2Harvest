@@ -170,7 +170,4 @@
             </div>
         </div>
     </div>
-
-    <p>*Abbreviated List</p>
-
 </asp:Content>
