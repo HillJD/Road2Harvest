@@ -12,7 +12,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-xs-4 col-sm-5 col-lg-6" style="padding-top: 2px;  padding-bottom: 2px;">
-        <img src="images/Hurst.jpg" style="border:2px #666 solid;height:215px;" class="img-circle">
+        <img src="images/Hurst.jpg" style="border:2px #666 solid;height:215px;" class="img-rounded">
     </div>
     <div class="col-xs-8 col-sm-7 col-lg-6" style="text-align:left;">
       <p>
@@ -30,7 +30,7 @@
    </div>
   <div class="row">
     <div class="col-xs-4 col-sm-5 col-lg-6" style="padding-top: 2px;  padding-bottom: 2px;">
-        <img src="images/McKelvey.jpg" style="border:2px #666 solid; height:215px;" class="img-circle">
+        <img src="images/McKelvey.jpg" style="border:2px #666 solid; height:215px;" class="img-rounded">
     </div>
     <div class="col-xs-8 col-sm-7 col-lg-6" style="text-align:left;">
       <p>
@@ -48,7 +48,7 @@
   </div>
   <div class="row">
     <div class="col-xs-4 col-sm-5 col-lg-6" style="padding-top: 2px;  padding-bottom: 2px;">
-        <img src="images/Maggard.jpg" style="border:2px #666 solid;height:215px;" class="img-circle">
+        <img src="images/Maggard.jpg" style="border:2px #666 solid;height:215px;" class="img-rounded">
     </div>
     <div class="col-xs-8 col-sm-7 col-lg-6" style="text-align:left;">
       <p>
