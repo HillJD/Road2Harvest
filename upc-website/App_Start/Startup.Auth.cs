@@ -67,14 +67,14 @@ namespace upc_website
             };
             facebookOptions.Scope.Add("email");
 
-           
-            
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+
+
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "981970099186-2a1vnn4b867qlppjfctiu1c0ktmg5pla.apps.googleusercontent.com",
+                ClientSecret = "wQuwCPx0y22qZOAEjDcy-3BY"
+            });
         }
     }
 }
