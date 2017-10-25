@@ -385,6 +385,7 @@
     <Content Include="pink.flag\image\jplayer.pink.flag.jpg" />
     <Content Include="pink.flag\image\jplayer.pink.flag.seeking.gif" />
     <Content Include="pink.flag\image\jplayer.pink.flag.video.play.png" />
+    <Content Include="pink.flag\image\jplayer_pink_flag_alt_color.jpg" />
     <Content Include="pink.flag\js\jquery.jplayer.min.js" />
     <Content Include="pink.flag\js\jquery.min.js" />
     <Content Include="pink.flag\mustache\jplayer.pink.flag.audio.playlist.html" />

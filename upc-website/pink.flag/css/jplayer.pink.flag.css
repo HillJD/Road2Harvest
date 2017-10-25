@@ -112,11 +112,12 @@
   height: 50px; }
 
 .jp-controls {
-  background: url("../image/jplayer.pink.flag.jpg") 0 0 no-repeat;
-  padding: 1px 0 2px 1px;
-  overflow: hidden;
-  width: 201px;
-  height: 34px; }
+    background: url("../image/jplayer_pink_flag_alt_color.jpg") 0 0 no-repeat;/*change*/*/
+    padding: 1px 0 2px 1px;
+    overflow: hidden;
+    width: 201px;
+    height: 34px;
+}
 
 .jp-audio .jp-controls,
 .jp-audio-stream .jp-controls {

@@ -29,9 +29,41 @@
     overflow: hidden;
 }
 
+.jp-volume-bar {
+    background: url(../image/jplayer.pink.flag.jpg) 0px -300px repeat-x;
+    position: absolute;
+    width: 315px !important;
+    height: 4px;
+    padding: 2px 2px 1px 2px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.jp-audio,
+.jp-audio-stream,
+.jp-video {
+    font-size: 16px;
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    border-top: 1px solid #554461;
+    border-left: 1px solid #554461;
+    border-right: 1px solid #180a1f;
+    border-bottom: 1px solid #180a1f;
+    background-color: rgba(0,21,64,1) !important;
+}
+.jp-controls {
+    background: url("../image/jplayer_pink_flag_alt_color.jpg") 0 0 no-repeat;
+    padding: 1px 0 2px 1px;
+    overflow: hidden;
+    width: 201px;
+    height: 34px;
+}
+/* Collapse, i.e. beliefs.aspx dropdowns for beliefs start*/
+.drop_arrow::after {
+    content:"Mike's ending";
+}
 
-
-
+/* Collapse, i.e. beliefs.aspx dropdowns for beliefs end*/
 /***************** jplayer end*********************/
 /*Try to force hamburger menu all times 7.27.17*/
 /*.navbar-header {
@@ -53,8 +85,6 @@
   display:block !important;
 }*/
 /*Try to force hamburger menu all times*/
-
-
 /*Try to force hamburger menu @1600 px tablets*/
 @media (max-width: 860px) {
     .navbar-header {
