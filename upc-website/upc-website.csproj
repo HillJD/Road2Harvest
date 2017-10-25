@@ -304,7 +304,10 @@
     <Content Include="images\audio_player\speaker_muted_72px.png" />
     <Content Include="images\audio_player\unmute.png" />
     <Content Include="images\FGBI_Logo.png" />
+    <Content Include="images\Hurst.jpg" />
     <Content Include="images\LC_YouVersion_Logo_with_icon_Light.png" />
+    <Content Include="images\Maggard.jpg" />
+    <Content Include="images\McKelvey.jpg" />
     <Content Include="images\OBI.png" />
     <Content Include="images\Revive Our Hearts logo.jpg" />
     <Content Include="images\RZIM3Color.png" />
@@ -399,11 +402,8 @@
     <Content Include="Church.aspx" />
     <Content Include="dove_in_circle_favicon.png" />
     <Content Include="images\ET1.png" />
-    <Content Include="images\McK_Crop.jpg" />
-    <Content Include="images\Ruth00.jpg" />
     <Content Include="images\UPC_CM.jpg" />
     <Content Include="images\Worship00.JPG" />
-    <Content Include="images\younghurst.jpg" />
     <Content Include="Ministries.aspx" />
     <Content Include="beliefs.aspx" />
     <Content Include="buildcontrol.aspx" />
@@ -444,8 +444,6 @@
     <Content Include="images\3_4.jpg" />
     <Content Include="images\4.jpg" />
     <Content Include="images\5.jpg" />
-    <Content Include="images\6.jpg" />
-    <Content Include="images\7.jpg" />
     <Content Include="images\carousel\1.jpg" />
     <Content Include="images\carousel\10.jpg" />
     <Content Include="images\carousel\11.jpg" />
@@ -469,12 +467,8 @@
     <Content Include="images\carousel\default carousel image.jpg" />
     <Content Include="images\carousel\default_carousel.jpg" />
     <Content Include="images\churchbuilding.jpg" />
-    <Content Include="images\dove3.png" />
-    <Content Include="images\dove40px.jpg" />
     <Content Include="images\DoveIconTrans.png" />
     <Content Include="images\DoveIconTrans2.png" />
-    <Content Include="images\gena upc dove white-03.png" />
-    <Content Include="images\gena upc dove-01-03.png" />
     <Content Include="images\live stream.jpg" />
     <Content Include="images\pic1.jpg" />
     <Content Include="images\pic2.jpg" />
