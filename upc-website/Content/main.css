@@ -59,7 +59,7 @@
     height: 34px;
 }
 /* Collapse, i.e. beliefs.aspx dropdowns for beliefs start*/
-.drop_arrow::after {
+.drop_arrow:after {
     content:"Mike's ending";
 }
 
