@@ -58,13 +58,14 @@
     width: 201px;
     height: 34px;
 }
+/***************** jplayer end*********************/
+
 /* Collapse, i.e. beliefs.aspx dropdowns for beliefs start*/
 .drop_arrow:after {
     content:"Mike's ending";
 }
-
 /* Collapse, i.e. beliefs.aspx dropdowns for beliefs end*/
-/***************** jplayer end*********************/
+
 /*Try to force hamburger menu all times 7.27.17*/
 /*.navbar-header {
   float: none;

@@ -12,10 +12,10 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-xs-4 col-sm-5 col-lg-6" style="padding-top: 2px;  padding-bottom: 2px;">
-        <img src="images/Hurst.jpg" style="border:2px #666 solid;height:215px;" class="img-rounded">
+        <img src="images/hurst_342px.jpg" style="border:2px #666 solid;height:215px;" class="img-rounded">
     </div>
     <div class="col-xs-8 col-sm-7 col-lg-6" style="text-align:left;">
-      <p>
+
         <button type="button" style="text-align:left;" class="btn-belief btn btn-link"data-toggle="collapse" data-target="#Staff00">Pastor Clifford Hurst</button>
           <div id="Staff00" class="collapse">
               Pastor Clifford Hurst has been in the ministry since 1979.   He has served, often concurrently, as
@@ -25,15 +25,14 @@
               degree in Bible literature with Old Testament emphasis.  In 1984 he married Sandra who shares in
               the ministry with him.  They have four children and nine grandchildren.
           </div>
-      </p>
+
     </div>
    </div>
   <div class="row">
     <div class="col-xs-4 col-sm-5 col-lg-6" style="padding-top: 2px;  padding-bottom: 2px;">
-        <img src="images/McKelvey.jpg" style="border:2px #666 solid; height:215px;" class="img-rounded">
+        <img src="images/mckelvey_342px.jpg" style="border:2px #666 solid; height:215px;" class="img-rounded">
     </div>
     <div class="col-xs-8 col-sm-7 col-lg-6" style="text-align:left;">
-      <p>
         <button type="button" style="text-align:left;" class="btn-belief btn btn-link"data-toggle="collapse" data-target="#Staff01">Youth Pastor Bryan McKelvey</button>
           <div id="Staff01" class="collapse">
               Pastor Bryan Mckelvey answered the call to preach at the age of 14 and a year later preached his first
@@ -43,15 +42,13 @@
               youth camps and youth retreats. They have a burden for teens and pre-teens to experience the love of
               God and His plans for their life. Bryan and Sarah have three children, Emma, Preston, and Eden. 
           </div>
-      </p>
     </div>
   </div>
   <div class="row">
     <div class="col-xs-4 col-sm-5 col-lg-6" style="padding-top: 2px;  padding-bottom: 2px;">
-        <img src="images/Maggard.jpg" style="border:2px #666 solid;height:215px;" class="img-rounded">
+        <img src="images/maggard_342px.jpg" style="border:2px #666 solid;height:215px;" class="img-rounded">
     </div>
     <div class="col-xs-8 col-sm-7 col-lg-6" style="text-align:left;">
-      <p>
         <button type="button" style="text-align:left;" class="btn-belief btn btn-link"data-toggle="collapse" data-target="#Staff02">Children's Ministries Leader Ruth Maggard</button>
           <div id="Staff02" class="collapse">
             Ruth A. Maggard, born in Dayton, Ohio has had a burden for ministry since the age of 8
@@ -66,7 +63,7 @@
             with the Gospel through puppets, skits, songs, stories, object lessons, etc.  Her ministry
             motto is “Partnering with Families to Help Strengthen Today’s Kids”!
           </div>
-      </p>
+
     </div>
    </div>
 </div>
