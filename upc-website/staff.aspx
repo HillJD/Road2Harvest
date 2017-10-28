@@ -12,10 +12,10 @@
 
     <div class="row" style="margin-bottom: 10px">
         <div class="col-xs-12 col-lg-12">
-            <img src="/images/hurst_342px.jpg" style="border: 2px #666 solid; alt='Pastor Hurst'"  class="staff-lead-pastor img-rounded img-responsive" />
+            <img src="/images/hurst_342px.jpg" style="border: 2px #666 solid;" alt="Pastor Hurst"; class="staff-lead-pastor img-rounded img-responsive" />
             <div style="font-size: 24px; font-weight: 800; margin: 5px 0;">Clifford & Sandra Hurst</div>
             <div style="font-size: 18px; font-weight: 700; margin: 5px 0;">Pastors</div>
-            <div style="margin-bottom: 10px; font-size: 16px;">
+            <div style="margin-bottom: 10px; font-size: 16px; width:60%;">
                 Pastor Clifford Hurst has been in the ministry since 1979.   He has served, often concurrently, as
               youth leader, evangelist, Bible school instructor, principal, instructor, and administrator of
               Christian schools, leader of Pentecostal associations, and, since 1992, as pastor of the Union
@@ -26,10 +26,10 @@
         </div>
         <div class="row" style="margin-bottom: 10px;">
             <div class="col-xs-12 col-lg-12" style="padding-left:30px;">
-                <img src="/images/mckelvey_342px.jpg" style="border: 2px #666 solid; alt='Pastor McKelvey'" class="staff-youth-pastor img-rounded img-responsive" />
+                <img src="/images/mckelvey_342px.jpg" style="border: 2px #666 solid;" alt="Pastor McKelvey"; class="staff-youth-pastor img-rounded img-responsive" />
                 <div style="font-size: 24px; font-weight: 800; margin: 5px 0;">Bryan & Sara McKelvey</div>
                 <div style="font-size: 18px; font-weight: 700; margin: 5px 0;">Youth Pastors</div>
-                <div style="margin-bottom: 10px; font-size: 16px;">
+                <div style="margin-bottom: 10px; font-size: 16px; width:60%;">
                     Pastor Bryan Mckelvey answered the call to preach at the age of 14 and a year later preached his first
               sermon.  In 2007, at the age of 21, he began as our youth leader. A year later he and Sarah (Baker)
               were married and obtained the official role as Youth Pastor, in 2008. Together they have directed the
@@ -41,10 +41,10 @@
         </div>
         <div class="row" style="margin-bottom: 10px">
             <div class="col-xs-12 col-lg-12" style="padding-left:30px;">
-                <img src="/images/maggard_342px.jpg" style="border: 2px #666 solid; alt='Sis Ruth Maggard'" class=" staff-kids-pastor img-rounded img-responsive" />
+                <img src="/images/maggard_342px.jpg" style="border: 2px #666 solid;" alt="Sis Ruth Maggard"; class=" staff-kids-pastor img-rounded img-responsive" />
                 <div style="font-size: 24px; font-weight: 800; margin: 5px 0;">Ruth Maggard</div>
                 <div style="font-size: 18px; font-weight: 700; margin: 5px 0;">Children's Ministry & Outreach Director</div>
-                <div style="margin-bottom: 10px; font-size: 16px;">
+                <div style="margin-bottom: 10px; font-size: 16px; width:60%;">
                     Ruth A. Maggard, born in Dayton, Ohio has had a burden for ministry since the age of 8
             when she first felt the Lord lay His hand on her life. She has been actively involved in children’s
             ministry since she was a teenager.  In 2003, immediately after graduating from Bible College,
