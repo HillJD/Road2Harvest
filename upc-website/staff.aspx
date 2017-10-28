@@ -12,7 +12,7 @@
 
     <div class="row" style="margin-bottom: 10px">
         <div class="col-xs-12 col-lg-12">
-            <img src="/images/hurst_342px.jpg" style="border: 2px #666 solid;" class="staff-lead-pastor img-rounded img-responsive" />
+            <img src="/images/hurst_342px.jpg" style="border: 2px #666 solid; alt='Pastor Hurst'"  class="staff-lead-pastor img-rounded img-responsive" />
             <div style="font-size: 24px; font-weight: 800; margin: 5px 0;">Clifford & Sandra Hurst</div>
             <div style="font-size: 18px; font-weight: 700; margin: 5px 0;">Pastors</div>
             <div style="margin-bottom: 10px; font-size: 16px;">
@@ -26,7 +26,7 @@
         </div>
         <div class="row" style="margin-bottom: 10px;">
             <div class="col-xs-12 col-lg-12" style="padding-left:30px;">
-                <img src="/images/mckelvey_342px.jpg" style="border: 2px #666 solid;" class="staff-youth-pastor img-rounded img-responsive" />
+                <img src="/images/mckelvey_342px.jpg" style="border: 2px #666 solid; alt='Pastor McKelvey'" class="staff-youth-pastor img-rounded img-responsive" />
                 <div style="font-size: 24px; font-weight: 800; margin: 5px 0;">Bryan & Sara McKelvey</div>
                 <div style="font-size: 18px; font-weight: 700; margin: 5px 0;">Youth Pastors</div>
                 <div style="margin-bottom: 10px; font-size: 16px;">
@@ -41,7 +41,7 @@
         </div>
         <div class="row" style="margin-bottom: 10px">
             <div class="col-xs-12 col-lg-12" style="padding-left:30px;">
-                <img src="/images/maggard_342px.jpg" style="border: 2px #666 solid;" class=" staff-kids-pastor img-rounded img-responsive" />
+                <img src="/images/maggard_342px.jpg" style="border: 2px #666 solid; alt='Sis Ruth Maggard'" class=" staff-kids-pastor img-rounded img-responsive" />
                 <div style="font-size: 24px; font-weight: 800; margin: 5px 0;">Ruth Maggard</div>
                 <div style="font-size: 18px; font-weight: 700; margin: 5px 0;">Children's Ministry & Outreach Director</div>
                 <div style="margin-bottom: 10px; font-size: 16px;">
