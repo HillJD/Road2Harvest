@@ -25,6 +25,7 @@
         name <asp:LoginName ID="LoginName1" runat="server" /> <br />
         status <asp:LoginStatus ID="LoginStatus1" runat="server" /> <br />
         view <asp:LoginView ID="LoginView1" runat="server"></asp:LoginView> <br />  
+
     </div>
    
 </asp:Content>
