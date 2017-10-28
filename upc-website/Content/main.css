@@ -66,8 +66,8 @@
 }
 /* Collapse, i.e. beliefs.aspx dropdowns for beliefs end*/
 
-/*Try to force hamburger menu all times 7.27.17*/
-/*.navbar-header {
+/*Try to force hamburger menu all times start 7.27.17*/
+.navbar-header {
   float: none;
 }
 .navbar-toggle {
@@ -84,8 +84,9 @@
 }
 .navbar-collapse.collapse.in{
   display:block !important;
-}*/
-/*Try to force hamburger menu all times*/
+}
+/*Try to force hamburger menu all times end*/
+
 /*Try to force hamburger menu @1600 px tablets*/
 @media (max-width: 860px) {
     .navbar-header {
@@ -557,6 +558,26 @@ body {
  #footer-date {
      color:white;
  }
+ /*Style staff pics start*/
+    
+ .staff-lead-pastor {
+    width:342px;
+    height:342px;
+     background-image:url("../images/hurst_342px.jpg");
+     
+    }
+    .staff-youth-pastor {
+        width: 342px;
+        height: 342px;
+        background-image: url("../images/mckelvey_342px.jpg");
+    }
+
+    .staff-kids-pastor {
+        width: 342px;
+        height: 342px;
+        background-image: url("../images/maggard_342px.jpg");
+    }
+    /*Style staff pics end*/
 /***************** media query styling ******************************************/ 
  @media screen and (min-width: 768px) {
 .navbar-brand {
@@ -567,6 +588,9 @@ body {
     line-height: 20px;
     transform: translate(-10%,-38%);
     }
+    .navbar-collapse.in {
+        overflow-y: auto !important;
+    }
 
 .navbar-nav > li > a {
         padding-top: 15px;
@@ -575,17 +599,43 @@ body {
         padding-right: 9px;
     }
 
+    .staff-lead-pastor {
+        width:576px;
+        height:576px;
+        background:url('../images/hurst_576px.jpg');
+        background-repeat:no-repeat;
+    }
+
+    .staff-youth-pastor {
+        width: 576px;
+        height: 576px;
+        background-image: url("../images/mckelvey_576px.jpg");
+        background-repeat: no-repeat;
+    }
+
+    .staff-kids-pastor {
+        width: 576px;
+        height: 576px;
+        background: url('../images/maggard_576px.jpg');
+        background-repeat: no-repeat;
+    }
+/*.navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible;
+}*/
 /*.col-lg-4, .col-md-6, .col-sm-6, .col-xs-6, span {
     display:block;
     text-align:center;
     font-size: 18px;
   }*/
 
- .col-lg-4, .col-md-6, .col-sm-6, .col-xs-6, span {
+ /*.col-lg-4, .col-md-6, .col-sm-6, .col-xs-6, span {
     display:block;
     text-align:center;
     font-size: 32px;
-  }
+  }*/
 
 .carousel {
   height: auto;
@@ -607,8 +657,6 @@ body {
             margin-bottom: -20px;
         }
 
-   
-
         .navbar-brand {
             float: left;
             height: 50px;
@@ -617,6 +665,7 @@ body {
             line-height: 20px;
             transform: translate(-2%,-23%); /* Move dove and text up*/
         }
+
     }
 /***************** end media query styling ******************************************/  
 
