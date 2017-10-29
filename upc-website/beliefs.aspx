@@ -18,7 +18,7 @@
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">We believe in God; Eternal and Almighty</a>
                     </h4>
                 </div>
-                <div id="collapse1" class="panel-collapse collapse in">
+                <div id="collapse1" class="panel-collapse collapse">
                     <div class="panel-body">
                         We believe in God Who is the Eternal and Almighty Creator of all things. (Eph 3:9; Gen. 1:1).
                     </div>

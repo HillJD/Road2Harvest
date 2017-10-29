@@ -19,7 +19,7 @@
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Hope</a>
                     </h4>
                 </div>
-                <div id="collapse1" class="panel-collapse collapse in">
+                <div id="collapse1" class="panel-collapse collapse">
                     <div class="panel-body">
                         You may have discovered that your life seems empty and meaningless. Modern humanity has 
                 seen the advancement of science, the explosion of technology, the development of the best 
