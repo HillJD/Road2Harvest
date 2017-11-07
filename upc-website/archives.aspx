@@ -14,16 +14,17 @@
     <div class="table-responsive">
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="SermonAudioID" DataSourceID="SqlDataSource1" SkinID="UPC_GV1">
             <Columns>
-                <asp:ImageField HeaderText="Image"
+                <asp:ImageField HeaderText="Title Slide"
                     DataImageUrlField="ImageURL" 
-                    ControlStyle-Height="150px" 
+                    ControlStyle-Height="86px" 
                     ControlStyle-Width="150px"
                 />
                 <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" />
                 <asp:BoundField DataField="Speaker" HeaderText="Speaker" SortExpression="Speaker" />
                 <asp:BoundField DataField="SermonDt" HeaderText="Date" SortExpression="SermonDt" dataformatstring="{0:MM/dd/yy}" />
-                <asp:HyperLinkField  Text='<i class="glyphicons glyphicons-play mypage-glythicons"></i>'
-                    HeaderText="More Details" 
+                <asp:HyperLinkField
+                    Text="<i aria-hidden='true' class='glyphicons glyphicons-play'></i>"
+                    HeaderText=""
                     DataNavigateUrlFields="AudioURL" />
             </Columns>
         </asp:GridView>
