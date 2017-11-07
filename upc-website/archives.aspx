@@ -19,9 +19,26 @@
                     ControlStyle-Height="86px" 
                     ControlStyle-Width="150px"
                 />
-                <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" />
-                <asp:BoundField DataField="Speaker" HeaderText="Speaker" SortExpression="Speaker" />
-                <asp:BoundField DataField="SermonDt" HeaderText="Date" SortExpression="SermonDt" dataformatstring="{0:MM/dd/yy}" />
+                
+                <asp:TemplateField HeaderText="Sermon" SortExpression="Title">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="TextBox1" runat="server"
+                            Text='<%# Bind("Title") %>'></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="Label1" runat="server"
+                            class="text-left small"
+                            Text='<%# Bind("Title") %>'></asp:Label>
+                        <asp:Label ID="Label2" runat="server"
+                            class="text-left small"
+                            Text='<%# Eval("Speaker") %>'></asp:Label>
+                        <asp:Label ID="Label3" runat="server"
+                            class="text-left small"
+                            Text='<%# String.Format("{0:MM/dd/yy}", Eval("SermonDt")) %>'>
+                        </asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
+
                 <asp:HyperLinkField
                     Text="<i aria-hidden='true' class='glyphicons glyphicons-play'></i>"
                     HeaderText=""
