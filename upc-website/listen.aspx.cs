@@ -53,7 +53,7 @@ namespace upc_website
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("sermons.aspx");
+            Response.Redirect("archives.aspx");
         }
 
         protected void ImageButton3_Click(object sender, ImageClickEventArgs e)

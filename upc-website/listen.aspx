@@ -16,7 +16,6 @@
         <p><asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/images/sermon stream.jpg" Width="100%" /></p>
         <p><asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" ImageUrl="~/images/sermon archive.jpg" Width="100%" /></p>
         <p><asp:ImageButton ID="ImageButton3" runat="server" OnClick="ImageButton3_Click" ImageUrl="~/images/tunein.jpg" Width="100%" /> </p>
-        <h4><a runat="server" href="archives.aspx">Message Archives</a></h4>
         
     </div>
 </asp:Content>

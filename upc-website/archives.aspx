@@ -6,7 +6,7 @@
     <span class="glyphicons glyphicons-headphones mypage-glythicons"></span>
 </div>
 <div class="mypage-header text-center">
-    <h4><b>Message Archives</b></h4>
+    <h4><b>Sermon Archives</b></h4>
 </div>
 
 
@@ -26,9 +26,9 @@
                             Text='<%# Bind("Title") %>'></asp:TextBox>
                     </EditItemTemplate>
                     <ItemTemplate>
-                        <asp:Label ID="Label1" runat="server"
+                        <h3><strong><asp:Label ID="Label1" runat="server"
                             class="text-left small"
-                            Text='<%# Bind("Title") %>'></asp:Label>
+                            Text='<%# Bind("Title") %>'></asp:Label></strong></h3>
                         <asp:Label ID="Label2" runat="server"
                             class="text-left small"
                             Text='<%# Eval("Speaker") %>'></asp:Label>
