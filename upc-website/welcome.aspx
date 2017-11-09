@@ -14,7 +14,7 @@
         <p><a href="Ministries.aspx">Our Ministries / Groups</a></p>
         <p><a href="help.aspx">Help and Hope</a></p>
         <p><a href="beliefs.aspx">Our Beliefs</a></p>
-        <p><a href="WelcomeVid.aspx">Welcome Video</a></p>
+        
     </div>
     <div>
         <img id="church_pic" src="images/InsidePic.jpg" /> 
