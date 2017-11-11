@@ -9,7 +9,14 @@
     <h4><b>Sermon Archives</b></h4>
 </div>
 
+Enter Search Value: 
+            <asp:TextBox ID="txtFind" runat="server"></asp:TextBox>
+            <input type="submit" id="btSubmit" runat="server" />
 
+            <%--LABEL TO SHOW ROW COUNT.--%>
+            <div style="clear:both;padding:10px 0;">
+                <label id="msg" runat="server"></label>
+            </div>
 
     <div class="table-responsive">
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="SermonAudioID" DataSourceID="SqlDataSource1" SkinID="UPC_GV1">
@@ -49,7 +56,13 @@
             runat="server"
             ConnectionString="<%$ ConnectionStrings:DB_110695_carouselConnectionString %>"
             SelectCommand="SELECT [SermonAudioID], [ImageURL], [Title], [Speaker], [SermonDt], [AudioURL]
-            FROM [SermonAudio] ORDER BY [SermonDt] DESC">
+            FROM [SermonAudio] ORDER BY [SermonDt] DESC"
+            FilterExpression="[Title] LIKE '%{0}%'">
+
+                    <FilterParameters>
+                        <asp:ControlParameter Name="BookName" 
+                            ControlID="txtFind" PropertyName="Text" />
+                    </FilterParameters>
         </asp:SqlDataSource>
     
 
