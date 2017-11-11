@@ -21,9 +21,9 @@
                 </div>
                 <div id="collapse1" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <p class="ministry-font-size">Sunday School 10am</p>
-                        <p class="ministry-font-size">Sunday Services 11am & 6pm</p>
-                        <p class="ministry-font-size">Wednesday Service 7:30pm</p>
+                        <p class="ministry-font-size">Sunday School 10 am.</p>
+                        <p class="ministry-font-size">Sunday Services 11 am & 6 pm.</p>
+                        <p class="ministry-font-size">Wednesday Service 7:30 pm.</p>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                 </div>
                 <div id="collapse2" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <h4 class="ministry-font-size">Prayer Meetings (Tuesday mornings at 10:00am & Sunday evenings at 5:30)</h4>
+                        <h4 class="ministry-font-size">Prayer Meetings (Tuesday mornings at 10:00am & Sunday evenings at 5:30.)</h4>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                 </div>
                 <div id="collapse3" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <h4 class="ministry-font-size"">Sunday School classes (Classes for all ages; 10:00-10:45 am)</h4>
+                        <h4 class="ministry-font-size"">Sunday School classes (Classes for all ages; 10:00-10:45 am.)</h4>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
                 </div>
                 <div id="collapse4" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <h4 class="ministry-font-size"> Wednesday Kids Classes (Ages 4-11; 7:30-8:30 pm)</h4>
+                        <h4 class="ministry-font-size"> Wednesday Kids Classes (Ages 4-11; 7:30-8:30 pm.)</h4>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                 </div>
                 <div id="collapse6" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <h4 class="ministry-font-size">Nursing Home Ministry (A youth group service on the first Tuesday of each month for residents)</h4>
+                        <h4 class="ministry-font-size">Nursing Home Ministry (A youth group service on the first Tuesday of each month for residents.)</h4>
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@
                 </div>
                 <div id="collapse7" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <h4 class="ministry-font-size">Outreach Ministry (Saturday’s at Noon)</h4>
+                        <h4 class="ministry-font-size">Outreach Ministry (Saturday’s at Noon.)</h4>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
                 </div>
                 <div id="collapse8" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <h4 class="ministry-font-size">Bus Ministry (Provides transportation for Individuals to attend Church; children must be potty trained to attend without an adult)</h4>
+                        <h4 class="ministry-font-size">Bus Ministry (Provides transportation for Individuals to attend Church; children must be potty trained to attend without an adult.)</h4>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@
                 </div>
                 <div id="collapse13" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <h4 class="ministry-font-size">Senior Saints Breakfast (Breakfast and fellowship held on the first Saturday of the month at 9:00am. Ages 60+)</h4>
+                        <h4 class="ministry-font-size">Senior Saints Breakfast (Breakfast and fellowship held on the first Saturday of the month at 9:00 am. Ages 60+.)</h4>
                     </div>
                 </div>
             </div>
