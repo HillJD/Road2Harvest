@@ -308,6 +308,11 @@
    /*}*/
  
 /* Carousel Fading slide added 5.19.17 from CodePen*/
+/* Ministry page font-size */
+.ministry-font-size {
+    font-size:16px !important;
+}
+
 #calendar {
 position:relative;
 }
