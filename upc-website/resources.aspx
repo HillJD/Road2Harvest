@@ -13,13 +13,17 @@
 
 
     <div class="jumbotron text-center">
-    <script type="text/javascript">
-    document.write("<iframe src=\"http://www.kingjamesonline.org/inspiring-images-widget.php\" style=\"width: 344px; height: 344px; border: 0px solid #ffffff;\"></iframe>");
-    </script>
+   
+   <!-- Verse of the Day. https://biblia.com/plugins/verseoftheday -->
+<biblia:verseoftheday resource="kjv1900" width="300" height="250" singleImage="false" theme="colorbar" variant="light"></biblia:verseoftheday>
+<!-- If you’re including multiple Biblia widgets, you only need this script tag once -->
+<script src="//biblia.com/api/logos.biblia.js"></script>
+<script>logos.biblia.init();</script>
+   
         <h4><a runat="server" href="Give.aspx">Online Giving</a></h4>
         <h4><a runat="server" href="listen.aspx">Streaming Audio</a></h4>
         <h4><a runat="server" href="archives.aspx">Message Archives</a></h4>
-        <h4><a runat="server" href="pastors-blog.aspx">Pastors Blog</a></h4>
+        <h4><a runat="server" href="pastors-blog.aspx">Pastor's Blog</a></h4>
         <h4><a runat="server" href="Links.aspx">Links</a></h4>
         <h4><a runat="server" href="~/bible">YouVersion Bible</a></h4>
     </div>

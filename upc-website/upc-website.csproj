@@ -518,6 +518,7 @@
     <Content Include="upcoming.aspx" />
     <Content Include="Give.aspx" />
     <Content Include="Links.aspx" />
+    <Content Include="Missionaries.aspx" />
     <Content Include="WelcomeVid.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -1098,6 +1099,13 @@
     </Compile>
     <Compile Include="Links.aspx.designer.cs">
       <DependentUpon>Links.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Missionaries.aspx.cs">
+      <DependentUpon>Missionaries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Missionaries.aspx.designer.cs">
+      <DependentUpon>Missionaries.aspx</DependentUpon>
     </Compile>
     <Compile Include="WelcomeVid.aspx.cs">
       <DependentUpon>WelcomeVid.aspx</DependentUpon>
