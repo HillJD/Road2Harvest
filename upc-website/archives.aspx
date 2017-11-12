@@ -14,7 +14,7 @@
     <td><asp:TextBox ID="txtFind01" runat="server"></asp:TextBox><br /></td>
   </tr>
   <tr>
-    <td style="text-align:right">Search Speaker:</td>
+    <td style="text-align:right">Speaker:</td>
     <td><asp:TextBox ID="txtFind02" runat="server"></asp:TextBox></td>
   </tr>
   <tr>
