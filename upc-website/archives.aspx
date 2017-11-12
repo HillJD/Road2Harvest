@@ -56,6 +56,7 @@
                     HeaderText=""
                     DataNavigateUrlFields="AudioURL" />
             </Columns>
+            <PagerStyle HorizontalAlign = "Center" CssClass = "GridPager" />
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1"
             runat="server"
