@@ -1,8 +1,8 @@
-﻿<asp:GridView runat="server" Font-Name="Montserat" />
-<asp:GridView runat="server" SkinID="UPC_GV1"
+﻿<asp:GridView runat="server" SkinID="UPC_GV1"
         BackColor="White"
         ForeColor="Black"        
         Font-Name="Montserat"
         Font-Size="10pt" Cellpadding="3"
         HeaderStyle-BackColor="White"
-        HeaderStyle-ForeColor="Blue"/>
+        HeaderStyle-ForeColor="Blue"
+        GridLines="Horizontal"/>
