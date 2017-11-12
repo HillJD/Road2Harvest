@@ -13,31 +13,31 @@ namespace upc_website {
     public partial class archives {
         
         /// <summary>
-        /// txtFind control.
+        /// txtFind01 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFind;
+        protected global::System.Web.UI.WebControls.TextBox txtFind01;
         
         /// <summary>
-        /// btSubmit control.
+        /// txtFind02 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputSubmit btSubmit;
+        protected global::System.Web.UI.WebControls.TextBox txtFind02;
         
         /// <summary>
-        /// msg control.
+        /// Submit1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl msg;
+        protected global::System.Web.UI.HtmlControls.HtmlInputSubmit Submit1;
         
         /// <summary>
         /// GridView1 control.

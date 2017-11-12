@@ -8,16 +8,20 @@
 <div class="mypage-header text-center">
     <h4><b>Sermon Archives</b></h4>
 </div>
-
-Enter Search Value: 
-            <asp:TextBox ID="txtFind" runat="server"></asp:TextBox>
-            <input type="submit" id="btSubmit" runat="server" />
-
-            <%--LABEL TO SHOW ROW COUNT.--%>
-            <div style="clear:both;padding:10px 0;">
-                <label id="msg" runat="server"></label>
-            </div>
-
+<table class="table" style="width:100%">
+  <tr>
+    <td style="text-align:right">Search Title:</td>
+    <td><asp:TextBox ID="txtFind01" runat="server"></asp:TextBox><br /></td>
+  </tr>
+  <tr>
+    <td style="text-align:right">Speaker:</td>
+    <td><asp:TextBox ID="txtFind02" runat="server"></asp:TextBox></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="submit" id="Submit1" runat="server" /></td>
+  </tr>
+</table>
     <div class="table-responsive">
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="SermonAudioID" DataSourceID="SqlDataSource1" SkinID="UPC_GV1">
             <Columns>
@@ -31,18 +35,19 @@ Enter Search Value:
                     <EditItemTemplate>
                         <asp:TextBox ID="TextBox1" runat="server"
                             Text='<%# Bind("Title") %>'></asp:TextBox>
-                    </EditItemTemplate>
+                    </EditItemTemplate> 
                     <ItemTemplate>
                         <h3><strong><asp:Label ID="Label1" runat="server"
                             class="text-left small"
+                            ForeColor="Black"
                             Text='<%# Bind("Title") %>'></asp:Label></strong></h3>
-                        <asp:Label ID="Label2" runat="server"
+                        <p><asp:Label ID="Label2" runat="server"
                             class="text-left small"
                             Text='<%# Eval("Speaker") %>'></asp:Label>
                         <asp:Label ID="Label3" runat="server"
                             class="text-left small"
                             Text='<%# String.Format("{0:MM/dd/yy}", Eval("SermonDt")) %>'>
-                        </asp:Label>
+                        </asp:Label></p>
                     </ItemTemplate>
                 </asp:TemplateField>
 
@@ -51,17 +56,20 @@ Enter Search Value:
                     HeaderText=""
                     DataNavigateUrlFields="AudioURL" />
             </Columns>
+            <PagerStyle HorizontalAlign = "Center" CssClass = "GridPager" />
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1"
             runat="server"
             ConnectionString="<%$ ConnectionStrings:DB_110695_carouselConnectionString %>"
             SelectCommand="SELECT [SermonAudioID], [ImageURL], [Title], [Speaker], [SermonDt], [AudioURL]
             FROM [SermonAudio] ORDER BY [SermonDt] DESC"
-            FilterExpression="[Title] LIKE '%{0}%'">
+            FilterExpression="[Title] LIKE '%{0}%' AND [Speaker] LIKE '%{1}%'">
 
                     <FilterParameters>
-                        <asp:ControlParameter Name="BookName" 
-                            ControlID="txtFind" PropertyName="Text" />
+                        <asp:ControlParameter Name="Title" 
+                            ControlID="txtFind01" PropertyName="Text" ConvertEmptyStringToNull="false"/>
+                        <asp:ControlParameter Name="Speaker" 
+                            ControlID="txtFind02" PropertyName="Text" ConvertEmptyStringToNull="false"/>
                     </FilterParameters>
         </asp:SqlDataSource>
     
