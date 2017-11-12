@@ -8,7 +8,7 @@
 <div class="mypage-header text-center">
     <h4><b>Sermon Archives</b></h4>
 </div>
-<table style="width:100%">
+<table class="table" style="width:100%">
   <tr>
     <td style="text-align:right">Search Title:</td>
     <td><asp:TextBox ID="txtFind01" runat="server"></asp:TextBox><br /></td>
@@ -22,7 +22,6 @@
     <td><input type="submit" id="Submit1" runat="server" /></td>
   </tr>
 </table>
-
     <div class="table-responsive">
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="SermonAudioID" DataSourceID="SqlDataSource1" SkinID="UPC_GV1">
             <Columns>
