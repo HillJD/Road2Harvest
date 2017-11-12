@@ -8,17 +8,20 @@
 <div class="mypage-header text-center">
     <h4><b>Sermon Archives</b></h4>
 </div>
-
- Search  Title:
-            <asp:TextBox ID="txtFind01" runat="server"></asp:TextBox><br />
-Search Speaker:
-            <asp:TextBox ID="txtFind02" runat="server"></asp:TextBox>
-            <input type="submit" id="btSubmit01" runat="server" />
-
-            <%--LABEL TO SHOW ROW COUNT.--%>
-            <div style="clear:both;padding:10px 0;">
-                <label id="msg" runat="server"></label>
-            </div>
+<table style="width:100%">
+  <tr>
+    <td style="text-align:right">Search Title:</td>
+    <td><asp:TextBox ID="txtFind01" runat="server"></asp:TextBox><br /></td>
+  </tr>
+  <tr>
+    <td style="text-align:right">Search Speaker:</td>
+    <td><asp:TextBox ID="txtFind02" runat="server"></asp:TextBox></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><input type="submit" id="Submit1" runat="server" /></td>
+  </tr>
+</table>
 
     <div class="table-responsive">
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="SermonAudioID" DataSourceID="SqlDataSource1" SkinID="UPC_GV1">

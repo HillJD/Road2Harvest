@@ -31,22 +31,13 @@ namespace upc_website {
         protected global::System.Web.UI.WebControls.TextBox txtFind02;
         
         /// <summary>
-        /// btSubmit01 control.
+        /// Submit1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputSubmit btSubmit01;
-        
-        /// <summary>
-        /// msg control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl msg;
+        protected global::System.Web.UI.HtmlControls.HtmlInputSubmit Submit1;
         
         /// <summary>
         /// GridView1 control.
