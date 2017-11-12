@@ -1,0 +1,62 @@
+[
+	{
+		"file_name": "../../audio/4905.mp3",
+		"title": "Sermon 4905",
+		"author": "Bro. Clifford Hurst",
+		"book": "John",
+		"chapter": "5",
+		"verse": "18",
+		"series": "1",
+		"series_name": "Jesus In John",
+		"date": "2017-10-29",
+		"day_of_week": "sun",
+		"service_time": "am",
+		"file_type": "mp3",
+		"on_server": "1"
+	},
+  {
+    "file_name": "../../audio/6021.mp3",
+    "title": "One Of The Least Of These",
+    "author": "Bro. David Trawick",
+    "book": "Matthew",
+    "chapter": "25",
+    "verse": "31-40",
+    "series": "0",
+    "series_name": "",
+    "date": "2017-10-29",
+    "day_of_week": "sun",
+    "service_time": "pm",
+    "file_type": "mp3",
+    "on_server": "1"
+  },
+  {
+    "file_name": "../../audio/6022.mp3",
+    "title": "Putting God On Trial",
+    "author": "Bro. Clifford Hurst",
+    "book": "John",
+    "chapter": "5",
+    "verse": "38",
+    "series": "1",
+    "series_name": "Jesus In John",
+    "date": "2017-11-05",
+    "day_of_week": "sun",
+    "service_time": "am",
+    "file_type": "mp3",
+    "on_server": "1"
+  },
+  {
+    "file_name": "../../audio/6023.mp3",
+    "title": "All The Gospel",
+    "author": "Bro. Clifford Hurst",
+    "book": "II Timothy",
+    "chapter": "3",
+    "verse": "14",
+    "series": "0",
+    "series_name": "",
+    "date": "2017-11-05",
+    "day_of_week": "sun",
+    "service_time": "pm",
+    "file_type": "mp3",
+    "on_server": "1"
+  }
+]

@@ -191,6 +191,7 @@
     border-bottom: 3px solid #eee;
     border-bottom-color:rgba(130,105,30,1);
     margin-top: -140px;
+    font-size:18px;
 }
 
 .mypage-header h2 {
@@ -265,49 +266,7 @@
 }
 /* ------------------- End Carousel Styling ------------------- */
 
-/* Carousel Fading slide added 5.19.17 from CodePen*/
-/*.carousel-fade .item {
-  -webkit-transition: opacity 1.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 1.5s ease-in-out;
-}*/
-/*.carousel-fade .active.left,
-.carousel-fade .active.right {
-  left: 0;
-  z-index: 2;
-  opacity: 0;
-  filter: alpha(opacity=0);
-}*/
-/*.carousel-fade .carousel-control { z-index: 3; }
-.carousel-fade .next,
-.carousel-fade .prev {
-  left: 0;
-  z-index: 1;
-}*/
 
-
-
-/* Carousel Control */
-/*.carousel-control {
-  top: 43%;
-  font-size: 38px;
-  }*/ 
-
-  /* Animation */
-  /*.control-box, a.carousel-control, .carousel-indicators li {
-    -webkit-transition: all 250ms ease;
-    -moz-transition: all 250ms ease;
-    -ms-transition: all 250ms ease;
-    -o-transition: all 250ms ease;
-    transition: all 250ms ease;
-                             
-     /*hardware acceleration will cause Bootstrap carousel controlbox margin error in webkit browsers 
-     Assigning animation to indicator li will make slides flicker*/
-   /*}*/
- 
-/* Carousel Fading slide added 5.19.17 from CodePen*/
 /* Ministry page font-size */
 .ministry-font-size {
     font-size:16px !important;
@@ -386,37 +345,6 @@ position:relative;
               transform: translate3d(0, 0, 0);
     }
 
-    /*.control-box, a.carousel-control, .carousel-indicators li {
-  -webkit-transition: all 250ms ease;
-  -moz-transition: all 250ms ease;
-  -ms-transition: all 250ms ease;
-  -o-transition: all 250ms ease;
-  transition: all 250ms ease;*/   
-  /* hardware acceleration causes Bootstrap carousel controlbox margin error in webkit */
-  /* Assigning animation to indicator li will make slides flicker */
-  /*}*/ 
-/*end codepen.io/wisnust10/pen/mPjwWv 6/5/17*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------------------- Section Styling - Not needed for carousel styling ------------------- */
 body {
@@ -424,12 +352,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding-top:211px;/*a taller menu*/
 }
-/*.section-white {
-    padding: 0 0;
-    margin-top: 20px;
-    background-color: black;
-    color: #555;
-}*/
 
     /* ------------------- Section Styling - For navbar-brand  ------------------- */
 .navbar {
@@ -439,7 +361,6 @@ body {
     padding-bottom:15px;
     border: 3px solid;
     border-bottom-color:rgba(130,105,30,1);/* Gold */
-
 }
 
 .navbar-brand {
@@ -475,18 +396,12 @@ body {
    }
 
 
-/*@media screen and (max-width: 768px) {
-    .section-white {
-        padding: 1.5em 0;
-    }
-}
-
-@media screen and (min-width: 992px) {
+/*@media screen and (min-width: 992px) {
    
     .container {
             max-width: 1366px;
         }
-}*/background
+}*/
 
 
 
@@ -563,38 +478,36 @@ body {
  #footer-date {
      color:white;
  }
- /*Style staff pics start*/
+ 
+.staff-bio {
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 100%;
+    text-align:left;
+}
 
-    /*.staff-lead-pastor {
-        width: 800px;
-        height:800px;
-        background: url("../images/hurst_800px.jpg");
-        background-repeat: no-repeat;
-    }*/*/
-    /*.staff-youth-pastor {
-        width: 800px;
-        height: 800px;
-        background: url("../images/mckelvey_800px.jpg");
-        background-repeat: no-repeat;
-    }
-
-    .staff-kids-pastor {
-        width: 800px;
-        height:800px;
-        background: url("../images/maggard_800px.jpg");
-        background-repeat: no-repeat;
-    }*/
-
-    .staff-bio {
-        margin-bottom: 10px;
-        font-size: 16px;
-        width: 100%;
-        text-align:left;
-        
-    }
     /*Style staff pics end*/
-/***************** media query styling ******************************************/ 
- @media screen and (min-width: 768px) {
+/***************** media query styling ******************************************/
+    /*small mobile dedvices, this image is normally 60px*/
+    /*At 60 px interferes with hamburger menu*/
+    @media (min-width: 319px) and (max-width:767px) {
+        .navbar-brand > img {
+            display: block;
+            height: 46px;
+            margin-bottom: -20px;
+        }
+
+        .navbar-brand {
+            float: left;
+            height: 50px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+            transform: translate(-2%,-23%); /* Move dove and text up*/
+        }
+    }
+
+ @media (min-width: 768px) {
 .navbar-brand {
     float: left;
     height: 50px;
@@ -614,49 +527,6 @@ body {
         padding-right: 9px;
     }
 
-    /*.staff-lead-pastor {
-        width: 50%;
-        height:auto;
-        background: url('../images/hurst_800px.jpg');
-        background-repeat: no-repeat;
-    }
-
-    .staff-youth-pastor {
-        width: 576px;
-        /*height:576px;*/
-        /*background: url("../images/mckelvey_800px.jpg");
-        background-repeat: no-repeat;
-    }
-
-    .staff-kids-pastor {
-        width: 576px;
-        /*height:576px;*/
-        /*background: url('../images/maggard_800px.jpg');
-        background-repeat: no-repeat;*/
-    }
-    /*.staff-bio {
-        margin-bottom: 10px;
-        font-size: 16px;
-        width: 60%;*/
-    }*/*/
-/*.navbar-collapse.collapse {
-    display: block !important;
-    height: auto !important;
-    padding-bottom: 0;
-    overflow: visible;
-}*/
-/*.col-lg-4, .col-md-6, .col-sm-6, .col-xs-6, span {
-    display:block;
-    text-align:center;
-    font-size: 18px;
-  }*/
-
- /*.col-lg-4, .col-md-6, .col-sm-6, .col-xs-6, span {
-    display:block;
-    text-align:center;
-    font-size: 32px;
-  }*/
-
 .carousel {
   height: auto;
   margin-bottom: 15px;
@@ -666,29 +536,14 @@ body {
   border-color:rgba(255,251,251,.5);
   border-width:2px;
  }
-}
 
- /*small mobile dedvices, this image is normally 60px*/
-        /*At 60 px interferes with hamburger menu*/
-    @media (max-width: 400px) { 
-        .navbar-brand > img {
-            display: block;
-            height: 46px;
-            margin-bottom: -20px;
-        }
-
-        .navbar-brand {
-            float: left;
-            height: 50px;
-            padding: 15px 15px;
-            font-size: 18px;
-            line-height: 20px;
-            transform: translate(-2%,-23%); /* Move dove and text up*/
-        }
-
-        
-
+    .mypage-header > h4 {
+        /*margin: 40px 0 20px;*/
+        margin-top: -140px;
+        font-size: 30px;
     }
+
+ 
 /***************** end media query styling ******************************************/  
 
 /********************* location page styling ******************************************/  
