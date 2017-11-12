@@ -9,9 +9,11 @@
     <h4><b>Sermon Archives</b></h4>
 </div>
 
-Enter Search Value: 
-            <asp:TextBox ID="txtFind" runat="server"></asp:TextBox>
-            <input type="submit" id="btSubmit" runat="server" />
+ Search  Title:
+            <asp:TextBox ID="txtFind01" runat="server"></asp:TextBox><br />
+Search Speaker:
+            <asp:TextBox ID="txtFind02" runat="server"></asp:TextBox>
+            <input type="submit" id="btSubmit01" runat="server" />
 
             <%--LABEL TO SHOW ROW COUNT.--%>
             <div style="clear:both;padding:10px 0;">
@@ -31,18 +33,19 @@ Enter Search Value:
                     <EditItemTemplate>
                         <asp:TextBox ID="TextBox1" runat="server"
                             Text='<%# Bind("Title") %>'></asp:TextBox>
-                    </EditItemTemplate>
+                    </EditItemTemplate> 
                     <ItemTemplate>
                         <h3><strong><asp:Label ID="Label1" runat="server"
                             class="text-left small"
+                            ForeColor="Black"
                             Text='<%# Bind("Title") %>'></asp:Label></strong></h3>
-                        <asp:Label ID="Label2" runat="server"
+                        <p><asp:Label ID="Label2" runat="server"
                             class="text-left small"
                             Text='<%# Eval("Speaker") %>'></asp:Label>
                         <asp:Label ID="Label3" runat="server"
                             class="text-left small"
                             Text='<%# String.Format("{0:MM/dd/yy}", Eval("SermonDt")) %>'>
-                        </asp:Label>
+                        </asp:Label></p>
                     </ItemTemplate>
                 </asp:TemplateField>
 
@@ -57,11 +60,13 @@ Enter Search Value:
             ConnectionString="<%$ ConnectionStrings:DB_110695_carouselConnectionString %>"
             SelectCommand="SELECT [SermonAudioID], [ImageURL], [Title], [Speaker], [SermonDt], [AudioURL]
             FROM [SermonAudio] ORDER BY [SermonDt] DESC"
-            FilterExpression="[Title] LIKE '%{0}%'">
+            FilterExpression="[Title] LIKE '%{0}%' AND [Speaker] LIKE '%{1}%'">
 
                     <FilterParameters>
-                        <asp:ControlParameter Name="BookName" 
-                            ControlID="txtFind" PropertyName="Text" />
+                        <asp:ControlParameter Name="Title" 
+                            ControlID="txtFind01" PropertyName="Text" ConvertEmptyStringToNull="false"/>
+                        <asp:ControlParameter Name="Speaker" 
+                            ControlID="txtFind02" PropertyName="Text" ConvertEmptyStringToNull="false"/>
                     </FilterParameters>
         </asp:SqlDataSource>
     
