@@ -23,29 +23,32 @@
   </tr>
 </table>
     <div class="table-responsive">
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="SermonAudioID" DataSourceID="SqlDataSource1" SkinID="UPC_GV1">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="SermonAudioID" ShowHeader="False" DataSourceID="SqlDataSource1" SkinID="UPC_GV1">
             <Columns>
-                <asp:ImageField HeaderText="Title Slide"
+                <asp:ImageField
                     DataImageUrlField="ImageURL" 
-                    ControlStyle-Height="85px" 
-                    ControlStyle-Width="150px"
+                    ControlStyle-Height="84px" 
+                    ControlStyle-Width="146px"
                 />
                 
-                <asp:TemplateField HeaderText="Sermon" SortExpression="Title">
+                <asp:TemplateField SortExpression="Title">
                     <EditItemTemplate>
                         <asp:TextBox ID="TextBox1" runat="server"
                             Text='<%# Bind("Title") %>'></asp:TextBox>
                     </EditItemTemplate> 
                     <ItemTemplate>
                         <h3><strong><asp:Label ID="Label1" runat="server"
-                            class="text-left small"
+                            class="text-left"
+                            Font-Name="Montserrat"
                             ForeColor="Black"
                             Text='<%# Bind("Title") %>'></asp:Label></strong></h3>
                         <p><asp:Label ID="Label2" runat="server"
                             class="text-left small"
+                            Font-Name="Montserrat"
                             Text='<%# Eval("Speaker") %>'></asp:Label>
                         <asp:Label ID="Label3" runat="server"
                             class="text-left small"
+                            Font-Name="Montserrat"
                             Text='<%# String.Format("{0:MM/dd/yy}", Eval("SermonDt")) %>'>
                         </asp:Label></p>
                     </ItemTemplate>
