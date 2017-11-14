@@ -27,7 +27,7 @@
             <Columns>
                 <asp:ImageField HeaderText="Title Slide"
                     DataImageUrlField="ImageURL" 
-                    ControlStyle-Height="86px" 
+                    ControlStyle-Height="85px" 
                     ControlStyle-Width="150px"
                 />
                 
