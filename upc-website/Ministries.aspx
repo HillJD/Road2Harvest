@@ -152,7 +152,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Couple Fellowships</a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Couples Fellowship</a>
                     </h4>
                 </div>
                 <div id="collapse12" class="panel-collapse collapse">

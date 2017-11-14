@@ -13,10 +13,17 @@ namespace upc_website
         {
             bool DayCheck = false;
             bool TimeCheck = false;
-            
-            TimeSpan DaytonOffset = new TimeSpan(4, 0, 0);
+            bool DaylightSavings = false;
+           
+
+
+            //TimeSpan DaytonOffset = new TimeSpan(4, 0, 0);
             DateTimeOffset DaytonTime = new DateTimeOffset(DateTime.UtcNow);
-            DaytonTime = DaytonTime.Subtract(DaytonOffset);
+            //DaytonTime = DaytonTime.Subtract(DaytonOffset);
+
+            TimeZoneInfo Tz = TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time");
+            DaytonTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow,Tz);
+
             String Day = DaytonTime.DayOfWeek.ToString();
             String Time = DaytonTime.TimeOfDay.ToString();
 
@@ -27,6 +34,7 @@ namespace upc_website
             TimeSpan WednesdayStart = new TimeSpan(19, 30, 00);
             TimeSpan WednesdayEnd = new TimeSpan(20, 30, 00);
 
+           
             
             if (Day == "Wednesday")
             {
