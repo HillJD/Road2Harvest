@@ -431,7 +431,7 @@ position:relative;
     .glyphicons:before {
         color: black;
     }
-    
+
     .glyphicons {
         display: inline;
     }
@@ -558,7 +558,8 @@ position:relative;
             border-right-width: 0;
             width: 100%;
         }
-
+    }
+}
         /***************** end location page styling ******************************************/
         .GridPager a,
         .GridPager span {
@@ -582,10 +583,10 @@ position:relative;
             border: 1px solid #969696;
         }
 
-        .GridPager span {
-            background: #616161;
-            box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .8);
-            color: #f0f0f0;
-            text-shadow: 0px 0px 3px rgba(0,0,0, .5);
-            border: 1px solid #3AC0F2;
-        }
+.GridPager span {
+    background: #616161;
+    box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .8);
+    color: #f0f0f0;
+    text-shadow: 0px 0px 3px rgba(0,0,0, .5);
+    border: 1px solid #82691e;
+}
