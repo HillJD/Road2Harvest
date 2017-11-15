@@ -13,6 +13,18 @@
   width: 100%;
   height: auto;
 }
+
+/* Center responsive images*/
+.img-responsive.img-center {
+    margin: 0 auto;
+}
+
+ #myButton.myButton.btn-link:focus {
+    color: #23527c;
+    text-decoration: none;
+    background-color: transparent;
+}
+
 /***************** jplayer start*********************/
 .jp-audio {
     width: 355px !important;/*change*/
@@ -191,7 +203,6 @@
     padding: 5px 0px 5px 0px;
     border-bottom: 3px solid #eee;
     border-bottom-color: rgba(130,105,30,1);
-    /*margin-top: -140px;*/
     font-size: 18px;
 }
 
@@ -426,7 +437,7 @@ position:relative;
     }
 
     .mypage-glythicons {
-        margin-top: -143px;
+        margin-top: -141px;
         float: left;
         font-size: 18px;
     }
