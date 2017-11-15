@@ -323,8 +323,8 @@
     <Content Include="images\OBI.png" />
     <Content Include="images\Revive Our Hearts logo.jpg" />
     <Content Include="images\RZIM3Color.png" />
-    <Content Include="images\sermon archive.png" />
-    <Content Include="images\sermon stream.png" />
+    <Content Include="images\sermon archive 1.jpg" />
+    <Content Include="images\sermon stream 1.jpg" />
     <Content Include="jPlayer-2.9.2\dist\add-on\jplayer.playlist.js" />
     <Content Include="jPlayer-2.9.2\dist\add-on\jplayer.playlist.min.js" />
     <Content Include="jPlayer-2.9.2\dist\add-on\jquery.jplayer.inspector.js" />
