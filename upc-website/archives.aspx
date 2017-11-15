@@ -29,8 +29,8 @@
             <Columns>
                 <asp:ImageField
                     DataImageUrlField="ImageURL" 
-                    ControlStyle-Height="84px" 
-                    ControlStyle-Width="146px"
+                    ControlStyle-Height="78px" 
+                    ControlStyle-Width="139px"
                 />
                 
                 <asp:TemplateField SortExpression="Title">
