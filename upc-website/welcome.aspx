@@ -17,6 +17,6 @@
         
     </div>
     <div>
-        <img id="church_pic" src="images/InsidePic.jpg" /> 
+        <img id="church_pic" src="images/Worship00.jpg" /> 
     </div>
 </asp:Content>

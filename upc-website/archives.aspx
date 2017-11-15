@@ -8,6 +8,7 @@
 <div class="mypage-header text-center">
     <h4><b>Sermon Archives</b></h4>
 </div>
+
 <table class="table" style="width:100%">
   <tr>
     <td style="text-align:right">Search Title:</td>
@@ -22,6 +23,7 @@
     <td><input type="submit" id="Submit1" runat="server" /></td>
   </tr>
 </table>
+
     <div class="table-responsive">
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="SermonAudioID" ShowHeader="False" DataSourceID="SqlDataSource1" SkinID="UPC_GV1">
             <Columns>
@@ -56,7 +58,6 @@
 
                 <asp:HyperLinkField
                     Text="<i aria-hidden='true' class='glyphicons glyphicons-play'></i>"
-                    HeaderText=""
                     DataNavigateUrlFields="AudioURL" />
             </Columns>
             <PagerStyle HorizontalAlign = "Center" CssClass = "GridPager" />
@@ -75,9 +76,7 @@
                             ControlID="txtFind02" PropertyName="Text" ConvertEmptyStringToNull="false"/>
                     </FilterParameters>
         </asp:SqlDataSource>
-    
 
     </div>
-
 
 </asp:Content>
