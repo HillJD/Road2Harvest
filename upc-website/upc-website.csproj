@@ -303,6 +303,8 @@
     <Content Include="images\audio_player\speaker_muted_48px.png" />
     <Content Include="images\audio_player\speaker_muted_72px.png" />
     <Content Include="images\audio_player\unmute.png" />
+    <Content Include="images\carousel\millikinhristmas.jpg" />
+    <Content Include="images\carousel\thanksgiving2017.jpg" />
     <Content Include="images\FGBI_Logo.png" />
     <Content Include="images\hurst_342px_rev.jpg" />
     <Content Include="images\hurst 576px.jpg" />

@@ -13,6 +13,7 @@
         
         <p><a href="location.aspx">Location</a></p>
         <p><a href="services.aspx">Service Times</a></p>
+        <p><a href="Ministries.aspx">Our Ministries / Groups</a></p>
         <p><a href="help.aspx">Help</a></p>
     </div>
 </asp:Content>

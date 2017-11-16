@@ -92,7 +92,7 @@
                 </div>
                 <div id="collapse7" class="panel-collapse collapse">
                     <div class="panel-body">
-                        We believe in the Holy Spirit, that He is the Third Person of the Triune God and the Divine Spirit through whom the Father and Son work.
+                        "that it is the cleansing of the heart from inbred sin, the changing of the carnal nature to the divine nature, and that it is wrought by the application of the blood of Jesus Christ through faith and consecration to God and that this experience of grace is subsequent to the new birth. (John 17:15-17; 1 Thes. 4:3; Heb. 2:11; 1 Peter 1:6; Eph. 1:6; 5:25-27; 2 Peter 1:4)."
                     </div>
                 </div>
             </div>
