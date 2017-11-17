@@ -39,11 +39,11 @@
                             Text='<%# Bind("Title") %>'></asp:TextBox>
                     </EditItemTemplate> 
                     <ItemTemplate>
-                        <h3><strong><asp:Label ID="Label1" runat="server"
-                            class="text-left"
-                            Font-Name="Montserrat"
-                            ForeColor="Black"
-                            Text='<%# Bind("Title") %>'></asp:Label></strong></h3>
+                        <h5><strong>
+                                <asp:HyperLink id="HL1" runat="server" NavigateUrl='<%# GetUrl(Eval("AudioURL"))%>'
+                                    Text='<%# Eval("Title") %>'>
+                                </asp:HyperLink>
+                            </strong></h5>
                         <p><asp:Label ID="Label2" runat="server"
                             class="text-left small"
                             Font-Name="Montserrat"
@@ -55,10 +55,6 @@
                         </asp:Label></p>
                     </ItemTemplate>
                 </asp:TemplateField>
-
-                <asp:HyperLinkField
-                    Text="<i aria-hidden='true' class='glyphicons glyphicons-play'></i>"
-                    DataNavigateUrlFields="AudioURL" />
             </Columns>
             <PagerStyle HorizontalAlign = "Center" CssClass = "GridPager" />
         </asp:GridView>

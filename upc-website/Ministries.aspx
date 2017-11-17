@@ -16,7 +16,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Lively, Spirit-led worship on Sundays and Wednesdays</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse1">Lively, Spirit-led worship on Sundays and Wednesdays</a>
                     </h4>
                 </div>
                 <div id="collapse1" class="panel-collapse collapse">
@@ -30,7 +30,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a class="ministry-font-size" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Prayer meetings</a>
+                        <a class="myLinks ministry-font-size" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Prayer meetings</a>
                     </h4>
                 </div>
                 <div id="collapse2" class="panel-collapse collapse">
@@ -42,7 +42,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Sunday school for all</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Sunday school for all</a>
                     </h4>
                 </div>
                 <div id="collapse3" class="panel-collapse collapse">
@@ -54,7 +54,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Wednesday Kid’s classes</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse4">Wednesday Kid’s classes</a>
                     </h4>
                 </div>
                 <div id="collapse4" class="panel-collapse collapse">
@@ -66,7 +66,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Music; Adult, Youth & Junior choirs</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse5">Music; Adult, Youth & Junior choirs</a>
                     </h4>
                 </div>
                 <div id="collapse5" class="panel-collapse collapse">
@@ -80,7 +80,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Nursing home ministry</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse6">Nursing home ministry</a>
                     </h4>
                 </div>
                 <div id="collapse6" class="panel-collapse collapse">
@@ -92,7 +92,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Outreach Ministry</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse7">Outreach Ministry</a>
                     </h4>
                 </div>
                 <div id="collapse7" class="panel-collapse collapse">
@@ -104,7 +104,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Bus ministry</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse8">Bus ministry</a>
                     </h4>
                 </div>
                 <div id="collapse8" class="panel-collapse collapse">
@@ -116,7 +116,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Shut-in ministry</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse9">Shut-in ministry</a>
                     </h4>
                 </div>
                 <div id="collapse9" class="panel-collapse collapse">
@@ -128,7 +128,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Junior Fridays</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse10">Junior Fridays</a>
                     </h4>
                 </div>
                 <div id="collapse10" class="panel-collapse collapse">
@@ -140,7 +140,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">Youth Nights</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse11">Youth Nights</a>
                     </h4>
                 </div>
                 <div id="collapse11" class="panel-collapse collapse">
@@ -152,7 +152,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Couples Fellowship</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse12">Couples Fellowship</a>
                     </h4>
                 </div>
                 <div id="collapse12" class="panel-collapse collapse">
@@ -164,7 +164,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">Senior Saints breakfasts</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse13">Senior Saints breakfasts</a>
                     </h4>
                 </div>
                 <div id="collapse13" class="panel-collapse collapse">
@@ -176,7 +176,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">Women’s fellowship</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse14">Women’s fellowship</a>
                     </h4>
                 </div>
                 <div id="collapse14" class="panel-collapse collapse">
@@ -188,7 +188,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse15">Men’s ministry</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse15">Men’s ministry</a>
                     </h4>
                 </div>
                 <div id="collapse15" class="panel-collapse collapse">
