@@ -8,6 +8,9 @@ namespace upc_website
             {
                 
             }
-     
+        protected string GetUrl(object id)
+        {
+            return "" + id;
+        }
     }
 }
