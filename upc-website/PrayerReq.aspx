@@ -10,33 +10,23 @@
 </div>
 <div class="jumbotron text-center">
         
- 
-        <div class="form-group">
-            <label for="FromName">Name:</label>
-            <input type="text" class="form-control" id="FromName">
-        </div>
-        Would you like to be contacted by a pastor?
-        <div class="radio">
-            <label><input type="radio" name="PastorContact">YES</label>
-           </div>
-    <div class="radio">
-            <label><input type="radio" name="PastorContact">NO</label>
-           </div>
-    <div class="form-group">
-            <label for="Email">Email Address:</label>
-            <input type="email" class="form-control" id="Email">
-        </div>
-        
-        <div class="form-group">
-            <label for="Request">Prayer Request:</label>
-            <textarea  class="form-control" rows="5" id="Request"> </textarea>
-        </div>
-        
-        <button type="submit" class ="btn btn-default">Submit</button>
-        
-  
-   
+    
+        Name <br />
+        <asp:TextBox ID="Name" runat="server" Width="90%"></asp:TextBox>
+        <br /> <br />
+    
+        Would you like to be contacted by a pastor? <br />
+        <asp:RadioButton ID="PastorYes" runat="server" GroupName="PastorContact" Text="Yes" />
+        <asp:RadioButton ID="PastorNo" runat="server" GroupName="PastorContact" Text="No" />
+    <br /><br />
+        Email  <br />
+        <asp:TextBox ID="Email" runat="server" Width="90%"></asp:TextBox>  <br />
 
+        Prayer Request <br />
+        <asp:TextBox ID="PrayerRequest" runat="server" Rows="3" Width="90%" TextMode="MultiLine"></asp:TextBox> <br /><br />
+  
+    <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />
+     <br />
     <br>
 
     <h4>Other Resources</h4>
