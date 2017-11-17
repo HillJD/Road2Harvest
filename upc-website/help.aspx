@@ -16,7 +16,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Hope</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse1">Hope</a>
                     </h4>
                 </div>
                 <div id="collapse1" class="panel-collapse collapse">
@@ -47,7 +47,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Help</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Help</a>
                     </h4>
                 </div>
                 <div id="collapse2" class="panel-collapse collapse">
@@ -67,7 +67,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">How can I be saved?</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse3">How can I be saved?</a>
                     </h4>
                 </div>
                 <div id="collapse3" class="panel-collapse collapse">
@@ -93,7 +93,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">How can I have assurance?</a>
+                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion" href="#collapse4">How can I have assurance?</a>
                     </h4>
                 </div>
                 <div id="collapse4" class="panel-collapse collapse">
