@@ -133,7 +133,7 @@
                 </div>
                 <div id="collapse10" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <h4 class="ministry-font-size">Minimum age 10 years old.</h4>
+                        <h4 class="ministry-font-size">Youth (6yo and up) are invited for activity, bible stories and snacks one Friday each month.  Check the events calendar for date and time.</h4>
                     </div>
                 </div>
             </div>
@@ -145,7 +145,7 @@
                 </div>
                 <div id="collapse11" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <h4 class="ministry-font-size">Minimum age 11 years old.</h4>
+                        <h4 class="ministry-font-size">Youth (10yo and up) are invited for activity, testimonies and fellowship one night monthly.  Check the events calendar for date and time.</h4>
                     </div>
                 </div>
             </div>
