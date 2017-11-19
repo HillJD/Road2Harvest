@@ -9,6 +9,47 @@
     <h4>Pastor's Blog</h4>
 </div>
 
+
+
+
+
+    <link href="http://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript">
+function openPopup(ArticleID, Title, SubTitle) {
+    $('#lblId').text(ArticleID);
+    $('#lblName').text(Title);
+$('#lblPrice').text(SubTitle);
+$("#popupdiv").dialog({
+title: "jQuery Show Gridview Row Details in Popup",
+width: 300,
+height: 250,
+modal: true,
+buttons: {
+Close: function () {
+$(this).dialog('close');
+}
+}
+});
+}
+</script>
+<style type="text/css">
+.GridviewDiv {font-size: 100%; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helevetica, sans-serif; color: #303933;}
+.headerstyle
+{
+color:#FFFFFF;border-right-color:#abb079;border-bottom-color:#abb079;background-color: #df5015;padding:0.5em 0.5em 0.5em 0.5em;text-align:center;
+}
+</style>
+
+<div id="popupdiv" title="Basic modal dialog" style="display: none">
+Product Id: <label id="lblId"></label><br />
+Product Name: <label id="lblName"></label><br />
+Price: <label id="lblPrice"></label>
+</div>
+
+
+
 <table class="table" style="width:100%">
   <tr>
     <td style="text-align:right">Search Title:</td>
@@ -34,6 +75,11 @@
                 </ItemTemplate>
             </asp:TemplateField>
             <%--<asp:BoundField DataField="Body" HeaderText="Body" SortExpression="Body" />--%>
+            <asp:TemplateField>
+<ItemTemplate>
+<a href="#" class="gridViewToolTip" onclick='openPopup("<%# Eval("ArticleID")%>","<%# Eval("Title")%>","<%# Eval("SubTitle")%>")'>test</a>
+</ItemTemplate>
+</asp:TemplateField>
         </Columns>
         <PagerStyle HorizontalAlign = "Center" CssClass = "GridPager" />
     </asp:GridView>
