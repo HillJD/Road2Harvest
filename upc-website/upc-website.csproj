@@ -562,9 +562,7 @@
     <Content Include="fonts\glyphicons-social-regular.woff" />
     <Content Include="fonts\glyphicons-social-regular.woff2" />
     <Content Include="App_Themes\UPC_Skins\UPC_GV1.skin" />
-    <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\unionpentecostalchurch.com - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\upc.pubxml" />
+    <None Include="Properties\PublishProfiles\WebDeployUPC.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
