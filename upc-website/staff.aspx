@@ -11,7 +11,7 @@
     </div>
 
 
-    <img src="images/hurst_800px.jpg" style="border: 2px #666 solid;" class="img-rounded img-responsive" />
+    <img src="images/hurst7.jpg" style="border: 2px #666 solid;" class="img-rounded img-responsive" />
     <div style="font-size: 24px; font-weight: 800; margin: 5px 0;">Clifford & Sandra Hurst</div>
     <div style="font-size: 18px; font-weight: 700; margin: 5px 0;">Pastors</div>
 
