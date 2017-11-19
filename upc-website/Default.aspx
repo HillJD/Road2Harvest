@@ -1,9 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="upc_website.Carousel" %>
 
 
-<asp:Content ID="ContentHead" ContentPlaceHolderID="headContent" runat="server">
-    <link href="content/site2.css" rel="stylesheet" />
-</asp:Content>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 

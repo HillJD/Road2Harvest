@@ -605,7 +605,6 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Site.Mobile.Master" />
-    <Content Include="site2.Master" />
     <Content Include="Sermons\playlist.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1066,13 +1065,6 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
-    </Compile>
-    <Compile Include="site2.Master.cs">
-      <DependentUpon>site2.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="site2.Master.designer.cs">
-      <DependentUpon>site2.Master</DependentUpon>
     </Compile>
     <Compile Include="staff.aspx.cs">
       <DependentUpon>staff.aspx</DependentUpon>
