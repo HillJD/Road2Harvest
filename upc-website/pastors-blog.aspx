@@ -17,14 +17,15 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script type="text/javascript">
-function openPopup(ArticleID, Title, SubTitle) {
+function openPopup(ArticleID, Title, SubTitle, Body) {
     $('#lblId').text(ArticleID);
-    $('#lblName').text(Title);
-$('#lblPrice').text(SubTitle);
+    $('#lblTitle').text(Title);
+    $('#lblSubTitle').text(SubTitle);
+    $('#lblBody').text(Body);
 $("#popupdiv").dialog({
-title: "jQuery Show Gridview Row Details in Popup",
+title: "Pastor's Blog",
 width: 300,
-height: 250,
+height: 150,
 modal: true,
 buttons: {
 Close: function () {
@@ -35,17 +36,18 @@ $(this).dialog('close');
 }
 </script>
 <style type="text/css">
-.GridviewDiv {font-size: 100%; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helevetica, sans-serif; color: #303933;}
+.GridviewDiv {font-size: 100%; font-family: Montserrat; color: #000000;}
 .headerstyle
 {
-color:#FFFFFF;border-right-color:#abb079;border-bottom-color:#abb079;background-color: #df5015;padding:0.5em 0.5em 0.5em 0.5em;text-align:center;
+color:#FFFFFF;border-right-color:#001540;border-bottom-color:#001540;background-color: #FFFFFF;padding:0.5em 0.5em 0.5em 0.5em;text-align:center;
 }
 </style>
 
 <div id="popupdiv" title="Basic modal dialog" style="display: none">
-Product Id: <label id="lblId"></label><br />
-Product Name: <label id="lblName"></label><br />
-Price: <label id="lblPrice"></label>
+Id: <label id="lblID"></label><br />
+Title: <label id="lblTitle"></label><br />
+<label id="lblSubTitle"></label><br />
+<label id="lblBody"></label>
 </div>
 
 
@@ -77,14 +79,14 @@ Price: <label id="lblPrice"></label>
             <%--<asp:BoundField DataField="Body" HeaderText="Body" SortExpression="Body" />--%>
             <asp:TemplateField>
 <ItemTemplate>
-<a href="#" class="gridViewToolTip" onclick='openPopup("<%# Eval("ArticleID")%>","<%# Eval("Title")%>","<%# Eval("SubTitle")%>")'>test</a>
+<a href="#" class="gridViewToolTip" onclick='openPopup("<%# Eval("ArticleID")%>","<%# Eval("Title")%>","<%# Eval("SubTitle")%>","<%# Eval("Body")%>")'>Read</a>
 </ItemTemplate>
 </asp:TemplateField>
         </Columns>
         <PagerStyle HorizontalAlign = "Center" CssClass = "GridPager" />
     </asp:GridView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DB_110695_carouselConnectionString %>"
-        SelectCommand="SELECT [ArticleID], [Title], [Body], [SubTitle] FROM [Articles]"
+        SelectCommand="SELECT [ArticleID], [Title], [SubTitle], [Body] FROM [Articles]"
             FilterExpression="[Title] LIKE '%{0}%' AND [Body] LIKE '%{1}%'">
 
                     <FilterParameters>

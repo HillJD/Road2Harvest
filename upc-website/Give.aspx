@@ -13,7 +13,7 @@
 
     <div class="jumbotron text-Left text-center">
         <a href="https://www.easytithe.com/dl/?uid=Unio1101162" target="_blank">
-            <img alt="Online Giving" src="http://unionpen.w14.wh-2.com/myapp\images\ET1.png" style="width: 50%; height: auto;" />
+            <img alt="Online Giving" src="http://unionpentecostalchurch.com\images\ET1.png" style="width: 50%; height: auto;" />
         </a>
     </div>
 
