@@ -34,8 +34,8 @@ namespace upc_website
             TimeSpan WednesdayStart = new TimeSpan(19, 30, 00);
             TimeSpan WednesdayEnd = new TimeSpan(20, 30, 00);
 
-           
-            
+            DateTime CustomTimeStart = new DateTime(2017, 11, 21, 19, 00, 00);
+            DateTime CustomTimeEnd = new DateTime(2017, 11, 21, 20, 30, 00);
             if (Day == "Wednesday")
             {
                 DayCheck = true;
@@ -47,6 +47,14 @@ namespace upc_website
                 DayCheck = true;
                 if (DaytonTime.TimeOfDay >= SundayStart1 && DaytonTime.TimeOfDay <= SundayEnd1) TimeCheck = true;
                 else if (DaytonTime.TimeOfDay >= SundayStart2 && DaytonTime.TimeOfDay <= SundayEnd2) TimeCheck = true;
+            }
+
+            if (DaytonTime.Date == CustomTimeStart.Date)
+            {
+                DayCheck = true;
+                if (DaytonTime.TimeOfDay >= CustomTimeStart.TimeOfDay && DaytonTime.TimeOfDay <= CustomTimeEnd.TimeOfDay) TimeCheck = true;
+
+
             }
 
             
