@@ -248,6 +248,9 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="addcarousel.aspx" />
     <Content Include="addDiv.aspx" />
+    <Content Include="android-chrome-192x192.png" />
+    <Content Include="android-chrome-512x512.png" />
+    <Content Include="apple-touch-icon.png" />
     <Content Include="archives.aspx" />
     <Content Include="audio.aspx" />
     <Content Include="audio1.aspx" />
@@ -255,7 +258,12 @@
     <Content Include="audio\4905_20sec.mp3" />
     <Content Include="audio\4933_20sec.mp3" />
     <Content Include="audio\no more night.mp3" />
+    <Content Include="browserconfig.xml" />
     <Content Include="Content\jplayer.pink.flag.css" />
+    <Content Include="DoveIcon.png" />
+    <Content Include="favicon-16x16.png" />
+    <Content Include="favicon-32x32.png" />
+    <Content Include="favicon.ico" />
     <Content Include="glyphicons\glyphicons-social.css" />
     <Content Include="images\audio_player\Asset 1%402x.png" />
     <Content Include="images\audio_player\Asset 1%403x.png" />
@@ -401,6 +409,7 @@
     <Content Include="jPlayer-2.9.2\src\skin\pink.flag\mustache\jplayer.pink.flag.video.playlist.html" />
     <Content Include="jPlayer-2.9.2\src\skin\pink.flag\mustache\jplayer.pink.flag.video.single.html" />
     <Content Include="jplayer.aspx" />
+    <Content Include="mstile-150x150.png" />
     <Content Include="pink.flag\css\jplayer.pink.flag.css" />
     <Content Include="pink.flag\css\jplayer.pink.flag.min.css" />
     <Content Include="pink.flag\image\jplayer.pink.flag.jpg" />
@@ -414,11 +423,11 @@
     <Content Include="pink.flag\mustache\jplayer.pink.flag.audio.stream.html" />
     <Content Include="pink.flag\mustache\jplayer.pink.flag.video.playlist.html" />
     <Content Include="pink.flag\mustache\jplayer.pink.flag.video.single.html" />
+    <Content Include="safari-pinned-tab.svg" />
     <Content Include="Scripts\audio_player.js" />
     <Content Include="Content\audio_player.css" />
     <Content Include="bible.aspx" />
     <Content Include="Church.aspx" />
-    <Content Include="dove_in_circle_favicon.png" />
     <Content Include="images\ET1.png" />
     <Content Include="images\UPC_CM.jpg" />
     <Content Include="images\Worship00.JPG" />
@@ -564,6 +573,7 @@
     <Content Include="fonts\glyphicons-social-regular.woff" />
     <Content Include="fonts\glyphicons-social-regular.woff2" />
     <Content Include="App_Themes\UPC_Skins\UPC_GV1.skin" />
+    <Content Include="manifest.json" />
     <None Include="Properties\PublishProfiles\WebDeployUPC.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -596,7 +606,6 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Default-old.aspx" />
-    <Content Include="favicon_upc.ico" />
     <Content Include="Global.asax" />
     <Content Include="sermons.aspx" />
     <Content Include="Site.Master" />
