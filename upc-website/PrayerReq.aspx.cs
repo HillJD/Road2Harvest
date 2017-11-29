@@ -71,17 +71,17 @@ namespace upc_website
             else emailbody = "No Contact Requested \n" +  "\n" + " PRAYER REQUEST: \n " + PrayerRequest.Text; 
             try
             {
-                MailAddress fromAddress = new MailAddress("upcprayerrequests@gmail.com");
+                MailAddress fromAddress = new MailAddress("prayer@unionpentecostalchurch.com");
                 message.From = fromAddress;
                 message.To.Add("michael@creekviewfarms.net");
                 message.Subject = "Prayer Request From " + Name.Text;
                 message.IsBodyHtml = true;
                 message.Body = emailbody ;
-                smtpClient.Host = "smtp.gmail.com";   // We use gmail as our smtp client
-                smtpClient.Port = 587;
+                smtpClient.Host = "smtp.unionpentecostalchurch.com";   //smtp client
+                smtpClient.Port = 465;
                 smtpClient.EnableSsl = true;
                 smtpClient.UseDefaultCredentials = true;
-                smtpClient.Credentials = new System.Net.NetworkCredential("upcprayerrequests@gmail.com", "1101union");
+                smtpClient.Credentials = new System.Net.NetworkCredential("prayer@unionpentecostalchurch.com", "6WRe@M#e)}k3Zz=^&u:");
 
                 smtpClient.Send(message);
                 msg = "Successful&lt;BR>";
