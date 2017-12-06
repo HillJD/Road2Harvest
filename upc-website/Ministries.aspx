@@ -145,7 +145,7 @@
                 </div>
                 <div id="collapse11" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <h4 class="ministry-font-size">Youth (10yo and up) are invited for activity, testimonies and fellowship one night monthly.  Check the events calendar for date and time.</h4>
+                        <h4 class="ministry-font-size">Youth (12yo and up) are invited for activity, testimonies and fellowship one night monthly.  Check the events calendar for date and time.</h4>
                     </div>
                 </div>
             </div>
