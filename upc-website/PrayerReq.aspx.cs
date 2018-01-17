@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Net;
 using System.Net.Mail;
 
 namespace upc_website
@@ -63,40 +64,71 @@ namespace upc_website
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            MailMessage message = new MailMessage();
-            SmtpClient smtpClient = new SmtpClient();
-            string msg = string.Empty;
             string emailbody = string.Empty;
-            if (PastorYes.Checked) emailbody = "Contact Requested \n " + Email.Text + "\n" + "\n" + "PRAYER REQUEST: \n" + PrayerRequest.Text; 
-            else emailbody = "No Contact Requested \n" +  "\n" + " PRAYER REQUEST: \n " + PrayerRequest.Text; 
+            if (PastorYes.Checked) emailbody = "Contact Requested \n " + Email.Text + "\n" + "\n" + "PRAYER REQUEST: \n" + PrayerRequest.Text;
+            else emailbody = "No Contact Requested \n" + "\n" + " PRAYER REQUEST: \n " + PrayerRequest.Text;
+
             try
             {
-                MailAddress fromAddress = new MailAddress("prayer@unionpentecostalchurch.com");
-                message.From = fromAddress;
-                message.To.Add("michael@creekviewfarms.net");
-                message.Subject = "Prayer Request From " + Name.Text;
-                message.IsBodyHtml = true;
-                message.Body = emailbody ;
-                smtpClient.Host = "smtp.unionpentecostalchurch.com";   //smtp client
-                smtpClient.Port = 465;
-                smtpClient.EnableSsl = true;
-                smtpClient.UseDefaultCredentials = true;
-                smtpClient.Credentials = new System.Net.NetworkCredential("prayer@unionpentecostalchurch.com", "6WRe@M#e)}k3Zz=^&u:");
+                //create the mail message 
+                MailMessage mail = new MailMessage();
 
-                smtpClient.Send(message);
-                msg = "Successful&lt;BR>";
+                //set the addresses 
+                mail.From = new MailAddress("prayer@unionpentecostalchurch.com");
+                mail.To.Add("cliffahurst@gmail.com");
+
+                //set the content 
+                mail.Subject = "Prayer Request From " + Name.Text;
+                mail.Body = emailbody;
+                //send the message 
+                SmtpClient smtp = new SmtpClient("mail.unionpentecostalchurch.com");
+
+                NetworkCredential Credentials = new NetworkCredential("prayer@unionpentecostalchurch.com", "6WRe@M#e)}k3Zz=^&u:");
+                smtp.Credentials = Credentials;
+                smtp.Send(mail);
                 Page.RegisterStartupScript("UserMsg", "<script>alert('Your Request Has Been Submitted.');if(alert){ window.location='PrayerReq.aspx';}</script>");
-
             }
             catch (Exception ex)
             {
-                msg = ex.Message;
-                
 
                 Page.RegisterStartupScript("UserMsg", "<script>alert('Oops...Looks like we are having some problems. Please try again later.');</script>");
             }
+                
             
+            /* MailMessage message = new MailMessage();
+                SmtpClient smtpClient = new SmtpClient();
+                string msg = string.Empty;
+                string emailbody = string.Empty;
+                if (PastorYes.Checked) emailbody = "Contact Requested \n " + Email.Text + "\n" + "\n" + "PRAYER REQUEST: \n" + PrayerRequest.Text; 
+                else emailbody = "No Contact Requested \n" +  "\n" + " PRAYER REQUEST: \n " + PrayerRequest.Text; 
+                try
+                {
+                    MailAddress fromAddress = new MailAddress("prayer@unionpentecostalchurch.com");
+                    message.From = fromAddress;
+                    message.To.Add("michael@creekviewfarms.net");
+                    message.Subject = "Prayer Request From " + Name.Text;
+                    message.IsBodyHtml = true;
+                    message.Body = emailbody ;
+                    smtpClient.Host = "smtp.unionpentecostalchurch.com";   //smtp client
+                    smtpClient.Port = 465;
+                    smtpClient.EnableSsl = true;
+                    smtpClient.UseDefaultCredentials = true;
+                    smtpClient.Credentials = new System.Net.NetworkCredential("prayer@unionpentecostalchurch.com", "6WRe@M#e)}k3Zz=^&u:");
+
+                    smtpClient.Send(message);
+                    msg = "Successful&lt;BR>";
+                    Page.RegisterStartupScript("UserMsg", "<script>alert('Your Request Has Been Submitted.');if(alert){ window.location='PrayerReq.aspx';}</script>");
+
+                }
+                catch (Exception ex)
+                {
+                    msg = ex.Message;
+
+
+                    Page.RegisterStartupScript("UserMsg", "<script>alert('Oops...Looks like we are having some problems. Please try again later.');</script>");
+                }*/
+
+            }
+
         }
-    
-    }
 }
