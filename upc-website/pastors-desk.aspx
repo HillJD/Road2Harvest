@@ -11,7 +11,7 @@
     
     <div class="jumbotron text-center">
         
-        <h2>The Darkness Brfore The Glory</h2>
+        <h2>The Darkness Before The Glory</h2>
         <br />
         <p>
            Usually, I let one sermon go as I become engaged with the next. Consequently, often, if out of the blue you were to ask me on a Sunday afternoon what I had preached that morning, my mind would go blank. I couldn’t immediately tell you. I don’t think that is amnesia or age; it’s just moving on to the next sermon. Last Sunday Evening while introducing our church’s 2018 theme, I preached “Pursuing His Presence,” using as an illustration the story of Moses desiring to see the Glory of God before traversing the wilderness. There was a point I made that night, that in all honesty was incidental, but I cannot let go of it in my mind. I keep remembering it. Believing that that main meaning of Scripture is the original intentional meaning, I never want to be guilty of eisegesis—reading something into the text that is not there. So, I acknowledge the point I made comes from using the story as an illustration and not from interpreting it. Here is that thought:
