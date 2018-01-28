@@ -36,12 +36,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AspNet.ScriptManager.bootstrap, Version=3.3.6.0, Culture=neutral, processorArchitecture=MSIL">
@@ -260,6 +261,8 @@
     <Content Include="audio\no more night.mp3" />
     <Content Include="browserconfig.xml" />
     <Content Include="Content\jplayer.pink.flag.css" />
+    <Content Include="carouselVideo.aspx" />
+    <Content Include="default3.aspx" />
     <Content Include="DoveIcon.png" />
     <Content Include="favicon-16x16.png" />
     <Content Include="favicon-32x32.png" />
@@ -437,7 +440,6 @@
     <Content Include="buildcontrol.aspx" />
     <Content Include="events.aspx" />
     <Content Include="connect.aspx" />
-    <Content Include="default.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -606,7 +608,6 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Default-old.aspx" />
     <Content Include="Global.asax" />
     <Content Include="sermons.aspx" />
     <Content Include="Site.Master" />
@@ -806,6 +807,20 @@
     <Compile Include="Church.aspx.designer.cs">
       <DependentUpon>Church.aspx</DependentUpon>
     </Compile>
+    <Compile Include="carouselVideo.aspx.cs">
+      <DependentUpon>carouselVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="carouselVideo.aspx.designer.cs">
+      <DependentUpon>carouselVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default3.aspx.cs">
+      <DependentUpon>default3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default3.aspx.designer.cs">
+      <DependentUpon>default3.aspx</DependentUpon>
+    </Compile>
     <Compile Include="jplayer.aspx.cs">
       <DependentUpon>jplayer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -848,26 +863,12 @@
     <Compile Include="connect.aspx.designer.cs">
       <DependentUpon>connect.aspx</DependentUpon>
     </Compile>
-    <Compile Include="default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="default.aspx.designer.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default-old.aspx.cs">
-      <DependentUpon>Default-old.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default-old.aspx.designer.cs">
-      <DependentUpon>Default-old.aspx</DependentUpon>
     </Compile>
     <Compile Include="default2.ascx.cs">
       <DependentUpon>default2.ascx</DependentUpon>
