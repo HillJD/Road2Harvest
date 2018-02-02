@@ -55,4 +55,5 @@
             <a href="resources.aspx"><p class="gly-paragraph">Resources</p></a>
         </div>
     </div>
+    <asp:TextBox runat="server"></asp:TextBox>
 </asp:Content>
