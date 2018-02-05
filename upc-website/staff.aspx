@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="staff.aspx.cs" Inherits="upc_website.staff" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
@@ -53,4 +54,19 @@
         with the Gospel through puppets, skits, songs, stories, object lessons, etc.  Her ministry
         motto is “Partnering with Families to Help Strengthen Today’s Kids”!
     </div>
+     <asp:TextBox class="status" runat="server"></asp:TextBox>
+    <script>
+        
+        $(document).ready(function () {
+            var l = $('div').length;
+            if (l) {
+                console.log('True, ' + 'Length= ' + l)
+            }
+            else {
+                console.log('False, ' + 'Length= ' + l)
+            }
+        });
+        
+
+    </script>
 </asp:Content>

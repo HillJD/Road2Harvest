@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var time = 0;
+            $('img').on('click', function () {
+                if (time!=0) {
+                alert('It has been ' + (event.timeStamp - time) / 1000 + ' seconds since last click');
+                time = event.timeStamp;
+            }
+            else {
+                time = event.timeStamp;
+                alert("Position of click is " + 'X: ' + event.pageX + ',' + 'Y: ' +event .pageY)
+                }
+            });
+
+
+        });
+
+    </script>
+    <title></title>
+</head>
+<body>
+    <img src="../images/churchbuilding.jpg" />
+</body>
+</html>

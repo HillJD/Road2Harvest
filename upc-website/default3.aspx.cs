@@ -19,7 +19,7 @@ namespace upc_website
         HtmlGenericControl SlideWrapper = new HtmlGenericControl("div"); //Wrapper for slides
         HtmlGenericControl ImageWrapper = new HtmlGenericControl("div");//Wrapper for each image inside master <div> for all slides
         HtmlGenericControl ImageContainer = new HtmlGenericControl("img");//Container for each individual image
-        HtmlGenericControl VideoContainer = new HtmlGenericControl("VIDEO");//Container for each individual video
+        HtmlGenericControl VideoContainer = new HtmlGenericControl("video");//Container for each individual video
                                                                           //HtmlGenericControl ImageContainer = new HtmlGenericControl("A");
                                                                           //HtmlGenericControl ImageContainer = new HtmlGenericControl("SPAN");
                                                                           //HtmlGenericControl li_1 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
@@ -37,7 +37,7 @@ namespace upc_website
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            ClientScript.RegisterStartupScript(TextBox,"ClientScript","document.getElementById('TextBox")
+            
             int SlidesToAdd = GetRowCount(); //i.e. # of pictures slides to add
             BuildCarouselDiv("10000");//Slide display time
             BuildCarouselOrderedList();
@@ -379,7 +379,9 @@ namespace upc_website
                         }
                         mySource[i].Attributes.Add("src", myData[index * i].ToString());
                         mySource[i].Attributes.Add("type", "video/mp4");
-                        myVideo[i].Attributes.Add("autoplay", "autoplay");//url
+                        myVideo[i].Attributes.Add("id", "myVid");//id
+                        //myVideo[i].Attributes.Add("autoplay", "autoplay");//url
+                        //myVideo[i].Attributes.Add("loop", "loop");//url
                         myVideo[i].Attributes.Add("width", "100%");//url
                         myVideo[i].Attributes.Add("height", "auto");//url
                     }
