@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('li').on('click', function () {
+                $(this).fadeOut(500);
+            });
+
+                $('#btn').on('click', function () {
+                    //This assigns an event handler to the new <li> element that is being created
+                    var newListElement = $('<li>New list element</li>').on('click', function () {
+                        $(this).fadeOut(250);
+                    })
+                    $('ul').append(newListElement);
+                })
+                
+
+            })
+
+
+        
+
+    </script>
+    <title></title>
+</head>
+<body>
+    
+    <input id="btn" type="button" value="Append new List Item"></>
+    <ul>
+        <li>Original</li>
+        <li>Original</li>
+        <li>Original</li>
+    </ul>
+</body>
+</html>
