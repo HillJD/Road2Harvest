@@ -6,13 +6,13 @@
     <script>
         $(document).ready(function() {
             $('li').on('click', function () {
-                $(this).fadeOut(500);
+                $(this).fadeOut(175);
             });
 
                 $('#btn').on('click', function () {
                     //This assigns an event handler to the new <li> element that is being created
                     var newListElement = $('<li>New list element</li>').on('click', function () {
-                        $(this).fadeOut(250);
+                        $(this).fadeOut(175);
                     })
                     $('ul').append(newListElement);
                 })

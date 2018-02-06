@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("video source").each(function () {
+                
+                $(this).attr("src", "../images/carousel/morphing_solid.mp4");
+                var video = this.parentElement;
+                //video.load();
+                video.play();
+                //video.delay(500).pause();
+            });
+              
+                
+
+            })
+
+
+        
+
+    </script>
+    <title></title>
+</head>
+<body>
+    <!--<video>
+        <source src="../images/carousel/test_video.mp4" type="video/mp4" />
+    </video>-->
+   
+    <video>
+        <source src="../images/carousel/morphing_solid.mp4" type="video/mp4" />
+    </video>
+    morphing_solid.mp4
+</body>
+</html>
