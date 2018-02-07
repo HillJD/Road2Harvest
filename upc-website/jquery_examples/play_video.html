@@ -6,13 +6,19 @@
     <script>
         $(document).ready(function () {
             //Play/Pause control clicked
-            var video = $('#videoID');
+            var whichVideo = 0;
+            var video = $('.videoID');
+            //$('#label').html('Start Video...');
             $('.btnPlay').on('click', function () {
-                if (video[0].paused) {
-                    video[0].play();
+                //alert(video.length);
+                if (video[whichVideo].paused) {
+                    //$('.btnPlay').html('Pause Video...');
+                    video[whichVideo].play();
+                   
                 }
                 else {
-                    video[0].pause();
+                    video[whichVideo].pause();
+                    //$('.btnPlay').html('Start Video...');
                 }
                 return false;
             });
@@ -34,16 +40,17 @@
     <title></title>
 </head>
 <body>
-    <input class="btnPlay" type="button" value="Start Video" /><br /><br />
+    <input class="btnPlay" type="button" value="Start Video" style="font-size:60px" /><br /><br />
+    <label id="label" style="display:inline-block">Mike</label>
     <div class="active">
-        <video id="videoID">
+        <video class="videoID">
             <source id="source" src="../images/carousel/test_video.mp4" type="video/mp4" />
         </video>
     </div>
    
-    <!--<video id="VideoId">
+    <video class="videoID">
         <source src="../images/carousel/morphing_solid.mp4" type="video/mp4" />
-    </video>-->
+    </video>
     
 </body>
 </html>
