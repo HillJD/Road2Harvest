@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+
+            //settings for slider
+            var width = 720;
+            var animationSpeed = 1000;
+            var pause = 1000;
+            var currentSlide = 1;
+
+            //cache DOM elements
+            var $slider = $('#slider');
+            var $slideContainer = $('.slides', $slider);
+            var $slides = $('.slide', $slider);
+
+            var interval;
+
+            function startSlider() {
+                interval = setInterval(function () {
+                    $slideContainer.animate({ 'margin-left': '-=' + width }, animationSpeed, function () {
+                        if (++currentSlide === $slides.length) {
+                            currentSlide = 1;
+                            $slideContainer.css('margin-left', 0);
+                        }
+                    });
+                }, pause);
+            }
+            function pauseSlider() {
+                clearInterval(interval);
+            }
+
+            $slideContainer
+                .on('mouseenter', pauseSlider)
+                .on('mouseleave', startSlider);
+
+            startSlider();
+
+
+        });
+    </script>
+    <title></title>
+    <style type="text/css">
+        #slider {
+            width: 720px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+            #slider .slides {
+                display: block;
+                width: 6000px;
+                height: 400px;
+                margin: 0;
+                padding: 0;
+            }
+
+            #slider .slide {
+                float: left;
+                list-style-type: none;
+                width: 720px;
+                height: 400px;
+            }
+
+        /* helper css, since we don't have images */
+        .slide1 {background: red;}
+        .slide2 {background: blue;}
+        .slide3 {background: green;}
+        .slide4 {background: purple;}
+        .slide5 {background: pink;}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="text-muted">jQuery Basic Slider</h1>
+        </div>
+
+        <div id="slider">
+            <ul class="slides">
+                <li class="slide slide1">slide1</li>
+                <li class="slide slide2">slide2</li>
+                <li class="slide slide3">slide3</li>
+                <li class="slide slide4">slide4</li>
+                <li class="slide slide5">slide5</li>
+                <li class="slide slide1">slide1</li>
+            </ul>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -4,34 +4,46 @@
     <meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $("video source").each(function () {
-                
-                $(this).attr("src", "../images/carousel/morphing_solid.mp4");
-                var video = this.parentElement;
-                //video.load();
-                video.play();
-                //video.delay(500).pause();
+        $(document).ready(function () {
+            //Play/Pause control clicked
+            var video = $('#videoID');
+            $('.btnPlay').on('click', function () {
+                if (video[0].paused) {
+                    video[0].play();
+                }
+                else {
+                    video[0].pause();
+                }
+                return false;
             });
-              
-                
 
+
+            //var obj = $(".source").parentElement;
+            //alert($(obj).attr('id'));
+            //alert($('video').attr('id'));
+            ////var video = $(this).child
+                    //video.play();
+                //});
             })
 
-
-        
+        //    $("video").attr('class', 'active');
+        //    alert($("video").children().attr('src'));
+        //})
 
     </script>
     <title></title>
 </head>
 <body>
-    <!--<video>
-        <source src="../images/carousel/test_video.mp4" type="video/mp4" />
-    </video>-->
+    <input class="btnPlay" type="button" value="Start Video" /><br /><br />
+    <div class="active">
+        <video id="videoID">
+            <source id="source" src="../images/carousel/test_video.mp4" type="video/mp4" />
+        </video>
+    </div>
    
-    <video>
+    <!--<video id="VideoId">
         <source src="../images/carousel/morphing_solid.mp4" type="video/mp4" />
-    </video>
-    morphing_solid.mp4
+    </video>-->
+    
 </body>
 </html>
