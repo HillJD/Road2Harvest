@@ -532,6 +532,7 @@
     <Content Include="prayer.aspx" />
     <Content Include="resources.aspx" />
     <Content Include="Scripts\jquery.jplayer.min.js" />
+    <Content Include="Scripts\js.js" />
     <Content Include="services.aspx" />
     <Content Include="staff.aspx" />
     <Content Include="styles.css" />

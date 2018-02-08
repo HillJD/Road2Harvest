@@ -3,38 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            //Play/Pause control clicked
-            var video = $('#videoID');
-            $('.btnPlay').on('click', function () {
-                if (video[0].paused) {
-                    video[0].play();
-                }
-                else {
-                    video[0].pause();
-                }
-                return false;
-            });
-
-
-            //var obj = $(".source").parentElement;
-            //alert($(obj).attr('id'));
-            //alert($('video').attr('id'));
-            ////var video = $(this).child
-                    //video.play();
-                //});
-            })
-
-        //    $("video").attr('class', 'active');
-        //    alert($("video").children().attr('src'));
-        //})
-
-    </script>
+    <script src="../Scripts/js.js"></script>
     <title></title>
 </head>
 <body>
     <input class="btnPlay" type="button" value="Start Video" /><br /><br />
+    <label id="label" style="font-size:24px;">Start Video...</label>
     <div class="active">
         <video id="videoID">
             <source id="source" src="../images/carousel/test_video.mp4" type="video/mp4" />
