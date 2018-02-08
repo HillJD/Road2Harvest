@@ -34,8 +34,9 @@ namespace upc_website
             TimeSpan WednesdayStart = new TimeSpan(19, 30, 00);
             TimeSpan WednesdayEnd = new TimeSpan(20, 30, 00);
 
-            DateTime CustomTimeStart = new DateTime(2017, 11, 21, 19, 00, 00);
-            DateTime CustomTimeEnd = new DateTime(2017, 11, 21, 20, 30, 00);
+            DateTime CustomTimeStart = new DateTime(2018, 02, 08, 19, 30, 00);
+            DateTime CustomTimeEnd = new DateTime(2018, 02, 08, 21, 00, 00);
+
             if (Day == "Wednesday")
             {
                 DayCheck = true;
