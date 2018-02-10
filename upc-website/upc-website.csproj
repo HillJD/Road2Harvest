@@ -344,6 +344,7 @@
     <Content Include="images\RZIM3Color.png" />
     <Content Include="images\sermon archive 1.jpg" />
     <Content Include="images\sermon stream 1.jpg" />
+    <Content Include="images\upc_tutorial_1.mp4" />
     <Content Include="jPlayer-2.9.2\dist\add-on\jplayer.playlist.js" />
     <Content Include="jPlayer-2.9.2\dist\add-on\jplayer.playlist.min.js" />
     <Content Include="jPlayer-2.9.2\dist\add-on\jquery.jplayer.inspector.js" />
@@ -532,7 +533,7 @@
     <Content Include="prayer.aspx" />
     <Content Include="resources.aspx" />
     <Content Include="Scripts\jquery.jplayer.min.js" />
-    <Content Include="Scripts\js.js" />
+    <Content Include="jquery_examples\js.js" />
     <Content Include="services.aspx" />
     <Content Include="staff.aspx" />
     <Content Include="styles.css" />
