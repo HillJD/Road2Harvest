@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     //Play/Pause control clicked
-    var whatImage = 2;
+    var whatImage = 3;
     var video = $('.videoID');
     $('.btnPlay').on('click',function () {
         if (video[whatImage].paused) {
