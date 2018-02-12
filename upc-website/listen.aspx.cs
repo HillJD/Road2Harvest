@@ -34,8 +34,11 @@ namespace upc_website
             TimeSpan WednesdayStart = new TimeSpan(19, 30, 00);
             TimeSpan WednesdayEnd = new TimeSpan(20, 30, 00);
 
-            DateTime CustomTimeStart = new DateTime(2018, 02, 08, 19, 30, 00);
-            DateTime CustomTimeEnd = new DateTime(2018, 02, 08, 21, 00, 00);
+            DateTime CustomTimeStart = new DateTime(2018, 02, 09, 19, 30, 00);
+            DateTime CustomTimeEnd = new DateTime(2018, 02, 09, 21, 00, 00);
+
+            DateTime CustomTimeStart1 = new DateTime(2018, 02, 10, 10, 00, 00);
+            DateTime CustomTimeEnd1 = new DateTime(2018, 02, 10, 11, 30, 00);
 
             if (Day == "Wednesday")
             {
@@ -57,9 +60,16 @@ namespace upc_website
 
 
             }
+            if (DaytonTime.Date == CustomTimeStart1.Date)
+            {
+                DayCheck = true;
+                if (DaytonTime.TimeOfDay >= CustomTimeStart1.TimeOfDay && DaytonTime.TimeOfDay <= CustomTimeEnd1.TimeOfDay) TimeCheck = true;
 
-            
-           if (DayCheck && TimeCheck) ImageButton1.ImageUrl = "~/images/live stream.jpg";
+
+            }
+
+
+            if (DayCheck && TimeCheck) ImageButton1.ImageUrl = "~/images/live stream.jpg";
 
         }
 
