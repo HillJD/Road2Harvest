@@ -324,9 +324,10 @@ namespace upc_website
                         }
                         mySource[i].Attributes.Add("src", myData[index * i].ToString());
                         mySource[i].Attributes.Add("type", "video/mp4");
-                        myVideo[i].Attributes.Add("autoplay", "autoplay");//url
-                        myVideo[i].Attributes.Add("width", "1920");//url
-                        myVideo[i].Attributes.Add("height", "1080");//url
+                        //myVideo[i].Attributes.Add("autoplay", "autoplay"); 2.12.18 removed
+                        myVideo[i].Attributes.Add("width", "100%");//url
+                        myVideo[i].Attributes.Add("height", "auto");//url
+                        myVideo[i].Controls.Add(mySource[i]); //Added 2.12.18
                     }
 
                     myCaptionDiv[i].Attributes.Add("class", "carousel-caption"); //Future captions
@@ -384,6 +385,7 @@ namespace upc_website
                         //myVideo[i].Attributes.Add("loop", "loop");//url
                         myVideo[i].Attributes.Add("width", "100%");//url
                         myVideo[i].Attributes.Add("height", "auto");//url
+                        myVideo[i].Controls.Add(mySource[i]); //Added 2.12.18
                     }
 
                     myCaptionDiv[i].Attributes.Add("class", "carousel-caption"); //Future captions
