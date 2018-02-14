@@ -13,7 +13,15 @@
         <asp:Button ID="FB_Login" runat="server" OnClick="FB_Login_Click" Text="Login with Facebook" />
         <br />
         <br />
-    
+        First Name:
+        <asp:Label ID="FN" runat="server" Text=""></asp:Label>
+        <br />
+        Last Name:
+        <asp:Label ID="LN" runat="server" Text=""></asp:Label>
+        <br />
+        Email:
+        <asp:Label ID="EMAIL" runat="server" Text=""></asp:Label>
+        <br />
         <asp:Button ID="FB_Post" runat="server" OnClick="Button1_Click" Text="Post Link to my Facebook" />
     
     </div>

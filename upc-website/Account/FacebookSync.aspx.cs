@@ -30,17 +30,19 @@ namespace upc_website.Account
         {
             string app_id = "1846335912290211";
             string app_secret = "7f7555d14710c880b0f55885f7f13c9f";
-            string scope = "public_profile,publish_actions,email";
+            //string scope = "public_profile,publish_actions,email"; //USE THIS SCOPE TO POST TO FB
+            string scope = "public_profile, email";
+
 
             if (Request["code"] == null)
             {
                 Response.Redirect(string.Format(
                     "https://graph.facebook.com/oauth/authorize?client_id={0}&redirect_uri={1}&scope={2}",
                     app_id, Request.Url.AbsoluteUri, scope));
+                
 
             }
-            else
-            {
+            
                 Dictionary<string, string> tokens = new Dictionary<string, string>();
                 string url = string.Format("https://graph.facebook.com/oauth/access_token?client_id={0}&redirect_uri={1}&code={2}&client_secret={3}",
                     app_id, Request.Url.AbsoluteUri, Request["code"].ToString(), app_secret);
@@ -83,10 +85,13 @@ namespace upc_website.Account
                 var email = (string)result["email"];
                 var firstName = (string)result["first_name"];
                 var lastName = (string)result["last_name"];
-
+                FN.Text = firstName;
+                LN.Text = lastName;
+                EMAIL.Text = email;
+         
 
                 //Write data to user database
-                SqlConnection conn = new SqlConnection("Data Source=s13.winhost.com;Initial Catalog=DB_110695_webauth;Persist Security Info=True;User ID=DB_110695_webauth_user;Password=John1!1");
+         /*       SqlConnection conn = new SqlConnection("Data Source=s13.winhost.com;Initial Catalog=DB_110695_webauth;Persist Security Info=True;User ID=DB_110695_webauth_user;Password=John1!1");
                 string stmt = "Insert into User(UID, FN, LN) Values(@UID, @FN, @LN)";
 
                 SqlCommand insert = new SqlCommand(stmt, conn);
@@ -98,7 +103,7 @@ namespace upc_website.Account
                 conn.Open();
                 insert.ExecuteNonQuery();
                 conn.Close();
-
+*/
 
                 Auth_Done = true;
 
@@ -108,7 +113,7 @@ namespace upc_website.Account
 
 
 
-            }
+            
 
         }
 
