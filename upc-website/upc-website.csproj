@@ -314,6 +314,7 @@
     <Content Include="images\audio_player\speaker_muted_48px.png" />
     <Content Include="images\audio_player\speaker_muted_72px.png" />
     <Content Include="images\audio_player\unmute.png" />
+    <Content Include="images\carousel\1920x1080.mp4" />
     <Content Include="images\carousel\camp dove save the date.jpg" />
     <Content Include="images\carousel\millikinchristmas.jpg" />
     <Content Include="images\carousel\morphing_solid.mp4" />
