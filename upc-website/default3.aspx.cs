@@ -325,6 +325,7 @@ namespace upc_website
                         mySource[i].Attributes.Add("src", myData[index * i].ToString());
                         mySource[i].Attributes.Add("type", "video/mp4");
                         myVideo[i].Attributes.Add("muted", "muted"); //2.14.18 added
+                        myVideo[i].Attributes.Add("playsinline", "playsinline");//added for apple video autoplay 2.15.18
                         myVideo[i].Attributes.Add("width", "100%");//url
                         myVideo[i].Attributes.Add("height", "auto");//url
                         myVideo[i].Controls.Add(mySource[i]); //Added 2.12.18
@@ -380,9 +381,9 @@ namespace upc_website
                         }
                         mySource[i].Attributes.Add("src", myData[index * i].ToString());
                         mySource[i].Attributes.Add("type", "video/mp4");
-                        myVideo[i].Attributes.Add("id", "myVid");//id
+                        //myVideo[i].Attributes.Add("id", "myVid");//id
                         myVideo[i].Attributes.Add("muted", "muted"); //2.14.18 added
-                        //myVideo[i].Attributes.Add("loop", "loop");//url
+                        myVideo[i].Attributes.Add("playsinline", "playsinline");//added for apple video autoplay 2.15.18
                         myVideo[i].Attributes.Add("width", "100%");//url
                         myVideo[i].Attributes.Add("height", "auto");//url
                         myVideo[i].Controls.Add(mySource[i]); //Added 2.12.18
