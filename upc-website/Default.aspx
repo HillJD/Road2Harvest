@@ -57,4 +57,18 @@
             <a href="resources.aspx"><p class="gly-paragraph">Resources</p></a>
         </div>
     </div>
+    <script>
+        $(document).ready(function () {
+
+            $("#MainContent_myCarousel").on('slid.bs.carousel', function () {
+                var v = $(".active").find("video")[0];
+                if (v) {
+                    v.play();
+                }
+            });
+                
+                
+        });
+       
+    </script>
 </asp:Content>

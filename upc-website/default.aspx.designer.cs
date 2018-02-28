@@ -10,7 +10,7 @@
 namespace upc_website {
     
     
-    public partial class addControlsFirst_Attempt {
+    public partial class Carousel {
         
         /// <summary>
         /// ControlContainer control.
