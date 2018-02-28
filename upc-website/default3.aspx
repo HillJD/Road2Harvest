@@ -9,7 +9,7 @@
     <asp:Literal ID="Literal3" runat="server"></asp:Literal>--%>
     <asp:PlaceHolder ID="ControlContainer" runat="server"></asp:PlaceHolder>
 
-    <!--  Mike was here Stack the columns on mobile by making one full-width and the other half-width -->
+    <!--Stack the columns on mobile by making one full-width and the other half-width -->
 
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
