@@ -49,7 +49,7 @@ namespace upc_website
             myCarousel.Attributes.Add("data-ride", "carousel");
             myCarousel.Attributes.Add("data-interval", slideDelay);
             ControlContainer.Controls.Add(myCarousel);
-        }
+                    }
 
         public void BuildCarouselOrderedList()
         {
