@@ -261,7 +261,6 @@
     <Content Include="browserconfig.xml" />
     <Content Include="Content\jplayer.pink.flag.css" />
     <Content Include="carouselVideo.aspx" />
-    <Content Include="Default.aspx" />
     <Content Include="default3.aspx" />
     <Content Include="DoveIcon.png" />
     <Content Include="favicon-16x16.png" />
@@ -831,19 +830,9 @@
     <Compile Include="carouselVideo.aspx.designer.cs">
       <DependentUpon>carouselVideo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="default3.aspx.cs">
       <DependentUpon>default3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="default3.aspx.designer.cs">
-      <DependentUpon>default3.aspx</DependentUpon>
     </Compile>
     <Compile Include="jplayer.aspx.cs">
       <DependentUpon>jplayer.aspx</DependentUpon>
