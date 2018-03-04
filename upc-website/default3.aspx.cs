@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 
 namespace upc_website
 {
-    public partial class newCarousel : System.Web.UI.Page
+    public partial class NewCarousel : System.Web.UI.Page
     {
         //Must be visible to all below
         HtmlGenericControl myCarousel = new HtmlGenericControl("div"); //Top level <div>
@@ -20,12 +20,13 @@ namespace upc_website
         HtmlGenericControl ImageWrapper = new HtmlGenericControl("div");//Wrapper for each image inside master <div> for all slides
         HtmlGenericControl ImageContainer = new HtmlGenericControl("img");//Container for each individual image
         HtmlGenericControl VideoContainer = new HtmlGenericControl("video");//Container for each individual video
-                                                                          //HtmlGenericControl ImageContainer = new HtmlGenericControl("A");
-                                                                          //HtmlGenericControl ImageContainer = new HtmlGenericControl("SPAN");
-                                                                          //HtmlGenericControl li_1 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
+
+        //HtmlGenericControl ImageContainer = new HtmlGenericControl("A");
+        //HtmlGenericControl ImageContainer = new HtmlGenericControl("SPAN");
+        //HtmlGenericControl li_1 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
 
         //Used in BuildCarouselImageDiv
-        public enum carouselField
+        public enum CarouselField
         {
             PicPath, //0
             LineOneCaption, //1
@@ -162,7 +163,7 @@ namespace upc_website
             myCarousel.Attributes.Add("data-ride", "carousel");
             myCarousel.Attributes.Add("data-interval", slideDelay);
             ControlContainer.Controls.Add(myCarousel); ///PlaceHolder in default.aspx this holds all elements for carousel
-        }
+            }
 
         public void BuildCarouselOrderedList()
         {
@@ -304,8 +305,8 @@ namespace upc_website
                     if (myData[index * i].IndexOf("mp4") == -1) //Not an mp4 (video) so therefore it's a jpg (image)
                     {
                         myImageDiv[i].Attributes.Add("class", "item active");
-                        myAnchor[i].Attributes.Add("href", myData[(index * i) + (int)carouselField.Url].ToString());
-                        if (myData[(index * i) + (int)carouselField.UrlLocation] == "external") //urlLocation == "external" means open in new webpage, else internal link (default)
+                        myAnchor[i].Attributes.Add("href", myData[(index * i) + (int)CarouselField.Url].ToString());
+                        if (myData[(index * i) + (int)CarouselField.UrlLocation] == "external") //urlLocation == "external" means open in new webpage, else internal link (default)
                         {
                             string urlLocation = "_blank";
                             myAnchor[i].Attributes.Add("target", urlLocation);
@@ -315,8 +316,8 @@ namespace upc_website
                     else
                     { //it's a video
                         myImageDiv[i].Attributes.Add("class", "item active");
-                        myAnchor[i].Attributes.Add("href", myData[(index * i) + (int)carouselField.Url].ToString());
-                        if (myData[(index * i) + (int)carouselField.UrlLocation] == "external") //urlLocation == "external" means open in new webpage, else internal link (default)
+                        myAnchor[i].Attributes.Add("href", myData[(index * i) + (int)CarouselField.Url].ToString());
+                        if (myData[(index * i) + (int)CarouselField.UrlLocation] == "external") //urlLocation == "external" means open in new webpage, else internal link (default)
                         {
                             string urlLocation = "_blank";
                             myAnchor[i].Attributes.Add("target", urlLocation);
@@ -331,9 +332,9 @@ namespace upc_website
                     }
 
                     myCaptionDiv[i].Attributes.Add("class", "carousel-caption"); //Future captions
-                    myCaptionH3[i].InnerHtml = myData[(index * i) + (int)carouselField.LineOneCaption].ToString();//caption1
-                    myCaptionH4[i].InnerHtml = myData[(index * i) + (int)carouselField.LineTwoCaption].ToString();//caption 2
-                    myCaptionH5[i].InnerHtml = myData[(index * i) + (int)carouselField.LineThreeCaption].ToString();//caption 3
+                    myCaptionH3[i].InnerHtml = myData[(index * i) + (int)CarouselField.LineOneCaption].ToString();//caption1
+                    myCaptionH4[i].InnerHtml = myData[(index * i) + (int)CarouselField.LineTwoCaption].ToString();//caption 2
+                    myCaptionH5[i].InnerHtml = myData[(index * i) + (int)CarouselField.LineThreeCaption].ToString();//caption 3
                     myCaptionDiv[i].Controls.Add(myCaptionH3[i]);
                     myCaptionDiv[i].Controls.Add(myCaptionH4[i]);
                     myCaptionDiv[i].Controls.Add(myCaptionH5[i]);
@@ -361,8 +362,8 @@ namespace upc_website
                     if (myData[index * i].IndexOf("mp4") == -1) //Not an mp4 (video) so therefore it's a jpg (image)
                     {
                         myImageDiv[i].Attributes.Add("class", "item");
-                        myAnchor[i].Attributes.Add("href", myData[(index * i) + (int)carouselField.Url].ToString());
-                        if (myData[(index * i) + (int)carouselField.UrlLocation] == "external") //urlLocation == "external" means open in new webpage, else internal link (default)
+                        myAnchor[i].Attributes.Add("href", myData[(index * i) + (int)CarouselField.Url].ToString());
+                        if (myData[(index * i) + (int)CarouselField.UrlLocation] == "external") //urlLocation == "external" means open in new webpage, else internal link (default)
                         {
                             string urlLocation = "_blank";
                             myAnchor[i].Attributes.Add("target", urlLocation);
@@ -372,8 +373,8 @@ namespace upc_website
                     else
                     { //it's a video
                         myImageDiv[i].Attributes.Add("class", "item");
-                        myAnchor[i].Attributes.Add("href", myData[(index * i) + (int)carouselField.Url].ToString());
-                        if (myData[(index * i) + (int)carouselField.UrlLocation] == "external") //urlLocation == "external" means open in new webpage, else internal link (default)
+                        myAnchor[i].Attributes.Add("href", myData[(index * i) + (int)CarouselField.Url].ToString());
+                        if (myData[(index * i) + (int)CarouselField.UrlLocation] == "external") //urlLocation == "external" means open in new webpage, else internal link (default)
                         {
                             string urlLocation = "_blank";
                             myAnchor[i].Attributes.Add("target", urlLocation);

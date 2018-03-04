@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="default3.aspx.cs" Inherits="upc_website.newCarousel" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="default3.aspx.cs" Inherits="upc_website.NewCarousel" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -10,7 +10,7 @@
     <!--Stack the columns on mobile by making one full-width and the other half-width -->
     
     <asp:PlaceHolder ID="ControlContainer" runat="server"></asp:PlaceHolder>
-
+    <asp:TextBox ID="text" runat="server">Mike</asp:TextBox>
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
             <a href="location.aspx"><span class="glyphicons glyphicons-map-marker"></span></a>

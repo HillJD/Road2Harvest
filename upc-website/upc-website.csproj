@@ -266,6 +266,7 @@
     <Content Include="favicon-16x16.png" />
     <Content Include="favicon-32x32.png" />
     <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
     <Content Include="glyphicons\glyphicons-social.css" />
     <Content Include="images\audio_player\Asset 1%402x.png" />
     <Content Include="images\audio_player\Asset 1%403x.png" />
@@ -622,7 +623,6 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Global.asax" />
     <Content Include="sermons.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
@@ -834,6 +834,12 @@
       <DependentUpon>default3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="default3.aspx.designer.cs">
+      <DependentUpon>default3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="jplayer.aspx.cs">
       <DependentUpon>jplayer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -896,9 +902,6 @@
     </Compile>
     <Compile Include="eventsold.aspx.designer.cs">
       <DependentUpon>eventsold.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="help.aspx.cs">
       <DependentUpon>help.aspx</DependentUpon>
