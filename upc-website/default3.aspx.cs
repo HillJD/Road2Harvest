@@ -162,7 +162,6 @@ namespace upc_website
             myCarousel.Attributes.Add("data-ride", "carousel");
             myCarousel.Attributes.Add("data-interval", slideDelay);
             ControlContainer.Controls.Add(myCarousel); ///PlaceHolder in default.aspx this holds all elements for carousel
-            //<asp:PlaceHolder ID="ControlContainer" runat="server"></asp:PlaceHolder>
         }
 
         public void BuildCarouselOrderedList()
