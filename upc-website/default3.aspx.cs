@@ -24,7 +24,7 @@ namespace upc_website
         //HtmlGenericControl ImageContainer = new HtmlGenericControl("A");
         //HtmlGenericControl ImageContainer = new HtmlGenericControl("SPAN");
         //HtmlGenericControl li_1 = new System.Web.UI.HtmlControls.HtmlGenericControl("li");
-
+        
         //Used in BuildCarouselImageDiv
         public enum CarouselField
         {
@@ -46,7 +46,6 @@ namespace upc_website
             BuildCarouselWrapperDiv(); //
             BuildCarouselImageDiv(SlidesToAdd);
             BuildCarouselControls();
-
         }
 
         public int GetRowCount()
@@ -163,7 +162,7 @@ namespace upc_website
             myCarousel.Attributes.Add("data-ride", "carousel");
             myCarousel.Attributes.Add("data-interval", slideDelay);
             ControlContainer.Controls.Add(myCarousel); ///PlaceHolder in default.aspx this holds all elements for carousel
-            }
+        }
 
         public void BuildCarouselOrderedList()
         {
