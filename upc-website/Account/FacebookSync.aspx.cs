@@ -88,7 +88,7 @@ namespace upc_website.Account
                 FN.Text = firstName;
                 LN.Text = lastName;
                 EMAIL.Text = email;
-         
+                ID.Text = id;
 
                 //Write data to user database
          /*       SqlConnection conn = new SqlConnection("Data Source=s13.winhost.com;Initial Catalog=DB_110695_webauth;Persist Security Info=True;User ID=DB_110695_webauth_user;Password=John1!1");

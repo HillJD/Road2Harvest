@@ -22,6 +22,9 @@
         Email:
         <asp:Label ID="EMAIL" runat="server" Text=""></asp:Label>
         <br />
+        ID:
+        <asp:Label ID="ID" runat="server" Text=""></asp:Label>
+        <br />
         <asp:Button ID="FB_Post" runat="server" OnClick="Button1_Click" Text="Post Link to my Facebook" />
     
     </div>

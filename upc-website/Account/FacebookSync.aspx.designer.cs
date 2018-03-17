@@ -58,6 +58,15 @@ namespace upc_website.Account {
         protected global::System.Web.UI.WebControls.Label EMAIL;
         
         /// <summary>
+        /// ID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ID;
+        
+        /// <summary>
         /// FB_Post control.
         /// </summary>
         /// <remarks>
