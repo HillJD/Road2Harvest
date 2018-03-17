@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="default3.aspx.cs" Inherits="upc_website.NewCarousel" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="default.aspx.cs" Inherits="upc_website.NewCarousel" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -54,18 +54,16 @@
             <a href="resources.aspx"><p class="gly-paragraph">Resources</p></a>
         </div>
     </div>
-    <asp:TextBox class="status" runat="server"></asp:TextBox>
     <script>
         $(document).ready(function () {
 
-            //$('p').eq(2).html('3rd <strong>Paragraph</strong>').end().eq(0).empty();
-                
-            //$(".row:eq(0)").attr('id', 'google.com').html('I\'\m here');
-            $('p').each(function (index, element) {
-                console.log($(this).text());
+            $("#MainContent_myCarousel").on('slid.bs.carousel', function () {
+                var v = $(".active").find("video")[0];
+                if (v) {
+                    v.play();
+                }
             });
-            
-        });
+        });   
        
     </script>
 
