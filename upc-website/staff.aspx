@@ -54,19 +54,4 @@
         with the Gospel through puppets, skits, songs, stories, object lessons, etc.  Her ministry
         motto is “Partnering with Families to Help Strengthen Today’s Kids”!
     </div>
-     <asp:TextBox class="status" runat="server"></asp:TextBox>
-    <script>
-        
-        $(document).ready(function () {
-            var l = $('div').length;
-            if (l) {
-                console.log('True, ' + 'Length= ' + l)
-            }
-            else {
-                console.log('False, ' + 'Length= ' + l)
-            }
-        });
-        
-
-    </script>
 </asp:Content>
