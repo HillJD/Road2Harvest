@@ -55,8 +55,13 @@ namespace upc_website
             SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
             //SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
             cs.Open();
+            //Sort by PicOrder DESC & endDate DESC, this will show slides ending sooner than others
+            //Set slide, default_carousel.jpg to an endDate that is the latest of all slides
+            //And set PicOrder on default_carousel.jpg to 100.
+            //This forces that slide to show first in list , so that a video file will not be shown first
+            //If a video file is shown first it will not display if it's the first slide
             string str = "SELECT * ";
-            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY endDate DESC";
+            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY PicOrder DESC, endDate DESC";
 
             SqlCommand command = new SqlCommand(str, cs);
             DataTable dt = new DataTable();
@@ -79,9 +84,14 @@ namespace upc_website
             //Setup data connection, get data fron sql table 'carousel_images
             // SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
             SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
+            //Sort by PicOrder DESC & endDate DESC, this will show slides ending sooner than others
+            //Set slide, default_carousel.jpg to an endDate that is the latest of all slides
+            //And set PicOrder on default_carousel.jpg to 100.
+            //This forces that slide to show first in list , so that a video file will not be shown first
+            //If a video file is shown first it will not display if it's the first slide
             cs.Open();
             string str = "SELECT * ";
-            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY endDate DESC";
+            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY PicOrder DESC, endDate DESC";
 
             SqlCommand command = new SqlCommand(str, cs);
             DataTable dt = new DataTable();
