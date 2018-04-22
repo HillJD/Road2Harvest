@@ -8,7 +8,6 @@
 <div class="mypage-header text-center">
     <h4><b>Sermon Archives</b></h4>
 </div>
-
 <table class="table" style="width:100%">
   <tr>
     <td style="text-align:right">Search Title:</td>
@@ -16,7 +15,12 @@
   </tr>
   <tr>
     <td style="text-align:right">Speaker:</td>
-    <td><asp:TextBox ID="txtFind02" runat="server"></asp:TextBox></td>
+    <td><asp:TextBox ID="txtFind02" runat="server"></asp:TextBox><br /></td>
+  </tr>
+    <tr>
+        <asp:Textbox ID="Series" runat="server"></asp:Textbox>
+    <td style="text-align:right">Series:</td>
+    <td><asp:TextBox ID="txtFind03" runat="server"></asp:TextBox></td>
   </tr>
   <tr>
     <td></td>
@@ -61,15 +65,18 @@
         <asp:SqlDataSource ID="SqlDataSource1"
             runat="server"
             ConnectionString="<%$ ConnectionStrings:DB_110695_carouselConnectionString %>"
-            SelectCommand="SELECT [SermonAudioID], [ImageURL], [Title], [Speaker], [SermonDt], [AudioURL]
-            FROM [SermonAudio] WHERE [InArchive] = 'True' ORDER BY [SermonDt] DESC, [SermonAMPM] DESC"
-            FilterExpression="[Title] LIKE '%{0}%' AND [Speaker] LIKE '%{1}%'">
+            SelectCommand="SELECT [SermonAudioID], [ImageURL], [Title], [Speaker], [SermonDt], [AudioURL],
+            dbo.Series.[SeriesName] FROM dbo.[SermonAudio] LEFT JOIN dbo.[Series] ON dbo.[SermonAudio].[SeriesID] = dbo.[Series].[SeriesID]
+            WHERE [InArchive] = 'True' ORDER BY [SermonDt] DESC, [SermonAMPM] DESC"
+            FilterExpression="[Title] LIKE '%{0}%' AND [Speaker] LIKE '%{1}%' AND [SeriesName] LIKE '%{2}%'">
 
                     <FilterParameters>
                         <asp:ControlParameter Name="Title" 
                             ControlID="txtFind01" PropertyName="Text" ConvertEmptyStringToNull="false"/>
                         <asp:ControlParameter Name="Speaker" 
                             ControlID="txtFind02" PropertyName="Text" ConvertEmptyStringToNull="false"/>
+                        <asp:ControlParameter Name="Series" 
+                            ControlID="txtFind03" PropertyName="Text" ConvertEmptyStringToNull="false"/>
                     </FilterParameters>
         </asp:SqlDataSource>
 
