@@ -72,7 +72,6 @@
     <td><asp:TextBox ID="txtFind02" runat="server"></asp:TextBox></td>
   </tr>
   <tr>
-      <asp:Textbox ID="Series" runat="server"></asp:Textbox>
     <td style="text-align:right">Series:</td>
     <td><asp:TextBox ID="txtFind03" runat="server"></asp:TextBox></td>
   </tr>
