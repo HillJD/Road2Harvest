@@ -1,5 +1,58 @@
 ﻿<%@ Page Title="" Language="C#" StyleSheetTheme="UPC_Skins" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="archives.aspx.cs" Inherits="upc_website.archives" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
+<style>
+.mGrid { 
+    
+    background-color: #fff; 
+    /*margin: 5px 0 10px 0; */
+    border: solid 1px #525252; 
+    border-collapse:collapse; 
+    border-spacing: 0px;
+    border-color: black;
+    
+}
+
+/*.mGrid table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0px;
+    border-color: red;
+}*/
+
+.mGrid td { 
+    /*padding: 0px; 
+    border: solid 1px #c1c1c1; */
+    color: #717171; 
+    text-align:left;
+    background-color:white;
+}
+
+.mGrid .pgr td { 
+    border-width: 0; 
+    padding: 0 6px; 
+    border-left: solid 1px #666; 
+    font-weight: bold; 
+    color:black; 
+    line-height: 12px; 
+ }   
+.mGrid .pgr a { color: #f00; text-decoration: none; }
+.mGrid .pgr a:hover { color: #000; text-decoration: none; }
+.textColor {color:red}
+.textAlign {padding-left:10px}
+
+.mGrid h5, .h5 {
+    font-size: 14px;
+    height: 16px;
+    /*width: 169px;*/
+    margin-left: 3px; 
+    margin-right: 41px;
+}
+
+.mGrid p {
+    margin: 0 4px 25px;
+}
+
+</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <div>
@@ -25,11 +78,11 @@
 </table>
 
     <div class="table-responsive">
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="SermonAudioID" ShowHeader="False" DataSourceID="SqlDataSource1" SkinID="UPC_GV1">
+        <asp:GridView ID="GridView1" runat="server" PagerStyle-CssClass="pgr" CssClass="mGrid" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="SermonAudioID" ShowHeader="False" DataSourceID="SqlDataSource1">
             <Columns>
                 <asp:ImageField
                     DataImageUrlField="ImageURL" 
-                    ControlStyle-Height="78px" 
+                    ControlStyle-Height="80px" 
                     ControlStyle-Width="139px"
                 />
                 
@@ -41,15 +94,13 @@
                     <ItemTemplate>
                         <h5><strong>
                                 <asp:HyperLink id="HL1" runat="server" NavigateUrl='<%# GetUrl(Eval("AudioURL"))%>'
-                                    Text='<%# Eval("Title") %>'>
+                                    Text='<%# Eval("Title") %>' >
                                 </asp:HyperLink>
                             </strong></h5>
                         <p><asp:Label ID="Label2" runat="server"
-                            class="text-left small"
                             Font-Name="Montserrat"
                             Text='<%# Eval("Speaker") %>'></asp:Label>
                         <asp:Label ID="Label3" runat="server"
-                            class="text-left small"
                             Font-Name="Montserrat"
                             Text='<%# String.Format("{0:MM/dd/yy}", Eval("SermonDt")) %>'>
                         </asp:Label></p>
@@ -62,7 +113,7 @@
             runat="server"
             ConnectionString="<%$ ConnectionStrings:DB_110695_carouselConnectionString %>"
             SelectCommand="SELECT [SermonAudioID], [ImageURL], [Title], [Speaker], [SermonDt], [AudioURL]
-            FROM [SermonAudio] WHERE [InArchive] = 'True' ORDER BY [SermonDt] DESC, [SermonAMPM] DESC"
+            FROM [SermonAudio] WHERE [InArchive] = 'True' ORDER BY [SermonDt] DESC"
             FilterExpression="[Title] LIKE '%{0}%' AND [Speaker] LIKE '%{1}%'">
 
                     <FilterParameters>
