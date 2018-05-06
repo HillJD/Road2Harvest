@@ -82,7 +82,7 @@
             <Columns>
                 <asp:ImageField
                     DataImageUrlField="ImageURL" 
-                    ControlStyle-Height="80px" 
+                    ControlStyle-Height="81px" 
                     ControlStyle-Width="139px"
                 />
                 
