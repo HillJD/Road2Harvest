@@ -72,6 +72,17 @@
     <td><asp:TextBox ID="txtFind02" runat="server"></asp:TextBox></td>
   </tr>
   <tr>
+    <td>&nbsp;</td>
+    <td>
+        <asp:DropDownList ID="DLSeries" runat="server" DataSourceID="SqlDatSeries" DataTextField="SeriesName" DataValueField="SeriesID" AppendDataBoundItems="true">
+            <Items>
+                <asp:ListItem Text="Select" Value="" />
+            </Items>
+        </asp:DropDownList>
+        <asp:SqlDataSource ID="SqlDatSeries" runat="server" ConnectionString="<%$ ConnectionStrings:DB_110695_carouselConnectionString %>" SelectCommand="SELECT * FROM dbo.Series WHERE SeriesName <> '' AND SeriesID IN (SELECT SeriesID FROM [SermonAudio] WHERE [InArchive] = 'True' AND SeriesID <> 49) ORDER BY SeriesID DESC;"></asp:SqlDataSource>
+    </td>
+  </tr>
+  <tr>
     <td></td>
     <td><input type="submit" id="Submit1" runat="server" /></td>
   </tr>
