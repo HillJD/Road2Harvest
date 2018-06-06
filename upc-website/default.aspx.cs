@@ -61,7 +61,7 @@ namespace upc_website
             //This forces that slide to show first in list , so that a video file will not be shown first
             //If a video file is shown first it will not display if it's the first slide
             string str = "SELECT * ";
-            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY PicOrder DESC, endDate DESC";
+            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY PicOrder ASC";
 
             SqlCommand command = new SqlCommand(str, cs);
             DataTable dt = new DataTable();
@@ -91,7 +91,7 @@ namespace upc_website
             //If a video file is shown first it will not display if it's the first slide
             cs.Open();
             string str = "SELECT * ";
-            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY PicOrder DESC, endDate DESC";
+            str += " FROM carousel_images WHERE (beginDate <= {fn now() }) and (endDate >= {fn now() }) ORDER BY PicOrder ASC";
 
             SqlCommand command = new SqlCommand(str, cs);
             DataTable dt = new DataTable();

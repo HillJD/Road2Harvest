@@ -357,6 +357,7 @@
     <Content Include="jplayer.aspx" />
     <Content Include="jquery_examples\arrays.html" />
     <Content Include="mstile-150x150.png" />
+    <Content Include="pastordesk.aspx" />
     <Content Include="pink.flag\css\jplayer.pink.flag.css" />
     <Content Include="pink.flag\css\jplayer.pink.flag.min.css" />
     <Content Include="pink.flag\image\jplayer.pink.flag.jpg" />
@@ -913,6 +914,13 @@
     </Compile>
     <Compile Include="pastor-info.aspx.designer.cs">
       <DependentUpon>pastor-info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pastordesk.aspx.cs">
+      <DependentUpon>pastordesk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pastordesk.aspx.designer.cs">
+      <DependentUpon>pastordesk.aspx</DependentUpon>
     </Compile>
     <Compile Include="pastors-blog.aspx.cs">
       <DependentUpon>pastors-blog.aspx</DependentUpon>
