@@ -259,6 +259,7 @@
     <Content Include="audio\4933_20sec.mp3" />
     <Content Include="audio\no more night.mp3" />
     <Content Include="browserconfig.xml" />
+    <Content Include="campdove.aspx" />
     <Content Include="Content\jplayer.pink.flag.css" />
     <Content Include="carouselVideo.aspx" />
     <Content Include="default.aspx" />
@@ -504,6 +505,10 @@
     <Content Include="fonts\glyphicons-social-regular.woff2" />
     <Content Include="App_Themes\UPC_Skins\UPC_GV1.skin" />
     <Content Include="manifest.json" />
+    <Content Include="camp_dove\camper_registration_form.pdf" />
+    <Content Include="camp_dove\camp_dove_flyer.pdf" />
+    <Content Include="camp_dove\church_registration_form.pdf" />
+    <Content Include="camp_dove\rules_and_ regulations.pdf" />
     <None Include="Properties\PublishProfiles\WebDeployUPC.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -727,6 +732,13 @@
     </Compile>
     <Compile Include="bible.aspx.designer.cs">
       <DependentUpon>bible.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="campdove.aspx.cs">
+      <DependentUpon>campdove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="campdove.aspx.designer.cs">
+      <DependentUpon>campdove.aspx</DependentUpon>
     </Compile>
     <Compile Include="Church.aspx.cs">
       <DependentUpon>Church.aspx</DependentUpon>

@@ -224,7 +224,7 @@
     line-height:.2;
 }
 
-//center text vertically page font-face-name indicator
+/*center text vertically page font-face-name indicator*/
 .header-h4 {
     margin-bottom:1px;
 }
@@ -318,7 +318,7 @@ position:relative;
     border:thin solid black;
 } 
 
-}
+
 
   /*codepen.io/wisnust10/pen/mPjwWv 6/5/17*/
   .carousel-fade .carousel-inner .item {
@@ -498,6 +498,7 @@ position:relative;
     /***************** media query styling ******************************************/
     /*small mobile dedvices, this image is normally 60px*/
     /*At 60 px interferes with hamburger menu*/
+
     @media (min-width: 319px) and (max-width:767px) {
         .navbar-brand > img {
             display: block;
@@ -530,10 +531,7 @@ position:relative;
         }
 
         .navbar-nav > li > a {
-            padding-top: 15px;
-            padding-bottom: 15px;
-            padding-left: 9px;
-            padding-right: 9px;
+            padding: 15px 9px
         }
 
         .carousel {
@@ -545,20 +543,8 @@ position:relative;
             border-color: rgba(255,251,251,.5);
             border-width: 2px;
         }
+    }
 
-        /*.mypage-header > h4 {
-            margin: 40px 0 20px;
-            border-bottom: 3px solid #eee;
-            border-bottom-color: rgba(130,105,30,1);
-            margin-top: -140px;
-            font-size: 30px;
-        }*/
-
-        /*.mypage-glythicons {
-            margin-top: -120px;
-            float: left;
-            font-size: 24px;
-        }*/
         /***************** end media query styling ******************************************/
         /********************* location page styling ******************************************/
         #page-name {
@@ -568,9 +554,7 @@ position:relative;
             border-right-width: 0;
             width: 100%;
         }
-    }
-}
-        /***************** end location page styling ******************************************/
+           /***************** end location page styling ******************************************/
         /*.GridPager a,
         .GridPager span {
             display: inline-block;
@@ -826,7 +810,7 @@ position:relative;
     line-height:.2;
 }
 
-//center text vertically page font-face-name indicator
+/*center text vertically page font-face-name indicator*/
 .header-h4 {
     margin-bottom:1px;
 }
@@ -920,7 +904,7 @@ position:relative;
     border:thin solid black;
 } 
 
-}
+
 
   /*codepen.io/wisnust10/pen/mPjwWv 6/5/17*/
   .carousel-fade .carousel-inner .item {
@@ -932,7 +916,7 @@ position:relative;
   opacity: 1;
 }
 
-.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.left
 .carousel-fade .carousel-inner .active.right {
   left: 0;
   opacity: 0;
@@ -1100,6 +1084,7 @@ position:relative;
     /***************** media query styling ******************************************/
     /*small mobile dedvices, this image is normally 60px*/
     /*At 60 px interferes with hamburger menu*/
+
     @media (min-width: 319px) and (max-width:767px) {
         .navbar-brand > img {
             display: block;
@@ -1113,9 +1098,11 @@ position:relative;
             padding: 15px 15px;
             font-size: 18px;
             line-height: 20px;
-            transform: translate(-2%,-23%); /* Move dove and text up*/
+            /* Move dove and text up*/
+            transform: translate(-2%,-23%);
         }
     }
+    
 
     @media (min-width: 768px) {
         .navbar-brand {
@@ -1132,10 +1119,7 @@ position:relative;
         }
 
         .navbar-nav > li > a {
-            padding-top: 15px;
-            padding-bottom: 15px;
-            padding-left: 9px;
-            padding-right: 9px;
+            padding: 15px 9px;
         }
 
         .carousel {
@@ -1148,19 +1132,7 @@ position:relative;
             border-width: 2px;
         }
 
-        /*.mypage-header > h4 {
-            margin: 40px 0 20px;
-            border-bottom: 3px solid #eee;
-            border-bottom-color: rgba(130,105,30,1);
-            margin-top: -140px;
-            font-size: 30px;
-        }*/
-
-        /*.mypage-glythicons {
-            margin-top: -120px;
-            float: left;
-            font-size: 24px;
-        }*/
+        
         /***************** end media query styling ******************************************/
         /********************* location page styling ******************************************/
         #page-name {
@@ -1171,10 +1143,9 @@ position:relative;
             width: 100%;
         }
     }
-}
+
         /***************** end location page styling ******************************************/
-        .GridPager a,
-        .GridPager span {
+        .GridPager a,.GridPager span {
             display: inline-block;
             padding: 0px 9px;
             margin-right: 4px;
