@@ -14,20 +14,20 @@
     <div class="jumbotron text-center">
 
         <p>
-            <a href="http://www.unionpentecostalchurch.com\camp_dove_2018\rules_and_regulations.pdf" target="_blank">Camp Dove Rules And Regulations</a>
+            <a href="http://www.unionpentecostalchurch.com/camp_dove/rules_and_regulations.pdf" target="_blank">Camp Dove Rules And Regulations</a>
         </p>
         <br />
         <p>
-            <a href="http://www.unionpentecostalchurch.com\camp_dove_2018\church_registration_form.pdf" target="_blank">Camp Dove Church Registration Form</a>
+            <a href="http://www.unionpentecostalchurch.com/camp_dove/church_registration_form.pdf" target="_blank">Camp Dove Church Registration Form</a>
         </p>
         <br />
         <p>
-            <a href="http://www.unionpentecostalchurch.com\camp_dove_2018\camper_registration_form.pdf" target="_blank">Camp Dove Camper Registration Form</a>
+            <a href="http://www.unionpentecostalchurch.com/camp_dove/camper_registration_form.pdf" target="_blank">Camp Dove Camper Registration Form</a>
         </p>
         <br />
 
         <p>
-            <a href="http://www.unionpentecostalchurch.com\camp_dove_flyer.pdf" target="_blank">Camp Dove Flyer</a>
+            <a href="http://www.unionpentecostalchurch.com/camp_dove/camp_dove_flyer.pdf" target="_blank">Camp Dove Flyer</a>
         </p>
     </div>
 

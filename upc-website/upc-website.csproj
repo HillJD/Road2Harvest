@@ -508,7 +508,7 @@
     <Content Include="camp_dove\camper_registration_form.pdf" />
     <Content Include="camp_dove\camp_dove_flyer.pdf" />
     <Content Include="camp_dove\church_registration_form.pdf" />
-    <Content Include="camp_dove\rules_and_ regulations.pdf" />
+    <Content Include="camp_dove\rules_and_regulations.pdf" />
     <None Include="Properties\PublishProfiles\WebDeployUPC.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
