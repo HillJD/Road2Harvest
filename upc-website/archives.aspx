@@ -124,7 +124,7 @@
             runat="server"
             ConnectionString="<%$ ConnectionStrings:DB_110695_carouselConnectionString %>"
             SelectCommand="SELECT [SermonAudioID], [ImageURL], [Title], [Speaker], [SermonDt], [AudioURL]
-            FROM [SermonAudio] WHERE [InArchive] = 'True' ORDER BY [SermonDt] DESC"
+            FROM [SermonAudio] WHERE [InArchive] = 'True' ORDER BY [SermonDt], [SermonAMPM] DESC"
             FilterExpression="[Title] LIKE '%{0}%' AND [Speaker] LIKE '%{1}%'">
 
                     <FilterParameters>
