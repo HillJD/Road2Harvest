@@ -22,5 +22,11 @@ namespace upc_website
         {
 
         }
+
+        protected void Button01_Click(object sender, EventArgs e)
+        {
+            txtFind01.Text = String.Empty;
+            txtFind02.Text = String.Empty;
+        }
     }
 }

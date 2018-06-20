@@ -22,15 +22,6 @@ namespace upc_website {
         protected global::System.Web.UI.WebControls.TextBox txtFind01;
         
         /// <summary>
-        /// txtFind02 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFind02;
-        
-        /// <summary>
         /// DLSeries control.
         /// </summary>
         /// <remarks>
@@ -49,6 +40,15 @@ namespace upc_website {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDatSeries;
         
         /// <summary>
+        /// txtFind02 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFind02;
+        
+        /// <summary>
         /// Submit1 control.
         /// </summary>
         /// <remarks>
@@ -56,6 +56,15 @@ namespace upc_website {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputSubmit Submit1;
+        
+        /// <summary>
+        /// Button01 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button01;
         
         /// <summary>
         /// GridView1 control.
