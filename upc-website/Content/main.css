@@ -79,6 +79,47 @@
 }
 /***************** jplayer end*********************/
 
+
+
+/***************pastor's desk***********************/
+.flex-container {
+    padding: 5px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flex-item {
+    background: #fbfbfc;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    margin: 10px 5px 10px 5px;
+    border-radius: .3em;
+    border: 1px solid rgb(2, 3, 0);
+    box-shadow: 4px 4px 3.5px 1px rgb(114, 114, 114);
+    line-height: 50px;
+    color: #333;
+    text-align: center;
+}
+
+.message {
+    font-size: .9em;
+    text-align: justify;
+    line-height: 30px;
+    margin: 10px 5px;
+    text-indent: 2em;
+}
+
+.title {
+    font-size: .9em;
+    font-weight: bold;
+    font-style: italic;
+}
+/***************pastor's desk end***********************/
+
 /* Collapse, i.e. beliefs.aspx dropdowns for beliefs start*/
 .drop_arrow:after {
     content:"Mike's ending";

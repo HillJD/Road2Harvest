@@ -308,7 +308,7 @@ namespace upc_website
                 myCaptionH4[i] = new HtmlGenericControl("h4");
                 myCaptionH5[i] = new HtmlGenericControl("h5");
 
-                //Note use of enum declared at class level, i.e. (int)carouselField.UrlLocation
+                //Note use of enum declared at class level, i.e. (int)CarouselField.UrlLocation
                 if (i == 0) //First slide, has to be set to "item active"
                 {
                     if (myData[index * i].IndexOf("mp4") == -1) //Not an mp4 (video) so therefore it's a jpg (image)
