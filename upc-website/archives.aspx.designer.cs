@@ -49,13 +49,13 @@ namespace upc_website {
         protected global::System.Web.UI.WebControls.TextBox txtFind02;
         
         /// <summary>
-        /// Submit1 control.
+        /// Button00 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputSubmit Submit1;
+        protected global::System.Web.UI.WebControls.Button Button00;
         
         /// <summary>
         /// Button01 control.

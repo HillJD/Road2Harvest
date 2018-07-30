@@ -76,7 +76,7 @@
                 <asp:ListItem Text="Select" Value="" />
             </Items>
         </asp:DropDownList>
-        <asp:SqlDataSource ID="SqlDatSeries" runat="server" ConnectionString="<%$ ConnectionStrings:DB_110695_carouselConnectionString %>" SelectCommand="SELECT * FROM dbo.Series WHERE SeriesName <> '' AND SeriesID IN (SELECT SeriesID FROM [SermonAudio] WHERE [InArchive] = 'True' AND SeriesID <> 49) ORDER BY SeriesID DESC;"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDatSeries" runat="server" ConnectionString="<%$ ConnectionStrings:DB_110695_carouselConnectionString %>" SelectCommand="SELECT * FROM dbo.Series WHERE SeriesName <> '' AND SeriesID IN (SELECT SeriesID FROM [SermonAudio] WHERE [InArchive] = 'True' AND SeriesID <> 49) ORDER BY SeriesID DESC;" OnSelecting="SqlDatSeries_Selecting"></asp:SqlDataSource>
       </td>
   </tr>
   <tr>
@@ -86,7 +86,8 @@
   </tr>
   <tr>
     <td></td>
-    <td class="auto-style1"><input type="submit" id="Submit1" runat="server" /></td>
+    <td>
+        <asp:Button ID="Button00" runat="server" Text="Submit" OnClick="Button00_Click" /></td>
     <td>
         <asp:Button ID="Button01" runat="server" Text="Clear All" OnClick="Button01_Click" /></td>
   </tr>
@@ -100,7 +101,6 @@
                     ControlStyle-Height="81px" 
                     ControlStyle-Width="139px"
                 />
-                
                 <asp:TemplateField SortExpression="Title">
                     <EditItemTemplate>
                         <asp:TextBox ID="TextBox1" runat="server"
@@ -124,21 +124,18 @@
             </Columns>
             <PagerStyle HorizontalAlign = "Center" CssClass = "GridPager" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1"
+    </div>
+    <asp:SqlDataSource ID="SqlDataSource1"
             runat="server"
             ConnectionString="<%$ ConnectionStrings:DB_110695_carouselConnectionString %>"
             SelectCommand="SELECT [SermonAudioID], [ImageURL], [Title], [Speaker], [SermonDt], [AudioURL]
             FROM [SermonAudio] WHERE [InArchive] = 'True' ORDER BY [SermonDt] DESC, [SermonAMPM] DESC"
             FilterExpression="[Title] LIKE '%{0}%' AND [Speaker] LIKE '%{1}%'">
-
-                    <FilterParameters>
-                        <asp:ControlParameter Name="Title" 
-                            ControlID="txtFind01" PropertyName="Text" ConvertEmptyStringToNull="false"/>
-                        <asp:ControlParameter Name="Speaker" 
-                            ControlID="txtFind02" PropertyName="Text" ConvertEmptyStringToNull="false"/>
-                    </FilterParameters>
-        </asp:SqlDataSource>
-
-    </div>
-
+                <FilterParameters>
+                    <asp:ControlParameter Name="Title" 
+                        ControlID="txtFind01" PropertyName="Text" ConvertEmptyStringToNull="false"/>
+                    <asp:ControlParameter Name="Speaker" 
+                        ControlID="txtFind02" PropertyName="Text" ConvertEmptyStringToNull="false"/>
+                </FilterParameters>
+    </asp:SqlDataSource>
 </asp:Content>
