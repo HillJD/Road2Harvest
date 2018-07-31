@@ -18,7 +18,7 @@ namespace upc_website
         HtmlGenericControl flexItem = new HtmlGenericControl("div"); //Wrapper for 'title' & message div
         HtmlGenericControl titleContainer = new HtmlGenericControl("div");//Wrapper for 'title'
         HtmlGenericControl messageContainer = new HtmlGenericControl("div"); //Wrapper for 'message' 
-
+        
         //string connectionString = "SELECT TOP 10 ArticleID,Author,PubDt,SeriesOrder,Title,Body FROM Articles ORDER BY Title ASC";
         //string connectionString="SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");"
 
@@ -35,11 +35,12 @@ namespace upc_website
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            int messagesToAdd = GetRowCount(); //i.e. # of pictures slides to add
+            int messagesToAdd = 0;
+            messagesToAdd = GetRowCount(); //i.e. # of pictures slides to add
             BuildFlexContainer();//Slide display time
-            //BuildFlexItem();
-            //BuildTitle();
-            //BuildMessage(); //
+            BuildFlexItem();
+            BuildTitle();
+            BuildMessage(); //
             BuildFlexItemDiv(messagesToAdd);
             //BuildCarouselImageDiv(SlidesToAdd);
             //BuildCarouselControls();
@@ -48,13 +49,14 @@ namespace upc_website
         public string DbConnectionSelectString()
         {
             string connectionString = "SELECT TOP (1000) ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,100),'...') as body FROM Articles ORDER BY ArticleID ASC";
+            //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,200),'...') as body FROM Articles ORDER BY ArticleID ASC OFFSET 50 ROWS FETCH NEXT 5 ROWS ONLY";
             return connectionString;
         }
 
         public int GetRowCount()
         {
             //install later a Try, Catch error routine
-            //Setup data connection, get data fron sql table 'carousel_images
+            //Setup data connection, get data fron sql table 'Articles'
             //SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
             SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
             cs.Open();
@@ -64,7 +66,9 @@ namespace upc_website
             DataTable dt = new DataTable();
             SqlDataAdapter adp = new SqlDataAdapter(command);
             adp.Fill(dt);
-            int rowCount = dt.Rows.Count;
+            int rowCount = 0;
+            rowCount = 5;
+            //rowCount=dt.Rows.Count + 1;
             if (rowCount == 0)
             {
                 //This means there's no records to show, 
@@ -173,15 +177,16 @@ namespace upc_website
             SqlDataAdapter adp = new SqlDataAdapter(command);
             adp.Fill(dt);
             int rowCount = dt.Rows.Count;
+            
+            ////One row per piece of data 6 database fields a follows:
+            ////ArticleID,Author,PubDt,SeriesOrder,Title,Body
+            ////Total of 6 rows for each article.
+            ////So 1 article = 6 rows of data
 
-            //One row per piece of data 6 database fields a follows:
-            //ArticleID,Author,PubDt,SeriesOrder,Title,Body
-            //Total of 6 rows for each article.
-            //So 1 article = 6 rows of data
-
-            //Must be at least one row, else we will create one row
+            ////Must be at least one row, else we will create one row
             List<string> rowData = new List<string>();
             String temp = "";
+
             if (rowCount > 0)
             {
 
