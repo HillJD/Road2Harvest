@@ -37,19 +37,17 @@ namespace upc_website
         {
             int messagesToAdd = 0;
             messagesToAdd = GetRowCount(); //i.e. # of pictures slides to add
-            BuildFlexContainer();//Slide display time
-            BuildFlexItem();
-            BuildTitle();
-            BuildMessage(); //
+           BuildFlexContainer();
+            //BuildFlexItem();
+            //BuildTitle();
+            //BuildMessage(); //
             BuildFlexItemDiv(messagesToAdd);
-            //BuildCarouselImageDiv(SlidesToAdd);
-            //BuildCarouselControls();
         }
 
         public string DbConnectionSelectString()
         {
-            string connectionString = "SELECT TOP (1000) ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,100),'...') as body FROM Articles ORDER BY ArticleID ASC";
-            //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,200),'...') as body FROM Articles ORDER BY ArticleID ASC OFFSET 50 ROWS FETCH NEXT 5 ROWS ONLY";
+            //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,100),'...') as body FROM Articles ORDER BY ArticleID ASC";
+            string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,300),'...') as body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 50 ROWS ONLY";
             return connectionString;
         }
 
@@ -57,8 +55,8 @@ namespace upc_website
         {
             //install later a Try, Catch error routine
             //Setup data connection, get data fron sql table 'Articles'
-            //SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
-            SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
+            SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
+            //SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
             cs.Open();
             string str = DbConnectionSelectString();
             SqlCommand command = new SqlCommand(str, cs);
@@ -66,9 +64,8 @@ namespace upc_website
             DataTable dt = new DataTable();
             SqlDataAdapter adp = new SqlDataAdapter(command);
             adp.Fill(dt);
-            int rowCount = 0;
-            rowCount = 5;
-            //rowCount=dt.Rows.Count + 1;
+
+            int rowCount = dt.Rows.Count;
             if (rowCount == 0)
             {
                 //This means there's no records to show, 
@@ -167,8 +164,8 @@ namespace upc_website
         {
             //install later a Try, Catch error routine
             //Setup data connection, get data fron sql table 'carousel_images
-            SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
-            //SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
+            //SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
+            SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
             cs.Open();
             string str = DbConnectionSelectString();
 
