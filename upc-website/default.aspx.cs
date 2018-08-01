@@ -56,8 +56,8 @@ namespace upc_website
             //SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
             cs.Open();
             //Sort by PicOrder DESC & endDate DESC, this will show slides ending sooner than others
-            //Set slide, default_carousel.jpg to an endDate that is the latest of all slides
-            //And set PicOrder on default_carousel.jpg to 100.
+            //Set slide, default_carousel1.jpg to an endDate that is the latest of all slides
+            //And set PicOrder on default_carousel1.jpg to 100.
             //This forces that slide to show first in list , so that a video file will not be shown first
             //If a video file is shown first it will not display if it's the first slide
             string str = "SELECT * ";
@@ -71,7 +71,7 @@ namespace upc_website
             if (rowCount == 0)
             {
                 //This means there's no records to show, 
-                //so set rowCount to 1 so we can display the default image, default_carousel.jpg
+                //so set rowCount to 1 so we can display the default image, default_carousel1.jpg
                 rowCount = 1;
             }
             cs.Close();
@@ -85,8 +85,8 @@ namespace upc_website
             // SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
             SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
             //Sort by PicOrder DESC & endDate DESC, this will show slides ending sooner than others
-            //Set slide, default_carousel.jpg to an endDate that is the latest of all slides
-            //And set PicOrder on default_carousel.jpg to 100.
+            //Set slide, default_carousel1.jpg to an endDate that is the latest of all slides
+            //And set PicOrder on default_carousel1.jpg to 100.
             //This forces that slide to show first in list , so that a video file will not be shown first
             //If a video file is shown first it will not display if it's the first slide
             cs.Open();
@@ -106,7 +106,7 @@ namespace upc_website
             //So 1 slide = 6 rows of data
 
             //Must be at least one row, else we will create one row
-            //for the default slide, default_carousel.jpg in the else statement below
+            //for the default slide, default_carousel1.jpg in the else statement below
             List<string> rowData = new List<string>();
             String temp = "";
             if (rowCount > 0)
@@ -134,7 +134,7 @@ namespace upc_website
             }
             else
             {
-                string path = "images/carousel/default_carousel.jpg";
+                string path = "images/carousel/default_carousel1.jpg";
                 string lineOneCaption = "";
                 string lineTwoCaption = "";
                 string lineThreeCaption = "";
