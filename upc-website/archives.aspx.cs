@@ -38,8 +38,8 @@ namespace upc_website
             //series filer changed
             txtFind01.Text = String.Empty;
             txtFind02.Text = String.Empty;
-         
-            //GridView1.DataSource = SqlDataSource2;
+
+            GridView1.DataSourceID="SqlDataSource2";
             //GridView1.DataBind();
         }
     }

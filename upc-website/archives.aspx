@@ -138,4 +138,15 @@
                         ControlID="txtFind02" PropertyName="Text" ConvertEmptyStringToNull="false"/>
                 </FilterParameters>
     </asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource2"
+            runat="server"
+            ConnectionString="<%$ ConnectionStrings:DB_110695_carouselConnectionString %>"
+            SelectCommand="SELECT [SermonAudioID], [ImageURL], [Title], [Speaker], [SermonDt], [AudioURL], [SeriesID]
+            FROM [SermonAudio] WHERE [InArchive] = 'True' ORDER BY [SermonDt] DESC, [SermonAMPM] DESC"
+            FilterExpression="[SeriesID] LIKE '%{0}%'">
+                <FilterParameters>
+                    <asp:ControlParameter Name="SeriesID" 
+                        ControlID="DLSeries" PropertyName="SelectedValue" ConvertEmptyStringToNull="false"/>
+                </FilterParameters>
+    </asp:SqlDataSource>
 </asp:Content>
