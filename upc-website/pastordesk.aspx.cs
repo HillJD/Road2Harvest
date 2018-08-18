@@ -47,7 +47,8 @@ namespace upc_website
         public string DbConnectionSelectString()
         {
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,100),'...') as body FROM Articles ORDER BY ArticleID ASC";
-            string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,200),'...') as body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 10 ROWS ONLY";
+            //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,200),'...') as body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 300 ROWS ONLY";
+            string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 10 ROWS ONLY";
             return connectionString;
         }
 

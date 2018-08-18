@@ -81,8 +81,8 @@
 
 
 
-/***************pastor's desk***********************/
-.flex-container {
+/***************pastor's desk*********************** commented out 8.17.18/
+/*.flex-container {
     padding: 5px;
     margin: 0;
     list-style: none;
@@ -118,7 +118,8 @@
     font-weight: bold;
     font-style: italic;
     line-height:1.5;
-}
+    text-transform:capitalize;
+}*/
 /***************pastor's desk end***********************/
 
 /* Collapse, i.e. beliefs.aspx dropdowns for beliefs start*/
@@ -587,17 +588,17 @@ position:relative;
         }
     }
 
-        /***************** end media query styling ******************************************/
-        /********************* location page styling ******************************************/
-        #page-name {
-            margin-top: -145px;
-            border: 5px solid rgb(125,85,30);
-            border-left-width: 0;
-            border-right-width: 0;
-            width: 100%;
-        }
-           /***************** end location page styling ******************************************/
-        /*.GridPager a,
+    /***************** end media query styling ******************************************/
+    /********************* location page styling ******************************************/
+    #page-name {
+        margin-top: -145px;
+        border: 5px solid rgb(125,85,30);
+        border-left-width: 0;
+        border-right-width: 0;
+        width: 100%;
+    }
+    /***************** end location page styling ******************************************/
+    /*.GridPager a,
         .GridPager span {
             display: inline-block;
             padding: 0px 9px;
@@ -627,555 +628,579 @@ position:relative;
     border: 1px solid #82691e;
 }
             /* body background-color: rgba(155, 160, 170, 1) gray */
-/* header bar background-color rgba(0,21,64,1) maroon */
-/* border-bottom-color:rgba(130,105,30,1)  gold */
+    /* header bar background-color rgba(0,21,64,1) maroon */
+    /* border-bottom-color:rgba(130,105,30,1)  gold */
 
-/***************** This section is for carousel *********************************************/
-/* Makes images fully responsive for carousel */
-.img-responsive,
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+    /***************** This section is for carousel *********************************************/
+    /* Makes images fully responsive for carousel */
+    .img-responsive,
+    .thumbnail > img,
+    .thumbnail a > img,
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 
-/* Center responsive images*/
-.img-responsive.img-center {
-    margin: 0 auto;
-}
+        /* Center responsive images*/
+        .img-responsive.img-center {
+            margin: 0 auto;
+        }
 
- #myButton.myButton.btn-link:focus {
-    color: #23527c;
-    text-decoration: none;
-    background-color: transparent;
-}
+    #myButton.myButton.btn-link:focus {
+        color: #23527c;
+        text-decoration: none;
+        background-color: transparent;
+    }
 
 
-.myLinks {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
+    .myLinks {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 
     /***************** jplayer start*********************/
     .jp-audio {
-    width: 355px !important;/*change*/
-    padding: 20px;
-    
-}
-.jp-progress {
-    background: url(../image/jplayer.pink.flag.jpg) 0px -240px no-repeat;
-    width: 315px !important;
-    height: 13px;
-    padding: 0 2px 2px 2px;
-    margin-top:8px;
-    margin-bottom: 4px;
-    overflow: hidden;
-}
+        width: 355px !important; /*change*/
+        padding: 20px;
+    }
 
-.jp-volume-bar {
-    background: url(../image/jplayer.pink.flag.jpg) 0px -300px repeat-x;
-    position: absolute;
-    width: 315px !important;
-    height: 4px;
-    padding: 2px 2px 1px 2px;
-    overflow: hidden;
-    cursor: pointer;
-}
-.jp-audio,
-.jp-audio-stream,
-.jp-video {
-    font-size: 16px;
-    font-family: Verdana, Arial, sans-serif;
-    line-height: 1.6;
-    color: #fff;
-    border-top: 1px solid #554461;
-    border-left: 1px solid #554461;
-    border-right: 1px solid #180a1f;
-    border-bottom: 1px solid #180a1f;
-    background-color: rgba(0,21,64,1) !important;
-}
-.jp-controls {
-    background: url("../image/jplayer_pink_flag_alt_color.jpg") 0 0 no-repeat;
-    padding: 1px 0 2px 1px;
-    overflow: hidden;
-    width: 201px;
-    height: 34px;
-}
-/***************** jplayer end*********************/
+    .jp-progress {
+        background: url(../image/jplayer.pink.flag.jpg) 0px -240px no-repeat;
+        width: 315px !important;
+        height: 13px;
+        padding: 0 2px 2px 2px;
+        margin-top: 8px;
+        margin-bottom: 4px;
+        overflow: hidden;
+    }
 
-/* Collapse, i.e. beliefs.aspx dropdowns for beliefs start*/
-.drop_arrow:after {
-    content:"Mike's ending";
-}
-/* Collapse, i.e. beliefs.aspx dropdowns for beliefs end*/
+    .jp-volume-bar {
+        background: url(../image/jplayer.pink.flag.jpg) 0px -300px repeat-x;
+        position: absolute;
+        width: 315px !important;
+        height: 4px;
+        padding: 2px 2px 1px 2px;
+        overflow: hidden;
+        cursor: pointer;
+    }
 
-/*Try to force hamburger menu all times start 7.27.17*/
-.navbar-header {
-  float: none;
-}
-.navbar-toggle {
-  display: block;
-}
-.navbar-collapse.collapse {
-  display: none!important;
-}
-.navbar-nav {
-  float: none!important;
-}
-.navbar-nav>li {
-  float: none;
-}
-.navbar-collapse.collapse.in{
-  display:block !important;
-}
-/*Try to force hamburger menu all times end*/
+    .jp-audio,
+    .jp-audio-stream,
+    .jp-video {
+        font-size: 16px;
+        font-family: Verdana, Arial, sans-serif;
+        line-height: 1.6;
+        color: #fff;
+        border-top: 1px solid #554461;
+        border-left: 1px solid #554461;
+        border-right: 1px solid #180a1f;
+        border-bottom: 1px solid #180a1f;
+        background-color: rgba(0,21,64,1) !important;
+    }
 
-/*Try to force hamburger menu @1600 px tablets*/
-@media (max-width: 860px) {
+    .jp-controls {
+        background: url("../image/jplayer_pink_flag_alt_color.jpg") 0 0 no-repeat;
+        padding: 1px 0 2px 1px;
+        overflow: hidden;
+        width: 201px;
+        height: 34px;
+    }
+    /***************** jplayer end*********************/
+
+    /* Collapse, i.e. beliefs.aspx dropdowns for beliefs start*/
+    .drop_arrow:after {
+        content: "Mike's ending";
+    }
+    /* Collapse, i.e. beliefs.aspx dropdowns for beliefs end*/
+
+    /*Try to force hamburger menu all times start 7.27.17*/
     .navbar-header {
         float: none;
     }
-    .navbar-left,.navbar-right {
-        float: none !important;
-    }
+
     .navbar-toggle {
         display: block;
     }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
+
     .navbar-collapse.collapse {
-        display: none!important;
+        display: none !important;
     }
+
     .navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-        display:block !important;
-    }
-}
-/*Try to force hamburger menu @1600 px tablets*/
-
-
-/* ------------------- Button state styling ------------------- */
-/* set width color-profile button */
- 
-.go-left span {text-align:left !important;
-          color:green;
-}
-
-.btn {
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    width: 80%;
-}
-.btn-belief {
-       white-space:normal;
-       width:100%;
-       text-align:left;
-    }
-.btn-info {
-    color: #fff;
-     background-color:rgba(0, 21, 64, 1);
-    border-color: #eee;
-}
-.btn-info:visited {
-    color: #fff;
-    background-color:rgba(4, 59, 171, 1);
-    border-color: #eee;
-}
-
-.btn-info:active {
-    color: #fff;
-    background-color:rgba(4, 59, 171, 1);
-    border-color: #eee;
-}
-
-.btn-info:hover,.btn-info:focus {
-    color: #fff;
-    /*background-color:rgba(93, 80, 50, 1);*/
-    background-color:#0603FF;
-    border-color: #eee;
-}
-/* ------------------- End Button state styling ------------------- */
-
-/* ------------------- Page-header styling ------------------- */
-/*Move to top of page*/
-.mypage-header > h4 {
-    padding-bottom: 0px;
-    margin: -140px 0 20px;
-    padding: 5px 0px 5px 0px;
-    border-bottom: 3px solid #eee;
-    border-bottom-color: rgba(130,105,30,1);
-    font-size: 18px;
-}
-
-.mypage-header h2 {
-    line-height:.1;
-}
-
-.text-center h3 {
-    line-height:.2;
-}
-
-/*center text vertically page font-face-name indicator*/
-.header-h4 {
-    margin-bottom:1px;
-}
-
-/* ------------------- End Page-header styling ------------------- */
-
-/* ------------------- Carousel Styling ------------------- */
-/*Change width of carousel*/
-.carousel {
-  height: auto;
-  margin-bottom: 15px;
-  width:100%;
-  margin:-138px auto 0;
-  border-style:solid;
-  border-color:rgba(255,251,251,.5);
-  border-width:2px;
- }
-.carousel-inner {
-  border-radius: 0px;
-  z-index:25;
-  width:100%;
-  }
-.carousel-caption {
-  background-color: rgba(0,0,0,.5);
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  padding: 0 0 10px 25px;
-  color: #fff;
-  text-align: left;
-}
-.carousel-indicators {
-  position: absolute;
-  bottom: -24px; /*Move indicators up or down*/
-  right:0;
-  left: 0; /*Move indicators left or right*/
-  width: 100%;
-  z-index: 26;
-  margin: 0;
-  padding: 0 25px 25px 0;
-  text-align: right;
-}
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
-  z-index:26;
-}
-
-.carousel-caption {
-    background-color: rgba(0,0,0,0);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top:30%;
-    z-index: 10;
-    padding: 0 0 10px 25px;
-    color: #fff;
-    text-align: center;
-}
-/* ------------------- End Carousel Styling ------------------- */
-
-
-/* Ministry page font-size */
-.ministry-font-size {
-    font-size:16px !important;
-}
-
-#calendar {
-position:relative;
-}
-
-#map {
-    height:500px;
-    margin-top:20px;
-    margin-bottom:20px;
-    border:solid thin black;
-}
-
-#church_pic {
-    width: 100%;
-    height: auto;
-    border: thin solid black;
-    margin-bottom: 20px;
-}
-
-#bible_iframe {
-    width:100%;
-    height:600px;
-    border:thin solid black;
-} 
-
-
-
-  /*codepen.io/wisnust10/pen/mPjwWv 6/5/17*/
-  .carousel-fade .carousel-inner .item {
-  opacity: 0;
-  transition-property: opacity;
-}
-
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-
-.carousel-fade .carousel-inner .active.left
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-  
-}
-
-.carousel-fade .carousel-control {
-  z-index: 30;
-}
-@media all and (transform-3d), (-webkit-transform-3d) {
-    .carousel-fade .carousel-inner > .item.next,
-    .carousel-fade .carousel-inner > .item.active.right {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+        float: none !important;
     }
 
-    .carousel-fade .carousel-inner > .item.prev,
-    .carousel-fade .carousel-inner > .item.active.left {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-
-        .carousel-fade .carousel-inner > .item.next.left,
-        .carousel-fade .carousel-inner > .item.prev.right,
-        .carousel-fade .carousel-inner > .item.active {
-            opacity: 1;
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+        .navbar-nav > li {
+            float: none;
         }
 
-
-    /* ------------------- Section Styling - Not needed for carousel styling ------------------- */
-    body {
-        background-color: rgba(155, 160, 170, 1);
-        font-family: 'Montserrat', sans-serif;
-        padding-top: 211px; /*a taller menu*/
+    .navbar-collapse.collapse.in {
+        display: block !important;
     }
+    /*Try to force hamburger menu all times end*/
 
-    /* ------------------- Section Styling - For navbar-brand  ------------------- */
-    .navbar {
-        height: 70px; /*changed from 70px*/
-        background-color: rgba(0, 21, 64, 1);
-        padding-top: 8px;
-        padding-bottom: 15px;
-        border: 3px solid;
-        border-bottom-color: rgba(130,105,30,1); /* Gold */
-    }
+    /*Try to force hamburger menu @1600 px tablets*/
+    @media (max-width: 860px) {
+        .navbar-header {
+            float: none;
+        }
 
-    .navbar-brand {
-        float: left;
-        height: 50px;
-        padding: 15px 15px;
-        font-size: 20px;
-        line-height: 20px;
-        transform: translate(0%,-38%);
-    }
+        .navbar-left, .navbar-right {
+            float: none !important;
+        }
 
-        .navbar-brand > img {
+        .navbar-toggle {
             display: block;
-            height: 60px;
-            margin-bottom: -20px;
         }
 
-    .navbar-collapse {
-        background-color: rgba(0, 21, 64, 1) /*replace with desired color*/
+        .navbar-collapse {
+            border-top: 1px solid transparent;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+
+        .navbar-fixed-top {
+            top: 0;
+            border-width: 0 0 1px;
+        }
+
+        .navbar-collapse.collapse {
+            display: none !important;
+        }
+
+        .navbar-nav {
+            float: none !important;
+            margin-top: 7.5px;
+        }
+
+            .navbar-nav > li {
+                float: none;
+            }
+
+                .navbar-nav > li > a {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+
+        .collapse.in {
+            display: block !important;
+        }
+    }
+    /*Try to force hamburger menu @1600 px tablets*/
+
+
+    /* ------------------- Button state styling ------------------- */
+    /* set width color-profile button */
+
+    .go-left span {
+        text-align: left !important;
+        color: green;
     }
 
-    .navbar-fixed-top {
-        top: 0;
-        /*border-width: 0 0 1px;*/
-        border-top-width: 0px;
-        border-right-width: 0px;
-        /*border-bottom-width: 5px;*/
-        border-left-width: 0px;
-    }
-
-    .navbar-inverse .navbar-nav > li > a {
-        color: #fff;
-    }
-
-    /***************** End of carousel*********************************************/
-
-
-    .jumbotron {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        margin-bottom: 30px;
-        color: inherit;
-        background-color: #eee;
-        margin-top: -11px;
-    }
-
-    /***************** This displays glyphicons properly***************************/
-    .col-lg-4, .col-md-6, .col-sm-6, .col-xs-6 {
-        display: block;
+    .btn {
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.42857143;
         text-align: center;
-        font-size: 32px;
-    }
-
-    .glyphicons:before {
-        color: black;
-    }
-
-    .glyphicons {
-        display: inline;
-    }
-
-    .mypage-glythicons {
-        margin-top: -141px;
-        float: left;
-        font-size: 18px;
-    }
-
-    .gly-paragraph { /*Adjust glythicon vertical spacing first 2 settings below*/
-        -webkit-margin-before: 0em;
-        -webkit-margin-after: 1em;
-        -webkit-margin-start: 0px;
-        -webkit-margin-end: 0px;
-        color: #fff;
-        font-size: small;
-    }
-    /***************** End of glyphicons ******************************************/
-
-    /***************** footer styling ******************************************/
-    .center-block {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 5px;
-        background-color: rgba(0, 21, 64, 1);
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
         border-radius: 4px;
-        padding-right: 6px; /*added 7_15_17 */
-    }
-    /* Make footer div shorter and float text left, icons right 7_15_17 */
-    span#footer-date {
-        font-size: 12px;
-        padding: 9px 0 0 6px;
-        float: left;
-    }
-    /***************** end of footer styling ******************************************/
-    .social-icons {
-        padding: 2px 0; /*changed from 10px 6.21.17*/
+        width: 80%;
     }
 
-    #footer-date {
-        color: white;
-    }
-
-    .staff-bio {
-        margin-bottom: 10px;
-        font-size: 16px;
+    .btn-belief {
+        white-space: normal;
         width: 100%;
         text-align: left;
     }
 
-    /*Style staff pics end*/
-    /***************** media query styling ******************************************/
-    /*small mobile dedvices, this image is normally 60px*/
-    /*At 60 px interferes with hamburger menu*/
-
-    @media (min-width: 319px) and (max-width:767px) {
-        .navbar-brand > img {
-            display: block;
-            height: 46px;
-            margin-bottom: -20px;
-        }
-
-        .navbar-brand {
-            float: left;
-            height: 50px;
-            padding: 15px 15px;
-            font-size: 18px;
-            line-height: 20px;
-            /* Move dove and text up*/
-            transform: translate(-2%,-23%);
-        }
+    .btn-info {
+        color: #fff;
+        background-color: rgba(0, 21, 64, 1);
+        border-color: #eee;
     }
-    
 
-    @media (min-width: 768px) {
+        .btn-info:visited {
+            color: #fff;
+            background-color: rgba(4, 59, 171, 1);
+            border-color: #eee;
+        }
+
+        .btn-info:active {
+            color: #fff;
+            background-color: rgba(4, 59, 171, 1);
+            border-color: #eee;
+        }
+
+        .btn-info:hover, .btn-info:focus {
+            color: #fff;
+            /*background-color:rgba(93, 80, 50, 1);*/
+            background-color: #0603FF;
+            border-color: #eee;
+        }
+    /* ------------------- End Button state styling ------------------- */
+
+    /* ------------------- Page-header styling ------------------- */
+    /*Move to top of page*/
+    .mypage-header > h4 {
+        padding-bottom: 0px;
+        margin: -140px 0 20px;
+        padding: 5px 0px 5px 0px;
+        border-bottom: 3px solid #eee;
+        border-bottom-color: rgba(130,105,30,1);
+        font-size: 18px;
+    }
+
+    .mypage-header h2 {
+        line-height: .1;
+    }
+
+    .text-center h3 {
+        line-height: .2;
+    }
+
+    /*center text vertically page font-face-name indicator*/
+    .header-h4 {
+        margin-bottom: 1px;
+    }
+
+    /* ------------------- End Page-header styling ------------------- */
+
+    /* ------------------- Carousel Styling ------------------- */
+    /*Change width of carousel*/
+    .carousel {
+        height: auto;
+        margin-bottom: 15px;
+        width: 100%;
+        margin: -138px auto 0;
+        border-style: solid;
+        border-color: rgba(255,251,251,.5);
+        border-width: 2px;
+    }
+
+    .carousel-inner {
+        border-radius: 0px;
+        z-index: 25;
+        width: 100%;
+    }
+
+    .carousel-caption {
+        background-color: rgba(0,0,0,.5);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        padding: 0 0 10px 25px;
+        color: #fff;
+        text-align: left;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: -24px; /*Move indicators up or down*/
+        right: 0;
+        left: 0; /*Move indicators left or right*/
+        width: 100%;
+        z-index: 26;
+        margin: 0;
+        padding: 0 25px 25px 0;
+        text-align: right;
+    }
+
+    .carousel-control.left,
+    .carousel-control.right {
+        background-image: none;
+        z-index: 26;
+    }
+
+    .carousel-caption {
+        background-color: rgba(0,0,0,0);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 30%;
+        z-index: 10;
+        padding: 0 0 10px 25px;
+        color: #fff;
+        text-align: center;
+    }
+    /* ------------------- End Carousel Styling ------------------- */
+
+
+    /* Ministry page font-size */
+    .ministry-font-size {
+        font-size: 16px !important;
+    }
+
+    #calendar {
+        position: relative;
+    }
+
+    #map {
+        height: 500px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: solid thin black;
+    }
+
+    #church_pic {
+        width: 100%;
+        height: auto;
+        border: thin solid black;
+        margin-bottom: 20px;
+    }
+
+    #bible_iframe {
+        width: 100%;
+        height: 600px;
+        border: thin solid black;
+    }
+
+
+
+    /*codepen.io/wisnust10/pen/mPjwWv 6/5/17*/
+    .carousel-fade .carousel-inner .item {
+        opacity: 0;
+        transition-property: opacity;
+    }
+
+    .carousel-fade .carousel-inner .active {
+        opacity: 1;
+    }
+
+        .carousel-fade .carousel-inner .active.left .carousel-fade .carousel-inner .active.right {
+            left: 0;
+            opacity: 0;
+            z-index: 1;
+        }
+
+    .carousel-fade .carousel-inner .next.left,
+    .carousel-fade .carousel-inner .prev.right {
+        opacity: 1;
+    }
+
+    .carousel-fade .carousel-control {
+        z-index: 30;
+    }
+
+    @media all and (transform-3d), (-webkit-transform-3d) {
+        .carousel-fade .carousel-inner > .item.next,
+        .carousel-fade .carousel-inner > .item.active.right {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        .carousel-fade .carousel-inner > .item.prev,
+        .carousel-fade .carousel-inner > .item.active.left {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+            .carousel-fade .carousel-inner > .item.next.left,
+            .carousel-fade .carousel-inner > .item.prev.right,
+            .carousel-fade .carousel-inner > .item.active {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+
+
+        /* ------------------- Section Styling - Not needed for carousel styling ------------------- */
+        body {
+            background-color: rgba(155, 160, 170, 1);
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 211px; /*a taller menu*/
+        }
+
+        /* ------------------- Section Styling - For navbar-brand  ------------------- */
+        .navbar {
+            height: 70px; /*changed from 70px*/
+            background-color: rgba(0, 21, 64, 1);
+            padding-top: 8px;
+            padding-bottom: 15px;
+            border: 3px solid;
+            border-bottom-color: rgba(130,105,30,1); /* Gold */
+        }
+
         .navbar-brand {
             float: left;
             height: 50px;
             padding: 15px 15px;
-            font-size: 18px;
+            font-size: 20px;
             line-height: 20px;
-            transform: translate(-10%,-38%);
+            transform: translate(0%,-38%);
         }
 
-        .navbar-collapse.in {
-            overflow-y: auto !important;
+            .navbar-brand > img {
+                display: block;
+                height: 60px;
+                margin-bottom: -20px;
+            }
+
+        .navbar-collapse {
+            background-color: rgba(0, 21, 64, 1) /*replace with desired color*/
         }
 
-        .navbar-nav > li > a {
-            padding: 15px 9px;
+        .navbar-fixed-top {
+            top: 0;
+            /*border-width: 0 0 1px;*/
+            border-top-width: 0px;
+            border-right-width: 0px;
+            /*border-bottom-width: 5px;*/
+            border-left-width: 0px;
         }
 
-        .carousel {
-            height: auto;
-            margin-bottom: 15px;
-            width: 70%;
-            margin: -138px auto 0;
-            border-style: solid;
-            border-color: rgba(255,251,251,.5);
-            border-width: 2px;
+        .navbar-inverse .navbar-nav > li > a {
+            color: #fff;
         }
 
-        
+        /***************** End of carousel*********************************************/
+
+
+        .jumbotron {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            color: inherit;
+            background-color: #eee;
+            margin-top: -11px;
+        }
+
+        /***************** This displays glyphicons properly***************************/
+        .col-lg-4, .col-md-6, .col-sm-6, .col-xs-6 {
+            display: block;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .glyphicons:before {
+            color: black;
+        }
+
+        .glyphicons {
+            display: inline;
+        }
+
+        .mypage-glythicons {
+            margin-top: -141px;
+            float: left;
+            font-size: 18px;
+        }
+
+        .gly-paragraph { /*Adjust glythicon vertical spacing first 2 settings below*/
+            -webkit-margin-before: 0em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            color: #fff;
+            font-size: small;
+        }
+        /***************** End of glyphicons ******************************************/
+
+        /***************** footer styling ******************************************/
+        .center-block {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 5px;
+            background-color: rgba(0, 21, 64, 1);
+            border-radius: 4px;
+            padding-right: 6px; /*added 7_15_17 */
+        }
+        /* Make footer div shorter and float text left, icons right 7_15_17 */
+        span#footer-date {
+            font-size: 12px;
+            padding: 9px 0 0 6px;
+            float: left;
+        }
+        /***************** end of footer styling ******************************************/
+        .social-icons {
+            padding: 2px 0; /*changed from 10px 6.21.17*/
+        }
+
+        #footer-date {
+            color: white;
+        }
+
+        .staff-bio {
+            margin-bottom: 10px;
+            font-size: 16px;
+            width: 100%;
+            text-align: left;
+        }
+
+        /*Style staff pics end*/
+        /***************** media query styling ******************************************/
+        /*small mobile dedvices, this image is normally 60px*/
+        /*At 60 px interferes with hamburger menu*/
+
+        @media (min-width: 319px) and (max-width:767px) {
+            .navbar-brand > img {
+                display: block;
+                height: 46px;
+                margin-bottom: -20px;
+            }
+
+            .navbar-brand {
+                float: left;
+                height: 50px;
+                padding: 15px 15px;
+                font-size: 18px;
+                line-height: 20px;
+                /* Move dove and text up*/
+                transform: translate(-2%,-23%);
+            }
+        }
+
+
+        @media (min-width: 768px) {
+            .navbar-brand {
+                float: left;
+                height: 50px;
+                padding: 15px 15px;
+                font-size: 18px;
+                line-height: 20px;
+                transform: translate(-10%,-38%);
+            }
+
+            .navbar-collapse.in {
+                overflow-y: auto !important;
+            }
+
+            .navbar-nav > li > a {
+                padding: 15px 9px;
+            }
+
+            .carousel {
+                height: auto;
+                margin-bottom: 15px;
+                width: 70%;
+                margin: -138px auto 0;
+                border-style: solid;
+                border-color: rgba(255,251,251,.5);
+                border-width: 2px;
+            }
+        }
+
         /***************** end media query styling ******************************************/
+
         /********************* location page styling ******************************************/
         #page-name {
             margin-top: -145px;
@@ -1184,10 +1209,9 @@ position:relative;
             border-right-width: 0;
             width: 100%;
         }
-    }
 
         /***************** end location page styling ******************************************/
-        .GridPager a,.GridPager span {
+        .GridPager a, .GridPager span {
             display: inline-block;
             padding: 0px 9px;
             margin-right: 4px;
@@ -1208,10 +1232,84 @@ position:relative;
             border: 1px solid #969696;
         }
 
-.GridPager span {
-    background: #616161;
-    box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .8);
-    color: #f0f0f0;
-    text-shadow: 0px 0px 3px rgba(0,0,0, .5);
-    border: 1px solid #82691e;
+        .GridPager span {
+            background: #616161;
+            box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .8);
+            color: #f0f0f0;
+            text-shadow: 0px 0px 3px rgba(0,0,0, .5);
+            border: 1px solid #82691e;
+        }
+
+        /********************* pastordesk page styling ******************************************/
+        .class1 {
+            background-color: rgb(191, 217, 248);
+            color: white;
+            transition: .8s;
+            cursor: pointer;
+        }
+
+        .class2 {
+            background-color: rgb(165, 204, 250);
+            color: rgb(94, 94, 97);
+            transition: .8s;
+        }
+
+
+
+        div.mesage span {
+            font-size: 2em;
+            position: absolute;
+            top: 3;
+            left: -32;
+        }
+
+        .flex-container {
+            padding: 5px;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .flex-item {
+            background: #fbfbfc;
+            padding: 15px;
+            width: auto;
+            height: 150px;
+            margin: 3px;
+            border-radius: .3em;
+            border: 1px solid rgb(2, 3, 0);
+            box-shadow: 4px 4px 3.5px 1px rgb(114, 114, 114);
+            /* line-height: 20px; */
+            color: #333;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .message {
+            font-size: 1.2em;
+            text-align: justify;
+            line-height: 30px;
+            margin: 10px 5px;
+            text-indent: 1.5em;
+            color: black;
+            position: relative;
+        }
+
+        .title {
+            font-size: .9 em;
+            font-size: 1.4em;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 1.8;
+            text-transform: capitalize;
+        }
+
+        .show-text {
+            height: auto;
+            color: red;
+            overflow: auto;
+        }
+    }
 }
