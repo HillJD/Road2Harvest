@@ -23,7 +23,7 @@
         <h4><a runat="server" href="Give.aspx">Online Giving</a></h4>
         <h4><a runat="server" href="listen.aspx">Streaming Audio</a></h4>
         <h4><a runat="server" href="archives.aspx">Sermon Archives</a></h4>
-        <h4><a runat="server" href="pastors-desk.aspx">Pastor's Blog</a></h4>
+        <h4><a runat="server" href="pastordesk.aspx">Pastor's Blog</a></h4>
         <h4><a runat="server" href="Links.aspx">Links</a></h4>
         <h4><a runat="server" href="~/bible">YouVersion Bible</a></h4>
     </div>
