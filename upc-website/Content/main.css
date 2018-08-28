@@ -1301,7 +1301,7 @@ position:relative;
             font-size: 1.4em;
             font-weight: bold;
             font-style: italic;
-            line-height: 1.8;
+            line-height: 1.2;
             text-transform: capitalize;
             color:RGB(88,88,88);
         }
@@ -1309,7 +1309,7 @@ position:relative;
         .sub-title {
             font-size: .6em;
             text-align: center;
-            line-height: .8;
+            line-height: 1.8;
         }
 
         .show-text {
