@@ -164,10 +164,17 @@ namespace upc_website
 
                 myTitleDiv[i].InnerHtml = myData[(index * i) + (int)ArticleField.Title].ToString();//Title
                 mySubTitleDiv[i].InnerHtml = myData[(index * i) + (int)ArticleField.Author].ToString();//Author
-                //string t = myData[(index * i) + (int)ArticleField.PubDt].ToString();
+                int dateLength= myData[(index * i) + (int)ArticleField.PubDt].ToString().Length;
+                if (dateLength!=0)
+                {
+                    mySubTitleDiv[i].InnerHtml += " " + myData[(index * i) + (int)ArticleField.PubDt].ToString().Substring(0,10);
+                }
                 
+                //string t = myData[(index * i) + (int)ArticleField.PubDt].ToString();
+                //string t2 = t.Substring(0, 3);
                 //DateTime myDate = new DateTime(t);
-                //mySubTitleDiv[i].InnerHtml += " " + t;
+                //mySubTitleDiv[i].InnerHtml += " " +  t2;
+
                 //string t = myData[(index * i) + (int)ArticleField.PubDt].ToString();
                 myMessageDiv[i].InnerHtml = myData[(index * i) + (int)ArticleField.Body].ToString();//Body
 
