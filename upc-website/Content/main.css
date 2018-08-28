@@ -1298,12 +1298,12 @@ position:relative;
         }
 
         .title {
-            font-size: .9 em;
             font-size: 1.4em;
             font-weight: bold;
             font-style: italic;
             line-height: 1.8;
             text-transform: capitalize;
+            color:RGB(88,88,88);
         }
 
         .show-text {
