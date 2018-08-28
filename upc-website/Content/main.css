@@ -1253,9 +1253,7 @@ position:relative;
             color: rgb(94, 94, 97);
             transition: .8s;
         }
-
-
-
+        
         div.mesage span {
             font-size: 2em;
             position: absolute;
@@ -1310,11 +1308,12 @@ position:relative;
             font-size: .6em;
             text-align: center;
             line-height: 1.8;
+            font-weight:400;
         }
 
         .show-text {
             height: auto;
-            color: red;
+            /*color: red;*/
             overflow: auto;
         }
     }
