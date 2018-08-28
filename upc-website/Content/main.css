@@ -1306,6 +1306,12 @@ position:relative;
             color:RGB(88,88,88);
         }
 
+        .sub-title {
+            font-size: .6em;
+            text-align: center;
+            line-height: .8;
+        }
+
         .show-text {
             height: auto;
             color: red;

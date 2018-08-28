@@ -17,6 +17,7 @@ namespace upc_website
         HtmlGenericControl flexContainer = new HtmlGenericControl("div"); //Top level <div>
         HtmlGenericControl flexItem = new HtmlGenericControl("div"); //Wrapper for 'title' & message div
         HtmlGenericControl titleContainer = new HtmlGenericControl("div");//Wrapper for 'title'
+        HtmlGenericControl sub_titleContainer= new HtmlGenericControl("div"); //Wrapper for 'sub-title'
         HtmlGenericControl messageContainer = new HtmlGenericControl("div"); //Wrapper for 'message' 
         
         //string connectionString = "SELECT TOP 10 ArticleID,Author,PubDt,SeriesOrder,Title,Body FROM Articles ORDER BY Title ASC";
@@ -48,7 +49,7 @@ namespace upc_website
         {
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,100),'...') as body FROM Articles ORDER BY ArticleID ASC";
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,200),'...') as body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 300 ROWS ONLY";
-            string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,body FROM Articles ORDER BY PubDt DESC OFFSET 0 ROWS FETCH NEXT 50 ROWS ONLY";
+            string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET 0 ROWS FETCH NEXT 50 ROWS ONLY";
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 50 ROWS ONLY";
             return connectionString;
         }
@@ -106,7 +107,7 @@ namespace upc_website
         }
 
         //This builds all the flex-items divs.  The flex-item divs are one per article.
-        //This then rolls the 'Title' div & 'message' divs 
+        //This then rolls the subTitle div into the 'Title' div & then Title div & 'message' divs 
         //into the flex-item div according to
         //the number of messages that are called for from the filter. 
         public void BuildFlexItemDiv(int messagesToAdd)
@@ -133,6 +134,13 @@ namespace upc_website
                 myTitleDiv[x] = new HtmlGenericControl();
             }
 
+            //This builds the divs for 'subtitle' put them in an array 'mySubTitleDiv'
+            HtmlGenericControl[] mySubTitleDiv = new HtmlGenericControl[messagesToAdd];
+            for (int x = 0; x < messagesToAdd; x++)
+            {
+                mySubTitleDiv[x] = new HtmlGenericControl();
+            }
+
             //This builds the divs for 'Message', put them in an array 'myMessageDiv'
             HtmlGenericControl[] myMessageDiv = new HtmlGenericControl[messagesToAdd];
             for (int x = 0; x < messagesToAdd; x++)
@@ -146,15 +154,24 @@ namespace upc_website
             {
                 myFlexItemDiv[i] = new HtmlGenericControl("div");
                 myTitleDiv[i] = new HtmlGenericControl("div");
+                mySubTitleDiv[i] = new HtmlGenericControl("div");
                 myMessageDiv[i] = new HtmlGenericControl("div");
 
                 myFlexItemDiv[i].Attributes.Add("class", "flex-item");
                 myTitleDiv[i].Attributes.Add("class", "title");
+                mySubTitleDiv[i].Attributes.Add("class", "sub-title");
                 myMessageDiv[i].Attributes.Add("class", "message");
 
                 myTitleDiv[i].InnerHtml = myData[(index * i) + (int)ArticleField.Title].ToString();//Title
+                mySubTitleDiv[i].InnerHtml = myData[(index * i) + (int)ArticleField.Author].ToString();//Author
+                //string t = myData[(index * i) + (int)ArticleField.PubDt].ToString();
+                
+                //DateTime myDate = new DateTime(t);
+                //mySubTitleDiv[i].InnerHtml += " " + t;
+                //string t = myData[(index * i) + (int)ArticleField.PubDt].ToString();
                 myMessageDiv[i].InnerHtml = myData[(index * i) + (int)ArticleField.Body].ToString();//Body
 
+                myTitleDiv[i].Controls.Add(mySubTitleDiv[i]);
                 myFlexItemDiv[i].Controls.Add(myTitleDiv[i]);
                 myFlexItemDiv[i].Controls.Add(myMessageDiv[i]);
                 flexContainer.Controls.Add(myFlexItemDiv[i]);
