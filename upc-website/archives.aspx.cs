@@ -19,18 +19,27 @@ namespace upc_website
         }
 
         protected void Button00_Click(object sender, EventArgs e)
+            //Series SUBMIT
         {
             //submit filter values
-            //GridView1.DataSource = SqlDataSource1;
+            GridView1.DataSourceID = "SqlDataSource2";
             //GridView1.DataBind();
         }
 
         protected void Button01_Click(object sender, EventArgs e)
+            //Clear Selections
         {
-            //clear selections
             txtFind01.Text = String.Empty;
             txtFind02.Text = String.Empty;
             DLSeries.ClearSelection();
+        }
+
+        protected void Button02_Click(object sender, EventArgs e)
+            //Sermon/Speaker SUBMIT
+        {
+            //submit filter values
+            GridView1.DataSourceID = "SqlDataSource1";
+            //GridView1.DataBind();
         }
 
         protected void SqlDatSeries_Selecting(object sender, System.Web.UI.WebControls.SqlDataSourceSelectingEventArgs e)
