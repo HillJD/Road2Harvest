@@ -117,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <asp:Button ID="Button01" runat="server" Text="Clear All" OnClick="Button01_Click" />
+            <asp:Button ID="Button01" runat="server" Text="Clear Search" OnClick="Button01_Click" />
         </div>
     </div>
 </div>
