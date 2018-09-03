@@ -66,14 +66,13 @@
     <h4><b>Sermon Archives</b></h4>
 </div>
 
-
-<div class="jumbotron text-center">
+<div class="jumbotronSK text-left">
 
     <div class="panel-group" id="accordion00">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion00" href="#collapse00">Search</a>
+                    <a data-toggle="collapse" data-parent="#accordion00" href="#collapse00">Click to Search</a>
                 </h4>
             </div>
             <div id="collapse00" class="panel-collapse collapse">
@@ -95,7 +94,7 @@
                             </div>
                         </div>
                     </div>
-                                    <br />
+                    <br />
                     <div class="panel-group" id="accordion02">
                         <div class="panel panel-default">
                             <div class="panel-heading">
@@ -122,7 +121,6 @@
         </div>
     </div>
 </div>
-
 
     <div class="table-responsive">
         <asp:GridView ID="GridView1" runat="server" PagerStyle-CssClass="pgr" CssClass="mGrid" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="SermonAudioID" ShowHeader="False" DataSourceID="SqlDataSource1">
