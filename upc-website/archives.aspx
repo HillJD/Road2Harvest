@@ -56,6 +56,8 @@
         width: 388px;
     }
 
+    .panel {text-align:center;}
+
 </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -85,10 +87,15 @@
                                 </h4>
                             </div>
                             <div id="collapse01" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Title <asp:TextBox ID="txtFind01" runat="server"></asp:TextBox>
-                                    <br />
-                                    Speaker <asp:TextBox ID="txtFind02" runat="server"></asp:TextBox>
+                                <div  class="panel-body">
+                                    <div style="float:right;clear:both;width:80px;display:inline-block;position:relative;">
+                                    <div style="position:absolute; left:75px;">Title:</div>
+                                    <div><asp:TextBox style="float:right;clear:both;margin-bottom:10px;" ID="txtFind01" runat="server"></asp:TextBox></div>
+                                    </div>
+                                    <div style="float:right;clear:both;width:100px;display:inline-block;position:relative;">
+                                        <div style="position:absolute;left:72px;">Speaker:</div>
+                                        <div style="left:150px;"><asp:TextBox  ID="txtFind02"  runat="server"></asp:TextBox></div>
+                                    </div>
                                 </div>
                                 <asp:Button ID="Button2" runat="server" Text="Submit" OnClick="Button02_Click" />
                             </div>
