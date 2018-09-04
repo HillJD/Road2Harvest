@@ -72,7 +72,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion00" href="#collapse00">Click to Search</a>
+                    <a class="myLinks" data-toggle="collapse" data-parent="#accordion00" href="#collapse00">Click to Search</a>
                 </h4>
             </div>
             <div id="collapse00" class="panel-collapse collapse">
@@ -81,7 +81,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion01" href="#collapse01">Title / Speaker</a>
+                                    <a class="myLinks" data-toggle="collapse" data-parent="#accordion01" href="#collapse01">Title / Speaker</a>
                                 </h4>
                             </div>
                             <div id="collapse01" class="panel-collapse collapse">
@@ -99,7 +99,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion02" href="#collapse02">Series</a>
+                                    <a  class="myLinks" data-toggle="collapse" data-parent="#accordion02" href="#collapse02">Series</a>
                                 </h4>
                             </div>
                             <div id="collapse02" class="panel-collapse collapse">
