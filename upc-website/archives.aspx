@@ -56,7 +56,7 @@
         width: 388px;
     }
 
-    .panel {text-align:center;}
+    /*.panel {text-align:center;}*/
 
     /* Flex from here */
     .container {
@@ -70,6 +70,8 @@
   height: 25px; /* Or whatever */
   margin: auto;  /* Magic! */
 }
+
+    .archive-span { display:block;}
 
 
 </style>
@@ -103,11 +105,13 @@
                             <div id="collapse01" class="panel-collapse collapse">
                                 <div class="panel-body container">
                                     
+                                    <%--<label for="txtFind1">Title</label>--%>
                                     <%--<asp:Label ID="label1" class="child" AssociatedControlID="txtFind01" Text="Title" runat="server"></asp:Label>--%>
-                                    Title <asp:TextBox ID="txtFind01" class="child" runat="server"></asp:TextBox>
+                                    <span class="archive-span">Title <asp:TextBox ID="txtFind01" class="child" runat="server"></asp:TextBox></span>
                                     
                                     <%--<asp:Label ID="label2" class="child" AssociatedControlID="txtFind02" Text="Speaker" runat="server"></asp:Label>--%>
-                                    Speaker <asp:TextBox ID="txtFind02" class="child" runat="server"></asp:TextBox>
+                                    <%--<label for="txtFind02">Title</label>--%>
+                                  <span class="archive-span">Speaker <asp:TextBox ID="txtFind02" class="child" runat="server"></asp:TextBox></span>
                                 </div>
 
                                 <asp:Button runat="server" Text="Submit" OnClick="Button02_Click" />
