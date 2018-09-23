@@ -86,13 +86,18 @@
         }
 
         .form-submit {
-            margin-left: 10px;
+            margin-left: 15px;
             margin-bottom: 10px;
         }
 
         .panel-title > a, .panel-title > small, .panel-title > .small,
         .panel-title > small > a, .panel-title > .small > a {
             text-align: center;
+        }
+
+        select {
+            height: 30px;
+            width: 255px;
         }
 
         @media screen and (min-width: 768px) {
@@ -112,7 +117,7 @@
         <h4><b>Sermon Archives</b></h4>
     </div>
 
-    <div class="jumbotronSK text-left">
+    <div class="jumbotronSK">
 
         <div class="panel-group" id="accordion00">
             <div class="panel panel-default">
@@ -134,18 +139,16 @@
                                     <div class="panel-body">
                                         <div class="form-row">
                                             <asp:Label ID="label1" class="form-row-label" AssociatedControlID="txtFind01" Text="Title" runat="server"></asp:Label>
-                                            <asp:TextBox ID="txtFind01" class="form-row-input" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtFind01" class="form-row-input" placeholder="Sermon title" runat="server"></asp:TextBox>
                                         </div>
 
                                         <div class="form-row">
                                             <asp:Label ID="label2" class="form-row-label" AssociatedControlID="txtFind02" Text="Speaker" runat="server"></asp:Label>
-                                            <asp:TextBox ID="txtFind02" class="form-row-input" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtFind02" class="form-row-input" placeholder="Speaker name" runat="server"></asp:TextBox>
                                         </div>
                                     </div>
                                     <asp:Button class="form-submit" runat="server" Text="Submit" OnClick="Button02_Click" />
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
