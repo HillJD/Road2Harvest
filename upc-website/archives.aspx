@@ -107,8 +107,8 @@
 
         .my-form-submit {
             position:relative;
-            bottom:50px;
-            margin-top:-20px;
+            bottom:24px;
+            margin-left:32px;
         }
 
         /*padding inside text-box*/
