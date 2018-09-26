@@ -98,11 +98,17 @@
         /*dropdown selector box*/
         .select {
             height: 30px;
-            width: 255px;
+            width: calc(100% - 30px);
         }
 
         .form-submit-series {
             margin-top:5px;
+        }
+
+        .my-form-submit {
+            position:relative;
+            bottom:50px;
+            margin-top:-20px;
         }
 
         /*padding inside text-box*/
@@ -116,7 +122,7 @@
         .jumbotronSK {
             padding-top: 2px;
             padding-bottom: 1px;
-            margin-bottom: 10px;
+            /*margin-bottom: 10px;*/
             color: inherit;
             background-color: #eee;
             margin-top: -10px;
@@ -126,6 +132,12 @@
             border-top: 1px solid #ddd;
             margin-bottom: -11px;
         }
+
+        .my-panel-body {
+            margin-top:-36px;
+        }
+
+
         /*@media screen and (min-width: 768px) {
             .form-row {
                 display: flex;
@@ -182,12 +194,12 @@
                                     <div class="panel-body">
                                         <div class="form-row">
                                             <%--<asp:Label ID="label1" class="form-row-label" AssociatedControlID="txtFind01" Text="Title" runat="server"></asp:Label>--%>
-                                            <asp:TextBox ID="txtFind01" class="form-row-input" placeholder="Sermon title, i.e. 'lord', no quotes." runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtFind01" class="form-row-input" placeholder="Sermon, i.e. 'lord', no quotes." runat="server"></asp:TextBox>
                                         </div>
 
                                         <div class="form-row">
                                             <%--<asp:Label ID="label2" class="form-row-label" AssociatedControlID="txtFind02" Text="Speaker" runat="server"></asp:Label>--%>
-                                            <asp:TextBox ID="txtFind02" class="form-row-input" placeholder="Speaker name, i.e 'smith', no quotes." runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtFind02" class="form-row-input" placeholder="Speaker, i.e 'smith', no quotes." runat="server"></asp:TextBox>
                                         </div>
                                     </div>
                                     <asp:Button class="form-submit" runat="server" Text="Submit" OnClick="Button02_Click" />
@@ -197,8 +209,7 @@
                     </div>
 
                     <div class="panel-group" id="accordion02">
-
-                        <div class="panel-body">
+                        <div class="panel-body my-panel-body">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
@@ -207,7 +218,7 @@
                                 </div>
                                 <div id="collapse02" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        <asp:DropDownList ID="DLSeries" runat="server" DataSourceID="SqlDatSeries" DataTextField="SeriesName" DataValueField="SeriesID" AppendDataBoundItems="true">
+                                        <asp:DropDownList ID="DLSeries" runat="server" class="select" DataSourceID="SqlDatSeries" DataTextField="SeriesName" DataValueField="SeriesID" AppendDataBoundItems="true">
                                             <Items>
                                                 <asp:ListItem Text="Series Select" Value="" />
                                             </Items>
@@ -219,8 +230,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <asp:Button ID="Button01" runat="server" class="form-submit" Text="Clear Search" OnClick="Button01_Click" />
+                    <asp:Button ID="Button01" runat="server" class="form-submit my-form-submit" Text="Clear Search" OnClick="Button01_Click" />
                 </div>
                 <br />
             </div>
