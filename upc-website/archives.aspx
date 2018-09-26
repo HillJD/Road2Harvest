@@ -74,7 +74,7 @@
         /* Flex from here */
         .form-row {
             display: flex;
-            padding: 10px 0;
+            padding: 5px 0;
         }
 
         .form-row-label {
@@ -95,18 +95,44 @@
             text-align: center;
         }
 
-        select {
+        /*dropdown selector box*/
+        .select {
             height: 30px;
             width: 255px;
         }
 
-        @media screen and (min-width: 768px) {
+        .form-submit-series {
+            margin-top:5px;
+        }
+
+        /*padding inside text-box*/
+        input {
+            margin: 0;
+            font: inherit;
+            color: inherit;
+            padding-left: 5px;
+        }
+
+        .jumbotronSK {
+            padding-top: 2px;
+            padding-bottom: 1px;
+            margin-bottom: 10px;
+            color: inherit;
+            background-color: #eee;
+            margin-top: -10px;
+        }
+
+        .panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
+            border-top: 1px solid #ddd;
+            margin-bottom: -11px;
+        }
+        /*@media screen and (min-width: 768px) {
             .form-row {
                 display: flex;
                 padding: 10px 0;
                 width: 75%;
             }
-        }
+        }*/
     </style>
 </asp:Content>
 
@@ -134,7 +160,7 @@
 
     <div class="jumbotronSK">
         <div class="panel-group" id="accordion00">
-            
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
@@ -151,16 +177,16 @@
                                         <a class="myLinks" data-toggle="collapse" data-parent="#accordion01" href="#collapse01">Title / Speaker</a>
                                     </h4>
                                 </div>
-                               
+
                                 <div id="collapse01" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <div class="form-row">
-                                            <asp:Label ID="label1" class="form-row-label" AssociatedControlID="txtFind01" Text="Title" runat="server"></asp:Label>
+                                            <%--<asp:Label ID="label1" class="form-row-label" AssociatedControlID="txtFind01" Text="Title" runat="server"></asp:Label>--%>
                                             <asp:TextBox ID="txtFind01" class="form-row-input" placeholder="Sermon title, i.e. 'lord', no quotes." runat="server"></asp:TextBox>
                                         </div>
 
                                         <div class="form-row">
-                                            <asp:Label ID="label2" class="form-row-label" AssociatedControlID="txtFind02" Text="Speaker" runat="server"></asp:Label>
+                                            <%--<asp:Label ID="label2" class="form-row-label" AssociatedControlID="txtFind02" Text="Speaker" runat="server"></asp:Label>--%>
                                             <asp:TextBox ID="txtFind02" class="form-row-input" placeholder="Speaker name, i.e 'smith', no quotes." runat="server"></asp:TextBox>
                                         </div>
                                     </div>
@@ -171,28 +197,28 @@
                     </div>
 
                     <div class="panel-group" id="accordion02">
-                        
+
                         <div class="panel-body">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="myLinks" data-toggle="collapse" data-parent="#accordion02" href="#collapse02">Series</a>
-                                </h4>
-                            </div>
-                            <div id="collapse02" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <asp:DropDownList ID="DLSeries" runat="server" DataSourceID="SqlDatSeries" DataTextField="SeriesName" DataValueField="SeriesID" AppendDataBoundItems="true">
-                                        <Items>
-                                            <asp:ListItem Text="Series Select" Value="" />
-                                        </Items>
-                                    </asp:DropDownList>
-                                    <asp:SqlDataSource ID="SqlDatSeries" runat="server" ConnectionString="<%$ ConnectionStrings:DB_110695_carouselConnectionString %>" SelectCommand="SELECT * FROM dbo.Series WHERE SeriesName <> '' AND SeriesID IN (SELECT SeriesID FROM [SermonAudio] WHERE [InArchive] = 'True' AND SeriesID <> 49) ORDER BY SeriesID DESC;" OnSelecting="SqlDatSeries_Selecting"></asp:SqlDataSource>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="myLinks" data-toggle="collapse" data-parent="#accordion02" href="#collapse02">Series</a>
+                                    </h4>
                                 </div>
-                                <asp:Button ID="Button00" class="form-submit" runat="server" Text="Submit" OnClick="Button00_Click" />
+                                <div id="collapse02" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <asp:DropDownList ID="DLSeries" runat="server" DataSourceID="SqlDatSeries" DataTextField="SeriesName" DataValueField="SeriesID" AppendDataBoundItems="true">
+                                            <Items>
+                                                <asp:ListItem Text="Series Select" Value="" />
+                                            </Items>
+                                        </asp:DropDownList>
+                                        <asp:SqlDataSource ID="SqlDatSeries" runat="server" ConnectionString="<%$ ConnectionStrings:DB_110695_carouselConnectionString %>" SelectCommand="SELECT * FROM dbo.Series WHERE SeriesName <> '' AND SeriesID IN (SELECT SeriesID FROM [SermonAudio] WHERE [InArchive] = 'True' AND SeriesID <> 49) ORDER BY SeriesID DESC;" OnSelecting="SqlDatSeries_Selecting"></asp:SqlDataSource>
+                                    </div>
+                                    <asp:Button ID="Button00" class="form-submit form-submit-series" runat="server" Text="Submit" OnClick="Button00_Click" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                        </div>
 
                     <asp:Button ID="Button01" runat="server" class="form-submit" Text="Clear Search" OnClick="Button01_Click" />
                 </div>
@@ -200,7 +226,7 @@
             </div>
         </div>
     </div>
-    
+
 
 
 
