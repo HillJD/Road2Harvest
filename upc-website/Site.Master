@@ -104,6 +104,7 @@
 
                 <div class="text-right center-block">
                     <span id="footer-date" class="text-left">&copy; <%: DateTime.Now.Year %> - UPC Version 8.0</span>
+                    <a href="https://www.instagram.com/unionpentecostalchurch/"><span class="social social-instagram" style="font-size:24px; color:white;padding-top:2px;"></span></a>
                     <a href="https://www.facebook.com/unionpentecostalchurch"><span class="social social-facebook" style="font-size:24px; color:white;padding-top:2px;"></span></a>
                     <a href="https://twitter.com/unionroadchurch"><span class="social social-twitter" style="font-size:24px; color:white;padding-top:2px;"></span></a>
                     <a href="http://plus.google.com/b/113686491120109002941"><span class="social social-google-plus" style="font-size:24px; color:white;padding-top:2px;"></span></a>
