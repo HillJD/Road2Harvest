@@ -410,6 +410,7 @@
     <Content Include="services.aspx" />
     <Content Include="staff.aspx" />
     <Content Include="styles.css" />
+    <Content Include="testimonies.aspx" />
     <Content Include="upc_dove_favicon.png" />
     <Content Include="upcoming.aspx" />
     <Content Include="Give.aspx" />
@@ -959,6 +960,13 @@
       <DependentUpon>staff.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="testimonies.aspx.cs">
+      <DependentUpon>testimonies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testimonies.aspx.designer.cs">
+      <DependentUpon>testimonies.aspx</DependentUpon>
+    </Compile>
     <Compile Include="upcoming.aspx.cs">
       <DependentUpon>upcoming.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
