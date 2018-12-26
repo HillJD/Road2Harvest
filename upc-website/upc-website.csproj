@@ -321,7 +321,9 @@
     <Content Include="images\carousel\upc_tutorial_1.mp4" />
     <Content Include="jplayer.aspx" />
     <Content Include="jquery_examples\arrays.html" />
+    <Content Include="media-1.aspx" />
     <Content Include="mstile-150x150.png" />
+    <Content Include="pastor-desk-new.aspx" />
     <Content Include="pastordesk.aspx" />
     <Content Include="safari-pinned-tab.svg" />
     <Content Include="Scripts\audio_player.js" />
@@ -721,6 +723,13 @@
     <Compile Include="jplayer.aspx.designer.cs">
       <DependentUpon>jplayer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="media-1.aspx.cs">
+      <DependentUpon>media-1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="media-1.aspx.designer.cs">
+      <DependentUpon>media-1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Ministries.aspx.cs">
       <DependentUpon>Ministries.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -869,6 +878,13 @@
     </Compile>
     <Compile Include="panelCtrl.aspx.designer.cs">
       <DependentUpon>panelCtrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pastor-desk-new.aspx.cs">
+      <DependentUpon>pastor-desk-new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pastor-desk-new.aspx.designer.cs">
+      <DependentUpon>pastor-desk-new.aspx</DependentUpon>
     </Compile>
     <Compile Include="pastor-info.aspx.cs">
       <DependentUpon>pastor-info.aspx</DependentUpon>
