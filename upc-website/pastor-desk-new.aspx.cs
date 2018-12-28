@@ -45,6 +45,7 @@ namespace upc_website
             else
             {
                 textInfo.Text = "No PostBack";
+                controlName = 0;
 
             }
 
