@@ -11,16 +11,15 @@ using System.Web.UI.HtmlControls;
 
 namespace upc_website
 {
-    public partial class pastor_desk_new : System.Web.UI.Page
+    public partial class pastordesk : System.Web.UI.Page
     {
         //Must be visible to all below
         HtmlGenericControl flexContainer = new HtmlGenericControl("div"); //Top level <div>
         HtmlGenericControl flexItem = new HtmlGenericControl("div"); //Wrapper for 'title' & message div
         HtmlGenericControl titleContainer = new HtmlGenericControl("div");//Wrapper for 'title'
-        HtmlGenericControl sub_titleContainer = new HtmlGenericControl("div"); //Wrapper for 'sub-title'
+        HtmlGenericControl sub_titleContainer= new HtmlGenericControl("div"); //Wrapper for 'sub-title'
         HtmlGenericControl messageContainer = new HtmlGenericControl("div"); //Wrapper for 'message' 
-        Int16 controlName = 0;
-
+        
         //string connectionString = "SELECT TOP 10 ArticleID,Author,PubDt,SeriesOrder,Title,Body FROM Articles ORDER BY Title ASC";
         //string connectionString="SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");"
 
@@ -37,20 +36,9 @@ namespace upc_website
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (IsPostBack)
-            {
-                controlName = Int16.Parse(Request.Params.Get("__eventtarget"));
-                textInfo.Text = "IsPostback/Button value: " + controlName;
-            }
-            else
-            {
-                textInfo.Text = "No PostBack";
-
-            }
-
             int messagesToAdd = 0;
             messagesToAdd = GetRowCount(); //i.e. # of pictures slides to add
-            BuildFlexContainer();
+           BuildFlexContainer();
             //BuildFlexItem();
             //BuildTitle();
             //BuildMessage(); //
@@ -61,7 +49,7 @@ namespace upc_website
         {
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,100),'...') as body FROM Articles ORDER BY ArticleID ASC";
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,200),'...') as body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 300 ROWS ONLY";
-            string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET " + controlName + " ROWS FETCH NEXT 10 ROWS ONLY";
+            string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET 0 ROWS FETCH NEXT 50 ROWS ONLY";
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 50 ROWS ONLY";
             return connectionString;
         }
@@ -176,12 +164,12 @@ namespace upc_website
 
                 myTitleDiv[i].InnerHtml = myData[(index * i) + (int)ArticleField.Title].ToString();//Title
                 mySubTitleDiv[i].InnerHtml = myData[(index * i) + (int)ArticleField.Author].ToString();//Author
-                int dateLength = myData[(index * i) + (int)ArticleField.PubDt].ToString().Length;
-                if (dateLength != 0)
+                int dateLength= myData[(index * i) + (int)ArticleField.PubDt].ToString().Length;
+                if (dateLength!=0)
                 {
-                    mySubTitleDiv[i].InnerHtml += " " + myData[(index * i) + (int)ArticleField.PubDt].ToString().Substring(0, 10);
+                    mySubTitleDiv[i].InnerHtml += " " + myData[(index * i) + (int)ArticleField.PubDt].ToString().Substring(0,10);
                 }
-
+                
                 //string t = myData[(index * i) + (int)ArticleField.PubDt].ToString();
                 //string t2 = t.Substring(0, 3);
                 //DateTime myDate = new DateTime(t);
@@ -212,7 +200,7 @@ namespace upc_website
             SqlDataAdapter adp = new SqlDataAdapter(command);
             adp.Fill(dt);
             int rowCount = dt.Rows.Count;
-
+            
             ////One row per piece of data 6 database fields a follows:
             ////ArticleID,Author,PubDt,SeriesOrder,Title,Body
             ////Total of 6 rows for each article.
@@ -285,3 +273,4 @@ namespace upc_website
     }
 
 }
+

@@ -10,16 +10,7 @@
 namespace upc_website {
     
     
-    public partial class pastor_desk_new {
-        
-        /// <summary>
-        /// textInfo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textInfo;
+    public partial class mike {
         
         /// <summary>
         /// ControlContainer control.
@@ -29,14 +20,5 @@ namespace upc_website {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder ControlContainer;
-        
-        /// <summary>
-        /// label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label1;
     }
 }
