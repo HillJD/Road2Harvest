@@ -11,8 +11,6 @@
 </script>--%>
     <style>
         .myLink {
-            
-            
             padding:0px 9px;
             border:#969696 solid 1px;
             margin-bottom:.5em;
@@ -60,19 +58,23 @@
         <h4><b>Pastor's Desk</b></h4>
         <asp:TextBox runat="server" ID="textInfo" Width="300"></asp:TextBox>
     </div>
-    <asp:PlaceHolder ID="ControlContainer" runat="server"></asp:PlaceHolder>
+    <asp:PlaceHolder ID="ControlContainer" runat="server">
+        <div class="flex">
+            <a id="Button1" class="myLink" href="javascript:__doPostBack('0')">...</a>
+
+            <a id="Button2" class="myLink" href="javascript:__doPostBack('10')">2</a>
+
+            <a id="Button3" class="myLink" href="javascript:__doPostBack('30')">3</a>
+
+            <a id="Button4" class="myLink" href="javascript:__doPostBack('40')">4</a>
+
+            <a id="Button5" class="myLink" href="javascript:__doPostBack('50')">...</a>
+
+            <asp:Label ID="label1" class="label1" runat="server"></asp:Label>
+        </div>
+
+    </asp:PlaceHolder>
      
-<div class="flex">
-    <a id="Button1" class="myLink" href="javascript:__doPostBack('10')">1</a>
-
-    <a id="Button2" class="myLink" href="javascript:__doPostBack('20')">2</a>
-
-    <a id="Button3" class="myLink" href="javascript:__doPostBack('30')">3</a>
-
-    <a id="Button4" class="myLink" href="javascript:__doPostBack('40')">4</a>
-
-    <asp:Label ID="label1" class="label1" runat="server"></asp:Label>
-</div>
     
     <script>
         $(document).ready(function () {

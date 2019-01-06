@@ -19,12 +19,16 @@ namespace upc_website
         HtmlGenericControl titleContainer = new HtmlGenericControl("div");//Wrapper for 'title'
         HtmlGenericControl sub_titleContainer = new HtmlGenericControl("div"); //Wrapper for 'sub-title'
         HtmlGenericControl messageContainer = new HtmlGenericControl("div"); //Wrapper for 'message' 
-        Int16 controlName = 0;
+        HtmlGenericControl recordSelectorContainer = new HtmlGenericControl("div"); //Wrapper for 'record button selector' 
+        HtmlGenericControl myAnchor = new HtmlGenericControl("a"); //Wrapper for 'record button selector' 
+        //This the starting rec# to show. 0 if not PostBack, muliplies of 10 otherwise based on button click selector
+        Int16 startingRecNum = 0;
+        private int recCount = 0;
 
         //string connectionString = "SELECT TOP 10 ArticleID,Author,PubDt,SeriesOrder,Title,Body FROM Articles ORDER BY Title ASC";
         //string connectionString="SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");"
 
-        //Used in BuildCarouselImageDiv
+        //Used in BuildFlexItemDiv
         public enum ArticleField
         {
             ArticleID, //0
@@ -39,30 +43,45 @@ namespace upc_website
         {
             if (IsPostBack)
             {
-                controlName = Int16.Parse(Request.Params.Get("__eventtarget"));
-                textInfo.Text = "IsPostback/Button value: " + controlName;
+                startingRecNum = Int16.Parse(Request.Params.Get("__eventtarget"));
+                //temp textbox on main page for my info
+                textInfo.Text = "IsPostback/Button value: " + startingRecNum;
             }
             else
             {
                 textInfo.Text = "No PostBack";
-                controlName = 0;
+                startingRecNum = 0;
 
             }
 
+            //i.e. returns total # of messages available
             int messagesToAdd = 0;
-            messagesToAdd = GetRowCount(); //i.e. # of pictures slides to add
+            messagesToAdd = GetRowCount();
+
+            //i.e. returns total # of messages available
+            //However we only show 10 messages per page.
+            //But we need to know how many record buttons selectors to show
+            //If the total messages were let's say >100 than 10 record buttons selectors for 100 records with some for next page page
+            //Also, if more than 100, we would need 'prev' & 'next' buttons
+            //If there were less than 100 or the this is the last page, then less than 10 record buttons selectors would be needed.
+            //If only 73 messages wre available than 8 record button selectors are needed, np 'prev' or 'next buttons needed
+            
+            //Used as a parameter to BuildRecordButtonsSelector this determines the total # of record button selectors to build.
+            recCount = messagesToAdd;
+            
             BuildFlexContainer();
-            //BuildFlexItem();
-            //BuildTitle();
-            //BuildMessage(); //
+            
             BuildFlexItemDiv(messagesToAdd);
+            
+            //Build rcord selector buttons
+            BuildRecordButtonsSelector(recCount,startingRecNum);
         }
 
         public string DbConnectionSelectString()
         {
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,100),'...') as body FROM Articles ORDER BY ArticleID ASC";
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,200),'...') as body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 300 ROWS ONLY";
-            string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET " + controlName + " ROWS FETCH NEXT 10 ROWS ONLY";
+            string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET " + startingRecNum + " ROWS FETCH NEXT 10 ROWS ONLY";
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 50 ROWS ONLY";
             return connectionString;
         }
@@ -198,6 +217,74 @@ namespace upc_website
             }
 
         } //End of BuildFlexItemDiv()
+
+
+        //This div wraps the record button selectors
+        public void BuildRecordButtonsSelector(int availableRecs, int startingRecNum)
+        {
+            int messagesPerPage = 10;
+            int buttonsToBuild = availableRecs;
+            Boolean prevButton = false;
+            Boolean nextButton = false;
+            buttonsToBuild = (buttonsToBuild / messagesPerPage) + (buttonsToBuild % messagesPerPage);
+
+            if (buttonsToBuild == 0)
+            {
+                textInfo.Text = "No messages available!";
+                return;
+            }
+
+            else if (buttonsToBuild < 101)
+            {
+                buttonsToBuild = (buttonsToBuild / messagesPerPage);
+                if ((buttonsToBuild % messagesPerPage) > 0)
+                {
+                    buttonsToBuild++;
+                }
+                prevButton = false;
+                nextButton = false;
+            }
+
+            else if (buttonsToBuild > 100)
+            {
+                buttonsToBuild = 10;
+                if (startingRecNum > 1) //Not first page
+                {
+                    if ((availableRecs % messagesPerPage) > 0 && (startingRecNum == (availableRecs % messagesPerPage)))
+                    {
+                        nextButton = true; //More than 100 records thus we could display more with 'Next' button
+                    }
+                    else
+                    {
+                        nextButton = false;
+                    }
+                    prevButton = true; //Not first page thus we could display previous records with 'Prev' button
+                    buttonsToBuild += 2;//add 2
+                }
+                else
+                {
+                    nextButton = true;
+                    prevButton = false; //First page of records
+
+                };
+            }
+        }
+
+
+
+
+
+        HtmlGenericControl[] myAnchor = new HtmlGenericControl[buttonsToBuild];
+            for (int x = 0; x < buttonsToBuild; x++)
+            {
+                myAnchor[x] = new HtmlGenericControl();
+            }
+            recordSelectorContainer.Attributes.Add("class", "flex");
+
+
+
+
+        }
 
         public List<string> GetMessageData()
         {
