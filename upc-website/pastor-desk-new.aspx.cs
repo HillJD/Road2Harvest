@@ -65,16 +65,16 @@ namespace upc_website
             //Also, if more than 100, we would need 'prev' & 'next' buttons
             //If there were less than 100 or the this is the last page, then less than 10 record buttons selectors would be needed.
             //If only 73 messages wre available than 8 record button selectors are needed, np 'prev' or 'next buttons needed
-            
+
             //Used as a parameter to BuildRecordButtonsSelector this determines the total # of record button selectors to build.
             recCount = messagesToAdd;
-            
+
             BuildFlexContainer();
-            
+
             BuildFlexItemDiv(messagesToAdd);
-            
+
             //Build rcord selector buttons
-            BuildRecordButtonsSelector(recCount,startingRecNum);
+            BuildRecordButtonsSelector(recCount, startingRecNum);
         }
 
         public string DbConnectionSelectString()
@@ -266,25 +266,32 @@ namespace upc_website
                     nextButton = true;
                     prevButton = false; //First page of records
 
-                };
-            }
-        }
-
-
-
-
-
-        HtmlGenericControl[] myAnchor = new HtmlGenericControl[buttonsToBuild];
-            for (int x = 0; x < buttonsToBuild; x++)
-            {
-                myAnchor[x] = new HtmlGenericControl();
+                }
             }
             recordSelectorContainer.Attributes.Add("class", "flex");
-
-
-
+            HtmlGenericControl[] myAnchor = new HtmlGenericControl[buttonsToBuild];
+            for (int t = 0; t < buttonsToBuild; t += 10)
+            {
+                for (int x = 0; x < buttonsToBuild; x++)
+                {
+                    myAnchor[x] = new HtmlGenericControl();
+                    myAnchor[x].Attributes.Add("href", "javascript:__doPostBack('" + t.ToString() + ")");
+                    recordSelectorContainer.Controls.Add(myAnchor[x]);
+                }
+            }
 
         }
+
+
+
+
+
+
+
+
+
+
+
 
         public List<string> GetMessageData()
         {
@@ -371,5 +378,6 @@ namespace upc_website
 
 
     }
-
 }
+
+
