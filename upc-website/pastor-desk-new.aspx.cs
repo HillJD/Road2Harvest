@@ -81,7 +81,7 @@ namespace upc_website
         {
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,100),'...') as body FROM Articles ORDER BY ArticleID ASC";
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,200),'...') as body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 300 ROWS ONLY";
-            string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET " + startingRecNum + " ROWS FETCH NEXT 10 ROWS ONLY";
+            string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET " + startingRecNum + " ROWS FETCH NEXT 100 ROWS ONLY";
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 50 ROWS ONLY";
             return connectionString;
         }
@@ -223,20 +223,21 @@ namespace upc_website
         public void BuildRecordButtonsSelector(int availableRecs, int startingRecNum)
         {
             int messagesPerPage = 10;
-            int buttonsToBuild = availableRecs;
+            int buttonsToBuild = 0;
+            //int buttonsToBuild = availableRecs;1.8.19
             Boolean prevButton = false;
             Boolean nextButton = false;
-            buttonsToBuild = (buttonsToBuild / messagesPerPage) + (buttonsToBuild % messagesPerPage);
+            //buttonsToBuild = (availableRecs / messagesPerPage) + (availableRecs % messagesPerPage);
 
-            if (buttonsToBuild == 0)
+            if (availableRecs == 0)
             {
                 textInfo.Text = "No messages available!";
                 return;
             }
 
-            else if (buttonsToBuild < 101)
+            else if (availableRecs < 101)
             {
-                buttonsToBuild = (buttonsToBuild / messagesPerPage);
+                buttonsToBuild = (availableRecs / messagesPerPage);
                 if ((buttonsToBuild % messagesPerPage) > 0)
                 {
                     buttonsToBuild++;
@@ -245,7 +246,7 @@ namespace upc_website
                 nextButton = false;
             }
 
-            else if (buttonsToBuild > 100)
+            else if (availableRecs > 100)
             {
                 buttonsToBuild = 10;
                 if (startingRecNum > 1) //Not first page
@@ -270,15 +271,18 @@ namespace upc_website
             }
             recordSelectorContainer.Attributes.Add("class", "flex");
             HtmlGenericControl[] myAnchor = new HtmlGenericControl[buttonsToBuild];
-            for (int t = 0; t < buttonsToBuild; t += 10)
-            {
+            int t = 0;
+            //char c = ''';
+            
                 for (int x = 0; x < buttonsToBuild; x++)
                 {
-                    myAnchor[x] = new HtmlGenericControl();
-                    myAnchor[x].Attributes.Add("href", "javascript:__doPostBack('" + t.ToString() + ")");
+                    myAnchor[x] = new HtmlGenericControl("a");
+                //myAnchor[x].Attributes.Add("href", "She said, " + '\u0022' + "You deserve a treat!" + '\u0022');
+                myAnchor[x].Attributes.Add("href", "javascript:__doPostBack('" +  (x * 10).ToString() + "')");
+                myAnchor[x].InnerText = "Mike";
                     recordSelectorContainer.Controls.Add(myAnchor[x]);
                 }
-            }
+            ControlContainer.Controls.Add(recordSelectorContainer);
 
         }
 

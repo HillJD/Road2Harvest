@@ -59,7 +59,7 @@
         <asp:TextBox runat="server" ID="textInfo" Width="300"></asp:TextBox>
     </div>
     <asp:PlaceHolder ID="ControlContainer" runat="server">
-        <div class="flex">
+        <%--<div class="flex">
             <a id="Button1" class="myLink" href="javascript:__doPostBack('0')">...</a>
 
             <a id="Button2" class="myLink" href="javascript:__doPostBack('10')">2</a>
@@ -71,7 +71,7 @@
             <a id="Button5" class="myLink" href="javascript:__doPostBack('50')">...</a>
 
             <asp:Label ID="label1" class="label1" runat="server"></asp:Label>
-        </div>
+        </div>--%>
 
     </asp:PlaceHolder>
      
