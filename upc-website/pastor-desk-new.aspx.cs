@@ -54,9 +54,10 @@ namespace upc_website
 
             }
 
-            //i.e. returns total # of messages available
-            int messagesToAdd = 0;
-            messagesToAdd = GetRowCount();
+            //i.e. default # of messages per page
+            int messagesToAdd = 10;
+            //messagesToAdd = GetRowCount();
+
 
             //i.e. returns total # of messages available
             //However we only show 10 messages per page.
@@ -64,10 +65,10 @@ namespace upc_website
             //If the total messages were let's say >100 than 10 record buttons selectors for 100 records with some for next page page
             //Also, if more than 100, we would need 'prev' & 'next' buttons
             //If there were less than 100 or the this is the last page, then less than 10 record buttons selectors would be needed.
-            //If only 73 messages wre available than 8 record button selectors are needed, np 'prev' or 'next buttons needed
+            //If only 73 messages were available than 8 record button selectors are needed, no 'prev' or 'next buttons needed
 
             //Used as a parameter to BuildRecordButtonsSelector this determines the total # of record button selectors to build.
-            recCount = messagesToAdd;
+            recCount = GetRowCount();
 
             BuildFlexContainer();
 
@@ -81,7 +82,8 @@ namespace upc_website
         {
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,100),'...') as body FROM Articles ORDER BY ArticleID ASC";
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,200),'...') as body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 300 ROWS ONLY";
-            string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET " + startingRecNum + " ROWS FETCH NEXT 100 ROWS ONLY";
+            string connectionString = "SELECT ArticleID From Articles";
+            //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET " + startingRecNum + " ROWS FETCH NEXT 10 ROWS ONLY";
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 50 ROWS ONLY";
             return connectionString;
         }
@@ -93,7 +95,8 @@ namespace upc_website
             SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
             //SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
             cs.Open();
-            string str = DbConnectionSelectString();
+            string str= "SELECT ArticleID From Articles";
+            //string str = DbConnectionSelectString();
             SqlCommand command = new SqlCommand(str, cs);
 
             DataTable dt = new DataTable();
@@ -266,6 +269,7 @@ namespace upc_website
                 {
                     nextButton = true;
                     prevButton = false; //First page of records
+                    buttonsToBuild++;
 
                 }
             }
@@ -273,15 +277,33 @@ namespace upc_website
             HtmlGenericControl[] myAnchor = new HtmlGenericControl[buttonsToBuild];
             int t = 0;
             //char c = ''';
-            
-                for (int x = 0; x < buttonsToBuild; x++)
+
+            for (int x = 0; x < buttonsToBuild; x++)
+            {
+                myAnchor[x] = new HtmlGenericControl("a");
+                myAnchor[x].Attributes.Add("href", "javascript:__doPostBack('" + (x * 10).ToString() + "')");
+                myAnchor[x].Attributes.Add("class", "myLink");
+
+                if (x == 0 && prevButton) //Make 1st button a 'prev' button
                 {
-                    myAnchor[x] = new HtmlGenericControl("a");
-                //myAnchor[x].Attributes.Add("href", "She said, " + '\u0022' + "You deserve a treat!" + '\u0022');
-                myAnchor[x].Attributes.Add("href", "javascript:__doPostBack('" +  (x * 10).ToString() + "')");
-                myAnchor[x].InnerText = "Mike";
-                    recordSelectorContainer.Controls.Add(myAnchor[x]);
+                    myAnchor[x].InnerText = "...";
                 }
+                else
+                {
+                    myAnchor[x].InnerText = ((startingRecNum + x) +1).ToString();
+                }
+
+                if (x +1 == buttonsToBuild && nextButton) //Make last button a 'next' button
+                {
+                    myAnchor[x].InnerText = "...";
+                }
+                else
+                {
+                    myAnchor[x].InnerText = ((startingRecNum + x) + 1).ToString();
+                }
+
+                recordSelectorContainer.Controls.Add(myAnchor[x]);
+            }
             ControlContainer.Controls.Add(recordSelectorContainer);
 
         }
@@ -300,11 +322,12 @@ namespace upc_website
         public List<string> GetMessageData()
         {
             //install later a Try, Catch error routine
-            //Setup data connection, get data fron sql table 'carousel_images
+            //Setup data connection, get data fron sql table 'Articles'
             //SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
             SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
             cs.Open();
-            string str = DbConnectionSelectString();
+            string str = "SELECT ArticleID,Author,PubDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET " + startingRecNum + " ROWS FETCH NEXT 10 ROWS ONLY";
+            //string str = DbConnectionSelectString();
 
             SqlCommand command = new SqlCommand(str, cs);
             DataTable dt = new DataTable();
