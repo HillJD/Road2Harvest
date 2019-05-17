@@ -4,26 +4,22 @@
 
 /***************** This section is for carousel *********************************************/
 /* Makes images fully responsive for carousel */
-.img-responsive,
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  display: block;
-  width: 100%;
-  height: auto;
+/*These 2 rules to make carousel be full width on mobile
+    This overrides bootstrap classes 5.16.19 md */
+.container {
+    padding-left:0px;
+    padding-right:0px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-/* Center responsive images*/
-.img-responsive.img-center {
-    margin: 0 auto;
-}
+    .container-fluid > .navbar-collapse, .container-fluid >
+    .navbar-header, .container > .navbar-collapse,
+    .container > .navbar-header {
+        padding-left:15px;
+        padding-right:15px;
+    }
 
- #myButton.myButton.btn-link:focus {
-    color: #23527c;
-    text-decoration: none;
-    background-color: transparent;
-}
 
 
 .myLinks {

@@ -22,7 +22,7 @@ namespace upc_website
         HtmlGenericControl recordSelectorContainer = new HtmlGenericControl("div"); //Wrapper for 'record button selector' 
         HtmlGenericControl myAnchor = new HtmlGenericControl("a"); //Wrapper for 'record button selector' 
         //This the starting rec# to show. 0 if not PostBack, muliplies of 10 otherwise based on button click selector
-        Int16 startingRecNum = 0;
+        Int16 pageNumber = 0;
         private int recCount = 0;
 
         //string connectionString = "SELECT TOP 10 ArticleID,Author,PubDt,SeriesOrder,Title,Body FROM Articles ORDER BY Title ASC";
@@ -43,14 +43,14 @@ namespace upc_website
         {
             if (IsPostBack)
             {
-                startingRecNum = Int16.Parse(Request.Params.Get("__eventtarget"));
+                pageNumber = Int16.Parse(Request.Params.Get("__eventtarget"));
                 //temp textbox on main page for my info
-                textInfo.Text = "IsPostback/Button value: " + startingRecNum;
+                textInfo.Text = "IsPostback/Button value: " + pageNumber;
             }
             else
             {
                 textInfo.Text = "No PostBack";
-                startingRecNum = 0;
+                pageNumber = 1;
 
             }
 
@@ -75,7 +75,7 @@ namespace upc_website
             BuildFlexItemDiv(messagesToAdd);
 
             //Build rcord selector buttons
-            BuildRecordButtonsSelector(recCount, startingRecNum);
+            BuildRecordButtonsSelector(recCount, pageNumber);
         }
 
         public string DbConnectionSelectString()
@@ -222,8 +222,8 @@ namespace upc_website
         } //End of BuildFlexItemDiv()
 
 
-        //This div wraps the record button selectors
-        public void BuildRecordButtonsSelector(int availableRecs, int startingRecNum)
+        //This builds the record button selectors
+        public void BuildRecordButtonsSelector(int availableRecs, int pageNumber)
         {
             int messagesPerPage = 10;
             int buttonsToBuild = 0;
@@ -240,8 +240,8 @@ namespace upc_website
 
             else if (availableRecs < 101)
             {
-                buttonsToBuild = (availableRecs / messagesPerPage);
-                if ((buttonsToBuild % messagesPerPage) > 0)
+                buttonsToBuild = (availableRecs / messagesPerPage); //Not right, check
+                if ((buttonsToBuild % messagesPerPage) > 0) 
                 {
                     buttonsToBuild++;
                 }
@@ -251,18 +251,13 @@ namespace upc_website
 
             else if (availableRecs > 100)
             {
+                //Figure whether we need 'prev' and 'next' buttons
                 buttonsToBuild = 10;
-                if (startingRecNum > 1) //Not first page
+
+                if (pageNumber > 1) //Not first page, someone clicked on a recNumber, Postback
                 {
-                    if ((availableRecs % messagesPerPage) > 0 && (startingRecNum == (availableRecs % messagesPerPage)))
-                    {
-                        nextButton = true; //More than 100 records thus we could display more with 'Next' button
-                    }
-                    else
-                    {
-                        nextButton = false;
-                    }
-                    prevButton = true; //Not first page thus we could display previous records with 'Prev' button
+                    nextButton = true; //More than 100 records thus we could display more with 'Next' button
+                    prevButton = true;
                     buttonsToBuild += 2;//add 2
                 }
                 else
@@ -270,27 +265,26 @@ namespace upc_website
                     nextButton = true;
                     prevButton = false; //First page of records
                     buttonsToBuild++;
-
                 }
             }
             recordSelectorContainer.Attributes.Add("class", "flex");
             HtmlGenericControl[] myAnchor = new HtmlGenericControl[buttonsToBuild];
-            int t = 0;
+            //int t = 0;
             //char c = ''';
 
             for (int x = 0; x < buttonsToBuild; x++)
             {
                 myAnchor[x] = new HtmlGenericControl("a");
-                myAnchor[x].Attributes.Add("href", "javascript:__doPostBack('" + (x * 10).ToString() + "')");
+                myAnchor[x].Attributes.Add("href", "javascript:__doPostBack('" + (x + pageNumber).ToString() + "')");
                 myAnchor[x].Attributes.Add("class", "myLink");
 
-                if (x == 0 && prevButton) //Make 1st button a 'prev' button
+                if (x == 1 && prevButton) //Make 1st button a 'prev' button
                 {
                     myAnchor[x].InnerText = "...";
                 }
                 else
                 {
-                    myAnchor[x].InnerText = ((startingRecNum + x) +1).ToString();
+                    myAnchor[x].InnerText = (pageNumber + x).ToString();
                 }
 
                 if (x +1 == buttonsToBuild && nextButton) //Make last button a 'next' button
@@ -299,7 +293,7 @@ namespace upc_website
                 }
                 else
                 {
-                    myAnchor[x].InnerText = ((startingRecNum + x) + 1).ToString();
+                    myAnchor[x].InnerText = (pageNumber + x).ToString();
                 }
 
                 recordSelectorContainer.Controls.Add(myAnchor[x]);
@@ -326,7 +320,7 @@ namespace upc_website
             //SqlConnection cs = new SqlConnection("Data Source = (localdb)\\V11.0; Initial Catalog = upc; Integrated Security = True;");
             SqlConnection cs = new SqlConnection("Data Source = s13.winhost.com, 14330; Initial Catalog = DB_110695_carousel; Persist Security Info = True; User ID = DB_110695_carousel_user; Password = John1!1");
             cs.Open();
-            string str = "SELECT ArticleID,Author,PubDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET " + startingRecNum + " ROWS FETCH NEXT 10 ROWS ONLY";
+            string str = "SELECT ArticleID,Author,PubDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET " + pageNumber + " ROWS FETCH NEXT 10 ROWS ONLY";
             //string str = DbConnectionSelectString();
 
             SqlCommand command = new SqlCommand(str, cs);
