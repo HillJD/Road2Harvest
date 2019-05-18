@@ -4,7 +4,7 @@
 
 /***************** This section is for carousel *********************************************/
 /* Makes images fully responsive for carousel */
-/*These 2 rules to make carousel be full width on mobile
+/*These 3 rules to make carousel be full width on mobile
     This overrides bootstrap classes 5.16.19 md */
 .container {
     padding-left:0px;
@@ -19,22 +19,18 @@
         padding-left:15px;
         padding-right:15px;
     }
-
-
-
-.myLinks {
-    display: block;
-    width: 100%;
-    height: 100%;
+/*This changes height of  dropdown menu to allow all menu options to be displayed 5.17.19*/
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 379px;    
 }
 
     /***************** jplayer start*********************/
-    .jp-audio {
-    width: 355px !important;/*change*/
-    padding: 20px;
+    /*.jp-audio {
+    width: 355px !important;
+    padding: 20px*/;
     
 }
-.jp-progress {
+./*jp-progress {
     background: url(../image/jplayer.pink.flag.jpg) 0px -240px no-repeat;
     width: 315px !important;
     height: 13px;
@@ -42,9 +38,9 @@
     margin-top:8px;
     margin-bottom: 4px;
     overflow: hidden;
-}
+}*/
 
-.jp-volume-bar {
+./*jp-volume-bar {
     background: url(../image/jplayer.pink.flag.jpg) 0px -300px repeat-x;
     position: absolute;
     width: 315px !important;
@@ -52,8 +48,8 @@
     padding: 2px 2px 1px 2px;
     overflow: hidden;
     cursor: pointer;
-}
-.jp-audio,
+}*/
+/*.jp-audio,
 .jp-audio-stream,
 .jp-video {
     font-size: 16px;
@@ -65,14 +61,14 @@
     border-right: 1px solid #180a1f;
     border-bottom: 1px solid #180a1f;
     background-color: rgba(0,21,64,1) !important;
-}
-.jp-controls {
+}*/
+/*.jp-controls {
     background: url("../image/jplayer_pink_flag_alt_color.jpg") 0 0 no-repeat;
     padding: 1px 0 2px 1px;
     overflow: hidden;
     width: 201px;
     height: 34px;
-}
+}*/*/
 /***************** jplayer end*********************/
 
 
@@ -180,6 +176,11 @@
     }
     .collapse.in{
         display:block !important;
+    }
+
+    .nav {
+        padding-left:15px;
+        padding-right:15px;
     }
 }
 /*Try to force hamburger menu @1600 px tablets*/
