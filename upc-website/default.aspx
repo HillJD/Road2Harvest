@@ -52,6 +52,7 @@
             <a href="resources.aspx"><span class="glyphicons glyphicons-paperclip"></span></a>
             <a href="resources.aspx"><p class="gly-paragraph">Resources</p></a>
         </div>
+        
     </div>
     <script>
         $(document).ready(function () {

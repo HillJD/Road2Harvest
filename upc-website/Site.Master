@@ -76,6 +76,8 @@
                         <li><a runat="server" href="~/listen">Listen</a></li>
                         <li><a runat="server" href="~/services">Services</a></li>
                         <li><a runat="server" href="~/give">Giving</a></li>
+                        <li><a runat="server" href="https://www.websitepolicies.com/policies/view/GiQh98pD">Privacy</a></li>
+                        <li><a runat="server" href="https://www.websitepolicies.com/policies/view/C0HGm01a">Terms and conditions</a></li>
                     </ul>
                     <%--<asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>

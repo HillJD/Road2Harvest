@@ -19,9 +19,9 @@
         padding-left:15px;
         padding-right:15px;
     }
-/*This changes height of  dropdown menu to allow all menu options to be displayed 5.17.19*/
+/*This changes height of  dropdown menu to allow all menu options to be displayed 5.31.19*/
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-    max-height: 379px;    
+    max-height: 500px;    
 }
 
     /***************** jplayer start*********************/
