@@ -512,6 +512,10 @@ position:relative;
         border-radius: 4px;
         padding-right: 6px; /*added 7_15_17 */
     }
+
+    footer {
+        margin-top:auto;
+    }
     /* Make footer div shorter and float text left, icons right 7_15_17 */
     span#footer-date {
         font-size: 12px;

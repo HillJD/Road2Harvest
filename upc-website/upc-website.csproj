@@ -325,6 +325,7 @@
     <Content Include="mstile-150x150.png" />
     <Content Include="pastor-desk-new.aspx" />
     <Content Include="pastordesk.aspx" />
+    <Content Include="privacy.aspx" />
     <Content Include="safari-pinned-tab.svg" />
     <Content Include="Scripts\audio_player.js" />
     <Content Include="bible.aspx" />
@@ -429,6 +430,7 @@
     <Content Include="services.aspx" />
     <Content Include="staff.aspx" />
     <Content Include="styles.css" />
+    <Content Include="terms-and-conditions.aspx" />
     <Content Include="testimonies.aspx" />
     <Content Include="upc_dove_favicon.png" />
     <Content Include="upcoming.aspx" />
@@ -949,6 +951,13 @@
     <Compile Include="prayer.aspx.designer.cs">
       <DependentUpon>prayer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="privacy.aspx.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privacy.aspx.designer.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="resources.aspx.cs">
       <DependentUpon>resources.aspx</DependentUpon>
@@ -993,6 +1002,13 @@
       <DependentUpon>staff.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="terms-and-conditions.aspx.cs">
+      <DependentUpon>terms-and-conditions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="terms-and-conditions.aspx.designer.cs">
+      <DependentUpon>terms-and-conditions.aspx</DependentUpon>
+    </Compile>
     <Compile Include="testimonies.aspx.cs">
       <DependentUpon>testimonies.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
