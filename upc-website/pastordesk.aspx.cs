@@ -49,9 +49,9 @@ namespace upc_website
         {
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,100),'...') as body FROM Articles ORDER BY ArticleID ASC";
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,concat(substring(body,1,200),'...') as body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 300 ROWS ONLY";
-            // 7.10.19 string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET 0 ROWS FETCH NEXT 50 ROWS ONLY";
+            //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET 0 ROWS FETCH NEXT 50 ROWS ONLY";
             //7.10.19 Changed date returned, PubDt, with CONVERT SQl command to return date properly. No need to string contenation
-            string connectionString = "SELECT ArticleID,Author,CONVERT(varchar,PubDt,101) as PubDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET 0 ROWS FETCH NEXT 50 ROWS ONLY";
+            string connectionString = "SELECT ArticleID,Author,CONVERT(varchar,PubDt,101) as newDt,SeriesOrder,LOWER(Title) as Title,body FROM Articles ORDER BY PubDt DESC OFFSET 0 ROWS FETCH NEXT 50 ROWS ONLY";
             //string connectionString = "SELECT ArticleID,Author,PubDt,SeriesOrder,Title,body FROM Articles ORDER BY ArticleID ASC OFFSET 0 ROWS FETCH NEXT 50 ROWS ONLY";
             return connectionString;
         }
@@ -226,7 +226,8 @@ namespace upc_website
                     temp = dt.Rows[i]["Author"].ToString();
                     rowData.Add(temp);
                     temp = "";
-                    temp = dt.Rows[i]["PubDt"].ToString();
+                    //temp = dt.Rows[i]["PubDt"].ToString();
+                    temp = dt.Rows[i]["newDt"].ToString();
                     rowData.Add(temp);
                     temp = "";
                     temp = dt.Rows[i]["Title"].ToString();
