@@ -40,7 +40,7 @@ namespace upc_website
         {
             
             int SlidesToAdd = GetRowCount(); //i.e. # of pictures slides to add
-            BuildCarouselDiv("10000");//Slide display time
+            BuildCarouselDiv("25000");//Slide display time
             BuildCarouselOrderedList();
             BuildCarouselListItems(SlidesToAdd);
             BuildCarouselWrapperDiv(); //
