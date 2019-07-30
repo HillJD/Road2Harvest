@@ -267,6 +267,7 @@
     <Content Include="Global.asax" />
     <Content Include="glyphicons\glyphicons-social.css" />
     <Content Include="images\carousel\1920x1080.mp4" />
+    <Content Include="images\carousel\1920x1080_1.mp4" />
     <Content Include="images\carousel\camp dove save the date.jpg" />
     <Content Include="images\carousel\IMG_2095.JPG" />
     <Content Include="images\carousel\Intro Final W.Sound_3_25sec_bitrate2.mp4" />
