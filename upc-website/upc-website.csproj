@@ -258,6 +258,7 @@
     <Content Include="browserconfig.xml" />
     <Content Include="campdove.aspx" />
     <Content Include="carouselVideo.aspx" />
+    <Content Include="Content\video.css" />
     <Content Include="default.aspx" />
     <Content Include="DoveIcon.png" />
     <Content Include="favicon-16x16.png" />
@@ -268,6 +269,7 @@
     <Content Include="images\carousel\1920x1080.mp4" />
     <Content Include="images\carousel\camp dove save the date.jpg" />
     <Content Include="images\carousel\IMG_2095.JPG" />
+    <Content Include="images\carousel\Intro Final W.Sound_3_25sec_bitrate2.mp4" />
     <Content Include="images\carousel\millikinchristmas.jpg" />
     <Content Include="images\carousel\thanksgiving2017.jpg" />
     <Content Include="images\carousel\track_matting_640_360.mp4" />
@@ -427,6 +429,7 @@
     <Content Include="resources.aspx" />
     <Content Include="Scripts\jquery.jplayer.min.js" />
     <Content Include="jquery_examples\js.js" />
+    <Content Include="Scripts\video-player.js" />
     <Content Include="services.aspx" />
     <Content Include="staff.aspx" />
     <Content Include="styles.css" />
@@ -437,6 +440,8 @@
     <Content Include="Give.aspx" />
     <Content Include="Links.aspx" />
     <Content Include="Missionaries.aspx" />
+    <Content Include="video2.aspx" />
+    <Content Include="WebForm11.aspx" />
     <Content Include="WebForm7.aspx" />
     <Content Include="WelcomeVid.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -1043,6 +1048,20 @@
     </Compile>
     <Compile Include="Missionaries.aspx.designer.cs">
       <DependentUpon>Missionaries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="video2.aspx.cs">
+      <DependentUpon>video2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="video2.aspx.designer.cs">
+      <DependentUpon>video2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm11.aspx.cs">
+      <DependentUpon>WebForm11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm11.aspx.designer.cs">
+      <DependentUpon>WebForm11.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm7.aspx.cs">
       <DependentUpon>WebForm7.aspx</DependentUpon>

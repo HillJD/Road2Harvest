@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Give.aspx.cs" Inherits="upc_website.WebForm1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
-</asp:Content>
+    </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
     <div>
