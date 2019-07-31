@@ -1,15 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="video2.aspx.cs" Inherits="upc_website.video2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
-    <meta charset="utf-8" />
+    <%--<meta charset="utf-8" />
     <title>Cross Browser Styled Video Player - Mozilla</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Content/video.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />--%>
+    <link rel="stylesheet" href="Content/video.css" type="text/css"/>
     <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv-printshiv.min.js" type="text/javascript"></script><![endif]-->
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="headContent" runat="server">
 
-</asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h1>UPC Demo Video</h1>
