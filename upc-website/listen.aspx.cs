@@ -69,7 +69,7 @@ namespace upc_website
             }
 
 
-            if (DayCheck && TimeCheck) ImageButton1.ImageUrl = "~/images/live stream.jpg";
+            if (DayCheck && TimeCheck) ImageButton1.ImageUrl = "~/images/live-stream.jpg";
 
         }
 
