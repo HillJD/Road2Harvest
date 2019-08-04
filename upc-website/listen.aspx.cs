@@ -87,5 +87,15 @@ namespace upc_website
         {
             Response.Redirect("https://tunein.com/radio/Union-Pentecostal-Church-s197173/");
         }
+
+        protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("https://www.youtube.com/channel/UC0C_tCXvEb2yrdNZ5rVm-MQ/live");
+        }
+
+        protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("https://www.facebook.com/unionpentecostalchurch");
+        }
     }
 }

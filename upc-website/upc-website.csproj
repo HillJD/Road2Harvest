@@ -298,6 +298,8 @@
     <Content Include="images\digital-ministries\digital ministries testimonies page 8.jpg" />
     <Content Include="images\digital-ministries\digital ministries testimonies page 9.jpg" />
     <Content Include="images\digital-ministries\easy-tithe cropped.png" />
+    <Content Include="images\facebook-streaming carousel.jpg" />
+    <Content Include="images\facebook-streaming.jpg" />
     <Content Include="images\FGBI_Logo.png" />
     <Content Include="images\Hurst7.jpg" />
     <Content Include="images\hurst_342px_rev.jpg" />
@@ -322,6 +324,9 @@
     <Content Include="images\sermon archive 1.jpg" />
     <Content Include="images\sermon stream 1.jpg" />
     <Content Include="images\carousel\upc_tutorial_1.mp4" />
+    <Content Include="images\tunein2018.jpg" />
+    <Content Include="images\youtube-streaming carousel.jpg" />
+    <Content Include="images\youtube-streaming.jpg" />
     <Content Include="jplayer.aspx" />
     <Content Include="jquery_examples\arrays.html" />
     <Content Include="media-1.aspx" />

@@ -27,7 +27,7 @@
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
             <a href="listen.aspx"><span class="glyphicons glyphicons-headphones"></span></a>
-            <a href="listen.aspx"><p class="gly-paragraph">Listen</p></a>
+            <a href="listen.aspx"><p class="gly-paragraph">Audio & Video</p></a>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">

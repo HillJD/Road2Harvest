@@ -28,7 +28,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="glyphicons/glyphicons.css" rel="stylesheet" type="text/css" />
     <link href="glyphicons/glyphicons-social.css" rel="stylesheet" />
-    <link href="Content/video.css" rel="stylesheet" type="text/css" />
+    <%--below interferes with Jumbotron on some pages need to have this on video2 page only--%>
+    <%--<link href="Content/video.css" rel="stylesheet" type="text/css" />--%>
 </head>
 <body>
     <form runat="server">
@@ -73,7 +74,7 @@
                         <li><a runat="server" href="~/prayer">Prayer</a></li>
                         <li><a runat="server" href="~/resources">Resources</a></li>
                         <li><a runat="server" href="~/events">Events</a></li>
-                        <li><a runat="server" href="~/listen">Listen</a></li>
+                        <li><a runat="server" href="~/listen">Audio & Video</a></li>
                         <li><a runat="server" href="~/services">Services</a></li>
                         <li><a runat="server" href="~/give">Giving</a></li>
                         <li><a runat="server" href="~/privacy">Privacy</a></li>
