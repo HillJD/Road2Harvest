@@ -34,7 +34,7 @@
             <asp:ImageButton ID="ImageButton4" runat="server" OnClick="ImageButton4_Click" ImageUrl="~/images/youtube-streaming.jpg" CssClass="image" />
         </p>
         <p>
-            <asp:ImageButton ID="ImageButton5" runat="server" OnClick="ImageButton4_Click" ImageUrl="~/images/facebook-streaming.jpg" CssClass="image" />
+            <asp:ImageButton ID="ImageButton5" runat="server" OnClientClick="myFunction();"  OnClick="ImageButton4_Click" ImageUrl="~/images/facebook-streaming.jpg"  CssClass="image" />
         </p>
             <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/images/sermon stream 1.jpg" CssClass="image" />
         <p>
@@ -47,18 +47,10 @@
 
 
     </div>
-    <script>
-        function myFunction() {
-            console.log("Listen.aspx");
-            var x = document.getElementById("myDIV");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-
-
-    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            alert("Mike");
+        }); 
+     </script>
 
 </asp:Content>
