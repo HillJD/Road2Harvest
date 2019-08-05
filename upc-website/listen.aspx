@@ -47,4 +47,18 @@
 
 
     </div>
+    <script>
+        function myFunction() {
+            console.log("Listen.aspx");
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+
+    </script>
+
 </asp:Content>

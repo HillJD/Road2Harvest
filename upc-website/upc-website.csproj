@@ -470,7 +470,7 @@
     <Content Include="fonts\glyphicons-social-regular.woff" />
     <Content Include="fonts\glyphicons-social-regular.woff2" />
     <Content Include="App_Themes\UPC_Skins\UPC_GV1.skin" />
-    <Content Include="manifest.json" />
+    <None Include="manifest.json" />
     <Content Include="camp_dove\camper_registration_form.pdf" />
     <Content Include="camp_dove\camp_dove_flyer.pdf" />
     <Content Include="camp_dove\church_registration_form.pdf" />
