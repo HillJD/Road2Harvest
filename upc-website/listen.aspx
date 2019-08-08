@@ -14,7 +14,9 @@
             font-weight: 200;
         }
     </style>
+    <script src="Content/listen.js"></script>
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         <span class="glyphicons glyphicons-headphones mypage-glythicons"></span>
@@ -30,7 +32,9 @@
         <p><asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" ImageUrl="~/images/sermon archive 1.jpg" Width="100%" /></p>
         <p><asp:ImageButton ID="ImageButton3" runat="server" OnClick="ImageButton3_Click" ImageUrl="~/images/tunein.jpg" Width="100%" /> </p>--%>
 
-        <p>
+        <button onclick="myFunction()">Click here!</button>
+
+       <p id="yt" style="display:none">
             <asp:ImageButton ID="ImageButton4" runat="server" OnClick="ImageButton4_Click" ImageUrl="~/images/youtube-streaming.jpg" CssClass="image" />
         </p>
         <p>
@@ -48,9 +52,12 @@
 
     </div>
     <script type="text/javascript">
-        $(document).ready(function () {
-            alert("Mike");
-        }); 
-     </script>
+        window.onload = function () {
+            myFunction();
+            }
+        
+        
+        
+    </script>
 
 </asp:Content>

@@ -258,6 +258,7 @@
     <Content Include="browserconfig.xml" />
     <Content Include="campdove.aspx" />
     <Content Include="carouselVideo.aspx" />
+    <Content Include="Content\listen.js" />
     <Content Include="Content\video.css" />
     <Content Include="default.aspx" />
     <Content Include="DoveIcon.png" />
