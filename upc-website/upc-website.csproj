@@ -323,9 +323,12 @@
     <Content Include="images\OBI.png" />
     <Content Include="images\Revive Our Hearts logo.jpg" />
     <Content Include="images\RZIM3Color.png" />
+    <Content Include="images\search-sermon-archive.jpg" />
     <Content Include="images\sermon archive 1.jpg" />
     <Content Include="images\sermon stream 1.jpg" />
     <Content Include="images\carousel\upc_tutorial_1.mp4" />
+    <Content Include="images\stream-audio-sermons.jpg" />
+    <Content Include="images\tunein.jpg" />
     <Content Include="images\tunein2018.jpg" />
     <Content Include="images\youtube-streaming carousel.jpg" />
     <Content Include="images\youtube-streaming.jpg" />
@@ -412,7 +415,6 @@
     <Content Include="images\pic3.jpg" />
     <Content Include="images\sermon archive.jpg" />
     <Content Include="images\sermon stream.jpg" />
-    <Content Include="images\tunein.jpg" />
     <Content Include="images\upc dove and text logo.png" />
     <Content Include="JavascriptObjectsAndMethods.aspx" />
     <Content Include="listen.aspx" />
