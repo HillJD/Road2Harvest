@@ -37,7 +37,7 @@
             <asp:ImageButton ID="ImageButton4" runat="server" OnClick="ImageButton4_Click" ImageUrl="~/images/youtube-streaming.jpg" CssClass="image" />
         </p>
         <p>
-            <asp:ImageButton ID="ImageButton5" runat="server" OnClientClick="myFunction();" OnClick="ImageButton4_Click" ImageUrl="~/images/facebook-streaming.jpg" CssClass="image" />
+            <asp:ImageButton ID="ImageButton5" runat="server" OnClientClick="myFunction();" OnClick="ImageButton5_Click" ImageUrl="~/images/facebook-streaming.jpg" CssClass="image" />
         </p>
         <p>
             <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/images/stream-audio-sermons.jpg" CssClass="image" />
