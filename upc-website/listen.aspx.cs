@@ -9,6 +9,8 @@ namespace upc_website
 {
     public partial class listen : System.Web.UI.Page
     {
+       
+
         protected void Page_Load(object sender, EventArgs e)
         {
             bool DayCheck = false;
@@ -67,9 +69,18 @@ namespace upc_website
 
 
             }
+            //For debugging
+            DayCheck = true;
+            TimeCheck = true;
 
 
-            if (DayCheck && TimeCheck) ImageButton1.ImageUrl = "~/images/live-stream.jpg";
+            if (DayCheck && TimeCheck)
+            {
+               ScriptManager.RegisterStartupScript(Page,this.GetType(), "client", "toggleLiveStreamSlide();", true);
+            }
+            
+            
+            //if (DayCheck && TimeCheck) ImageButton1.ImageUrl = "~/images/live-stream.jpg";
 
         }
 

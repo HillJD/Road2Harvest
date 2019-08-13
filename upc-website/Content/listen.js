@@ -1,13 +1,9 @@
 ﻿
 
-function myFunction() {
+function toggleLiveStreamSlide() {
+    alert("Help");
     var x = document.getElementById("yt");
-    //alert(x.style.display);
-    let show = true;
+    x.style.display = "none";
 
-    if (!show) {
-        x.style.display = "none"
-    } else {
-        x.style.display="block"
-    }
+
 }
