@@ -70,17 +70,18 @@ namespace upc_website
 
             }
             //For debugging
-            DayCheck = true;
-            TimeCheck = true;
+            //DayCheck = true;
+            //TimeCheck = true;
+
+            //This allows us to debug this page by settings conditions for showing 'Now Live' slide to 'true'
+            //if (DayCheck && TimeCheck)
+            //{
+            //This allows us to fire javascript from within code behind, this code is in content/listen.js   
+            //ScriptManager.RegisterStartupScript(Page,this.GetType(), "client", "toggleLiveStreamSlide();", true);
+            //}
 
 
-            if (DayCheck && TimeCheck)
-            {
-               ScriptManager.RegisterStartupScript(Page,this.GetType(), "client", "toggleLiveStreamSlide();", true);
-            }
-            
-            
-            //if (DayCheck && TimeCheck) ImageButton1.ImageUrl = "~/images/live-stream.jpg";
+            if (DayCheck && TimeCheck) ImageButton1.ImageUrl = "~/images/stream-audio-sermons-live.jpg";
 
         }
 

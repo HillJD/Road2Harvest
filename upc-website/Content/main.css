@@ -514,7 +514,7 @@ position:relative;
     }
 
     footer {
-        margin-top:auto;
+        margin-top: auto;
     }
     /* Make footer div shorter and float text left, icons right 7_15_17 */
     span#footer-date {
@@ -942,6 +942,60 @@ position:relative;
     }
     /* ------------------- End Carousel Styling ------------------- */
 
+    /* ------------------- Listen.aspx styling ------------------- */
+    .listen-image {
+        margin: 3px;
+        border: 3px solid #000;
+        /*margin-bottom:0px;*/
+        /*box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);*/
+        max-width: 80vw;
+    }
+
+    .listen-flex-container {
+        /*display: flex;
+        flex-direction: column;
+        width:100%;
+        height:auto;*/
+    }
+
+    .listen-flex-item {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items:center;
+        flex-direction: column;
+        /*max-height: 100vh;*/
+    }
+
+    .listen-jumbotron {
+        margin-bottom: 0px;
+        font-size: 21px;
+        font-weight: 200;
+        background-color: #eee;
+        padding: 10px;
+    }
+
+    /** {
+     outline: 1px solid red;
+    }*/
+    
+/*.container {padding:0;
+            margin:0 auto;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ------------------- Listen.aspx styling ------------------- */
 
     /* Ministry page font-size */
     .ministry-font-size {
