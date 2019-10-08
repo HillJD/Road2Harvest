@@ -7,30 +7,29 @@
 /*These 3 rules to make carousel be full width on mobile
     This overrides bootstrap classes 5.16.19 md */
 .container {
-    padding-left:0px;
-    padding-right:0px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-right: auto;
     margin-left: auto;
 }
 
-    .container-fluid > .navbar-collapse, .container-fluid >
-    .navbar-header, .container > .navbar-collapse,
+    .container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse,
     .container > .navbar-header {
-        padding-left:15px;
-        padding-right:15px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 /*This changes height of  dropdown menu to allow all menu options to be displayed 5.31.19*/
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-    max-height: 500px;    
+    max-height: 500px;
 }
 
-    /***************** jplayer start*********************/
-    /*.jp-audio {
+/***************** jplayer start*********************/
+/*.jp-audio {
     width: 355px !important;
     padding: 20px*/;
-    
 }
-./*jp-progress {
+
+. /*jp-progress {
     background: url(../image/jplayer.pink.flag.jpg) 0px -240px no-repeat;
     width: 315px !important;
     height: 13px;
@@ -39,8 +38,7 @@
     margin-bottom: 4px;
     overflow: hidden;
 }*/
-
-./*jp-volume-bar {
+. /*jp-volume-bar {
     background: url(../image/jplayer.pink.flag.jpg) 0px -300px repeat-x;
     position: absolute;
     width: 315px !important;
@@ -68,11 +66,8 @@
     overflow: hidden;
     width: 201px;
     height: 34px;
-}*/*/
+}*/ */
 /***************** jplayer end*********************/
-
-
-
 /***************pastor's desk*********************** commented out 8.17.18/
 /*.flex-container {
     padding: 5px;
@@ -113,31 +108,35 @@
     text-transform:capitalize;
 }*/
 /***************pastor's desk end***********************/
-
 /* Collapse, i.e. beliefs.aspx dropdowns for beliefs start*/
 .drop_arrow:after {
-    content:"Mike's ending";
+    content: "Mike's ending";
 }
 /* Collapse, i.e. beliefs.aspx dropdowns for beliefs end*/
 
 /*Try to force hamburger menu all times start 7.27.17*/
 .navbar-header {
-  float: none;
+    float: none;
 }
+
 .navbar-toggle {
-  display: block;
+    display: block;
 }
+
 .navbar-collapse.collapse {
-  display: none!important;
+    display: none !important;
 }
+
 .navbar-nav {
-  float: none!important;
+    float: none !important;
 }
-.navbar-nav>li {
-  float: none;
-}
-.navbar-collapse.collapse.in{
-  display:block !important;
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+.navbar-collapse.collapse.in {
+    display: block !important;
 }
 /*Try to force hamburger menu all times end*/
 
@@ -146,41 +145,50 @@
     .navbar-header {
         float: none;
     }
-    .navbar-left,.navbar-right {
+
+    .navbar-left, .navbar-right {
         float: none !important;
     }
+
     .navbar-toggle {
         display: block;
     }
+
     .navbar-collapse {
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
+
     .navbar-fixed-top {
         top: 0;
         border-width: 0 0 1px;
     }
+
     .navbar-collapse.collapse {
-        display: none!important;
+        display: none !important;
     }
+
     .navbar-nav {
-        float: none!important;
+        float: none !important;
         margin-top: 7.5px;
     }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-        display:block !important;
+
+        .navbar-nav > li {
+            float: none;
+        }
+
+            .navbar-nav > li > a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+    .collapse.in {
+        display: block !important;
     }
 
     .nav {
-        padding-left:15px;
-        padding-right:15px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 /*Try to force hamburger menu @1600 px tablets*/
@@ -188,9 +196,10 @@
 
 /* ------------------- Button state styling ------------------- */
 /* set width color-profile button */
- 
-.go-left span {text-align:left !important;
-          color:green;
+
+.go-left span {
+    text-align: left !important;
+    color: green;
 }
 
 .btn {
@@ -215,34 +224,37 @@
     border-radius: 4px;
     width: 80%;
 }
+
 .btn-belief {
-       white-space:normal;
-       width:100%;
-       text-align:left;
-    }
+    white-space: normal;
+    width: 100%;
+    text-align: left;
+}
+
 .btn-info {
     color: #fff;
-     background-color:rgba(0, 21, 64, 1);
-    border-color: #eee;
-}
-.btn-info:visited {
-    color: #fff;
-    background-color:rgba(4, 59, 171, 1);
+    background-color: rgba(0, 21, 64, 1);
     border-color: #eee;
 }
 
-.btn-info:active {
-    color: #fff;
-    background-color:rgba(4, 59, 171, 1);
-    border-color: #eee;
-}
+    .btn-info:visited {
+        color: #fff;
+        background-color: rgba(4, 59, 171, 1);
+        border-color: #eee;
+    }
 
-.btn-info:hover,.btn-info:focus {
-    color: #fff;
-    /*background-color:rgba(93, 80, 50, 1);*/
-    background-color:#0603FF;
-    border-color: #eee;
-}
+    .btn-info:active {
+        color: #fff;
+        background-color: rgba(4, 59, 171, 1);
+        border-color: #eee;
+    }
+
+    .btn-info:hover, .btn-info:focus {
+        color: #fff;
+        /*background-color:rgba(93, 80, 50, 1);*/
+        background-color: #0603FF;
+        border-color: #eee;
+    }
 /* ------------------- End Button state styling ------------------- */
 
 /* ------------------- Page-header styling ------------------- */
@@ -257,16 +269,16 @@
 }
 
 .mypage-header h2 {
-    line-height:.1;
+    line-height: .1;
 }
 
 .text-center h3 {
-    line-height:.2;
+    line-height: .2;
 }
 
 /*center text vertically page font-face-name indicator*/
 .header-h4 {
-    margin-bottom:1px;
+    margin-bottom: 1px;
 }
 
 /* ------------------- End Page-header styling ------------------- */
@@ -274,45 +286,49 @@
 /* ------------------- Carousel Styling ------------------- */
 /*Change width of carousel*/
 .carousel {
-  height: auto;
-  margin-bottom: 15px;
-  width:100%;
-  margin:-138px auto 0;
-  border-style:solid;
-  border-color:rgba(255,251,251,.5);
-  border-width:2px;
- }
+    height: auto;
+    margin-bottom: 15px;
+    width: 100%;
+    margin: -138px auto 0;
+    border-style: solid;
+    border-color: rgba(255,251,251,.5);
+    border-width: 2px;
+}
+
 .carousel-inner {
-  border-radius: 0px;
-  z-index:25;
-  width:100%;
-  }
+    border-radius: 0px;
+    z-index: 25;
+    width: 100%;
+}
+
 .carousel-caption {
-  background-color: rgba(0,0,0,.5);
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  padding: 0 0 10px 25px;
-  color: #fff;
-  text-align: left;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    padding: 0 0 10px 25px;
+    color: #fff;
+    text-align: left;
 }
+
 .carousel-indicators {
-  position: absolute;
-  bottom: -24px; /*Move indicators up or down*/
-  right:0;
-  left: 0; /*Move indicators left or right*/
-  width: 100%;
-  z-index: 26;
-  margin: 0;
-  padding: 0 25px 25px 0;
-  text-align: right;
+    position: absolute;
+    bottom: -24px; /*Move indicators up or down*/
+    right: 0;
+    left: 0; /*Move indicators left or right*/
+    width: 100%;
+    z-index: 26;
+    margin: 0;
+    padding: 0 25px 25px 0;
+    text-align: right;
 }
+
 .carousel-control.left,
 .carousel-control.right {
-  background-image: none;
-  z-index:26;
+    background-image: none;
+    z-index: 26;
 }
 
 .carousel-caption {
@@ -320,7 +336,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top:30%;
+    top: 30%;
     z-index: 10;
     padding: 0 0 10px 25px;
     color: #fff;
@@ -331,18 +347,18 @@
 
 /* Ministry page font-size */
 .ministry-font-size {
-    font-size:16px !important;
+    font-size: 16px !important;
 }
 
 #calendar {
-position:relative;
+    position: relative;
 }
 
 #map {
-    height:500px;
-    margin-top:20px;
-    margin-bottom:20px;
-    border:solid thin black;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid thin black;
 }
 
 #church_pic {
@@ -353,39 +369,39 @@ position:relative;
 }
 
 #bible_iframe {
-    width:100%;
-    height:600px;
-    border:thin solid black;
-} 
+    width: 100%;
+    height: 600px;
+    border: thin solid black;
+}
 
 
 
-  /*codepen.io/wisnust10/pen/mPjwWv 6/5/17*/
-  .carousel-fade .carousel-inner .item {
-  opacity: 0;
-  transition-property: opacity;
+/*codepen.io/wisnust10/pen/mPjwWv 6/5/17*/
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
 }
 
 .carousel-fade .carousel-inner .active {
-  opacity: 1;
+    opacity: 1;
 }
 
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
+    .carousel-fade .carousel-inner .active.left,
+    .carousel-fade .carousel-inner .active.right {
+        left: 0;
+        opacity: 0;
+        z-index: 1;
+    }
 
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-  
+    opacity: 1;
 }
 
 .carousel-fade .carousel-control {
-  z-index: 30;
+    z-index: 30;
 }
+
 @media all and (transform-3d), (-webkit-transform-3d) {
     .carousel-fade .carousel-inner > .item.next,
     .carousel-fade .carousel-inner > .item.active.right {
@@ -943,42 +959,43 @@ position:relative;
     /* ------------------- End Carousel Styling ------------------- */
 
     /* ------------------- Listen.aspx styling ------------------- */
-    .listen-image {
-        margin: 3px;
-        border: 3px solid #000;
-        /*margin-bottom:0px;*/
-        /*box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);*/
-        max-width: 80vw;
-    }
 
-    .listen-flex-container {
-        /*display: flex;
-        flex-direction: column;
-        width:100%;
-        height:auto;*/
-    }
 
-    .listen-flex-item {
+    .listen-container {
+        margin: -5px 20px 3px 0;
+        padding: 0.45em;
+        height: auto;
         display: flex;
-        flex-wrap: nowrap;
-        align-items:center;
         flex-direction: column;
-        /*max-height: 100vh;*/
+        align-items: center;
+        border-radius: 6px;
     }
 
-    .listen-jumbotron {
+    .listen-item {
+        padding: 0;
+        margin-bottom: .25em;
+        border: 3px solid black;
+        width: 100%;
+    }
+
+    .listen-image {
+        width: 100%;
+        display: block;
+    }
+
+    /*.listen-jumbotron {
         margin-bottom: 0px;
         font-size: 21px;
         font-weight: 200;
         background-color: #eee;
         padding: 10px;
-    }
+    }*/
 
     /** {
      outline: 1px solid red;
     }*/
-    
-/*.container {padding:0;
+
+    /*.container {padding:0;
             margin:0 auto;
 }*/
 
@@ -1130,9 +1147,9 @@ position:relative;
 
 
         .jumbotron {
-            padding-top: 30px;
-            padding-bottom: 30px;
-            margin-bottom: 30px;
+            padding: 15px 15px;
+            /*padding-bottom: 30px;
+            margin-bottom: 30px;*/
             color: inherit;
             background-color: #eee;
             margin-top: -11px;
@@ -1317,7 +1334,7 @@ position:relative;
             color: rgb(94, 94, 97);
             transition: .8s;
         }
-        
+
         div.mesage span {
             font-size: 2em;
             position: absolute;
@@ -1365,14 +1382,14 @@ position:relative;
             font-style: italic;
             line-height: 1.2;
             text-transform: capitalize;
-            color:RGB(88,88,88);
+            color: RGB(88,88,88);
         }
 
         .sub-title {
             font-size: .6em;
             text-align: center;
             line-height: 1.8;
-            font-weight:400;
+            font-weight: 400;
         }
 
         .show-text {
