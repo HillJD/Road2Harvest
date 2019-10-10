@@ -8,8 +8,10 @@
 <div class="mypage-header text-center">
     <h4><b>Terms and Conditions</b></h4>
 </div>
-<h1>Terms and conditions</h1>
 
+<div class="term-container">
+
+<h2>Terms and conditions</h2>
 <p>These terms and conditions (&quot;Terms&quot;, &quot;Agreement&quot;) are an agreement between Website Operator (&quot;Website Operator&quot;, &quot;us&quot;, &quot;we&quot; or &quot;our&quot;) and you (&quot;User&quot;, &quot;you&quot; or &quot;your&quot;). This Agreement sets forth the general terms and conditions of your use of the <a target="_blank" rel="nofollow" href="http://www.unionpentecostalchurch.com">unionpentecostalchurch.com</a> website and any of its products or services (collectively, &quot;Website&quot; or &quot;Services&quot;).</p>
 
 <h2>Backups</h2>
@@ -33,4 +35,5 @@
 <p>If you have any questions about this Agreement, please contact us.</p>
 
 <p>This document was last updated on May 31, 2019</p>
+</div>
 </asp:Content>

@@ -29,11 +29,11 @@ body {
 
 .jumbotron {
     padding: 15px 15px;
-    /*padding-bottom: 30px;
-    margin-bottom: 30px;*/
+    padding-bottom: 30px;
+    margin: -11px 5px 15px;
     color: inherit;
-    background-color: #eee;
-    margin-top: -11px;
+    background-color: var(--jumbotron-bg-color);
+    /*margin-top: -11px;*/
 }
 
 .jumbotronSK {
@@ -1029,4 +1029,16 @@ div.mesage span {
     overflow: auto;
 }
 }
+
+
+
+/********************* Terms & Conditions page styling ******************************************/
+.term-container {
+    padding: 15px 15px;
+    margin:15px 5px;
+    border-radius: 6px;
+    color: inherit;
+    background-color: var(--jumbotron-bg-color);
 }
+
+/********************* End Terms & Conditions page styling ******************************************/
