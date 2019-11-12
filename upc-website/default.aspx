@@ -56,7 +56,7 @@
     </div>
     <script>
         $(document).ready(function () {
-            //alert("default");
+            alert("default");
             $("#MainContent_myCarousel").on('slid.bs.carousel', function () {
                 var v = $(".active").find("video")[0];
                 if (v) {
