@@ -1042,3 +1042,19 @@ div.mesage span {
 }
 
 /********************* End Terms & Conditions page styling ******************************************/
+
+/********************* Grid for default.aspx page styling ******************************************/
+.default-container {
+    margin:10px auto;
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows:auto auto;
+    justify-content:space-around;
+
+
+}
+
+
+
+
+/********************* End Grid for default.aspx page styling ******************************************/
