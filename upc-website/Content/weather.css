@@ -1,0 +1,140 @@
+﻿
+/*4.13.20*/
+html, body {
+    font-size: 32px; /* Change this to change the sizes of all texts*/
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: black; */
+    background-image: url('../images/screenly bg with logo.jpg');
+    /* background: linear-gradient(to right, #2193b0, #6dd5ed); */
+    /* background: linear-gradient(to top, rgb(11, 84, 243), rgb(109, 213, 237)); */
+    /*
+                background-image: url("background.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            */
+}
+
+.container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temperature-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.max-min-temperature {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #fff;
+    padding-left: 30px;
+    height: 100%;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-bottom:100px;
+}
+
+#place {
+    font-weight: 800;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom:99px;
+}
+
+#temperature {
+    /*font-weight: 300;*/
+    font-size: 2rem;
+    padding-left: 10px;
+}
+
+#min-temperature {
+    padding-top: 20px;
+}
+
+#summary {
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+#forecast-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 800;
+    font-size: xx-large;
+}
+
+.forecast-temp {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    justify-content: space-evenly;
+    font-size: x-large;
+}
+
+.citation {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: rgb(247, 245, 246);
+    font-size: 18px;
+}
+
+.datetime-container {
+    width: auto;
+    text-align: center;
+    margin: 0px;
+    margin-top:99px;
+}
+
+#firstrow {
+    margin-bottom: 2vh;
+    font-size: 1rem;
+}
+
+#secondrow {
+    font-size: 2rem;
+    color: white;
+    line-height: 0.9;
+}
+
+

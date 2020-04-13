@@ -259,7 +259,9 @@
     <Content Include="campdove.aspx" />
     <Content Include="carouselVideo.aspx" />
     <Content Include="Content\listen.js" />
+    <Content Include="Content\restream.js" />
     <Content Include="Content\video.css" />
+    <Content Include="Content\weather.css" />
     <Content Include="default.aspx" />
     <Content Include="DoveIcon.png" />
     <Content Include="favicon-16x16.png" />
@@ -267,6 +269,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="glyphicons\glyphicons-social.css" />
+    <Content Include="HtmlPage3.html" />
     <Content Include="images\carousel\1920x1080.mp4" />
     <Content Include="images\carousel\1920x1080_1.mp4" />
     <Content Include="images\carousel\camp dove save the date.jpg" />
@@ -323,6 +326,7 @@
     <Content Include="images\OBI.png" />
     <Content Include="images\Revive Our Hearts logo.jpg" />
     <Content Include="images\RZIM3Color.png" />
+    <Content Include="images\screenly bg with logo.jpg" />
     <Content Include="images\sermon archive 1.jpg" />
     <Content Include="images\sermon stream 1.jpg" />
     <Content Include="images\carousel\upc_tutorial_1.mp4" />
@@ -336,6 +340,7 @@
     <Content Include="pastor-desk-new.aspx" />
     <Content Include="pastordesk.aspx" />
     <Content Include="privacy.aspx" />
+    <Content Include="restream.aspx" />
     <Content Include="safari-pinned-tab.svg" />
     <Content Include="Scripts\audio_player.js" />
     <Content Include="bible.aspx" />
@@ -449,6 +454,8 @@
     <Content Include="Links.aspx" />
     <Content Include="Missionaries.aspx" />
     <Content Include="video2.aspx" />
+    <Content Include="weather.aspx" />
+    <Content Include="weather2.aspx" />
     <Content Include="WebForm11.aspx" />
     <Content Include="WebForm7.aspx" />
     <Content Include="WelcomeVid.aspx" />
@@ -528,6 +535,7 @@
     <Content Include="Web - Copy.Release.config">
       <DependentUpon>Web - Copy %282%29.config</DependentUpon>
     </Content>
+    <Content Include="weather.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -988,6 +996,13 @@
     <Compile Include="resources.aspx.designer.cs">
       <DependentUpon>resources.aspx</DependentUpon>
     </Compile>
+    <Compile Include="restream.aspx.cs">
+      <DependentUpon>restream.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="restream.aspx.designer.cs">
+      <DependentUpon>restream.aspx</DependentUpon>
+    </Compile>
     <Compile Include="sermons.aspx.cs">
       <DependentUpon>sermons.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1072,6 +1087,27 @@
     </Compile>
     <Compile Include="video2.aspx.designer.cs">
       <DependentUpon>video2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="weather.aspx.cs">
+      <DependentUpon>weather.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="weather.aspx.designer.cs">
+      <DependentUpon>weather.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="weather.Master.cs">
+      <DependentUpon>weather.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="weather.Master.designer.cs">
+      <DependentUpon>weather.Master</DependentUpon>
+    </Compile>
+    <Compile Include="weather2.aspx.cs">
+      <DependentUpon>weather2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="weather2.aspx.designer.cs">
+      <DependentUpon>weather2.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm11.aspx.cs">
       <DependentUpon>WebForm11.aspx</DependentUpon>
