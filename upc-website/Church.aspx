@@ -23,13 +23,13 @@
         In doing so, our focus is Christ, our experience is Pentecostal, and our desire is holiness of life.  Union Pentecostal Church is a classical Pentecostal church that exists to preach and live unashamedly the whole counsel of Scripture.  Our desire is... 1) to provide an atmosphere of worship whereby one can focus on Christ and experience Him by faith in a real, felt way 2)to provide opportunities through service, activities, and events whereby everyone assists everyone in Christian growth and maturity to come into the full stature of Christ, and 3)to make an effort through our church to reach all we can, whoever they may be, whenever we can, by whatever Biblical means to the Lord Jesus Christ.  To accomplish the above we are determined to remain a full Gospel church where our focus is Christ, our experience is Pentecostal and our desire is holiness of life.</span></p>
         </div>
 
-        <div>
+        <div class="embed-responsive embed-responsive-16by9">
             <iframe src="https://embed.restream.io/player/index.html?token=fd88a43d9883ff4427ce6a94f61f1f90" width="480" height="360" frameborder="0" allowfullscreen="1"></iframe><p>Powered by <a href="https://restream.io">Restream.io</a></p>
         </div>
-        <div>
+        <div class="embed-responsive embed-responsive-4by3">
             <iframe src="https://embed.restream.io/player/index.html?token=fd88a43d9883ff4427ce6a94f61f1f90" width="640" height="396" frameborder="0" allowfullscreen="1"></iframe><p>Powered by <a href="https://restream.io">Restream.io</a></p>
         </div>
-        <div>
+        <div class="embed-responsive embed-responsive-16by9">
             <iframe src="https://embed.restream.io/player/index.html?token=fd88a43d9883ff4427ce6a94f61f1f90" width="960" height="576" frameborder="0" allowfullscreen="1"></iframe><p>Powered by <a href="https://restream.io">Restream.io</a></p>
         </div>
 
