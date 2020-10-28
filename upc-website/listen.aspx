@@ -26,13 +26,17 @@
     </div>
 
     <div class="jumbotron text-center">
-
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://embed.restream.io/player/index.html?token=fd88a43d9883ff4427ce6a94f61f1f90" width="640" height="396" frameborder="0" allowfullscreen="1"></iframe>
+        </div>
 
         <%-- <p><asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/images/sermon stream 1.jpg" Width="100%" /></p>
         <p><asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" ImageUrl="~/images/sermon archive 1.jpg" Width="100%" /></p>
         <p><asp:ImageButton ID="ImageButton3" runat="server" OnClick="ImageButton3_Click" ImageUrl="~/images/tunein.jpg" Width="100%" /> </p>--%>
-
-        <button onclick="myFunction()">Click here!</button>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="https://www.facebook.com/unionpentecostalchurch"><span class="glyphicons glyphicons-FaceBook"></span></a>
+            <a href="https://www.facebook.com/unionpentecostalchurch"><p class="gly-paragraph">Live Streaming on FaceBook</p></a>
+        </div>
 
        <p id="yt" style="display:none">
             <asp:ImageButton ID="ImageButton4" runat="server" OnClick="ImageButton4_Click" ImageUrl="~/images/youtube-streaming.jpg" CssClass="image" />
@@ -47,8 +51,6 @@
         <p>
             <asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" ImageUrl="~/images/sermon archive 1.jpg" CssClass="image" />
         </p>
-
-
 
     </div>
     <script type="text/javascript">
