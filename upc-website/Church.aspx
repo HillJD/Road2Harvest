@@ -24,15 +24,9 @@
         </div>
 
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://embed.restream.io/player/index.html?token=fd88a43d9883ff4427ce6a94f61f1f90" width="480" height="360" frameborder="0" allowfullscreen="1"></iframe><p>Powered by <a href="https://restream.io">Restream.io</a></p>
-        </div>
-        <div class="embed-responsive embed-responsive-4by3">
             <iframe src="https://embed.restream.io/player/index.html?token=fd88a43d9883ff4427ce6a94f61f1f90" width="640" height="396" frameborder="0" allowfullscreen="1"></iframe><p>Powered by <a href="https://restream.io">Restream.io</a></p>
         </div>
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://embed.restream.io/player/index.html?token=fd88a43d9883ff4427ce6a94f61f1f90" width="960" height="576" frameborder="0" allowfullscreen="1"></iframe><p>Powered by <a href="https://restream.io">Restream.io</a></p>
-        </div>
-
+        
         <img style="margin-top: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="images/Worship00.jpg" class="img-responsive">
 
         <div class="text-center" style="padding: 10px 0px;">
