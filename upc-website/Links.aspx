@@ -32,12 +32,6 @@
         <br />
         
         <p>
-            <a href="http://rzim.org/" target="_blank">
-            <img border="0" alt="Ravi Zacharias International Ministries" src="http://unionpentecostalchurch.com\images\RZIM3Color.png" width="130" height="35">
-            </a>
-        </p>
-        <br />
-        <p>
             <a href="https://www.reviveourhearts.com/" target="_blank">
             <img border="0" alt="Revive Our Hearts" src="http://unionpentecostalchurch.com\images\Revive Our Hearts logo.jpg" width="140" height="40">
             </a>
