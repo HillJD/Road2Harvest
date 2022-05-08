@@ -33,10 +33,10 @@
         <p><asp:ImageButton ID="ImageButton3" runat="server" OnClick="ImageButton3_Click" ImageUrl="~/images/tunein.jpg" Width="100%" /> </p>--%>
 
        <p id="yt" style="display:none">
-            <asp:ImageButton ID="ImageButton4" runat="server" OnClick="ImageButton4_Click" ImageUrl="~/images/youtube-streaming.jpg" CssClass="image" />
+            <asp:ImageButton ID="ImageButton4" runat="server" OnClick="ImageButton4_Click" ImageUrl="~/images/facebook-streaming.jpg" CssClass="image" />
         </p>
         <p>
-            <asp:ImageButton ID="ImageButton5" runat="server" OnClientClick="myFunction();"  OnClick="ImageButton4_Click" ImageUrl="~/images/facebook-streaming.jpg"  CssClass="image" />
+            <asp:ImageButton ID="ImageButton5" runat="server" OnClientClick="myFunction();"  OnClick="ImageButton4_Click" ImageUrl="~/images/youtube-streaming.jpg"  CssClass="image" />
         </p>
             <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/images/sermon stream 1.jpg" CssClass="image" />
         <p>
