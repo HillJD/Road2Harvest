@@ -46,7 +46,7 @@
             <asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" ImageUrl="~/images/sermon archive 1.jpg" CssClass="image" />
         </p>
     </div>
-    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.restream.io/?token=7ba27e78f1af47499e6aec8a71206576" allow="autoplay" allowfullscreen="1" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;" /></div>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.restream.io/?token=7ba27e78f1af47499e6aec8a71206576&vwrs=1" allow="autoplay" allowfullscreen="1" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"/></div>
     <script type="text/javascript">
         window.onload = function () {
             myFunction();
