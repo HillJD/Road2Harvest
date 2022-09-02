@@ -10,6 +10,7 @@
     <!--Stack the columns on mobile by making one full-width and the other half-width -->
     
     <asp:PlaceHolder ID="ControlContainer" runat="server"></asp:PlaceHolder>
+    <div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
             <a href="location.aspx"><span class="glyphicons glyphicons-map-marker"></span></a>
             <a href="location.aspx"><p class="gly-paragraph">Location</p></a>
@@ -52,8 +53,8 @@
             <a href="resources.aspx"><span class="glyphicons glyphicons-paperclip"></span></a>
             <a href="resources.aspx"><p class="gly-paragraph">Resources</p></a>
         </div>
-        
     </div>
+
     <script>
         $(document).ready(function () {
             //alert("default");
@@ -65,7 +66,17 @@
             });
         });   
        
+        window.nucleusLauncherSettings = {
+            launcherId: '4dcaa06695a2ffb1fbb0',
+        };
+        (function (l, a, u, n, c, h) {
+            u = a.createElement('script');
+            u.type = 'text/javascript';
+            u.async = true;
+            u.src = 'https://launcher.nucleus.church/boot.latest.js';
+            n = a.getElementsByTagName('script')[0];
+            n.parentNode.insertBefore(u, n);
+        })(window, document);
     </script>
-
     
 </asp:Content>

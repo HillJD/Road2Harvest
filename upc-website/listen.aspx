@@ -22,7 +22,7 @@
         <span class="glyphicons glyphicons-headphones mypage-glythicons"></span>
     </div>
     <div class="mypage-header text-center">
-        <h4><b>Listen</b></h4>
+        <h4><b>Media</b></h4>
     </div>
 
     <div class="jumbotron text-center">
