@@ -54,8 +54,6 @@
             <a href="resources.aspx"><p class="gly-paragraph">Resources</p></a>
         </div>
 
-    </div>
-
     <script>
         $(document).ready(function () {
             //alert("default");
@@ -65,8 +63,13 @@
                     v.play();
                 }
             });
-        });   
-       
+        });
+    </script>
+
+
+    </div>
+
+    <script>
         window.nucleusLauncherSettings = {
             launcherId: '4dcaa06695a2ffb1fbb0',
         };
