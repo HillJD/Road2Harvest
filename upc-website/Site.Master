@@ -14,6 +14,19 @@
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
+        <script>
+            window.nucleusLauncherSettings = {
+                launcherId: '4dcaa06695a2ffb1fbb0',
+            };
+            (function (l, a, u, n, c, h) {
+                u = a.createElement('script');
+                u.type = 'text/javascript';
+                u.async = true;
+                u.src = 'https://launcher.nucleus.church/boot.latest.js';
+                n = a.getElementsByTagName('script')[0];
+                n.parentNode.insertBefore(u, n);
+            })(window, document);
+        </script>
     </asp:PlaceHolder>
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -28,20 +41,6 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="glyphicons/glyphicons.css" rel="stylesheet" type="text/css" />
     <link href="glyphicons/glyphicons-social.css" rel="stylesheet" />
-
-    <script>
-      window.nucleusLauncherSettings = {
-        launcherId: '4dcaa06695a2ffb1fbb0',
-      };
-      (function (l, a, u, n, c, h) {
-        u = a.createElement('script');
-        u.type = 'text/javascript';
-        u.async = true;
-        u.src = 'https://launcher.nucleus.church/boot.latest.js';
-        n = a.getElementsByTagName('script')[0];
-        n.parentNode.insertBefore(u, n);
-      })(window, document);
-    </script>
 
     <%--below interferes with Jumbotron on some pages need to have this on video2 page only--%>
     <%--<link href="Content/video.css" rel="stylesheet" type="text/css" />--%>
