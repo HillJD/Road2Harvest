@@ -64,12 +64,7 @@
                 }
             });
         });
-    </script>
 
-
-    </div>
-
-    <script>
         window.nucleusLauncherSettings = {
             launcherId: '4dcaa06695a2ffb1fbb0',
         };
@@ -81,6 +76,9 @@
             n = a.getElementsByTagName('script')[0];
             n.parentNode.insertBefore(u, n);
         })(window, document);
+
     </script>
+
+    </div>
     
 </asp:Content>

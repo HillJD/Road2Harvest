@@ -15,6 +15,21 @@
         }
     </style>
     <script src="Content/listen.js"></script>
+
+    <script>
+        window.nucleusLauncherSettings = {
+            launcherId: '4dcaa06695a2ffb1fbb0',
+        };
+        (function (l, a, u, n, c, h) {
+            u = a.createElement('script');
+            u.type = 'text/javascript';
+            u.async = true;
+            u.src = 'https://launcher.nucleus.church/boot.latest.js';
+            n = a.getElementsByTagName('script')[0];
+            n.parentNode.insertBefore(u, n);
+        })(window, document);
+    </script>
+
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
