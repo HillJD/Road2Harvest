@@ -16,7 +16,7 @@
     </style>
     <script src="Content/listen.js"></script>
 
-    <script>
+    <%--<script>
         window.nucleusLauncherSettings = {
             launcherId: '4dcaa06695a2ffb1fbb0',
         };
@@ -28,7 +28,7 @@
             n = a.getElementsByTagName('script')[0];
             n.parentNode.insertBefore(u, n);
         })(window, document);
-    </script>
+    </script>--%>
 
 </asp:Content>
 
@@ -66,9 +66,6 @@
         window.onload = function () {
             myFunction();
             }
-        
-        
-        
     </script>
 
 </asp:Content>

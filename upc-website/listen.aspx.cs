@@ -102,7 +102,7 @@ namespace upc_website
 
         protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("https://www.youtube.com/channel/UC0C_tCXvEb2yrdNZ5rVm-MQ/live");
+            Response.Redirect("https://m.youtube.com/channel/UC0C_tCXvEb2yrdNZ5rVm-MQ");
         }
 
         protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
