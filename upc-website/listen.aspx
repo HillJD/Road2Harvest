@@ -29,12 +29,12 @@
     <asp:PlaceHolder ID="ControlContainer" runat="server"></asp:PlaceHolder>
     
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-            <a href="https://m.youtube.com/channel/UC0C_tCXvEb2yrdNZ5rVm-MQ"><span class="glyphicons glyphicons-YouTube"></span></a>
+            <a href="https://m.youtube.com/channel/UC0C_tCXvEb2yrdNZ5rVm-MQ"><span class="social social-youtube"></span></a>
             <a href="https://m.youtube.com/channel/UC0C_tCXvEb2yrdNZ5rVm-MQ"><p class="gly-paragraph">YouTube</p></a>
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-            <a href="https://www.facebook.com/unionpentecostalchurch"><span class="glyphicons glyphicons-FaceBook"></span></a>
+            <a href="https://www.facebook.com/unionpentecostalchurch"><span class="social social-facebook"></span></a>
             <a href="https://www.facebook.com/unionpentecostalchurch"><p class="gly-paragraph">FaceBook</p></a>
         </div>
 
