@@ -81,33 +81,33 @@ namespace upc_website
             //}
 
 
-            if (DayCheck && TimeCheck) ImageButton1.ImageUrl = "~/images/stream-audio-sermons-live.jpg";
+            //if (DayCheck && TimeCheck) ImageButton1.ImageUrl = "~/images/stream-audio-sermons-live.jpg";
 
         }
 
-        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect("http://unionpentecostal.dyndns.org:88/broadwave.mp3?src=1&rate=1&ref=http%3A%2F%2Funionpentecostal.dyndns.org%3A88%2F");
-        }
+        //protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        //{
+        //    Response.Redirect("http://unionpentecostal.dyndns.org:88/broadwave.mp3?src=1&rate=1&ref=http%3A%2F%2Funionpentecostal.dyndns.org%3A88%2F");
+        //}
 
-        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect("archives.aspx");
-        }
+        //protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        //{
+        //    Response.Redirect("archives.aspx");
+        //}
 
-        protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect("https://tunein.com/radio/Union-Pentecostal-Church-s197173/");
-        }
+        //protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+        //{
+        //    Response.Redirect("https://tunein.com/radio/Union-Pentecostal-Church-s197173/");
+        //}
 
-        protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect("https://m.youtube.com/channel/UC0C_tCXvEb2yrdNZ5rVm-MQ");
-        }
+        //protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+        //{
+        //    Response.Redirect("https://m.youtube.com/channel/UC0C_tCXvEb2yrdNZ5rVm-MQ");
+        //}
 
-        protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect("https://www.facebook.com/unionpentecostalchurch");
-        }
+        //protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
+        //{
+        //    Response.Redirect("https://www.facebook.com/unionpentecostalchurch");
+        //}
     }
 }

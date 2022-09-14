@@ -53,12 +53,4 @@
             <a href="video.aspx"><p class="gly-paragraph">Video</p></a>
         </div>
 
-
-
-    <script type="text/javascript">
-        window.onload = function () {
-            myFunction();
-            }
-    </script>
-
 </asp:Content>
