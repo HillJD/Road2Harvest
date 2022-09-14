@@ -24,7 +24,6 @@
     <div class="mypage-header text-center">
         <h4><b>Media</b></h4>
     </div>
-<asp:PlaceHolder ID="ControlContainer" runat="server"></asp:PlaceHolder>
     <div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
             <a href="https://m.youtube.com/channel/UC0C_tCXvEb2yrdNZ5rVm-MQ"><span class="social social-youtube"></span></a>
