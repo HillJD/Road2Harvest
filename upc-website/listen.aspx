@@ -49,7 +49,7 @@
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-            <a href="video.aspx"><span class="glyphicons glyphicons-video-camera"></span></a>
+            <a href="video.aspx"><span class="glyphicons glyphicons-facetime-video"></span></a>
             <a href="video.aspx"><p class="gly-paragraph">Video</p></a>
         </div>
 
