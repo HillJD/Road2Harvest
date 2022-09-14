@@ -454,8 +454,6 @@
     <Content Include="Links.aspx" />
     <Content Include="Missionaries.aspx" />
     <Content Include="video.aspx" />
-    <Content Include="weather.aspx" />
-    <Content Include="weather2.aspx" />
     <Content Include="WebForm11.aspx" />
     <Content Include="WebForm7.aspx" />
     <Content Include="WelcomeVid.aspx" />
@@ -535,7 +533,6 @@
     <Content Include="Web - Copy.Release.config">
       <DependentUpon>Web - Copy %282%29.config</DependentUpon>
     </Content>
-    <Content Include="weather.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1087,27 +1084,6 @@
     </Compile>
     <Compile Include="video.aspx.designer.cs">
       <DependentUpon>video.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="weather.aspx.cs">
-      <DependentUpon>weather.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="weather.aspx.designer.cs">
-      <DependentUpon>weather.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="weather.Master.cs">
-      <DependentUpon>weather.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="weather.Master.designer.cs">
-      <DependentUpon>weather.Master</DependentUpon>
-    </Compile>
-    <Compile Include="weather2.aspx.cs">
-      <DependentUpon>weather2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="weather2.aspx.designer.cs">
-      <DependentUpon>weather2.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm11.aspx.cs">
       <DependentUpon>WebForm11.aspx</DependentUpon>
