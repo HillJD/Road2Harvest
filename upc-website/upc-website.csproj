@@ -453,7 +453,7 @@
     <Content Include="Give.aspx" />
     <Content Include="Links.aspx" />
     <Content Include="Missionaries.aspx" />
-    <Content Include="video2.aspx" />
+    <Content Include="video.aspx" />
     <Content Include="weather.aspx" />
     <Content Include="weather2.aspx" />
     <Content Include="WebForm11.aspx" />
@@ -1081,12 +1081,12 @@
     <Compile Include="Missionaries.aspx.designer.cs">
       <DependentUpon>Missionaries.aspx</DependentUpon>
     </Compile>
-    <Compile Include="video2.aspx.cs">
-      <DependentUpon>video2.aspx</DependentUpon>
+    <Compile Include="video.aspx.cs">
+      <DependentUpon>video.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="video2.aspx.designer.cs">
-      <DependentUpon>video2.aspx</DependentUpon>
+    <Compile Include="video.aspx.designer.cs">
+      <DependentUpon>video.aspx</DependentUpon>
     </Compile>
     <Compile Include="weather.aspx.cs">
       <DependentUpon>weather.aspx</DependentUpon>
