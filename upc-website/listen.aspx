@@ -50,4 +50,5 @@
             <a href="video.aspx"><p class="gly-paragraph">Video</p></a>
         </div>
     </div>
+    </div>
 </asp:Content>

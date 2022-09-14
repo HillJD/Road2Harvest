@@ -36,11 +36,6 @@
             <a href="give.aspx"><p class="gly-paragraph">Giving</p></a>
         </div>
 
-        <%--<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
-            <a href="connect.aspx"><span class="glyphicons glyphicons-group"></span></a>
-            <a href="connect.aspx"><p class="gly-paragraph">Connection</p></a>
-        </div>--%>
-
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
             <a href="events.aspx"><span class="glyphicons glyphicons-calendar"></span></a>
             <a href="events.aspx"><p class="gly-paragraph">Events</p></a>
