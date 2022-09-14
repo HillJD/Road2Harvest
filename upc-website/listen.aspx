@@ -25,28 +25,36 @@
         <h4><b>Media</b></h4>
     </div>
 
-    <div class="jumbotron text-center">
+    
+    <asp:PlaceHolder ID="ControlContainer" runat="server"></asp:PlaceHolder>
+    
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="https://m.youtube.com/channel/UC0C_tCXvEb2yrdNZ5rVm-MQ"><span class="glyphicons glyphicons-YouTube"></span></a>
+            <a href="https://m.youtube.com/channel/UC0C_tCXvEb2yrdNZ5rVm-MQ"><p class="gly-paragraph">YouTube</p></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="https://www.facebook.com/unionpentecostalchurch"><span class="glyphicons glyphicons-FaceBook"></span></a>
+            <a href="https://www.facebook.com/unionpentecostalchurch"><p class="gly-paragraph">FaceBook</p></a>
+        </div>
+
+       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="https://tunein.com/radio/Union-Pentecostal-Church-s197173/"><span class="glyphicons glyphicons-headphones"></span></a>
+            <a href="https://tunein.com/radio/Union-Pentecostal-Church-s197173/"><p class="gly-paragraph">TuneIn</p></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="http://unionpentecostal.dyndns.org:88/broadwave.mp3?src=1&rate=1&ref=http%3A%2F%2Funionpentecostal.dyndns.org%3A88%2F"><span class="glyphicons glyphicons-headphones"></span></a>
+            <a href="http://unionpentecostal.dyndns.org:88/broadwave.mp3?src=1&rate=1&ref=http%3A%2F%2Funionpentecostal.dyndns.org%3A88%2F"><p class="gly-paragraph">BroadWave</p></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="video.aspx"><span class="glyphicons glyphicons-video-camera"></span></a>
+            <a href="video.aspx"><p class="gly-paragraph">Video</p></a>
+        </div>
 
 
-        <%-- <p><asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/images/sermon stream 1.jpg" Width="100%" /></p>
-        <p><asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" ImageUrl="~/images/sermon archive 1.jpg" Width="100%" /></p>
-        <p><asp:ImageButton ID="ImageButton3" runat="server" OnClick="ImageButton3_Click" ImageUrl="~/images/tunein.jpg" Width="100%" /> </p>--%>
 
-       <p id="yt" style="display:none">
-            <asp:ImageButton ID="ImageButton4" runat="server" OnClick="ImageButton4_Click" ImageUrl="~/images/youtube-streaming.jpg" CssClass="image" />
-        </p>
-        <p>
-            <asp:ImageButton ID="ImageButton5" runat="server" OnClientClick="myFunction();"  OnClick="ImageButton4_Click" ImageUrl="~/images/youtube-streaming.jpg"  CssClass="image" />
-        </p>
-            <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" ImageUrl="~/images/sermon stream 1.jpg" CssClass="image" />
-        <p>
-            <asp:ImageButton ID="ImageButton3" runat="server" OnClick="ImageButton3_Click" ImageUrl="~/images/tunein2018.jpg" CssClass="image" />
-        </p>
-        <p>
-            <asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" ImageUrl="~/images/sermon archive 1.jpg" CssClass="image" />
-        </p>
-    </div>
-    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.restream.io/?token=7ba27e78f1af47499e6aec8a71206576&vwrs=1" allow="autoplay" allowfullscreen="1" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"/></div>
     <script type="text/javascript">
         window.onload = function () {
             myFunction();
