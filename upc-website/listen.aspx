@@ -56,6 +56,6 @@
         </div>
     </div>
 
-    //The following is needed to force the footer to the bottom of the page
+    <%--The following is needed to force the footer to the bottom of the page--%>
     </div>
 </asp:Content>
