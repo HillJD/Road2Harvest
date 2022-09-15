@@ -52,8 +52,10 @@
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
             <a href="video.aspx"><span class="glyphicons glyphicons-facetime-video"></span></a>
-            <a href="video.aspx"><p class="gly-paragraph">Video</p></a>
+            <a href="video.aspx"><p class="gly-paragraph">Live Video</p></a>
         </div>
     </div>
+
+    //The following is needed to force the footer to the bottom of the page
     </div>
 </asp:Content>
