@@ -46,6 +46,11 @@
         </div>
 
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+            <a href="archives.aspx"><span class="glyphicons glyphicons-headphones"></span></a>
+            <a href="archives.aspx"><p class="gly-paragraph">Sermon Archives</p></a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
             <a href="video.aspx"><span class="glyphicons glyphicons-facetime-video"></span></a>
             <a href="video.aspx"><p class="gly-paragraph">Video</p></a>
         </div>
