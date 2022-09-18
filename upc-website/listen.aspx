@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="listen.aspx.cs" Inherits="upc_website.listen" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="headContent" runat="server">
     <style>
         .image {
@@ -16,7 +15,6 @@
     </style>
     <script src="Content/listen.js"></script>
 </asp:Content>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div>
         <span class="glyphicons glyphicons-headphones mypage-glythicons"></span>
@@ -55,7 +53,6 @@
             <a href="video.aspx"><p class="gly-paragraph">Live Video</p></a>
         </div>
     </div>
-
     <%--The following is needed to force the footer to the bottom of the page--%>
     </div>
 </asp:Content>
