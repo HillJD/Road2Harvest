@@ -4,6 +4,19 @@
 
 <html lang="en">
 <head runat="server">
+    <script>
+        window.nucleusLauncherSettings = {
+            launcherId: '4dcaa06695a2ffb1fbb0',
+        };
+        (function (l, a, u, n, c, h) {
+            u = a.createElement('script');
+            u.type = 'text/javascript';
+            u.async = true;
+            u.src = 'https://launcher.nucleus.church/boot.latest.js';
+            n = a.getElementsByTagName('script')[0];
+            n.parentNode.insertBefore(u, n);
+        })(window, document);
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> </title>
@@ -11,22 +24,9 @@
     <!--The corresponding code must be placed in the destination page -->
     <asp:ContentPlaceHolder ID="headContent" runat="server">
     </asp:ContentPlaceHolder>
-
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
-        <script>
-            window.nucleusLauncherSettings = {
-                launcherId: '4dcaa06695a2ffb1fbb0',
-            };
-            (function (l, a, u, n, c, h) {
-                u = a.createElement('script');
-                u.type = 'text/javascript';
-                u.async = true;
-                u.src = 'https://launcher.nucleus.church/boot.latest.js';
-                n = a.getElementsByTagName('script')[0];
-                n.parentNode.insertBefore(u, n);
-            })(window, document);
-        </script>
+        
     </asp:PlaceHolder>
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

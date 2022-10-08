@@ -22,7 +22,6 @@
     <div class="mypage-header text-center">
         <h4><b>Media</b></h4>
     </div>
-    <div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
             <a href="https://m.youtube.com/channel/UC0C_tCXvEb2yrdNZ5rVm-MQ"><span class="social social-youtube"></span></a>
             <a href="https://m.youtube.com/channel/UC0C_tCXvEb2yrdNZ5rVm-MQ"><p class="gly-paragraph">YouTube</p></a>
@@ -52,7 +51,6 @@
             <a href="video.aspx"><span class="glyphicons glyphicons-facetime-video"></span></a>
             <a href="video.aspx"><p class="gly-paragraph">Live Video</p></a>
         </div>
-    </div>
-    <%--The following is needed to force the footer to the bottom of the page--%>
+    <%--The following (unmatched) is needed to force the footer to the bottom of the page--%>
     </div>
 </asp:Content>
