@@ -340,6 +340,7 @@
     <Content Include="pastor-desk-new.aspx" />
     <Content Include="pastordesk.aspx" />
     <Content Include="privacy.aspx" />
+    <Content Include="PurerEyes.aspx" />
     <Content Include="restream.aspx" />
     <Content Include="safari-pinned-tab.svg" />
     <Content Include="Scripts\audio_player.js" />
@@ -986,6 +987,13 @@
       <DependentUpon>privacy.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurerEyes.aspx.cs">
+      <DependentUpon>PurerEyes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurerEyes.aspx.designer.cs">
+      <DependentUpon>PurerEyes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="resources.aspx.cs">
       <DependentUpon>resources.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
