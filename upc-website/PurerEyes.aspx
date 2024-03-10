@@ -19,7 +19,8 @@
         <br />
         <h2>Resources</h2>
         <br />
-
+                <h4><a runat="server" href="https://unionpentecostalchurch.com/downloads/Purer_Eyes_Notes.pdf">Message Notes PDF</a></h4>
+        <br />
         <h3>Books</h3>
           <br style="line-height:10px" />
         <h4><a runat="server" href="https://www.christianbook.com/temptation-victory-revised-updated-anniversary-edition/stephen-arterburn/9780525653516/pd/653511">Every Man's Battle</a></h4>      
@@ -47,6 +48,11 @@
         <h4><a runat="server" href="https://canopy.us/">Canopy</a></h4>
         
         <h4><a runat="server" href="https://www.covenanteyes.com/">Covenant Eyes</a></h4>
+
+        <h4><a runat="server" href="https://pi-hole.net/">Pi-Hole Network-Wide Ad Blocking</a></h4>
+
+        <h4><a runat="server" href="https://www.microcenter.com/search/search_results.aspx?Ntt=%22raspberry+pi+5%22">Raspberry Pi 5 for use with Pi-Hole</a></h4>
+       
         <br />  
 
         <h3 style="line-height:100%">Steps to turn on Content Restrictions on iPhone</h3>
@@ -64,8 +70,9 @@
          <br style="line-height:10px" />
 <h4><a runat="server" href="https://unionpentecostalchurch.com/downloads/Purer_Eyes_Resources.pdf">Resources PDF</a></h4>   
 
-        
-
+        <h4><a runat="server" href="https://unionpentecostalchurch.com/downloads/Purer_Eyes_Notes.pdf">Message Notes PDF</a></h4>
+         <h4><a runat="server" href="https://unionpentecostalchurch.com/downloads/Purer_Eyes_Tactics.pdf">Tactics PDF</a></h4> 
+        <p style="font-size:16px"> Video link coming soon! </p>
     </div>
 
 </asp:Content>
