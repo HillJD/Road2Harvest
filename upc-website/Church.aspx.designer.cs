@@ -7,9 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace upc_website {
-    
-    
-    public partial class history {
+namespace upc_website
+{
+
+
+    public partial class Church
+    {
     }
 }

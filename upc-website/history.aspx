@@ -23,8 +23,8 @@
         350 under his guidance. In 1985, Brother Vaughn’s health declined and Derwin Ward became pastor and 
         blessed the congregation with his musical talent as well as preaching of the Word. Five years later, 
         he resigned. In 1991 Rev. Clifford Hurst, an instructor at Ozark Bible Institute was called by God 
-        to carry on the vision, strengthening the congregation and reinforcing Biblical principles. The 
-        experiences, teachings, and Biblical living of classic Pentecost are still preserved in what is 
-        now Union Pentecostal Church.</p>
+        to carry on the vision, strengthening the congregation and reinforcing Biblical principles.
+        Rev. Clifford Hurst stepped down in 2024, but the experiences, teachings, and Biblical living of
+        classic Pentecost are still preserved in what is now Union Pentecostal Church.</p>
 </div>
 </asp:Content>
